@@ -1,4 +1,3 @@
-*.zip
 *.png
 *.jpg
 *.svg
@@ -6,6 +5,7 @@
 *.gif
 *.avif
 *.webp
+*.zip
 
 # dependencies
 *node_modules/

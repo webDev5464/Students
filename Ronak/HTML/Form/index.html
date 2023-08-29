@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    div {
+      margin: 10px 0;
+    }
+
+    form {
+      width: 50%;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="backend.php">
+    <fieldset>
+      <legend>First Form : </legend>
+
+      <div>
+        <label for="fName">Full Name : </label>
+        <input type="text" name="fName" id="fName" required autofocus>
+      </div>
+
+      <div>
+        <input type="email" name="email" id="email" placeholder="Email :" required >
+      </div>
+
+      <div>
+        <input type="password" name="pass" id="pass" placeholder="Password :" required>
+      </div>
+
+      <hr>
+
+      <div>
+        <h3>Select Language</h3>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="HTML" id="HTML"><br>
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="CSS" id="CSS"><br>
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" name="JavaScript" id="JavaScript"><br>
+      </div>
+
+      <hr>
+
+      <div>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female">
+        <label for="Other">Other</label>
+        <input type="radio" name="gender" id="Other">
+      </div>
+
+      <hr>
+
+      <div>
+        <select name="cars" id="cars" size="2" multiple>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Honda" selected>Honda</option>
+          <option value="Maruti 800">Maruti 800</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <textarea name="Comment" id="Comment" cols="30" rows="10" placeholder="Write Message..."></textarea>
+
+      <hr>
+
+      <div>
+        <input name="List" list="List" placeholder="Select Browser">
+        <datalist id="List">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+
+      </div>
+
+      <hr>
+
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

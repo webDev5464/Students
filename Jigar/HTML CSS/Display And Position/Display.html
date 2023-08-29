@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* div {
+      background-color: red;
+      display: inline-block;
+    }
+
+    span {
+      background-color: aqua;
+      display: block;
+    } */
+
+    .block {
+      height: 50px;
+      width: 50px;
+      background-color: red;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .block:hover .none {
+      display: block;
+    }
+
+    /* |||||||||||| */
+
+    .hidden {
+      background-color: aqua;
+    }
+
+    .hidden>P {
+      visibility: hidden;
+      /* display: none; */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div>
+    <p>Hello World</p>
+  </div>
+
+  <span>.</span><span>Magan</span> -->
+
+  <div class="block">
+    <p class="none">Lorem ipsum dolor sit amet.</p>
+  </div>
+
+  <!-- |||||||||||||| -->
+
+  <div class="hidden">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+
+
+</body>
+
+</html>

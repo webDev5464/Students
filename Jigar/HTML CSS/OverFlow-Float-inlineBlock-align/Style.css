@@ -1,0 +1,31 @@
+.overF {
+  width: 50vw;
+  height: 300px;
+  border: 3px solid red;
+  overflow: auto;
+  /* margin: auto; */
+}
+
+.float img {
+  float: right;
+}
+
+span {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.align {
+  border: 2px solid;
+  text-align: right;
+  width: fit-content;
+  margin: auto;
+}
+
+.centerMethod {
+  width: fit-content;
+  margin: auto;
+}

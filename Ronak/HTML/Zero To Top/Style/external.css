@@ -1,0 +1,28 @@
+h3 {
+  color: blue;
+}
+
+h4 {
+  color: blueviolet;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Chagan {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.Chagan-1 {
+  color: aqua;
+}
+
+#Magan {
+  font-size: 30px;
+  background-color: tomato;
+}
+
+.blockInline>span {
+  background-color: aqua;
+}

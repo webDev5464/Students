@@ -1,0 +1,127 @@
+hr {
+  border: 2px solid black;
+  margin: 30px 0;
+}
+
+/*  */
+.border {
+  display: flex;
+  justify-content: space-around;
+}
+
+.border>div {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  margin: 10px;
+}
+
+/* First Div */
+.border>div:first-child {
+  /* border radius (Rounded) */
+  border-radius: 30px;
+
+  /* Box Shadow */
+  box-shadow: 0 0 40px green;
+}
+
+.border>div:nth-child(2) {
+  /* border radius (Rounded) */
+  border-radius: 40px 10px;
+
+  /* Box Shadow */
+  box-shadow: 2px 4px 0 blue;
+}
+
+.border>div:nth-child(3) {
+  /*border radius(Rounded)*/
+  border-radius: 5px 40px 20px 0;
+  /*BoxShadow*/
+  box-shadow: -5px -10px 10px tomato;
+}
+
+.border>div:last-child {
+  /* border radius (Rounded) */
+  border-radius: 50%;
+
+  /* Box Shadow */
+  box-shadow: inset 30px 30px 30px black;
+}
+
+/*  */
+
+.textShadow>h2 {
+  font-size: 50px;
+  font-family: arial;
+}
+
+.textShadow>h2:first-child {
+  text-shadow: 2px 3px 5px red;
+}
+
+.textShadow>h2:nth-child(2) {
+  text-shadow: 0px 0px 5px greenyellow, 0 0 20px blue;
+}
+
+.textShadow>h2:nth-child(3) {
+  text-shadow: -1px -1px 0 black, 1px 1px 0 black, 0 0 10px black;
+  color: white;
+}
+
+/*  */
+.gradiant {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gradiant>div {
+  height: 250px;
+  width: 250px;
+  border: 1px solid;
+  margin: 10px;
+}
+
+.gradiant>div:first-child {
+  background: linear-gradient(green, blue, red);
+}
+
+.gradiant>div:nth-child(2) {
+  background: linear-gradient(to right, green, blue, red);
+}
+
+.gradiant>div:nth-child(3) {
+  background: linear-gradient(black, rgba(0, 208, 255, 0.5));
+}
+
+.Rounded-Gadiant>div,
+.repeat-rounded>div {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Rounded-Gadiant>div:first-child {
+  background: radial-gradient(blue, green, pink);
+}
+
+.Rounded-Gadiant>div:nth-child(2) {
+  background: repeating-radial-gradient(red, blue 10%, green 20%);
+}
+
+.Rounded-Gadiant>div:last-child {
+  background: conic-gradient(at 50% 50%, red 0deg, red 90deg, blue 90deg, blue 180deg, green 180deg, green 270deg, yellow 270deg);
+}
+
+.repeat-rounded>div:first-child {
+  background: repeating-conic-gradient(black 10%, white 20%);
+}
+
+.repeat-rounded>div:last-child {
+  background: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+}

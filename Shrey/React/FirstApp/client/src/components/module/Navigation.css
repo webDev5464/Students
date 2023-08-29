@@ -1,0 +1,19 @@
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 40px;
+    font-size: 20px;
+}
+
+/* this active class is only use NavLink. as a key */
+.active {
+    color: red;
+}

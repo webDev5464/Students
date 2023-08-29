@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+}
+
+::selection {
+  background-color: rgb(42, 10, 10);
+  color: white;
+}
+
+/* ||||||||||| */
+
+/* Header */
+.header {
+  background: url('../img/main-header-img-1.jpg');
+  height: 85vh;
+  background-size: contain;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.gradiantContainer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  padding-top: 50px;
+  padding-right: 150px;
+  padding-left: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navHeading {
+  font-weight: 600;
+}
+
+nav>section {
+  display: flex;
+  align-items: center;
+}
+
+.links>ul {
+  margin: 0 20px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.hoverLink {
+  list-style: none;
+  margin: 0 20px;
+  color: lightgray;
+  position: relative;
+}
+
+.hoverLink>span {
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.hoverContent {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  background-color: rgb(57, 57, 57);
+  /* background-color: aliceblue ; */
+  display: none;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.hoverContent>span {
+  display: block;
+  padding: 12px 10px;
+  color: gray;
+}
+
+.hoverContent>span:hover {
+  color: lightGray;
+  cursor: pointer;
+}
+
+.hoverLink:hover .hoverContent {
+  display: block;
+}
+
+.navHeading>a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* ||||||||||||| */
+
+.aboutLinks>div {
+  margin: 0 8px;
+}
+
+.aboutLinks>div>a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid white;
+  padding: 6px 8px;
+  text-decoration: none;
+}
+
+.mainHeading {
+  width: fit-content;
+  margin: auto;
+  top: 45%;
+  bottom: 55%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  text-align: center;
+}
+
+.mainHeading>h1 {
+  font-size: 46px;
+}

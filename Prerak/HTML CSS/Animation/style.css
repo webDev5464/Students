@@ -1,0 +1,36 @@
+.parent {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.parent:hover .banner {
+    height: 0;
+}
+
+.parent:hover .banner>span {
+    opacity: 0;
+}
+
+.banner>span {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+    border: 2px solid gray;
+    padding: 7px 5px;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px gray;
+    transition: .5s;
+}

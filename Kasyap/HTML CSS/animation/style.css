@@ -1,0 +1,43 @@
+div {
+  width: 300px;
+  height: 150px;
+  margin: 20px 0;
+  background-color: yellow;
+  border: 2px solid green;
+}
+
+section {
+  width: fit-content;
+}
+
+section:hover .a-1 {
+  transform: rotateX(150deg);
+  transition: 2s;
+}
+
+section:hover .a-2 {
+  transform: rotateY(120deg);
+  transition: 2s;
+}
+
+section:hover .a-3 {
+  transform: rotateZ(360deg);
+  transition: 2s;
+}
+
+.T-1 {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  transition: width 2s, height 4s ease-in-out;
+  overflow: auto;
+}
+
+.T-1:hover {
+  height: 300px;
+  width: 400px;
+}
+
+.space {
+  height: 100vh;
+}

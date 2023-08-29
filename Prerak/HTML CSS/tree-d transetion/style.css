@@ -1,0 +1,32 @@
+body {
+  padding: 100px;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 5px;
+  color: wheat;
+  transition: width 4s , 8s, height 6s ease-in;
+  -webkit-transition: width 4s , 8s, height 6s ease-in;
+  -moz-transition: width 4s , 8s, height 6s ease-in;
+  -ms-transition: width 4s , 8s, height 6s ease-in;
+  -o-transition: width 4s , 8s, height 6s ease-in;  
+}
+
+section {
+  width: fit-content;
+}
+
+section:hover div {
+  height: 600px;
+  width: 300px;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}

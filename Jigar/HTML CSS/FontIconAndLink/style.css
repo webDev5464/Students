@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Tektur&display=swap');
+
+:root {
+  --Tractor: 'Tektur', cursive;
+  --OutPutBg: rgb(5, 7, 48);
+  --white: white;
+}
+
+h1 {
+  color: blue;
+}
+
+.Ex-Font {
+  font-family: 'Tektur', cursive;
+}
+
+.UseVar {
+  background-color: var(--OutPutBg);
+  color: var(--white);
+}

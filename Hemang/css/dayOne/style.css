@@ -1,0 +1,29 @@
+.colorEndBg {
+  /* text color */
+  color: red;
+  /* background color */
+  background-color: lightblue;
+  /* border */
+  border: 2px solid black;
+  /* inside space */
+  padding: 20px 40px;
+  /* Outside space */
+  margin: 0 600px 50px 30px;
+}
+
+.colorEndBg > p {
+  color: blue;
+
+  font-size: 35px;
+}
+
+.colorEndBg > div {
+  background-color: red;
+  color: beige;
+}
+
+.heightAndWidth {
+  background-color: brown;
+  height: 300px;
+  width: 300px;
+}

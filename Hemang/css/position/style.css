@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  height: 500vh;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 50px 0;
+}
+
+/* ****************** */
+
+.relative {
+  background-color: lightgreen;
+  height: 550px;
+  width: 550px;
+  position: relative;
+  margin: 100px 0;
+}
+
+.absolute {
+  background-color: tomato;
+  height: 100px;
+  width: 100px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+/* **************** */
+
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.navigation-stickey {
+  position: sticky;
+  top: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}

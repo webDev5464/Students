@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Fill This Form :</legend>
+
+      <label for="fName">First Name : </label>
+      <input type="text" name="fName" id="fName">
+      <br>
+      <label for="email">Email : </label>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="number">Contact No. : </label>
+      <input type="number" name="number" id="number">
+      <br>
+      <hr>
+
+      <label for="html">HTML : </label>
+      <input type="radio" name="language" id="html">
+      <br>
+      <label for="css">CSS : </label>
+      <input type="radio" name="language" id="css">
+      <br>
+      <label for="js">JavaScript : </label>
+      <input type="radio" name="language" id="js">
+
+      <hr>
+
+      <h3>Select Your language's.</h3>
+      <label for="html">HTML : </label>
+      <input type="checkbox" name="html" id="html">
+      <label for="css">CSS : </label>
+      <input type="checkbox" name="css" id="css">
+      <label for="js">JavaScript : </label>
+      <input type="checkbox" name="js" id="js">
+
+      <br>
+
+      <!-- size="" -->
+      <!-- multiple -->
+      <select name="city" id="city">
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Nadiyad">Nadiyad</option>
+        <option value="Baroda">Baroda</option>
+        <option value="Anand">Anand</option>
+        <option value="Valsad">Valsad</option>
+      </select>
+
+      <br>
+
+      <label for="msg">Write Your Message : </label>
+      <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+
+      <br><br>
+
+      <label for="codeLeng">Select Lengauge : </label>
+      <input list="codeLeng">
+      <datalist id="codeLeng">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="React">
+        <option value="Node js">
+        <option value="MongoDb">
+      </datalist>
+
+      <br><br>
+
+      <button type="button" onclick="alert('Hello Hemang')">Click Me!</button>
+
+      <br><br>
+      <input type="submit" value="Submit">
+
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

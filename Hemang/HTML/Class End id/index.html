@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .red {
+      color: red;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <p class="red">Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+
+  <hr>
+
+  <p id="blue">Lorem ipsum dolor sit amet.</p>
+
+  <p id="clickEndChange"></p>
+
+  <p id="methodTwo"></p>
+
+  <button onclick="document.getElementById('showDate').innerHTML = Date()">Click Me !</button>
+
+  <p id="showDate"></p>
+
+  <script>
+    document.getElementById('blue').style.color = 'blue';
+
+    // Comment lick (//)
+
+    document.getElementById('clickEndChange').innerHTML = "Hello Hemang"
+
+    var methodSeccond = "Hello Hemang This is a seccond method."
+
+    document.getElementById('methodTwo').innerHTML = methodSeccond
+  </script>
+
+  <!-- iframe -->
+
+  <hr>
+
+  <iframe src="../Block inline/index.html" frameborder="1" style="width: 50%; height: 300px;"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tableStyle,
+.listProblem,
+.boxSize {
+    margin: 30px 0;
+}
+
+table {
+    border: 3px solid black;
+    width: 50%;
+    margin: auto;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+th {
+    padding: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: burlywood;
+}
+
+td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+td:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+/*  */
+
+ul,
+ol {
+    margin: 20px 0;
+}
+
+.list-one {
+    background-color: rgb(255, 173, 143);
+    padding: 10px 50px;
+}
+
+.list-one>li {
+    background-color: bisque;
+    padding: 5px 0;
+}
+
+.list-two,
+.list-three {
+    background-color: lightblue;
+    padding: 10px 50px;
+}
+
+.list-two>li {
+    background-color: white;
+    margin: 5px 0;
+}
+
+.list-three>li {
+    background-color: white;
+    margin: 5px 0;
+    
+    /* solution */
+    list-style: inside;
+}
+
+/*  */
+
+.boxSize {
+    display: flex;
+}
+
+.notUse-boxSize,
+.use-boxSize {
+
+    background-color: lightgreen;
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    padding: 50px;
+}
+
+.use-boxSize {
+    box-sizing: border-box;
+}
+
+.use-boxSize>p,
+.notUse-boxSize>p {
+    background-color: antiquewhite;
+}

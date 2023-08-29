@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* p,
+    span,
+    div {
+      border: 1px solid red;
+    } */
+
+    div.card {
+      width: 300px;
+      background-color: rgb(17, 17, 17);
+      border: 2px solid red;
+    }
+
+    img.card-img {
+      width: 300px;
+    }
+
+    div.card-detail {
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <p>A</p>
+  <span>A</span>
+  <div>A</div> -->
+
+  <div class="card">
+    <a href="./cute.jpg" target="_blank">
+      <img src="./cute.jpg" alt="cute" class="card-img">
+    </a>
+
+    <div class="card-detail">
+      <h3>Cute pet</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit illum reprehenderit autem odio
+        necessitatibus laudantium, aliquam voluptate praesentium fugit? Tempore, quod? Eveniet vel praesentium
+        reprehenderit nulla earum aliquam pariatur neque!</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <p id="demo">Lorem ipsum dolor sit amet.</p>
+  <button onclick="document.getElementById('demo').style.color = 'red' ">Click Me!</button>
+  
+  <hr>
+
+  <p id="textSize">Lorem ipsum dolor sit amet.</p>
+  <button onclick="document.getElementById('textSize').style.fontSize = '35px' ">Click Me!</button>
+
+  <hr>
+
+  <p id="hide">Click the button end hide this article.</p>
+  <button onclick="document.getElementById('hide').style.display = 'none' ">Click Me end hide!</button>
+  <button onclick="document.getElementById('hide').style.display = 'block' ">Click Me end show!</button>
+  
+  <hr>
+
+  <p id="noWrite"></p>
+  <script>
+    document.getElementById("noWrite").innerHTML = "Hello World, this is a JavaScript.";
+  </script>
+
+  <hr>
+
+</body>
+
+</html>

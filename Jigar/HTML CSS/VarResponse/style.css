@@ -1,0 +1,63 @@
+:root {
+    --lightBlue: #00ffff;
+    --Chagan: #faebd7;
+    --brow: #a52a2a;
+    --dark: black;
+    --light: white;
+
+    --myFont: arial;
+}
+
+.font-2 {
+    font-family: var(--myFont);
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    background-color: var(--lightBlue);
+    border: 2px solid var(--lightBlue);
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: var(--Chagan);
+    }
+
+    div {
+        background-color: var(--brow);
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1200px) {
+    body {
+        background-color: var(--dark);
+    }
+
+    div {
+        background-color: var(--light);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        padding: 20px;
+    }
+
+    div {
+        width: 100%;
+    }
+}

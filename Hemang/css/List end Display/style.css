@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 20px;
+}
+
+/* |||||||||||||||||| */
+
+.outSizeList,
+.insideList {
+  background-color: tomato;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.outSizeList>div,
+.insideList>div {
+  background-color: white;
+}
+
+.insideList>div>ul>li {
+  list-style: inside;
+}
+
+.testing {
+  list-style: inside;
+}
+
+/* |||||||||||||||||| */
+
+.line-lineBlock {
+  padding: 30px;
+}
+
+.line-lineBlock>p,
+span {
+  background-color: aqua;
+  margin: 5px 0;
+}
+
+/* |||||||||||||| */
+
+.convert>P {
+  display: inline;
+  background-color: yellowgreen;
+}
+
+.convert>span {
+  display: block;
+  background-color: burlywood;
+}
+
+/* ||||||||||||||| */
+
+.hide {
+  height: 100px;
+  width: 200px;
+  background-color: tomato;
+  margin: 20px auto;
+  width: fit;
+}
+
+.show {
+  display: none;
+  background-color: greenyellow;
+  height: 100%;
+  width: 100%;
+}
+
+.hide:hover .show {
+  display: block;
+}

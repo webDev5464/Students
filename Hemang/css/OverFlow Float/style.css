@@ -1,0 +1,28 @@
+hr {
+  border: 4px solid black;
+  margin: 50px 0;
+}
+
+.over-f {
+  width: 600px;
+  height: 700px;
+  border: 4px solid black;
+  overflow: auto;
+  padding: 5px;
+  background-color: rgb(255, 221, 215);
+}
+
+.flot>img {
+  width: 400px;
+  margin: 20px;
+  border: 2px solid gray;
+  box-shadow: 2px 4px 8 px black;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .myImg {
+      width: 200px;
+    }
+
+    body {
+      background-color: green;
+    }
+
+    /* Only known */
+    /* @media screen and (max-width: 500px) {
+      body {
+        background-color: lightblue;
+      }
+
+      .myImg {
+        width: 100px;
+      }
+    } */
+
+    /* @media screen and (max-width: 250px) {
+      .myImg {
+        width: 40vw;
+      }
+    } */
+
+    .picture-Img {
+      width: 90vw;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="./img_girl.jpg" alt="girl" class="myImg">
+
+  <br>
+
+  <picture>
+    <source srcset="./Mobile.png" media="(max-width: 500px)">
+    <source srcset="./Tablet.png" media="(max-width: 800px)">
+    <img src="./Laptop.png" alt="laptop" class="picture-Img">
+  </picture>
+
+</body>
+
+</html>

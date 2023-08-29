@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+    }
+
+    div {
+      height: 300px;
+      width: 300px;
+      border: 2px solid black;
+      background-color: #dddddd;
+    }
+
+    .b-1 {
+      box-shadow: 5px 5px 10px black;
+      background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 0, 0, 0.5));
+    }
+
+    .b-2 {
+      box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+      background: radial-gradient(blue, lightgreen, black);
+    }
+
+    .b-3 {
+      box-shadow: 0 0 10px black;
+      background: conic-gradient(blue 0deg, blue 90deg, red 90deg, red 180deg, blue 180deg, blue 270deg, red 270deg);
+    }
+
+    .b-4 {
+      box-shadow: inset 10px 5px 20px black;
+      background: linear-gradient(lightblue, rgba(255, 255, 255, 0));
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="b-1"></div>
+    <div class="b-2"></div>
+    <div class="b-3"></div>
+    <div class="b-4">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quibusdam cum consectetur, voluptatibus
+      accusamus porro alias obcaecati sed autem praesentium numquam, quas quaerat, ratione ad nostrum hic quod
+      repudiandae ipsum.
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.cardParent>div:first-child,
+.cardParent>div:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  margin: 10px;
+}
+
+.c-1 {
+  background: linear-gradient(orange, white, green);
+  box-shadow: inset 2px 2px 4px white, inset -2px -2px 4px black;
+}
+
+.c-2 {
+  background: repeating-radial-gradient(blue, black 10%, green 10%);
+}
+
+.c-3 {
+  background: linear-gradient(to top right, black, blue);
+}
+
+.c-4 {
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0), blue);
+}
+
+.c-5 {
+  background: radial-gradient(black 20%, lightblue 10%, black 30%);
+}
+
+.c-6 {
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+}

@@ -1,0 +1,47 @@
+.width-height {
+  height: 100px;
+  width: 100px;
+  background-color: tomato;
+  cursor: pointer;
+  transition: width 1s, height 4s;
+  -webkit-transition: width 1s, height 4s;
+  -moz-transition: width 1s, height 4s;
+  -ms-transition: width 1s, height 4s;
+  -o-transition: width 1s, height 4s;
+}
+
+.width-height:hover {
+  height: 400px;
+  width: 200px;
+}
+
+.div1 {  
+  transition-timing-function: linear;
+}
+
+.div2 {  
+  transition-timing-function: ease;
+}
+
+.div3 {  
+  transition-timing-function: ease-in;
+}
+
+.div4 {  
+  transition-timing-function: ease-out;
+}
+
+.div5 { 
+  transition-timing-function: ease-in-out;
+}
+
+.hover-increase {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  transition: width 2s;
+}
+
+.hover-increase:hover {
+  width: 300px;
+}

@@ -1,0 +1,77 @@
+.color {
+  color: blue;
+}
+
+.bg-color {
+  background-color: black;
+  color: white;
+}
+
+.font-size {
+  font-size: 30px;
+}
+
+.family {
+  /* font-family: sans-serif; */
+  /* font-family: cursive, 'Phudu'; */
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.border {
+  /* border-width: 5px; */
+  /* border-style: solid; */
+  /* border-color: green; */
+  border: 5px solid green;
+}
+
+.height-width {
+  height: 100px;
+  width: 300px;
+  border: 4px dashed red;
+}
+
+/* margin padding */
+
+.containt {
+  border: 2px solid rgb(0, 0, 255);
+  width: 300px;
+  /* margin: 10px; */
+  /* margin: 0 20px; */
+  margin: 30px 80px 5px 120px;
+  padding: 0 0 0 100px;
+}
+
+.containt-border {
+  border: 2px solid red;
+  width: fit-content;
+  margin: 40px 0 0 0;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.text-align {
+  border: 2px solid red;
+  /* text-align: center; */
+  text-align: right;
+  /* text-align: left; */
+}
+
+.text-edit {
+  border: 2px solid;
+  width: 300px;
+  text-align: justify;
+}
+
+input {
+  margin: 20px 0;
+  border: none;
+  background-color: antiquewhite;
+  outline: none;
+}

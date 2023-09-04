@@ -1,0 +1,58 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+hr {
+  border: 2px solid;
+  margin: 50px 0;
+}
+
+table {
+  font-family: arial;
+  border: 3px solid black;
+  width: 50vw;
+  margin: auto;
+
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+th {
+  padding: 10px;
+  background-color: bisque;
+}
+
+td {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:hover {
+  background-color: #ffc5c5;
+  cursor: pointer;
+}
+
+/*  */
+
+.isue {
+  background-color: tomato;
+  padding: 10px 0;
+}
+
+.isue>ul>li {
+  background-color: white;
+}
+
+.soule>ul>li {
+  list-style: inside;
+}

@@ -1,0 +1,9 @@
+<h1> to <h6>, <p> , <a href=""> :- Element's
+
+<a href=""> :- (href="" , class="" , id="" , src="") Atribute's
+
+<hr> , <br> , <img src="" alt=""> :- Self Closing elements
+
+
+================ ShortCuts =================
+ctrl + shift + n :- Create new folder.

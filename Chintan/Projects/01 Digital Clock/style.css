@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+
+.clock span {
+    width: 200px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#text {
+    font-size: 20px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: darkblue;
+    opacity: 80%;
+}
+
+#ampm {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 40px;
+    font-size: 30px;
+    background: rgb(72, 16, 96);
+}

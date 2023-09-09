@@ -1,0 +1,44 @@
+.box-yello-350x200 {
+  width: 350px;
+  height: 200px;
+  background-color: yellow;
+  border: 5px solid red;
+  padding: 10px;
+}
+
+.testBg {
+  background-color: tomato;
+  width: fit-content;
+}
+
+.translate {
+  transform: translate(80%, 0%);
+}
+
+.scale {
+  transform: scale(1.5, 0.5);
+}
+
+.rotate {
+  transform: rotate(-30deg);
+}
+
+.skew {
+  margin: auto;
+  /*transform: skewX(40deg);*/
+  transform: skewY(40deg);
+}
+
+/*  */
+
+.yRotate {
+  transform: rotateY(50deg);
+}
+
+.xRotate {
+  transform: rotateX(120deg);
+}
+
+.zRotate {
+  transform: rotateZ(30deg);
+}

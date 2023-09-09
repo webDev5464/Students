@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    form>div {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+
+    <div>
+      <label for="fName">Full Name : </label>
+      <input type="text" name="fName" id="fName">
+      <input type="text" name="fatherName" id="fatherName" placeholder="Father Name :">
+    </div>
+
+    <div>
+      <input type="email" name="email" id="email" placeholder="Email : ">
+    </div>
+
+    <div>
+      <input type="password" name="pass" id="pass" placeholder="password : ">
+    </div>
+
+    <hr>
+    <div>
+      <h2>Select Language.</h2>
+      <label for="leng">HTML : </label>
+      <input type="checkbox" name="leng" id="leng">
+      <label for="css">Css : </label>
+      <input type="checkbox" name="leng" id="css">
+      <label for="js">JavaScript : </label>
+      <input type="checkbox" name="leng" id="js">
+    </div>
+    <hr>
+
+    <div>
+      <h2>Select Course</h2>
+      <label for="Web">WebDeveloping</label>
+      <input type="radio" name="SeCo" id="Web">
+      <label for="softWare">Software</label>
+      <input type="radio" name="SeCo" id="softWare">
+      <label for="machine">Machine learning</label>
+      <input type="radio" name="SeCo" id="machine">
+    </div>
+
+    <div>
+      <input type="date" name="date" id="Date">
+    </div>
+
+    <div>
+      <input type="number" name="num" id="num" min="10" max="100">
+    </div>
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="2">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <textarea name="userMassage" id="userMassage" cols="30" rows="10"></textarea>
+
+    <div>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+</body>
+
+</html>

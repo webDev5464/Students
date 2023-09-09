@@ -1,0 +1,98 @@
+/* .index-1,
+.index-2,
+.index-3 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid;
+  position: absolute;
+}
+
+.index-1 {
+  background-color: aqua;
+  z-index: 4;
+}
+
+.index-2 {
+  background-color: tomato;
+  left: 70px;
+  top: 70px;
+  z-index: 2;
+}
+
+.index-3 {
+  background-color: greenyellow;
+  left: 130px;
+  top: 130px;
+  z-index: 6;
+} */
+
+.rounded {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.rounded > div {
+  height: 300px;
+  width: 300px;
+  border: 3px solid green;
+}
+
+.rounded > div:first-child {
+  border-radius: 20px;
+  box-shadow: 3px 1px 5px black;
+  background: linear-gradient(blue, green, yellow);
+}
+
+.rounded > div:nth-child(2) {
+  border-radius: 20px 100px;
+  box-shadow: -3px -3px 5px black;
+  background: linear-gradient(blue 10%, green 20%, yellow);
+}
+
+.rounded > div:nth-child(3) {
+  border-radius: 50px 100px 20px 5px;
+  box-shadow: 0 0 10px black;
+  background: radial-gradient(
+    rgb(58, 61, 58) 40%,
+    rgb(254, 230, 230) 60%,
+    rgb(30, 30, 30)
+  );
+}
+
+.rounded > div:last-child {
+  border-radius: 50%;
+  box-shadow: inset 2px 1px 5px black;
+  background: conic-gradient(
+    red 0deg,
+    red 90deg,
+    green 90deg,
+    green 180deg,
+    yellow 180deg,
+    yellow 270deg,
+    blue 270deg
+  );
+}
+
+.text-1 {
+  text-shadow: 3px 2px 4px black;
+}
+
+.text-2 {
+  text-shadow: 0 0 1px green, 0 0 10px blue;
+}
+
+.text-3 {
+  color: white;
+  text-shadow: 0.4px 0.4px 0 black, -0.4px -0.4px 0 black, 0 0 5px black;
+}
+
+.box {
+  width: 700px;
+  height: 600px;
+  border: 8px groove black;
+  background-color: antiquewhite;
+  padding: 5px;
+
+  overflow: auto;
+}

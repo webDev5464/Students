@@ -1,0 +1,89 @@
+.gradient {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gradient > div {
+  height: 300px;
+  width: 300px;
+  border: 3px solid;
+}
+
+.gradient > div:first-child {
+  background: linear-gradient(red, green 20%, green, blue 50%);
+  box-shadow: 8px 6px black;
+}
+
+.gradient > div:nth-child(2) {
+  background: radial-gradient(yellow 20%, green 20%, blue);
+  box-shadow: 8px 6px 10px black;
+}
+
+.gradient > div:nth-child(3) {
+  background: conic-gradient(
+    red 0deg,
+    red 90deg,
+    white 90deg,
+    white 180deg,
+    red 180deg,
+    red 270deg,
+    white 270deg
+  );
+
+  box-shadow: inset 0 0 10px black;
+}
+
+.gradient > div:last-child {
+  background: repeating-radial-gradient(white, black 20%);
+  box-shadow: 0 0 30px black;
+}
+
+.text-shadow > P {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: Arial;
+}
+
+.text-shadow > p:first-child {
+  text-shadow: 5px 5px 10px black;
+}
+
+.text-shadow > p:nth-child(2) {
+  text-shadow: 3px 3px 8px rgb(231, 105, 105), 0 0 10px rgb(6, 91, 119);
+}
+
+.text-shadow > p:last-child {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 0 0 5px black;
+}
+
+.bg-img {
+  border: 5px solid red;
+  background: url("./code-city.jpg");
+  /* background: url("./test-tube.ico"); */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: contain; */
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  background-position: 10% 10%;
+
+  background-attachment: fixed;
+}
+
+.bg-img > div {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading > h1 {
+  margin: 0;
+  font-size: 40px;
+  font-family: cursive;
+  color: white;
+}

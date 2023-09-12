@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pageSpace: 52px;
+}
+
+.glass {
+  height: 100%;
+  color: white;
+  position: relative;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: url(./imges.jpg);
+  background-size: cover;
+  height: 85vh;
+  margin: var(--pageSpace);
+}
+
+/*logo*/
+
+.logo {
+  margin-left: 40px;
+  text-transform: capitalize;
+}
+
+/*navbar*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation > ul {
+  display: flex;
+  cursor: pointer;
+  margin-right: 130px;
+}
+
+.navigation ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+.drop {
+  position: relative;
+}
+
+.down {
+  position: absolute;
+  display: none;
+  padding-top: 10px;
+  z-index: 10;
+}
+
+.down > div {
+  width: 180px;
+  margin-left: -4px;
+  padding: 10px 7px;
+  border-radius: 10px;
+  background-color: rgb(39, 38, 38);
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.down > div > li {
+  list-style: none;
+  padding: 5px 0;
+  border-bottom: 2px solid white;
+}
+
+.down > div > li:hover {
+  background-color: rgb(29, 29, 29);
+  cursor: pointer;
+}
+
+.down > div > li:last-child {
+  border: none;
+}
+
+.drop:hover .down {
+  display: block;
+}
+
+.navigation > ul > li:last-child > .down {
+  width: 200px;
+}
+
+/*iconbutton*/
+
+.icon {
+  position: relative;
+  padding: 0px 40px;
+}
+
+.icon a {
+  color: white;
+  margin: 0 5px;
+  border-color: white;
+}
+
+/*button*/
+
+.button {
+  display: inline;
+  border: 1px solid white;
+  padding: 0 5px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.button > a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+.button:hover a {
+  color: black;
+}
+
+/*text*/
+
+.text {
+  position: absolute;
+  top: 40%;
+  bottom: 50%;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+}
+
+.text p {
+  margin-left: 20px;
+}
+
+.text h1 {
+  font-size: 40px;
+  color: white;
+  font-family: "Lilita One", cursive;
+}
+
+/*imge*/
+
+.img {
+  display: flex;
+  justify-content: space-around;
+  padding: 52px 52px 0 52px;
+}
+
+.img > div {
+  margin: 0 10px;
+  position: relative;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.img > div:first-child {
+  margin: 0 10px 0 0;
+}
+
+.img > div:last-child {
+  margin: 0;
+}
+
+.img > div > img {
+  width: 340px;
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
+}
+
+.img > div > div {
+  position: absolute;
+  top: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img > div > div > h3 {
+  border: none;
+  transition: 1s;
+  font-size: 30px;
+}
+
+.img > div > div > h3:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+  border: 2px solid white;
+}
+
+/*bgtext*/
+
+.displytext {
+  display: flex;
+  padding: 120px 52px 0 52px;
+}
+
+.bgtext {
+  width: 30%;
+}
+
+.fonttext {
+  width: 70%;
+}
+
+/*bgbutton*/
+
+.bgbutton {
+  border: 2px solid black;
+  margin-top: 50px;
+  padding: 20px 15px;
+  width: fit-content;
+}
+
+.bgbutton > a {
+  text-decoration: none;
+}
+
+.bgbutton:hover {
+  background-color: black;
+  cursor: pointer;
+  color: black;
+}
+
+.bgbutton:hover a {
+  color: white;
+}
+
+/*imagesphoto*/
+
+.imagesphoto {
+  position: relative;
+  background-image: url(./background.jpg);
+  height: 100vh;
+  margin: var(--pageSpace);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.imagesphoto > div > div > div > h2 {
+  color: white;
+  /* position: absolute; */
+  /* left: 25%; */
+  /* right: 25%; */
+  /* top: 35%; */
+  /* bottom: 50%; */
+  /* text-align: center; */
+  font-size: 35px;
+  font-family: "Lilita One", cursive;
+}
+
+.buttonimg {
+  border: 2px solid white;
+  margin-top: 50pxpx;
+  width: fit-content;
+  padding: 20px 25px;
+}
+
+.buttonimg > a {
+  text-decoration: none;
+}
+
+.buttonimg:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.buttonimg:hover a {
+  color: black;
+}
+
+.setimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.setimg > div {
+  width: fit-content;
+}
+
+.setimg > div > .buttonimg {
+  margin: 20px auto;
+}

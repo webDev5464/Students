@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&family=Oswald&display=swap");
+
+.icon {
+  font-size: 50px;
+}
+
+.g_font {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.AboutFont {
+  font-family: 'Noto Sans Linear B', sans-serif;
+}

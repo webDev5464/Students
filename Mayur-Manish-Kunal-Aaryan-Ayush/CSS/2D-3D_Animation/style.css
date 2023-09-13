@@ -6,6 +6,11 @@
   padding: 10px;
 }
 
+hr {
+  border: 3px solid black;
+  margin: 30px 0;
+}
+
 .testBg {
   background-color: tomato;
   width: fit-content;
@@ -41,4 +46,80 @@
 
 .zRotate {
   transform: rotateZ(30deg);
+}
+
+.box-100x100 {
+  padding: 50px 0;
+}
+
+.box-100x100 > div {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  transition: 2s, width 0.5s;
+  -webkit-transition: 2s, width 0.5s;
+  -moz-transition: 2s, width 0.5s;
+  -ms-transition: 2s, width 0.5s;
+  -o-transition: 2s, width 0.5s;
+}
+
+.box-100x100 > div:hover {
+  width: 400px;
+  height: 600px;
+}
+
+/* =================== */
+
+main {
+  background-color: beige;
+  padding: 20px 0;
+  border: 4px groove gray;
+}
+
+._box-100x100 > div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 5px 0;
+}
+
+.box-1:hover div {
+  transform: translate(90vw);
+  transition: 5s;
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+}
+.box-2:hover div {
+  transform: translate(90vw);
+  transition: ease 5s;
+  -webkit-transition: ease 5s;
+  -moz-transition: ease 5s;
+  -ms-transition: ease 5s;
+  -o-transition: ease 5s;
+}
+.box-3:hover div {
+  transform: translate(90vw);
+  transition: ease-in 5s;
+  -webkit-transition: ease-in 5s;
+  -moz-transition: ease-in 5s;
+  -ms-transition: ease-in 5s;
+  -o-transition: ease-in 5s;
+}
+.box-4:hover div {
+  transform: translate(90vw);
+  transition: ease-in-out 5s;
+  -webkit-transition: ease-in-out 5s;
+  -moz-transition: ease-in-out 5s;
+  -ms-transition: ease-in-out 5s;
+  -o-transition: ease-in-out 5s;
+}
+.box-5:hover div {
+  transform: translate(90vw);
+  transition: ease-out 5s;
+  -webkit-transition: ease-out 5s;
+  -moz-transition: ease-out 5s;
+  -ms-transition: ease-out 5s;
+  -o-transition: ease-out 5s;
 }

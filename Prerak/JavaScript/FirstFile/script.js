@@ -88,3 +88,75 @@
 
 // y = 33;
 // console.log(y);
+
+// let x = 3;
+// let y = 2;
+// let z = y / x;
+
+// console.log(z);
+
+// let text = "Hello";
+// text += " World!";
+
+// document.getElementById("demo").innerHTML = text;
+
+// let x = 10;
+// x **= 2;
+
+// console.log(x);
+
+//! Function
+
+// function myFunction(v1, v2) {
+//   return v1 * v2;
+// }
+
+// console.log(myFunction(5, 2));
+
+// const myCal = function (v1, v2) {
+//   return v1 / v2;
+// };
+
+// console.log(myCal(5, 2));
+
+// const myF = (x, y, z) => {
+//   return x + y;
+// };
+
+// console.log(myF(100, 50));
+
+// function carDetail() {
+//   let car = true;
+//   let text = "Inside : " + typeof car + " " + car;
+
+//   console.log(text);
+// }
+
+// let text = "Outside : " + typeof car;
+// console.log(text);
+
+// carDetail();
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 24,
+//   eyeColor: "Brown",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// console.log(person.fullName());
+
+// const person = {
+//   firstName: "Chagan",
+//   lastName: "Chapri",
+//   age: 24,
+//   eyeColor: "Brown",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// console.log(person.fullName());

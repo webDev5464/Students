@@ -1,0 +1,30 @@
+div {
+  background-color: red;
+  border: 1px solid green;
+}
+
+div:hover {
+  background-color: tomato;
+}
+
+section {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+section > div:first-child {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+section > div:nth-child(5),
+section > div:nth-child(6),
+section > div:nth-child(7) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}

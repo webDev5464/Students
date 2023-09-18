@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .list {
+      list-style: circle;
+      /* list-style: square; */
+      /* list-style: decimal; */
+      /* list-style:decimal-leading-zero; */
+    }
+
+    .my-list {
+      border: 2px solid red;
+    }
+
+    .unorder {
+      margin: 0;
+      padding: 0;
+    }
+
+    .problem {
+      list-style: inside;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Unorder List -->
+
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React Js</li>
+    <li>Node Js</li>
+    <li>MongoDb</li>
+  </ul>
+
+  <!-- style with unorder list -->
+  <ul>
+    <li class="list">HTML</li>
+    <li class="list">CSS</li>
+    <li class="list">JavaScript</li>
+    <li class="list">React Js</li>
+    <li class="list">Node Js</li>
+    <li class="list">MongoDb</li>
+  </ul>
+
+  <div class="my-list">
+    <ul class="unorder">
+      <li class="problem">HTML</li>
+      <li class="problem">CSS</li>
+      <li class="problem">JavaScript</li>
+      <li class="problem">React Js</li>
+      <li class="problem">Node Js</li>
+      <li class="problem">MongoDb</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <!-- Order list -->
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React Js</li>
+    <li>Node Js</li>
+    <li>MongoDb</li>
+  </ol>
+
+
+  <ol type="A">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React Js</li>
+    <li>Node Js</li>
+    <li>MongoDb</li>
+  </ol>
+
+  <ol type="i">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React Js</li>
+    <li>Node Js</li>
+    <li>MongoDb</li>
+  </ol>
+
+  <ol start="51">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React Js</li>
+    <li>Node Js</li>
+    <li>MongoDb</li>
+  </ol>
+
+  <hr>
+
+  <!-- Nesting List -->
+
+  <h3>Nesting List</h3>
+
+  <ul>
+    <li>Fronent
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React Js</li>
+      </ul>
+    </li>
+
+    <li>Backend
+      <ul>
+        <li>Node Js</li>
+        <li>MingoDb</li>
+        <li>PHP</li>
+        <li>Python</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ol>
+    <li>Fronent
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React Js</li>
+      </ol>
+    </li>
+
+    <li>Backend
+      <ol>
+        <li>Node Js</li>
+        <li>MingoDb</li>
+        <li>PHP</li>
+        <li>Python</li>
+      </ol>
+    </li>
+  </ol>
+
+</body>
+
+</html>

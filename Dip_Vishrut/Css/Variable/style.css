@@ -1,0 +1,21 @@
+:root {
+    --darkTheme: #2f2f4a;
+    --lightTheme: #ffe9e9;
+
+
+    --myFont: cursive;
+}
+
+body {
+    background-color: var(--darkTheme);
+    color: var(--lightTheme);
+}
+
+body {
+    background-color: var(--lightTheme);
+    color: var(--darkTheme);
+}
+
+h1 {
+    font-family: var(--myFont);
+}

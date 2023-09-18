@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  border: 10px solid black;
+  padding: 10px;
+}
+
+hr {
+  border: 3px solid black;
+  margin: 50px 0;
+}
+
+.overF {
+  border: 4px solid green;
+  width: 600px;
+  height: 400px;
+  background-color: blanchedalmond;
+  padding: 5px;
+
+  overflow: auto;
+}
+
+.object {
+  width: 1000px;
+  height: 100px;
+  background-color: red;
+}
+
+.myImg {
+  background-color: aqua;
+  border: 2px solid black;
+  box-shadow: inset 0 0 10px black;
+  height: 250px;
+  width: 450px;
+  margin: 7px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

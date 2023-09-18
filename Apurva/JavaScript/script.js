@@ -107,3 +107,16 @@
 // c = a + " " + b;
 // console.log(c);
 // document.getElementById("demo").innerHTML = c;
+
+//! ++++++++++ What is dirent const or let
+
+// let x = 5;
+// x += 10
+// console.log(x); // 15
+
+// Addition
+// console.log(x + 12);
+
+// const y = 7;
+// y += 20
+// console.log(y); // err

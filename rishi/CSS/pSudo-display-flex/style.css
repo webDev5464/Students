@@ -1,0 +1,77 @@
+.psudo > p {
+  background-color: red;
+}
+
+.psudo div > p {
+  color: red;
+}
+
+.psudo > div > p {
+  background-color: greenyellow;
+}
+
+.psudo > div > div > p {
+  background-color: black;
+}
+
+.sudo-select div:last-child {
+  background-color: aqua;
+}
+
+.sudo-select div:first-child {
+  background-color: bisque;
+}
+
+.sudo-select div:nth-child(2) {
+  background-color: blueviolet;
+  color: white;
+}
+
+.sudo-select div:nth-child(3) {
+  background-color: brown;
+  color: wheat;
+}
+
+.sudo-a a {
+  color: black;
+}
+
+.sudo-a > div a:hover {
+  color: greenyellow;
+}
+
+.sudo-a > div a:active {
+  color: red;
+}
+
+.sudo-a > div a:visited {
+  background-color: rgb(225, 0, 255); /* visited link */
+}
+
+.display > p {
+  background-color: blueviolet;
+  display: inline;
+}
+
+.display > span {
+  background-color: brown;
+  display: block;
+}
+
+.none {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  margin: 10px 0;
+
+  display: none;
+}
+
+.visibility {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  margin: 10px 0;
+
+  visibility: hidden;
+}

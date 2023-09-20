@@ -65,6 +65,50 @@ is
 // x = 20
 // console.log(x);
 
-let x = 10
-x += 6
-console.log(x);
+// let x = 10
+// x += 6
+// console.log(x);
+
+// console.log(myFun(12, 2));
+
+// function myFun(a, b) {
+//   return a * b;
+// }
+
+// const myFun = function () {
+//   return "Hello";
+// };
+
+// console.log(myFun());
+
+// const x = (a, b) => {
+//   return a / b;
+// };
+
+// document.getElementById("demo").innerHTML = x(50, 2);
+
+// let text = "Outside : " + typeof car;
+// console.log(text);
+
+// function carDetail() {
+//   let car = "Volvo";
+//   let text = "Inside : " + typeof car + " " + car;
+
+//   console.log(text);
+// }
+
+// carDetail();
+
+const person = {
+  fName: "John",
+  lName: "Doe",
+  age: 22,
+  fullName: function () {
+    return this.fName + " " + this.lName;
+  },
+};
+
+console.log(person.fullName());
+
+// document.getElementById("demo").innerHTML =
+//   "Hello My name is " + person.fName + "<br>" + "my age is " + person.age;

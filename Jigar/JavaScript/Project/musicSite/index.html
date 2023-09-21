@@ -11,9 +11,21 @@
 </head>
 
 <body>
+    <h3 id="musicTitle"></h3>
+    <div>
+        <img alt="MusicImage" id="musicImg">
+    </div>
+
+    <button onclick="backwardBtn()">
+        <i class="fa-solid fa-backward-step"></i>
+    </button>
 
     <button onclick="playPauseBtn()" id="playPause">
         <i class="fa-solid fa-play"></i>
+    </button>
+
+    <button onclick="forwardBtn()">
+        <i class="fa-solid fa-forward-step"></i>
     </button>
 
     <script src="./audio.js"></script>

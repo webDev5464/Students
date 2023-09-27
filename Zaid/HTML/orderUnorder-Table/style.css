@@ -1,0 +1,43 @@
+.circle {
+  list-style: circle;
+}
+
+/* .tableDiv {
+  border: 3px solid green;
+  width: fit-content;
+  margin: auto;
+} */
+
+table {
+  width: 50%;
+  border: 3px solid black;
+  padding: 20px;
+  margin: 30px auto;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+th {
+  padding: 10px;
+  text-decoration: underline;
+  background-color: tomato;
+}
+
+td {
+  padding: 5px;
+}
+
+tr {
+  background-color: aquamarine;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:hover {
+  background-color: aliceblue;
+}

@@ -46,11 +46,11 @@ let loadMusic = document.createElement("audio");
 let musicIndex = 0;
 let musicCondition = false;
 
-const musicHandler = (i) => {
-  loadMusic.src = playlist[i].path;
-  musicTitle.innerHTML = playlist[i].name;
-  musicImg.src = playlist[i].audioImg;
-  // console.log((loadMusic.src = playlist[i].path));
+const musicHandler = () => {
+  let randomMusic = Math.floor(Math.random() * playlist.length);
+  loadMusic.src = playlist[randomMusic].path;
+  musicTitle.innerHTML = playlist[randomMusic].name;
+  musicImg.src = playlist[randomMusic].audioImg;
 
   loadMusic.load();
 };
@@ -85,9 +85,6 @@ const forwardBtn = () => {
   }
 
   musicHandler(musicIndex);
-  // console.log("====================================");
-  // console.log(musicIndex);
-  // console.log("====================================");
   PlayMusic();
 };
 
@@ -98,6 +95,19 @@ const backwardBtn = () => {
     musicIndex = playlist.length - 1;
   }
 
-  musicHandler(musicIndex)
-  PlayMusic()
+  musicHandler(musicIndex);
+  PlayMusic();
 };
+
+function musicTiming() {
+  console.log(Number(loadMusic.duration));
+  if (!isNaN(loadMusic.duration)) {
+    let currentMinutes = Math.floor(loadMusic.duration / 60);
+
+    console.log(currentMinutes);
+    let currentTimeSeconds = math.floor(currentMinutes / 60);
+    console.log(currentTimeSeconds.duration);
+  } else {
+    console.log("function is busy");
+  }
+}

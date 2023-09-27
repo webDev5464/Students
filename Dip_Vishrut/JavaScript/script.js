@@ -278,3 +278,159 @@
 //   }
 // };
 
+// console.log("====================================");
+// console.log(myF(10, 2));
+// console.log("====================================");
+
+// function myF(a, b) {
+//   return a * b;
+// }
+
+// console.log("====================================");
+// console.log(myArr(10, 5));
+// console.log("====================================");
+
+// const myArr = (a, b) => {
+//   return a * b;
+// };
+
+//! Object
+
+// const myDetail = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 22,
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// console.log("====================================");
+// console.log(myDetail.fullName());
+// console.log("====================================");
+
+// let person = myDetail.firstName + ' ' + myDetail.lastName
+// console.log('====================================');
+// console.log(person);
+// console.log('====================================');
+
+// let text =
+//   'We are the\
+//  so-called "Vikings" from the north.';
+
+// console.log("====================================");
+// console.log(text);
+// console.log("====================================");
+
+//! String
+
+// let x = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// console.log(x.length);
+
+// let x =
+//   'Lorem ipsum \n dolor \nsit amet "consectetur" adipisicing elit. Quis, quibusdam.';
+
+// console.log(x);
+
+// let x = "Hello World!";
+// let y = new String(x);
+
+// console.log(x === y);
+
+// let x = "Apple, Banana, Kiwi, Orange";
+// console.log("====================================");
+// console.log(x.slice(15, 19));
+// console.log("====================================");
+
+// let text = "Please visit microsoft!, Microsoft";
+// let newText = text.replace(/Microsoft/ig, "CodeWithDw");
+// console.log(newText);
+
+// let x = "Hello";
+// let y = "World!";
+
+// console.log("====================================");
+// // console.log(x, y);
+// // console.log(x + " " + y);
+
+// console.log(x.concat(" " + y));
+// console.log("====================================");
+
+// const girls = ["g1", "g2", "g3"];
+// const boys = ["b1", "b2", "b3"];
+
+// let x = girls.concat(boys);
+// let y = girls + boys;
+
+// console.log(typeof girls);
+
+//! Using Array Object
+// const data = [
+//   {
+//     fName: "John",
+//     lName: "Doe",
+//     age: 40,
+//     fullName: function () {
+//       return this.fName + " " + this.lName + "\nMy Age is " + this.age;
+//     },
+//   },
+//   {
+//     fName: "Jane",
+//     lName: "Smith",
+//     age: 67,
+//     fullName: function () {
+//       return this.fName + " " + this.lName + "\nMy Age is " + this.age;
+//     },
+//   },
+//   {
+//     fName: "Magan",
+//     lName: "Khan",
+//     age: 8,
+//     fullName: function () {
+//       return this.fName + " " + this.lName + "\nMy Age is " + this.age;
+//     },
+//   },
+// ];
+
+// //! render all data in html as s loop
+// document.getElementById("data").innerHTML = data.map(function (x) {
+//   return `
+//     <h1>${x.fName} ${x.lName}</h1>
+//   `;
+// });
+
+//! Template literals
+// let x = `Hello "World", let's write code. \n My name is ${data[0].fullName()}`;
+// console.log(x);
+
+// let x = "                     Hello                          ";
+// x = x.trim("")
+// console.log(x.length);
+// console.log(x);
+
+// let x = "5";
+// console.log(x.padStart(3, "0"));
+
+// let text = "a,b,c,d,e,f";
+// console.log(text[0]);
+
+// const myArray = text.split("a");
+// console.log(myArray[1]);
+
+// let data = document.getElementById("data");
+
+// let Heading = "H,E,L,L,O";
+// // console.log(Heading.length); // 9
+
+// Heading = Heading.split(",");
+// let len = Heading.length; // 5
+
+// let text = "<ul>";
+// for (let i = 0; i < len; i++) {
+//   text += "<li>" + Heading[i] + "</li>";
+// }
+// text += "</ul >";
+
+// data.innerHTML = text;
+// document.getElementById("data").style.listStyle = "none";
+

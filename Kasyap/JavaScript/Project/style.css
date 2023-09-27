@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 90vw;
+}
+
+button {
+  width: 30px;
+  font-size: 70px;
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,76 @@
+.flex > div,
+.flex-between > div,
+.flex-around > div,
+.flex-evenly > div {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-align > div:first-child {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+.flex-align > div:nth-child(2) {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  margin: 10px;
+}
+
+.flex-align > div:last-child {
+  width: 200px;
+  height: 150px;
+  background-color: black;
+  margin: 10px;
+}
+
+.singleObjectCenter {
+  width: 400px;
+  margin: auto;
+  height: 400px;
+  border: 3px solid red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleObjectCenter > div {
+  /* width: 100px; */
+  /* height: 100px; */
+  width: fit-content;
+  background-color: green;
+  color: white;
+}

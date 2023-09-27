@@ -124,6 +124,8 @@
 
 */
 
+//* How to check data type with variable :- typeof(variableName)
+
 //? What is string
 
 // let dabbleQuotes = "Chagan Chapri";
@@ -134,4 +136,54 @@
 // let ex2 = 'Let"s Play'
 // console.log(ex2);
 
-// mr.dev_dave
+//? Number
+
+// let x = 6;
+// console.log(typeof x);
+
+//? Boolean
+
+// let a = true;
+// console.log(Number(a) + " " + "true");
+
+// let b = false;
+// console.log(Number(b) + " " + "false");
+
+//? Undefined
+
+// let x;
+
+// console.log(typeof x);
+
+//? null
+
+// let x = null;
+// console.log(x , ':' , typeof x);
+
+//? Object
+
+//* Object
+// const personDetail = { firstName: "John", lastName: "Doe" };
+
+// let fullName = personDetail.firstName + " " + personDetail.lastName;
+
+// console.log(fullName);
+
+// ----------------------
+
+//* Array
+/*
+Array start with 0 index.
+*/
+
+// const persons = ["Hemang", "Deven", "Chagan", "Magan", "John"];
+
+// console.log(persons[2]);
+
+// ----------------------
+
+//* Date
+// let date = new Date();
+// console.log("====================================");
+// console.log(date);
+// console.log("====================================");

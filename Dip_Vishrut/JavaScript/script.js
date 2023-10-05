@@ -420,7 +420,7 @@
 // let data = document.getElementById("data");
 
 // let Heading = "H,E,L,L,O";
-// // console.log(Heading.length); // 9
+// console.log(Heading.length); // 9
 
 // Heading = Heading.split(",");
 // let len = Heading.length; // 5
@@ -434,3 +434,79 @@
 // data.innerHTML = text;
 // document.getElementById("data").style.listStyle = "none";
 
+// let data = document.getElementById("data");
+
+// let renderData = product.map(function (x) {
+//   return `
+//     <div>
+//       <img src="${x.img}" alt="ProductsImage">
+//       <p>${x.title.slice(0, 80)}</p>
+//       <p>${x.price}/-</p>
+//     </div>
+//   `;
+// });
+
+// data.innerHTML = renderData.join("");
+
+// let x = "John";
+// let y = "Doe";
+
+// let data = document.getElementById("data");
+
+// data.innerHTML = `<h1><span id="styles">${x}</span> ${y}</h1>`;
+
+// document.getElementById("styles").style.color = "red";
+
+// let header = "Templates Literals";
+// let tags = ["template literals", "javascript", "es6"];
+
+// let html = `<h1>${header}</h1><ul>`;
+
+// for (const x of tags) {
+//   html += `<li>${x}</li>`;
+// }
+
+// html += "</ul>";
+
+// document.getElementById("demo").innerHTML = html;
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let render = "<ul>";
+
+// for (const i of num) {
+//   render += `<li class="list">${i}</li>`;
+// }
+
+// render += "</ul>";
+
+// document.getElementById("demo").innerHTML = render;
+
+// let num = 9.656;
+// const number =
+//   num.toFixed(0) +
+//   "<br>" +
+//   num.toFixed(1) +
+//   "<br>" +
+//   num.toFixed(4) +
+//   "<br>" +
+//   num.toFixed(6);
+// console.log(number);
+
+/*
+10
+9.66
+9.6560
+9.656000
+*/
+
+// let num = 9.656;
+// const number =
+//   num.toPrecision() +
+//   "\n" +
+//   num.toPrecision(2) +
+//   "\n" +
+//   num.toPrecision(4) +
+//   "\n" +
+//   num.toPrecision(6);
+// console.log(number);

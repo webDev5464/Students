@@ -1,0 +1,51 @@
+body {
+  height: 400vh;
+}
+
+.relative {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border: 4px solid red;
+  margin: 50px 0;
+}
+
+.absolute {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+
+.centerAbsolute {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+
+  position: absolute;
+  top: 40%;
+  bottom: 45%;
+  right: 40%;
+  left: 45%;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: green;
+  margin: 10px 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 50px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

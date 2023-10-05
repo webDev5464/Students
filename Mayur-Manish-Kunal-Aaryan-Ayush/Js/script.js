@@ -242,7 +242,7 @@
 
 // ctrl + ~`
 
-// var products = [ 
+// var products = [
 //   {
 //     id: 1,
 //     name: "Product 1",
@@ -282,3 +282,63 @@
 // render = render.join("");
 
 // document.getElementById("demo").innerHTML = render;
+
+// let x = `Hello
+// World`
+
+// console.log(typeof x);
+
+// let firstName = "John";
+// let lastName = "Doe";
+
+// let fullName = `My Name is ${firstName + " " + lastName}`;
+// console.log(fullName);
+
+// let x = 10;
+// let y = 20;
+// let z = "30";
+// let a = 50;
+// let result = x + y + z + a;
+// console.log(result);
+// 30201050
+// 303050
+
+// let _x = "Hello"
+// let _y = "World!"
+
+// console.log(_x + _y); // Hello World!
+
+// let num = 100
+// let fru = "Apple"
+// let result = num / fru
+// console.log(result); //NaN
+
+// console.log(typeof NaN); // Number
+
+// let num = 124
+// num = new Number(num)
+// console.log(num); // Number
+
+// let x = 41
+// x = toString(x)
+// console.log(typeof x);
+
+// let x = 9.656
+// console.log(x.toFixed(6));
+// console.log(x.toPrecision(6));
+
+// Array.isArray(fruits)
+
+// let demo = document.getElementById("demo");
+// let fruits = ["Banana", "Apple", "Kiwi", "Mango", "Orange"];
+// let len = fruits.length;
+
+// let list = "<ul>";
+
+// for (let x = 0; x < len; x++) {
+//   list += `<li>${fruits[x]}</li>`;
+// }
+// demo.innerHTML = list
+
+// list = "</ul>";
+

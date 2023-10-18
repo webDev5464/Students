@@ -11,6 +11,12 @@ function Navigation() {
         <li>
           <NavLink to={"About"}>About</NavLink>
         </li>
+        <li>
+          <NavLink to={"Props"}>Props Method</NavLink>
+        </li>
+        <li>
+          <NavLink to={"Context"}>Context</NavLink>
+        </li>
       </ul>
     </>
   );

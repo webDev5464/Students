@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Products from "./Products"
 
 function Home() {
   const [color, setColor] = useState()

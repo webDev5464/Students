@@ -104,6 +104,10 @@
 // let bully = true; // boolean
 // let wrongBully = false; // boolean
 // console.log(typeof bully);
+// console.log(5 == "5");
+// console.log(5 === "5");
+// console.log("5" === "5");
+// console.log("5" === "4");
 
 /*
 value of true : 1
@@ -147,3 +151,100 @@ Multiple value store in object
 // console.log(typeof person);
 
 // console.log(person.fName + person.lName);
+
+//* Date
+
+// let date = new Date()
+// console.log(typeof date);
+
+//* Arithmetic Operators
+
+// let x = 5
+// let y = 10
+
+// console.log(x + y); // Addition
+// console.log(x - y); // Subtraction
+// console.log(x * y); // Multiplication
+// console.log(x / y); // division
+// console.log(x % y); // Modulus
+// console.log(x ** 2); // Exponentiation
+// x++
+// console.log(x);
+// y--
+// console.log(y);
+
+
+// let x = 5
+// let y = 10
+
+// x += 20
+// console.log(x);
+
+//! Function
+
+//? Simple Function
+// function myFunction(a, b) {
+//   return a + b
+// }
+
+// console.log(myFunction(10, 5));
+
+// myF()
+
+// function myF() {
+//   let x = 5
+//   console.log(x);
+// }
+
+//? Arrow Function
+
+// const myFunction = (a, b) => {
+//   return a * b
+// }
+
+// console.log(myFunction(20, 2));
+
+//? Self calling function
+
+// (function () {
+//   console.log("lol");
+// })();
+
+//? using object function
+
+// const person = {
+//   fName: "John",
+//   lName: "Doe",
+//   age: 25,
+//   height: 145,
+//   fullName: function () {
+//     return this.fName + " " + this.lName
+//   }
+// }
+
+// console.log(person.fullName());
+
+//! String
+
+// let p = "Lorem, ipsum \"dolor\" sit amet's \
+// consectetur \\ adipisicing elit. \nPossimus, fuga."
+// console.log(p);
+// console.log(p.length);
+
+// let text = "Please visit Microsoft! microsoft , Microsoft , MICROSOFT";
+// let chanag = text.replace(/Microsoft/gi, "Hello")
+// console.log(chanag);
+// console.log(text);
+
+// let h = "Hello"
+// let w = "World"
+
+// let hw = h.concat(" " + w)
+// console.log(hw);
+// console.log(h + " " + w);
+
+// const g = ["g1", "g2", "g3"]
+// const b = ["b1", "b2", "b3"]
+
+// const child = g.concat(b)
+// console.log(typeof child);

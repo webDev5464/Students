@@ -376,7 +376,83 @@ Array start with 0 index.
 
 //* String match
 
-let text = "The rain in SPAIN stays mainly in the plain";
-let result = text.match(/ain/gi)
+// let text = "The rain in SPAIN stays mainly in the plain";
+// let result = text.match(/ain/gi)
 
-console.log(result);
+// console.log(result);
+
+//! String template
+
+// let person = "hemang"
+// esc bottom side (`) or (~)
+// console.log(`Hello ${person}`);
+
+// console.log(typeof ``); // String
+
+// let x = `Let's play "Pubg"`
+// console.log(x);
+
+// let personData = [
+//   { fName: "Hemang", lName: "Chavda", age: 22, from: "Dhandhuka" },
+//   { fName: "Deven", lName: "Dave", age: 22, from: "Ahmedabad" },
+//   { fName: "Jatin", lName: "Raval", age: 22, from: "Ahmedabad" },
+// ]
+
+// let renderData = personData.map((x) => {
+//   return `
+//     <p>${x.fName} ${x.lName}</p>
+//   `
+// })
+
+// document.getElementById("renderHereData").innerHTML = renderData.join("")
+
+//! Number Method
+
+// let num = 9.656;
+// const number =
+//   num.toPrecision() +
+//   "<br>" +
+//   num.toPrecision(2) +
+//   "<br>" +
+//   num.toPrecision(4) +
+//   "<br>" +
+//   num.toPrecision(6);
+// console.log(number);
+
+//! Array
+
+// const cars = ["Saab", "Volvo", "BMW"]
+// console.log(typeof cars);
+// console.log(Array.isArray(cars));
+// console.log(cars[cars.length - 1]);
+// cars[1] = "Not have car"
+// console.log(cars);
+// console.log(cars.toString());
+
+//* for loop
+// const language = ["html", "css", "javascript", "reactjs", "nodejs"]
+// let renderLanguage = document.getElementById("renderLanguage")
+
+// const languageLength = language.length
+// // console.log(languageLength);
+// let text = ""
+// let x;
+
+// for (x = 0; x < languageLength; x++) {
+//   text += `<h2>${language[x]}</h2>`
+// }
+
+// renderLanguage.innerHTML = text
+
+//* forEach loop
+// const language = ["html", "css", "javascript", "reactjs", "nodejs"]
+// let renderLanguage = document.getElementById("renderLanguage")
+
+// let text = "<ul>"
+// language.forEach((x) => {
+//   text += `<li>${x}</li>`
+// })
+// text += "</ul>"
+
+// renderLanguage.innerHTML = text
+

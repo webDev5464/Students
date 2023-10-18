@@ -215,3 +215,40 @@
 // let $renderMusic = renderMusic.join("");
 
 // document.getElementById("demo").innerHTML = $renderMusic;
+
+let demo = document.getElementById("demo")
+
+// let text = "";
+// let i = 0;
+// while (i < 10) {
+//   text += "<br>The Number is " + i;
+//   i++;
+// }
+
+// demo.innerHTML = text
+
+// let text = "";
+// let i = 0;
+
+// do {
+//   text += "<br>The Number is " + i;
+//   i++;
+// } while (i < 10);
+
+// let text = "";
+// for (let i = 0; i <= 10; i++) {
+//   if (i === 3) {
+//     break;
+//   }
+//   text += i + "<br>";
+// }
+
+// demo.innerHTML = text
+
+// let x = 5;
+// try {
+//   x = y + 1; // y cannot be used (reference)
+// } catch (err) {
+//   console.log(err.name);
+// }
+// // ReferenceError

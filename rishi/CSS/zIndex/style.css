@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh;
+  padding: 100px 0 0 0;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 10px 100px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /* main */
+  z-index: 10;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  background-color: yellow;
+  position: absolute;
+  left: 200px;
+
+  /* z-index: 20; */
+}

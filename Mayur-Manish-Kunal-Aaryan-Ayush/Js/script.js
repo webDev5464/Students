@@ -330,15 +330,150 @@
 // Array.isArray(fruits)
 
 // let demo = document.getElementById("demo");
-// let fruits = ["Banana", "Apple", "Kiwi", "Mango", "Orange"];
+
+// let fruits = ["Banana", "Apple", "Kiwi", "Mango", "Orange", "Watermelon"];
+
+//* for loop
 // let len = fruits.length;
-
+// console.log(len);
 // let list = "<ul>";
-
 // for (let x = 0; x < len; x++) {
 //   list += `<li>${fruits[x]}</li>`;
 // }
 // demo.innerHTML = list
-
 // list = "</ul>";
 
+//* ForEach function
+// let text = "<ul>";
+// fruits.forEach((state) => (text += `<li>${state}</li>`));
+// text += "</ul>";
+
+// document.getElementById("demo").innerHTML = text;
+
+//* Push method
+// const language = ["HTML", "CSS", "JavaScript"];
+// demo.innerHTML = language;
+
+// function myLang() {
+//   language.push("React");
+//   demo.innerHTML = language;
+// }
+// myLang()
+
+// (function () {
+//   language.push("React");
+//   demo.innerHTML = language;
+// })();
+
+//* join method
+
+// const language = ["HTML", "CSS", "JavaScript"];
+// demo.innerHTML = x;
+
+// language.pop();
+// language.push("MongoDb");
+// language.shift();
+// language.unshift("React");
+// language[1] = "JSX";
+//! Do not use delete method
+// delete language[0];
+// console.log(language[0]);
+// language.unshift("HTML");
+// language.splice("2", "0", "Python");
+// let x = language.slice("1");
+// console.log(typeof x);
+// x.sort();
+// x.reverse()
+// demo.innerHTML = x;
+
+// let demo = document.getElementById("demo");
+// const num = [3, 53, 12, 76, 9];
+
+// let sorted = num.sort(function (a, b) {
+//   return a - b;
+// });
+
+// demo.innerHTML = sorted;
+
+// demo.innerHTML = num.sort();
+
+//? Array Sorting
+
+// const languages = ["z", "HTML", "CSS", "javaScript", "node js", "Python", "A"];
+// console.log(languages);
+// console.log(languages.sort());
+// console.log(languages.sort().reverse());
+
+// const num = [40, 100, 1, 5, 25, 10];
+// console.log(num);
+// console.log(num.sort());
+
+//? Number Sorting method
+// console.log(
+//   num.sort((a, b) => {
+//     return a - b;
+//   })
+// );
+
+// const cars = [
+//   { type: "Volvo", year: 2016 },
+//   { type: "Saab", year: 2001 },
+//   { type: "BMW", year: 2010 },
+// ];
+
+// cars.sort((a, b) => {
+//   return a.year - b.year;
+// });
+
+// function displayCars() {
+//   document.getElementById("demo").innerHTML =
+//     cars[0].type +
+//     " " +
+//     cars[0].year +
+//     "<br>" +
+//     cars[1].type +
+//     " " +
+//     cars[1].year +
+//     "<br>" +
+//     cars[2].type +
+//     " " +
+//     cars[2].year;
+// }
+
+// displayCars();
+
+//? Using ForEach Function
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = "";
+// numbers.forEach((chagan) => {
+//   text += chagan + "<br>";
+// });
+
+// document.getElementById("demo").innerHTML = text;
+
+//? Map Method
+
+// let renderArray = numbers.map((x) => {
+//   return x;
+// });
+
+// document.getElementById("demo").innerHTML = renderArray;
+
+/* 
+? Array Iteration > Array every() 
+*/
+
+// const numbers = [45, 4, 9, 16, 25, 99];
+
+// numbers.shift()
+
+// console.log(
+//   numbers.findIndex((x) => {
+//     return x > 18
+//   })
+// )
+
+let date = new Date()
+
+console.log(date.getMonth());

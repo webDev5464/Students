@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter Two</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .bar {
+      font-size: 50px;
+      width: fit-content;
+    }
+
+    .menu {
+      background-color: lightgray;
+      border: 1px solid black;
+      width: fit-content;
+      padding: 10px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <h2 id="demo"></h2> -->
+
+  <!-- <p id="demo"></p>
+  <button onclick="randomValue(9999,1111)">Click!</button>
+
+  <script>
+    let randomValue = (max, min) => {
+      document.getElementById("demo").innerHTML = Math.floor(Math.random() * (max - min)) + min
+    }
+  </script> -->
+
+
+  <div class="bar" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></div>
+
+  <div class="menu">
+    <ul>
+      <li>Tea</li>
+      <li>Coffee</li>
+      <li>Bornvita</li>
+    </ul>
+  </div>
+
+  <script>
+    let bar = document.querySelector(".bar")
+    let menu = document.querySelector(".menu")
+    let condition = false
+
+    function toggleNav() {
+      if (condition == false) {
+        condition = true
+        bar.innerHTML = '<i class="fa-solid fa-x"></i>'
+        menu.style.display = "block"
+      } else {
+        condition = false
+        bar.innerHTML = '<i class="fa-solid fa-bars"></i>'
+        menu.style.display = "none"
+      }
+    }
+  </script>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

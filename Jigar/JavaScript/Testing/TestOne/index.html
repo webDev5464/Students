@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      .bar {
+        font-size: 34px;
+        cursor: pointer;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section class="bar" onclick="toggleNav()" id="bar"></section>
+      <ul id="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <script>
+      let list = document.getElementById("list");
+      let bar = document.getElementById("bar");
+      let body = document.getElementsByTagName("body");
+      let initialValue = false;
+
+      function toggleNav() {
+        if (initialValue == false) {
+          initialValue = true;
+          bar.innerHTML = '<i class="fa-solid fa-bars"></i>';
+          list.style.display = "none";
+        } else {
+          initialValue = false;
+          bar.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+          list.style.display = "block";
+        }
+      }
+      toggleNav();
+    </script>
+  </body>
+</html>
+<!-- <i class="fa-solid fa-bars"></i> -->
+<!-- <i class="fa-solid fa-xmark"></i> -->

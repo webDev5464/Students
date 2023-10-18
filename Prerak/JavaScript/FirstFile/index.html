@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="demo"></div>
 
-    <!-- <script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <input type="text" id="input">
+  <button type="submit" onclick="resultFunction()">Test Input!</button>
+  <p id="result"></p>
+
+  <script>
+    let resultFunction = () => {
+      const result = document.getElementById("result")
+      result.innerHTML = ""
+      let input = document.getElementById("input").value
+
+      try {
+        if (input.trim() == "") throw "empty"
+        if (isNaN(input)) throw "Not a Number!"
+        input = Number(input)
+        if (input < 5) throw "too low"
+        if (input > 10) throw "too high"
+      } catch (err) {
+        result.innerHTML = "input is " + err
+      }
+    }
+  </script>
+
+  <!-- <script>
       document.getElementById("demo").innerHTML = "Hello World!";
     </script> -->
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>

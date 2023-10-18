@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav {
+        border-bottom: 2px solid black;
+        padding: 5px 0;
+      }
+
+      ul {
+        width: fit-content;
+        margin: auto;
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 27px;
+        margin: 0 20px;
+      }
+
+      main {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="navLink" onclick="toggleNav('home')" id="default">Home</li>
+        <li class="navLink" onclick="toggleNav('products')">products</li>
+        <li class="navLink" onclick="toggleNav('cart')">cart</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="home" class="container">
+        <h1>This is a Home Page</h1>
+      </div>
+      <div id="products" class="container">
+        <h1>This is a products page</h1>
+      </div>
+      <div id="cart" class="container">
+        <h1>This is a cart page</h1>
+      </div>
+    </main>
+
+    <script>
+      document.getElementById("default").click();
+
+      function toggleNav(pageName) {
+        let container = document.getElementsByClassName("container");
+        let navLink = document.getElementsByClassName("navLink");
+        for (let init = 0; init < container.length; init++) {
+          container[init].style.display = "none";
+        }
+        document.getElementById(pageName).style.display = "block";
+
+        for (let init = 0; init < navLink.length; init++) {
+          navLink[init].style.color = "black";
+        }
+        document.querySelector(
+          `[onclick="toggleNav('${pageName}')"]`
+        ).style.color = "red";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/*? Display */
+
+/* div {
+  background-color: red;
+  display: inline;
+}
+
+span {
+  background-color: green;
+  display: block;  
+} */
+
+/*? position */
+
+body {
+  height: 500vh;
+}
+
+.relative {
+  height: 400px;
+  width: 400px;
+  background-color: aquamarine;
+
+  position: relative;
+}
+
+.absolute {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.fixed {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: fixed;
+  right: 0;
+}
+
+.sticky {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+
+  position: sticky;
+  top: 100px;  
+}

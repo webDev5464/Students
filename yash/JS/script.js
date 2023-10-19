@@ -99,16 +99,65 @@ is
 
 // carDetail();
 
-const person = {
-  fName: "John",
-  lName: "Doe",
-  age: 22,
-  fullName: function () {
-    return this.fName + " " + this.lName;
-  },
-};
+// const person = {
+//   fName: "John",
+//   lName: "Doe",
+//   age: 22,
+//   fullName: function () {
+//     return this.fName + " " + this.lName;
+//   },
+// };
 
-console.log(person.fullName());
+// console.log(person.fullName());
 
 // document.getElementById("demo").innerHTML =
 //   "Hello My name is " + person.fName + "<br>" + "my age is " + person.age;
+
+//? Array Loop
+
+//* for loop
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fLen = fruits.length
+
+// let unOrder = "<ul>"
+
+// for (let inti = 0; inti < fLen; inti++) {
+//   unOrder += `<li>${fruits[inti]}</li>`
+// }
+
+// unOrder += "</ul>"
+
+// document.getElementById("demo").innerHTML = unOrder
+
+//* forEach
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// let text = ""
+// fruits.forEach((x) => {
+//   text += x + "<br>"
+// })
+
+// document.getElementById("demo").innerHTML = text
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log( fruits.join(""));
+// console.log(fruits.toString());
+
+// fruits.push("Kiwi")
+// console.log(fruits);
+// document.getElementById("demo").innerHTML = fruits
+
+// console.log(fruits[fruits.length] = "Kiwi");
+
+// const myGirls = ["Cecilie", "Lone"];
+// const myBoys = ["Emil", "Tobias", "Linus"]
+
+// let child = myBoys.concat(myGirls)
+// console.log(child);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+fruits.splice(0, 1, "Kiwi")
+console.log(fruits);

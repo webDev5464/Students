@@ -460,8 +460,8 @@
 
 // document.getElementById("demo").innerHTML = renderArray;
 
-/* 
-? Array Iteration > Array every() 
+/*
+? Array Iteration > Array every()
 */
 
 // const numbers = [45, 4, 9, 16, 25, 99];
@@ -474,6 +474,83 @@
 //   })
 // )
 
-let date = new Date()
+// let date = new Date()
 
-console.log(date.getMonth());
+// console.log(date.getMonth());
+// console.log(date.getDay());
+// console.log(date.getFullYear());
+// console.log(date.getDate());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// const date = new Date()
+// console.log(months[date.getMonth()] + " " + days[date.getDay()]);
+
+// const date = new Date()
+// date.setFullYear(2025)
+// console.log(date);
+// console.log(date.getFullYear());
+
+//? Boolean
+
+// console.log("5" == 5); // value
+// console.log("5" === 5); // data type , value
+
+// console.log(9 > 10);
+// console.log(9 < 10);
+
+// console.log(Number(false));
+// console.log(Number(true));
+
+// let result = 10 < 20 ? "Yes" : "No"
+// console.log(result);
+
+//? if else or else if, Ternary Operator
+
+// let x = true
+// if (x == false) {
+//   console.log("Condition True");
+// } else {
+//   console.log("condition false");
+// }
+
+// let date = new Date()
+
+// if (date.getHours() < 10) {
+//   console.log("Good Morning");
+// } else if (date.getHours() < 20) {
+//   console.log("Good Day");
+// } else {
+//   console.log("Good Night");
+// }
+
+// console.log(date.getHours());
+
+// let result = 10 < 20 ? "Yes" : "No"

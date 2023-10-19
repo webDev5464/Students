@@ -1,0 +1,56 @@
+.float {
+  border: 2px solid green;
+  height: 500px;
+  overflow: auto;
+}
+
+.float img:nth-child(even) {
+  float: right;
+  margin-right: 20px;
+}
+
+.float img {
+  float: left;
+  margin: 20px;
+}
+
+.borderBox {
+  margin: 50px 0;
+  display: flex;
+}
+
+.borderBox>div {
+  background-color: tomato;
+  border: 2px solid black;
+  width: 300px;
+  height: 150px;
+  margin: 0 30px;
+
+  padding: 30px;
+}
+
+.borderBox>div:nth-child(2) {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.opecity {
+  border: 4px solid black;
+  background: url("https://res.cloudinary.com/dpiiduvvx/image/upload/v1694261481/cld-sample-5.jpg");
+  background-size: contain;
+}
+
+.opecity>div {
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  background-color: brown;
+}
+
+.opecity>div:nth-child(2) {
+  opacity: .5;
+}
+
+.opecity>div:nth-child(3) {
+  opacity: .2;
+}

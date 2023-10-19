@@ -9,7 +9,7 @@
 
 <body>
 
-  <input type="text" id="input">
+  <!-- <input type="text" id="input">
   <button type="submit" onclick="resultFunction()">Test Input!</button>
   <p id="result"></p>
 
@@ -29,11 +29,52 @@
         result.innerHTML = "input is " + err
       }
     }
-  </script>
+  </script> -->
 
   <!-- <script>
       document.getElementById("demo").innerHTML = "Hello World!";
     </script> -->
+
+  <!-- <h1 onclick="this.innerHTML = 'Hello JavaScript'" id="time">Hello World!</h1>
+
+  <button id="btn">Click!</button>
+
+  <script>
+    document.getElementById("btn").onclick = () => {
+      document.getElementById("time").innerHTML = Date()
+    }
+  </script> -->
+
+  <!-- <input type="text" name="name" id="name" onchange="upperCase()" />
+
+  <script>
+    function upperCase() {
+      const x = document.getElementById("name");
+      x.value = x.value.toUpperCase();
+    }
+  </script> -->
+
+  <!-- <div onmouseover="mOn(this)" onmouseout="mOff(this)">Mouse Over me!</div>
+  <script>
+    function mOn(obj) {
+      obj.innerHTML = "Hello World!";
+    }
+    function mOff(obj) {
+      obj.innerHTML = "Mouse Over me!";
+    }
+  </script> -->
+
+  <h1 id="heading">Click The button</h1>
+  <button onmousedown="mDown()" onmouseup="mUp()">Click!</button>
+  <script>
+    let heading = document.getElementById("heading");
+    function mDown() {
+      heading.innerHTML = "Hello World!";
+    }
+    function mUp() {
+      heading.innerHTML = "Click The button";
+    }
+  </script>
 
   <script src="./script.js"></script>
 </body>

@@ -248,3 +248,60 @@ Multiple value store in object
 
 // const child = g.concat(b)
 // console.log(typeof child);
+
+//! Number
+
+// let x = 5
+// let y = 5.5
+
+// let x = 5
+// let y = 10
+
+// console.log(x + y);
+
+// let x = 5
+// let y = "5"
+
+// let result = x + y
+// console.log(typeof result);
+
+// console.log(5 + 20 + "25");
+// console.log("25" + 20 + 5);
+
+// console.log("5" / "2");
+// console.log("5" * 2);
+
+// console.log("Hello" * 2);
+
+//! String template
+
+// let x = "let's play"
+// let y = '"Hello"'
+// console.log(y);
+
+// let x = `Hello World!`
+// let y = `"Hello"`
+// let z = `let's play`
+// console.log(y);
+
+// let data = ["html", "css", "JavaScript"]
+
+// let result = `I understand this language ${data[0] + " " + data[2]}`
+// console.log(result);
+
+// let word = "JavaScript"
+// let wordLength = word.length
+
+// let text = ""
+// for (let i = 0; i < wordLength; i++) {
+//   text += word[i]
+// }
+
+// document.getElementById("demo").innerHTML = `<h1>${text}</h1>`
+
+let text = `The rain in SPAIN stays mainly in the plain`;
+let result = text.match(/ain/gi)
+console.log(result);
+console.log(Array.isArray(result));
+console.log(result[1]);
+

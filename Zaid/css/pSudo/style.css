@@ -1,0 +1,106 @@
+.p1 {
+  border: 2px solid red;
+  margin: 10px 0;
+}
+
+.p1>p {
+  color: red;
+}
+
+.p1>div>p {
+  color: blue;
+}
+
+.p1>div>div>p {
+  color: green;
+}
+
+.p1 p {
+  font-size: 22px;
+}
+
+/*  */
+
+.s1 {
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 10px 0;
+}
+
+.s1>p:first-child {
+  color: chocolate;
+}
+
+.s1>p:last-child {
+  color: blueviolet;
+}
+
+.s1>p:nth-child(2) {
+  color: red;
+}
+
+.s1>p:nth-child(3) {
+  color: cadetblue;
+}
+
+.s1>p:nth-child(4) {
+  color: coral;
+}
+
+.d2,
+.c2 {
+  font-size: 30px;
+}
+
+.a1 {
+  margin: 10px 0;
+}
+
+.hoverMe:hover {
+  color: aqua;
+}
+
+.clickMe:active {
+  color: darkred;
+}
+
+.dual:hover {
+  color: chartreuse;
+}
+
+.dual:active {
+  color: blue;
+}
+
+.visitMe:visited {
+  color: lightgray;
+}
+
+.advance {
+  color: black;
+  text-decoration: none;
+}
+
+.advance:hover {
+  text-decoration: underline;
+}
+
+.advance:active {
+  color: darkorange;
+}
+
+.btn {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: tomato;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+  box-shadow: 2px 2px 4px black;
+}
+
+.btn:active {
+  padding: 4px;
+}

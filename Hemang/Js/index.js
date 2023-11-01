@@ -10,8 +10,8 @@
 
 //! Type of Variables
 
-/* 
-1. let 
+/*
+1. let
 2. const
 3. var
 */
@@ -111,13 +111,13 @@
 
 //? 8 type's of data types
 
-/* 
+/*
 
 1. String
-2. Number 
+2. Number
 3. Boolean
 4. object
-- 5. Bigint 
+- 5. Bigint
 6. undefined
 7. null
 - 8. symbol
@@ -456,3 +456,491 @@ Array start with 0 index.
 
 // renderLanguage.innerHTML = text
 
+//? Array Methods
+// const language = ["html", "css", "javascript", "reactJs", "nodejs"]
+// console.log(language);
+// console.log(language.pop());
+// console.log(language.push("Python"));
+// console.log(language.shift());
+// console.log(language.unshift("django"));
+// // delete language[2] // Do not use delete method
+
+// // [ 'django', 'css', 'javascript', 'reactJs', 'Python' ]
+// language.splice(4, 0, "PHP")
+// console.log(language.length);
+// console.log(language);
+// console.log(language.toString());
+// console.log(language.join(" * "));
+// console.log(language.splice(3));
+
+//? Array Sort
+
+// const language = ["html", "css", "javascript", "reactJs", "nodejs"]
+// console.log(language);
+// console.log(language.sort());
+
+// const aToz = ["A", "C", "G", "Q", "T", "V", "Y", "W", "Z", "E"]
+// console.log(aToz.sort().reverse());
+
+// const num = [40, 100, 1, 5, 25, 10]
+// console.log(num);
+// console.log(num.sort());
+
+// const numberSort = num.sort((a, b) => {
+//   return a - b
+// })
+// console.log(numberSort.reverse());
+
+//? Array iteration
+
+//* forEach() loop (function)
+
+// const language = ["html", "css", "javascript", "reactJs", "nodejs"]
+
+// let demo = document.getElementById("demo")
+
+// let text = "<ul>"
+// language.forEach((x) => {
+//   text += `<li>${x}</li>`
+// })
+// text += "</ul>"
+
+// demo.innerHTML = text
+
+//* map() loop (function)
+
+// const language = ["html", "css", "javascript", "reactJs", "nodejs"]
+// let demo = document.getElementById("demo")
+
+// let render = language.map((x) => {
+//   return `
+//     <li>${x}</li>
+//   `
+// })
+
+// demo.innerHTML = `<ul>${render.join("")}</ul>`
+
+//* filter
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// const filter = numbers.filter((val) => {
+//   return val > 18
+// })
+
+// console.log(filter);
+
+//* reduce
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// const total = numbers.reduce((tol, val) => {
+//   return tol + val
+// })
+
+// console.log(total);
+
+//* every
+
+// const numbers = [45, 20, 22, 27, 25];
+
+// const checking = numbers.every((val) => {
+//   return val > 18
+// })
+
+// console.log(checking);
+
+//* some
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// const checking = numbers.some((val) => {
+//   return val > 18
+// })
+
+// console.log(checking);
+
+//* find
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// const checking = numbers.find((val) => {
+//   return val > 18
+// })
+
+// console.log(checking);
+
+//* findIndex
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// const checking = numbers.findIndex((val) => {
+//   return val > 18
+// })
+
+// console.log("Index: "+checking + ", Value : " + numbers[0]);
+
+//* from
+
+// const arr = Array.from("JavaScript")
+// console.log(arr);
+
+/* ---------- */
+
+// const render = arr.map((x) => {
+//   return x + "<br>"
+// })
+
+// document.getElementById("demo").innerHTML = render.join("")
+
+//? /* Keys  */
+
+// const arrKey = arr.keys()
+// let text = ""
+
+// for (let init of arrKey) {
+//   text += init
+// }
+
+// console.log(text);
+
+//! Date
+
+// const date = new Date(2024, 11, 5, 12, 30, 59, 500)
+// console.log(date);
+
+//? get date
+
+// const date = new Date()
+
+// console.log(date.getFullYear());
+// console.log(date.getMonth()); // 0 - 11
+// console.log(date.getDate());
+// console.log(date.getDay()); // 0 - 6
+// console.log(date.getHours()); // 0 - 23
+// console.log(date.getMinutes()); // 0 - 59
+// console.log(date.getSeconds()); // 0 - 59
+// console.log(date.getMilliseconds()); // 0 - 999
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// let getMonths = months[date.getMonth()]
+// console.log(getMonths);
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// let getDays = days[date.getDay()]
+// console.log(getDays);
+
+//? set date
+
+// const date = new Date()
+
+// date.setFullYear(2025)
+// console.log(date.getFullYear());
+
+// date.setMonth(11)
+// console.log(date.getMonth());
+
+// date.setDate(31)
+// console.log(date.getDate());
+
+// date.setHours(24)
+// console.log(date.getHours());
+
+// date.setMinutes(30)
+// console.log(date.getMinutes());
+
+// date.setSeconds(59)
+// console.log(date.getSeconds());
+
+// date.setMilliseconds(999)
+// console.log(date.getMilliseconds());
+
+//! Math method's
+
+//? round
+
+// console.log(Math.round(4.6));
+// 5
+
+// console.log(Math.round(4.5));
+// 5
+
+// console.log(Math.round(4.4));
+// 4
+
+//? ceil
+
+// console.log(Math.ceil(4.3));
+// 5
+
+// console.log(Math.ceil(4.5));
+// 5
+
+// console.log(Math.ceil(4.6));
+// 5
+
+// console.log(Math.ceil(4));
+// 4
+
+// console.log(Math.ceil(-4.3));
+// -4
+
+// console.log(Math.ceil(-4));
+// -4
+
+//? floor
+
+// console.log(Math.floor(4.9));
+// 4
+
+// console.log(Math.floor(4.7));
+// 4
+
+// console.log(Math.floor(4.4));
+// 4
+
+// console.log(Math.floor(4.2));
+// 4
+
+// console.log(Math.floor(-4.2));
+// -5
+
+//? trunc
+
+// console.log(Math.trunc(4.9));
+// 4
+
+// console.log(Math.trunc(4.7));
+// 4
+
+// console.log(Math.trunc(4.4));
+// 4
+
+// console.log(Math.trunc(4.2));
+// 4
+
+// console.log(Math.trunc(-4.2));
+// -4
+
+//! Boolean
+
+// console.log(10 < 9);
+
+// console.log(10 > 9);
+
+// console.log(Number(10 > 9)); // true :- 1
+
+// console.log(Number(10 < 9)); // false :- 0
+
+// console.log(5 == "5"); // true
+
+// console.log(5 === "5"); // false
+
+//! if else & else if
+
+// if (10 < 9) {
+//   console.log("true"); // true
+// } else {
+//   console.log("false"); // false
+// }
+
+// if (10 > 9) {
+//   console.log("true"); // true
+// } else {
+//   console.log("false"); // false
+// }
+
+// const date = new Date()
+// console.log(date.getHours());
+
+// if (date.getHours() < 12) {
+//   console.log("good Morning");
+// } else {
+//   console.log("Good Day");
+// }
+
+//* ternary operator
+
+// let date = new Date()
+// let result = date.getHours() < 14 ? "True" : "False"
+// console.log(result);
+
+//* else if
+
+// if (date.getHours() < 12) {   // 12:00Am pehla
+//   console.log("Good Morning");
+// } else if (date.getHours() < 17) { // 05:00Pm pehla
+//   console.log("Good Afternoon");
+// } else if (date.getHours() < 20) { // 08:00pm pehla
+//   console.log("Good Evening");
+// } else { // 08:00pm pachi
+//   console.log("Good Night");
+// }
+
+//! Switch statement
+
+// let init = true
+
+// switch (init) {
+//   case true:
+//     console.log("true");
+//     break;
+
+//   case false:
+//     console.log("false");
+//     break;
+// }
+
+//* ---- day message -----
+
+// const date = new Date()
+// const hours = date.getHours()
+// console.log(hours);
+
+// let text = ""
+// switch (true) {
+//   case hours < 12:
+//     text += "Good Morning"
+//     break;
+
+//   case hours < 17:
+//     text += "Good Afternoon"
+//     break;
+
+//   case hours < 20:
+//     text += "Good Evening"
+//     break;
+
+//   default:
+//     text += "Good night"
+// }
+
+// console.log(text);
+
+//* ----- the days -----
+
+// const x = new Date().getDay()
+// console.log(x);
+
+// let days = ""
+// switch (x) {
+//   case 0:
+//     days = "Sunday";
+//     break;
+//   case 1:
+//     days = "Monday";
+//     break;
+//   case 2:
+//     days = "Tuesday";
+//     break;
+//   case 3:
+//     days = "Wednesday";
+//     break;
+//   case 4:
+//     days = "Thursday";
+//     break;
+//   case 5:
+//     days = "Friday";
+//     break;
+//   case 6:
+//     days = "Saturday";
+// }
+
+// console.log(days);
+
+//* ---- the months ----
+
+// let text = ""
+// switch (new Date().getMonth()) {
+//   case 0:
+//     text += "January"
+//     break;
+
+//   case 1:
+//     text += "February"
+//     break;
+
+//   case 2:
+//     text += "March"
+//     break;
+
+//   case 3:
+//     text += "April"
+//     break;
+
+//   case 4:
+//     text += "May"
+//     break;
+
+//   case 5:
+//     text += "June"
+//     break;
+
+//   case 6:
+//     text += "July"
+//     break;
+
+//   case 7:
+//     text += "August"
+//     break;
+
+//   case 8:
+//     text += "September"
+//     break;
+
+//   case 9:
+//     text += "October"
+//     break;
+
+//   case 10:
+//     text += "November"
+//     break;
+
+//   case 11:
+//     text += "December"
+//     break;
+// }
+
+// console.log(text);
+
+//* ---- using multiple condition ----
+
+// let text;
+
+// switch (new Date().getDay()) {
+//   case 4:
+//   case 5:
+//     text = "Soon it is Weekend";
+//     break;
+//   case 0:
+//   case 6:
+//     text = "It is weekend";
+//     break;
+//   default:
+//     text = "Looking forward to the  Weekend";
+// }
+
+// console.log(text);

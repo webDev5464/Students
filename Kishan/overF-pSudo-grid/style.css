@@ -1,0 +1,51 @@
+.overContent {
+  border: 4px solid black;
+  height: 600px;
+  width: 700px;
+
+  overflow: auto;
+}
+
+.parent {
+  margin: 50px 0;
+  border: 3px solid black;
+  /* height: 350px; */
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+
+  justify-content: center;
+  align-items: center;  
+}
+
+.parent>div {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.parent>div:first-child {
+  background-color: navy;
+}
+
+.parent>div:last-child {
+  background-color: aqua;
+}
+
+.parent>div:nth-child(2) {
+  background-color: blueviolet;
+}
+
+.parent>div:nth-child(3) {
+  background-color: brown;
+}
+
+.nestingSelector>p {
+  color: blue;
+}
+
+.nestingSelector>div>p {
+  color: red;
+}

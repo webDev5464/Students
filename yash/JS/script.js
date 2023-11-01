@@ -157,7 +157,86 @@ is
 // let child = myBoys.concat(myGirls)
 // console.log(child);
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits);
-fruits.splice(0, 1, "Kiwi")
-console.log(fruits);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+// fruits.splice(0, 1, "Kiwi")
+// console.log(fruits);
+
+//? Date
+
+// const date = new Date()
+
+// console.log(date.getFullYear());
+// console.log(date.getMonth());
+// console.log(date.getDate());
+// console.log(date.getDay());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+
+// date.setFullYear(2024)
+// console.log(date);
+// console.log(date.getFullYear());
+
+// console.log(typeof date);
+
+// const months = [
+//     "January",
+//     "February",
+//     "March",
+//     "April",
+//     "May",
+//     "June",
+//     "July",
+//     "August",
+//     "September",
+//     "October",
+//     "November",
+//     "December",
+// ];
+
+// console.log(months[date.getMonth()]);
+
+// const days = [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+// ];
+
+// console.log(days[date.getDay()]);
+
+//? Boolean
+
+// console.log(10 > 9);
+
+// console.log(Number(true));
+// console.log(Number(false));
+
+//? if else & else if
+
+// if (10 > 9) {
+//     console.log("True");
+// } else {
+//     console.log("false");
+// }
+
+//* ternary operator
+
+// let result = 9 < 10 ? console.log("true") : console.log("false");
+
+//* else if
+
+// const date = new Date()
+
+// if (date.getHours() < 9) {
+//     console.log("Good Morning");
+// } else if (date.getHours() < 11) {
+//     console.log("good Day");
+// } else {
+//     console.log("Good Night");
+// }

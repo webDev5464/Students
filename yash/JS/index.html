@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="demo"></div>
 
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-    <script src="./script.js"></script>
-  </body>
+<body>
+  <div id="demo"></div>
+
+  <button onclick="randomValue(1111,9999)">Click!</button>
+
+  <script>
+    let demo = document.getElementById("demo")
+    demo.innerHTML = 0
+
+    function randomValue(min, max) {
+      demo.innerHTML = Math.floor(Math.random() * (max - min) + 1) + min
+    }
+  </script>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

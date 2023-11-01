@@ -1,0 +1,77 @@
+/* div > p {
+  font-size: 40px;
+} */
+
+.parent {
+  border: 3px solid black;
+}
+
+.parent>div:nth-child(2) {
+  background-color: tomato;
+}
+
+.parent>div:last-child>p {
+  background-color: greenyellow;
+}
+
+.parent>div:last-child>div>p {
+  background-color: red;
+}
+
+.allElement {
+  border: 3px solid red;
+  margin: 10px 0;
+}
+
+.allElement p {
+  font-size: 40px;
+}
+
+.selector {
+  border: 4px solid blue;
+}
+
+.selector p:first-child {
+  background-color: aqua;
+}
+
+.selector p:last-child {
+  background-color: blue;
+  color: white;
+}
+
+.selector p:nth-child(2) {
+  background-color: bisque;
+}
+
+.selector p:nth-child(3),
+.selector p:nth-child(4) {
+  font-size: 25px;
+  background-color: black;
+  color: white;
+}
+
+.link {
+  margin: 20px 0;
+  border: 3px groove red;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.link a:first-child {
+  text-decoration: none;
+  color: black;
+}
+
+.link a:first-child:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.link a:first-child:active {
+  color: green;
+}
+
+.link a:nth-child(2):visited {
+  color: red;
+}

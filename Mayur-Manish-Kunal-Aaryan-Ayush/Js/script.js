@@ -554,3 +554,213 @@
 // console.log(date.getHours());
 
 // let result = 10 < 20 ? "Yes" : "No"
+
+//! Switch Statement
+
+// const date = new Date().getDay()
+// console.log(date);
+
+// let days = ""
+
+// switch (date) {
+//   case 0:
+//     days = "Sunday";
+//     break;
+//   case 1:
+//     days = "Monday";
+//     break;
+//   case 2:
+//     days = "Tuesday";
+//     break;
+//   case 3:
+//     days = "Wednesday";
+//     break;
+//   case 4:
+//     days = "Thursday";
+//     break;
+//   case 5:
+//     days = "Friday";
+//     break;
+//   case 6:
+//     days = "Saturday";
+// }
+
+// console.log(days);
+
+// switch (date) {
+//   default:
+//     days = "Looking forward to the Weekend";
+//     break;
+//   case 6:
+//     days = "Saturday";
+//     break;
+//   case 0:
+//     days = "Sunday";
+// }
+
+// console.log(days);
+
+// let text;
+
+// switch (new Date().getDay()) {
+//   case 4:
+//   case 5:
+//     text = "Soon it is Weekend";
+//     break;
+//   case 0:
+//   case 6:
+//     text = "It is weekend";
+//     break;
+//   default:
+//     text = "Looking forward to the  Weekend";
+// }
+
+// console.log(text);
+
+//! Loop
+
+//? for loop
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "<ul>"
+// let carsLength = cars.length
+
+// for (let init = 0; init < carsLength; init++) {
+//   text += `<li>${cars[init]}</li>`
+// }
+
+// text += "</ul>"
+
+// document.getElementById("demo").innerHTML = text
+
+//* ex
+
+// let int = 0
+// let carsLength = cars.length
+// let text = "<ul>"
+// for (; int < carsLength;) {
+//   text += `<li>${cars[int]}</li>`;
+//   int++
+// }
+// text += "</ul>"
+// document.getElementById("demo").innerHTML = text
+
+//? for in loop
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "<ul>"
+
+// for (let x in cars) {
+//   text += `<li>${cars[x]}</li>`
+// }
+
+// text += "</ul>"
+
+// document.getElementById("demo").innerHTML = text
+
+//? for of loop
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "<ul>"
+// for (let x of cars) {
+//   text += `<li>${x}</li>`
+// }
+// text += "</ul>"
+
+// document.getElementById("demo").innerHTML = text
+
+//? while loop
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// let carsLength = cars.length
+// let int = 0
+// let text = "<ul>"
+// while (int < carsLength) {
+//   text += `<li>${cars[int]}</li>`
+//   int++
+// }
+// text += "</ul>"
+// document.getElementById("demo").innerHTML = text
+
+//? do while loop
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let carsLen = cars.length
+// let text = "<ul>"
+// let i = 0
+
+// do {
+//   text += `<li>${cars[i]}</li>`
+//   i++
+// } while (i < carsLen)
+// document.getElementById("demo").innerHTML = text
+
+//! Warning: infinity loop
+
+// let text = 0
+// let i = 0
+
+// while (i < 1000) {
+//   text += i
+// }
+
+// document.getElementById("demo").innerHTML = text
+
+//? forEach function (loop)
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "<ul>"
+// cars.forEach((x) => {
+//   text += `<li>${x}</li>`
+// })
+// text += "</ul>"
+
+// document.getElementById("demo").innerHTML = text
+
+//? map function (loop)
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// const render = cars.map((x) => {
+//   return `<li>${x}</li>`
+// })
+
+// document.getElementById("demo").innerHTML = `<ul>${render.join("")}</ul>`
+
+//! break of continue 
+
+//? break
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = ""
+// for (init = 0; init < cars.length; init++) {
+//   if (init == 3) {
+//     break;
+//   }
+//   text += cars[init] + "<br>"
+// }
+// document.getElementById("demo").innerHTML = text
+
+//? continue
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = ""
+// for (init = 0; init < cars.length; init++) {
+//   if (init == 3) {
+//     continue;
+//   }
+//   text += cars[init] + "<br>"
+// }
+// document.getElementById("demo").innerHTML = text
+
+//? error
+
+let num = 5
+console.log(num.toUppercase());

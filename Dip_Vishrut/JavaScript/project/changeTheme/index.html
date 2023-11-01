@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./light.css" id="stylesheet">
+</head>
+
+<body>
+
+  <button onclick="toggleTheme()">Change Theme</button>
+
+  <h1>Hello JavaScript</h1>
+
+  <p>Lorem ipsum dolor sit amet consectetur.</p>
+  <p>Possimus quos aspernatur commodi deleniti ad.</p>
+  <p>Officia qui deserunt delectus? Officiis, aperiam?</p>
+  <p>Inventore culpa eius qui optio nostrum?</p>
+  <p>Alias explicabo suscipit et eligendi vel?</p>
+  <p>Illo qui explicabo eveniet dolor totam?</p>
+  <p>Quas, voluptatibus dignissimos? Sit, ipsum dolor.</p>
+  <p>Voluptate illum incidunt quam soluta adipisci!</p>
+  <p>Illum possimus dolor eum consequuntur illo?</p>
+  <p>Quo quos sit veritatis impedit cupiditate!</p>
+
+  <article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis repudiandae quis fugiat saepe magnam
+      consequuntur quisquam, voluptate voluptates nihil unde deserunt vel blanditiis non nemo quasi praesentium quo sed.
+    </p>
+    <p>At corporis architecto asperiores eius, ea harum magni impedit, aperiam a itaque quas atque sit assumenda iure
+      deserunt, sapiente quam aspernatur ex nesciunt ducimus! Mollitia facere porro vitae! A, ratione!</p>
+    <p>Quis voluptatem vero laudantium quos nam, ullam culpa, nemo neque odio, dolor nulla in voluptatum rerum nostrum
+      eveniet! Debitis quae provident placeat accusantium facere nesciunt ab, quia consequuntur fugit labore?</p>
+    <p>Architecto necessitatibus veritatis earum distinctio nemo. Corporis soluta libero veniam distinctio!
+      Exercitationem assumenda saepe explicabo eligendi! Ipsam molestiae ab nesciunt provident, odit ipsa, a accusantium
+      tempore, vero excepturi illo quo.</p>
+    <p>Doloremque cum magnam, dolorem delectus quis, incidunt quos facere quam dolor nobis libero reprehenderit error
+      aliquid assumenda? Suscipit ea, quaerat modi obcaecati, distinctio molestias, voluptas doloribus animi et ex odio!
+    </p>
+  </article>
+
+  <script>
+    let styleSheet = document.getElementById("stylesheet")
+    let init = false
+
+    function toggleTheme() {
+      if (init == false) {
+        styleSheet.setAttribute("href", "./dark.css")
+        init = true
+      } else {
+        styleSheet.setAttribute("href", "./light.css")
+        init = false
+      }
+    }
+  </script>
+</body>
+
+</html>

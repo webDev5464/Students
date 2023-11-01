@@ -8,19 +8,21 @@
 </head>
 
 <body>
-  <!-- <script>
-      let word = "Hello JavaScript";
-      let len = word.length;
-      let text = "";
+  <div id="demo"></div>
+  <button onclick="randomNumber(9999 , 1111)">Click!</button>
 
-      for (let x = 0; x < len; x++) {
-        text += word[x] + "<br>";
-      }
+  <script>
+    // document.getElementById("demo").innerHTML = Math.random()
+    // function randomNumber() {
+    //   document.getElementById("demo").innerHTML = Math.random()
+    // }
 
-      document.write(`<h1>${text}</h1>`);
-    </script> -->
-
-  <div id="renderLanguage"></div>
+    let demo = document.getElementById("demo")
+    demo.innerHTML = "0000"
+    function randomNumber(max, min) {
+      demo.innerHTML = Math.floor(Math.random() * (max - min)) + min
+    }
+  </script>
 
   <script src="./index.js"></script>
 </body>

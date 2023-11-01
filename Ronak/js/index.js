@@ -111,7 +111,7 @@
 
 /*
 value of true : 1
-value of false : 0 
+value of false : 0
 */
 
 // console.log(Number(bully));
@@ -299,9 +299,322 @@ Multiple value store in object
 
 // document.getElementById("demo").innerHTML = `<h1>${text}</h1>`
 
-let text = `The rain in SPAIN stays mainly in the plain`;
-let result = text.match(/ain/gi)
-console.log(result);
-console.log(Array.isArray(result));
-console.log(result[1]);
+// let text = `The rain in SPAIN stays mainly in the plain`;
+// let result = text.match(/ain/gi)
+// console.log(result);
+// console.log(Array.isArray(result));
+// console.log(result[1]);
 
+//! Array
+
+// const language = ["html", "css", "JavaScript", "Python"]
+// console.log(language.length);
+// console.log(Array.isArray(language));
+// language[2] = "NodeJs"
+// language[language.length] = "NodeJs"
+
+// language.pop()
+// language.push("dJango")
+
+// language.shift()
+// language.unshift("PHP")
+
+// language.splice(1, 2, "NodeJs")
+
+// console.log(language.slice(1, 1));
+
+// delete language[1]
+// console.log(language);
+
+// console.log(language.toString());
+
+// console.log(language.join(" * "));
+
+//! Array sort
+
+// const aToz = ['G', 'F', 'Y', 'W', 'Z', 'Y', 'A', 'B']
+// console.log(aToz.sort().reverse());
+
+// const num = [40, 100, 1, 5, 25, 10]
+// console.log(num.sort());
+
+// console.log(num.sort((a, b) => {
+//   return a - b
+// }));
+
+//! Array iteration
+
+//* forEach
+
+// const numbers = [45, 4, 9, 16, 25];
+// let demo = document.getElementById("demo")
+
+// let text = ""
+// numbers.forEach((x) => {
+//   text += x + "<br>"
+// })
+
+// demo.innerHTML = text
+
+//* map
+
+// const numbers = [45, 4, 9, 16, 25];
+// let demo = document.getElementById("demo")
+
+// const render = numbers.map((x) => {
+//   return x + "<br>"
+// })
+
+// demo.innerHTML = render.join("")
+
+
+//* Array in object render data
+
+// const personData = [
+//   {
+//     fName: "John",
+//     lName: "Doe",
+//     age: 24
+//   },
+//   {
+//     fName: "Smith",
+//     lName: "Trunc",
+//     age: 29
+//   },
+//   {
+//     fName: "Chagan",
+//     lName: "Bloger",
+//     age: 31
+//   },
+//   {
+//     fName: "Magan",
+//     lName: "Chapri",
+//     age: 62
+//   }
+// ];
+
+// let demo = document.getElementById("demo")
+
+// const render = personData.map((x) => {
+//   return `
+//     <p>${x.fName} ${x.lName}</p>
+//   `
+// })
+
+// demo.innerHTML = render.join("")
+
+//* for od loop Key()
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]
+// let key = fruits.keys()
+
+// let text = ""
+// for (let x in fruits) {
+//   text += x + " , " + fruits[x] + "<br>"
+// }
+// document.getElementById("demo").innerHTML = text
+
+//* d-structuring
+
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
+
+// let allProducts = [...q1, ...q2, ...q3, ...q4]
+// let allData = q1.concat(q2, q3, q4)
+
+// console.log(allProducts);
+
+//! Math.random()
+
+// let demo = document.getElementById("demo")
+// demo.innerHTML = Math.round(Math.random())
+
+// function randomNum(max, min) {
+//   demo.innerHTML = Math.round(Math.random() * (max - min)) + min
+// }
+
+// function randomNum() {
+//   demo.innerHTML = Math.round(Math.random() * (9999 - 1111)) + 1111
+// }
+
+//! boolean
+
+// console.log(10 > 9);
+// console.log(10 < 9);
+
+// console.log(Number(true));
+// console.log(Number(false));
+
+// console.log(5 == 5);
+// console.log(5 === "5");
+// console.log(5 == "5");
+
+// console.log(5 !== "5");
+
+//! if else & else if
+
+// if (5 == 5) {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+
+// if (5 == 6) {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+
+// -------
+
+// let date = new Date().getHours()
+// console.log(date);
+
+// if (date < 18) {
+//   console.log("Good day");
+// } else {
+//   console.log("Good Evening");
+// }
+
+// if (date >= 6 && date < 12) {
+//   console.log("Good Morning");
+// } else if (date < 18) {
+//   console.log("Good Afternoon");
+// } else if (date < 22) {
+//   console.log("Good Evening");
+// } else {
+//   console.log("Good Night");
+// }
+
+// let date = 5
+// console.log(date >= 6 && date < 12);
+
+//* ternary operator
+
+// let x = 10 > 9 ? "Yes" : "No"
+// console.log(x);
+
+//! Switch statement
+
+// let int = 0
+
+// switch (int) {
+//   case false:
+//     console.log("Its false");
+//     break;
+
+//   case true:
+//     console.log("its true");
+//     break;
+
+//   default:
+//     console.log("Something Wrong");
+// }
+
+//! Loops
+
+//* For loop
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// let int
+// let text = "<ul>"
+
+// for (int = 0; int < language.length; int++) {
+//   text += `<li>${language[int]}</li>`
+// }
+
+// text += "</ul>"
+
+// demo.innerHTML = text
+
+//* for in loop
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// let text = "<ul>"
+// for (let x in language) {
+//   text += `<li>${x} :- ${language[x]}</li>`
+// }
+// text += "</ul>"
+
+// demo.innerHTML = text
+
+//* for of 
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// let text = ""
+
+// for (let x of language) {
+//   text += `<li>${x}</li>`
+// }
+
+// demo.innerHTML = `<ul>${text}</ul>`
+
+//* while loop
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// let x = 0
+// let LangLeng = language.length
+// let text = ""
+
+// while (x < LangLeng) {
+//   text += language[x] + "<br>"
+//   x++
+// }
+
+// demo.innerHTML = text
+
+//* do while loop
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// text = ""
+// let x = 0
+
+// do {
+//   text += language[x] + "<br>"
+//   x++
+// } while (x > language.length)
+
+// demo.innerHTML = text
+
+//* forEach function (loop)
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// let text = ""
+// language.forEach((x) => {
+//   text += `<p>${x}</p>`
+// })
+
+// demo.innerHTML = text
+
+//* map function (loop)
+
+// let demo = document.getElementById("demo")
+// const language = ["HTML", 'CSS', 'JavaScript', "React", "Node js"]
+
+// const text = language.map((x)=> {
+//   return `<p>${x}</p>`
+// })
+
+// demo.innerHTML = text
+
+//! Errors
+
+// try {
+//   eval(`${demo}`)
+// } catch (err) {
+//   console.log(err.message);
+// }

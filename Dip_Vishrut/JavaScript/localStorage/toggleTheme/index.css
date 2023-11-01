@@ -1,0 +1,57 @@
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+hr {
+  border: 2px solid var(--black);
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  background-color: var(--cardBg);
+  color: var(--black);
+  padding: 5px;
+}
+
+.cardImg>img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/** Switch */
+
+.switch {
+  position: relative;
+  border: 2px solid var(--white);
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px var(--white);
+  cursor: pointer;
+
+  scale: 1.5;
+  margin: 20px;
+}
+
+.boll {
+  position: absolute;
+  top: 0;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.right {
+  right: 0;
+}

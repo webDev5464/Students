@@ -8,18 +8,74 @@
 </head>
 
 <body>
-  <div id="demo"></div>
+  <!-- <h1 id="demo"></h1>
+  <button onclick="numerical()">Numerical</button>
+  <button onclick="alphabetic()">Alphabetic</button>
+  <button onclick="randomNum()">Random</button>
 
-  <!-- <script>
-      let myVariable = "Hello World!";
-      let age = 27;
+  <script>
+    let demo = document.getElementById("demo")
+    const num = [40, 100, 1, 5, 25, 10]
+    demo.innerHTML = num
 
-      document.getElementById("demo").innerHTML = myVariable;
-    </script> -->
+    function numerical() {
+      num.sort()
+      demo.innerHTML = num
+    }
 
+    function alphabetic() {
+      num.sort((a, b) => {
+        return a - b
+      })
 
-    <script src="./index.js"></script>
-  <!-- <script src="./script.js"></script> -->
+      demo.innerHTML = num
+    }
+
+    function randomNum() {
+      num.sort(() => {
+        return 0.5 - Math.random()
+      })
+
+      demo.innerHTML = num
+    }
+  </script> -->
+
+  <!-- <div id="demo"></div> -->
+  <!-- <button onclick="randomNum(9999,1111)">Click!</button> -->
+  <!-- <button onclick="randomNum()">Click!</button> -->
+
+  <!-- <div id="demo"></div> -->
+
+  <input type="text" id="input">
+  <input type="submit" onclick="submitButton()" />
+
+  <p id="result"></p>
+
+  <script>
+    function submitButton() {
+      let result = document.getElementById("result")
+      let input = document.getElementById("input").value
+      input.innerHTML = ""
+
+      try {
+        if (input.trim() == "") throw "Input is blank";
+        if (isNaN(input)) throw "Not a Number";
+        input = Number(input)
+        if (input > 10) throw "to high"
+        if (input < 5) throw "to low"
+        if (5 < input && 10 > input) throw ""
+      } catch (err) {
+        result.innerHTML = err
+      } finally {
+        if (5 < input && 10 > input) {
+          console.log("is Blank");
+          document.getElementById("input").value = ""
+        }
+      }
+    }
+  </script>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>

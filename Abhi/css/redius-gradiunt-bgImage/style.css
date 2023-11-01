@@ -1,0 +1,95 @@
+.radius {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.radius>div {
+  height: 300px;
+  width: 300px;
+  border: 4px solid black;
+}
+
+.radius>div:first-child {
+  border-radius: 30px;
+
+  background: linear-gradient(red, blue, green);
+}
+
+.radius>div:nth-child(2) {
+  border-radius: 10px 40px;
+
+  background: radial-gradient(red, blue, green);
+}
+
+.radius>div:nth-child(3) {
+  border-radius: 50px 10px 90px 150px;
+
+  background: conic-gradient(red 5%, blue 10%, green);
+}
+
+.radius>div:last-child {
+  border-radius: 50%;
+
+  background: linear-gradient(red 5%, blue 50%, green 5%);
+}
+
+.gradient {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.gradient>div {
+  height: 300px;
+  width: 300px;
+  border: 4px solid black;
+}
+
+.gradient>div:first-child {
+  border-radius: 50%;
+
+  background: repeating-radial-gradient(white, black 10%);
+}
+
+.gradient>div:nth-child(2) {
+  border-radius: 50%;
+
+  background: repeating-conic-gradient(black 10%, white 20%);
+}
+
+.gradient>div:nth-child(3) {
+  border-radius: 50%;
+
+  background: conic-gradient(tomato 0deg, tomato 90deg, lightblue 90deg, lightblue 180deg, lightgreen 180deg, lightgreen 270deg, gray 270deg);
+}
+
+.gradient>div:last-child {
+  background: conic-gradient(at 70% 30%, red, blue, green);
+}
+
+/*  */
+
+.bg_img {
+  border: 3px solid red;
+  background: url('./DoremonEndNobitaCrop.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 500px;
+  width: 700px;
+}
+
+.advanceImage {
+  background: url('./mountaine.jpg');
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+
+  box-shadow: inset 0 0 10px black;
+}
+
+.advanceImage>div {
+  height: 100%;
+  background: linear-gradient(#00000070, #00000070);
+}

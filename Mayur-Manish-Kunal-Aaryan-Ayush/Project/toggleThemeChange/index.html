@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./light.css" id="themeStyle">
+</head>
+
+<body>
+
+  <div class="themeBtn" onclick="toggleTheme()">
+    <i class="fa-solid fa-moon"></i>
+  </div>
+
+  <div class="card">
+    <div class="cardImage">
+      <img src="https://res.cloudinary.com/dpiiduvvx/image/upload/v1694261481/cld-sample-5.jpg" alt="product">
+    </div>
+    <hr>
+    <div class="cardDetail">
+      <h3>Shoes</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates rerum odio vel!</p>
+    </div>
+  </div>
+
+  <div class="popup">
+    <h3>Theme Change : <span id="witchTheme"></span></h3>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

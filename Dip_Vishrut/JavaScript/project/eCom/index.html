@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>myEcom</title>
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/dark.css" id="themeStyle">
+</head>
+
+<body>
+
+  <nav>
+    <div>
+      <h3>MyE-Commerce</h3>
+    </div>
+
+    <div>
+      <ul>
+        <li class="link" onclick="singlePage('product')" id="default">Products</li>
+        <li class="link" onclick="singlePage('cart')">Cart</li>
+      </ul>
+
+      <div onclick="toggleTheme()" class="themeButton">
+        <div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="product" class="container">
+      <div id="renderHereProducts"></div>
+    </section>
+
+    <section id="cart" class="container">
+      <div id="cartDataRender"></div>
+    </section>
+  </main>
+
+  <div class="showImageElement">
+    <div class="cancelIcon">
+      <div id="cancelBtn"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+
+    <img src="" alt="" id="showImgSrc">
+  </div>
+
+  <div class="popup"></div>
+  <script src="./js/product.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--white);
+}
+
+hr {
+  margin: 5px 0;
+  border: 2px solid var(--white);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 15px;
+}
+
+nav>div:last-child {
+  display: flex;
+}
+
+nav>div>ul {
+  display: flex;
+  margin: 0 100px 0 0;
+}
+
+nav>div>ul>li {
+  margin: 0 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.links {
+  color: var(--white);
+}
+
+.active {
+  color: tomato;
+}
+
+/*  */
+
+.container {
+  padding: 10px;
+}
+
+.cartCard img {
+  width: 300px;
+}
+
+#renderHereProducts {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cartCard {
+  width: 315px;
+  height: 450px;
+  padding: 5px;
+  background-color: var(--black);
+  border: 2px solid black;
+}
+
+.priceDetail {
+  margin: 7px 0;
+}
+
+.btn {
+  border: 2px solid var(--white);
+  width: fit-content;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:active {
+  scale: .9;
+}
+
+.addCart {
+  background-color: lightgreen;
+  color: var(--black);
+}
+
+.removeCart {
+  background-color: tomato;
+  color: var(--black);
+}
+
+.x {
+  color: black;
+}
+
+.popup {
+  padding: 5px 10px;
+  border: 2px dashed var(--white);
+  position: fixed;
+  margin: 10px;
+  right: -1000px;
+  bottom: 0;
+  transition: 1s ease-in-out;
+}
+
+.warningActivePopup {
+  right: 0;
+  background-color: tomato;
+}
+
+.successActivePopup {
+  right: 0;
+  background-color: lightgreen;
+}
+
+.showImageElement {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(black, black);
+}
+
+.showImageElementActive {
+  display: block;
+}
+
+.cancelIcon {
+  position: relative;
+  background-color: blue;
+}
+
+.cancelIcon>div {
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+  margin: 10px;
+}

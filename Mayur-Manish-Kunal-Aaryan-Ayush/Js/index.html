@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <style>
+  <!-- <style>
     #demo {
       display: grid;
       grid-template-columns: repeat(4, auto);
@@ -22,7 +22,7 @@
       align-items: center;
       justify-content: center;
     }
-  </style>
+  </style> -->
 </head>
 
 <body>
@@ -34,6 +34,31 @@
       document.getElementById("demo").innerHTML = Math.floor(Math.random() * 11)
     }
   </script> -->
+
+  <!-- <input type="number" id="text">
+  <button type="submit" onclick="myValue()">Submit</button>
+  <p id="result"></p>
+
+  <script>
+    let myValue = () => {
+      let value = Number(document.getElementById("text").value)
+
+      switch (value) {
+        case 0:
+          text = "Off"
+          break
+        case 1:
+          text = "On"
+          break
+        default:
+          text = "Value is not found"
+      }
+
+      document.getElementById("result").innerHTML = text
+    }
+  </script> -->
+
+  <div id="demo"></div>
 
   <script src="./script.js"></script>
 </body>

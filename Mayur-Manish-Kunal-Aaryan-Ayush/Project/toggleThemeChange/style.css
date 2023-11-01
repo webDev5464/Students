@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+hr {
+  border: 3px solid var(--black);
+  margin: 5px 10px 0 10px;
+}
+
+.card {
+  width: 350px;
+  border: 2px solid var(--black);
+  background-color: var(--lightGray);
+}
+
+.cardImage>img {
+  width: 345px;
+}
+
+.cardDetail {
+  padding: 10px;
+}
+
+.themeBtn {
+  font-size: 35px;
+  margin: 10px 0;
+  color: var(--black);
+}
+
+.popup {
+  position: fixed;
+  right: -1000px;
+  bottom: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+  transition: .5s ease-in-out;
+}
+
+.activePopup {
+  right: 10px;
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import TitleCounter from './TitleCounter'
 
 export default function Home() {
   const [val, setVal] = useState(0)
@@ -29,6 +30,11 @@ export default function Home() {
       <button onClick={() => setColor("green")}>green</button>
       <button onClick={() => setColor("yellow")}>yellow</button>
       <button onClick={() => setColor("blue")}>blue</button>
+
+      <hr />
+      <hr />
+
+      <TitleCounter />
     </>
   )
 }

@@ -3,6 +3,7 @@ import Home from "./components/pages/Home"
 import UseState from "./components/pages/UseState"
 import JsLogic from "./components/pages/JsLogic"
 import UseEffect from "./components/pages/UseEffect"
+import UseRef from "./components/pages/UseRef"
 
 export default function Router() {
   return (
@@ -13,6 +14,7 @@ export default function Router() {
         <Route path="UseState" element={<UseState />} />
         <Route path="JsLogic" element={<JsLogic />} />
         <Route path="UseEffect" element={<UseEffect />} />
+        <Route path="UseRef" element={<UseRef />} />
       </Routes>
     </BrowserRouter>
   )
@@ -27,6 +29,7 @@ function Navigation() {
         <li><NavLink to={'UseState'}>UseState</NavLink></li>
         <li><NavLink to={'JsLogic'}>JsLogic</NavLink></li>
         <li><NavLink to={'UseEffect'}>UseEffect</NavLink></li>
+        <li><NavLink to={'UseRef'}>UseRef</NavLink></li>
       </ul>
     </nav>
   )

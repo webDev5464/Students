@@ -84,7 +84,7 @@ cancelBtn.addEventListener('click', () => {
 function showImage(id) {
   let productImage = productData.find((x) => x.id == id)
   showImgSrc.src = productImage.img
-  showImageElement.classList.add("showImageElementActive")
+  showImageElement.classList.add("showImageElementActive")  
 }
 
 //! Add to cart

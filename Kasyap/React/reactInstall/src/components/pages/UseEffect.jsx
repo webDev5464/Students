@@ -1,15 +1,21 @@
-import { useEffect } from "react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function UseEffect() {
+  return (
+    <>
+      <FetchApi />
+    </>
+  )
+}
 
+function FetchApi() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1697829682/productData").then((response) => response.json()).then((data) => {
-      let products = [...data.earbud]
-
-      setData(products)
+    fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1697829682/productData").then(x => x.json()).then(y => {
+      const dStructure = [...y.earbud, ...y.tshirt]
+      console.log(dStructure);
+      setData(dStructure)
     })
   }, [])
 
@@ -19,8 +25,11 @@ export default function UseEffect() {
     <>
       <div>
         {
-          data.map((x)=> (
-            <p key={x.id}>{x.title}</p>
+          data.map((x) => (
+            <div key={x.id}>
+              <p>{x.title}</p>
+              <img src={x.img1} alt="" style={{ width: 200 }} />
+            </div>
           ))
         }
       </div>

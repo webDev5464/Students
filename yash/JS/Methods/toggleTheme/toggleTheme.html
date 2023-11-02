@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN Js site :- https://cdnjs.com/ -->
+  <!-- FontAwesome :- https://fontawesome.com/ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./light.css" id="themeStyle">
+
+  <style>
+    body {
+      /* background-color: var(--Chagan); */
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    .card {
+      width: 400px;
+      border: 2px solid var(--black);
+      margin: 20px 0;
+    }
+
+    .cardImage {
+      width: 400px;
+    }
+
+    .switch {
+      font-size: 35px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div onclick="toggleTheme()" class="switch">
+
+    <!-- <i class="fa-solid fa-moon"></i> -->
+  </div>
+
+  <div class="card">
+    <div>
+      <img src="https://res.cloudinary.com/dpiiduvvx/image/upload/v1694261480/cld-sample-2.jpg" alt=""
+        class="cardImage">
+    </div>
+
+    <div class="cardDetail">
+      <h2>Mount Everest</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio necessitatibus ab quis tempore corporis,
+        explicabo debitis, quae saepe dolor, consequuntur ad amet enim nisi assumenda fuga eligendi cumque illo earum!
+      </p>
+    </div>
+  </div>
+
+  <script>
+    let themeStyle = document.getElementById("themeStyle")
+    let $switch = document.querySelector(".switch")
+    $switch.innerHTML = `<i class="fa-solid fa-sun"></i>`
+
+    function toggleTheme() {
+      if (themeStyle.getAttribute("href") == "./light.css") {
+        themeStyle.setAttribute("href", "./dark.css")
+        $switch.innerHTML = `<i class="fa-solid fa-moon"></i>`
+
+        localStorage.setItem("theme", "dark")
+      } else {
+        themeStyle.setAttribute("href", "./light.css")
+        $switch.innerHTML = `<i class="fa-solid fa-sun"></i>`
+
+        localStorage.setItem("theme", "light")
+      }
+    }
+
+    let themeStorage = localStorage.getItem("theme")
+    console.log(themeStorage);
+
+    if (themeStorage == "light") {
+      themeStyle.setAttribute("href", "./light.css")
+      $switch.innerHTML = `<i class="fa-solid fa-sun"></i>`
+    } else {
+      themeStyle.setAttribute("href", "./dark.css")
+      $switch.innerHTML = `<i class="fa-solid fa-moon"></i>`
+    }
+  </script>
+
+</body>
+
+</html>

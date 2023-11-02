@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+    .nav {
+      position: absolute;
+      transition: 1s;
+      left: -1000px;
+    }
+
+    .navActive {
+      left: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div onclick="toggleNav()" id="navBtn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="nav" id="nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleNav() {
+      let nav = document.getElementById("nav")
+      let navBtn = document.getElementById("navBtn")
+
+      if (nav.getAttribute("class") == "nav") {
+        nav.classList.add("navActive")
+        navBtn.innerHTML = `<i class="fa-solid fa-x"></i>`
+      } else {
+        nav.classList.remove("navActive")
+        navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
+      }
+    }
+     
+  </script>
+</body>
+
+</html>

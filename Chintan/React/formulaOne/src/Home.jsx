@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import TitleCounter from './TitleCounter'
+import Card from './Card'
+import cardMountain from "./mountaine.jpg"
 
 export default function Home() {
   const [val, setVal] = useState(0)
@@ -35,6 +37,32 @@ export default function Home() {
       <hr />
 
       <TitleCounter />
+
+      <hr />
+
+      <Card props={{
+        imgSrc: "https://res.cloudinary.com/dpiiduvvx/image/upload/v1697702987/cld-sample-3.jpg",
+        imgWidth: 400,
+        cardHeading: "Card One",
+        cardTitle: "Lorem ipsum dolor sit amet.",
+        cartArticle: `
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo quam earum, itaque expedita non vero ut saepe provident tempore corrupti eum debitis, nobis sequi repudiandae nisi nam obcaecati? Reiciendis.`
+      }} />
+
+      <Card props={{
+        imgSrc: cardMountain,
+        imgWidth: 400,
+        cardHeading: "Card Two",
+        cardTitle: "Lorem ipsum dolor sit amet.",
+        cartArticle: `
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo quam earum, itaque expedita non vero ut saepe provident tempore corrupti eum debitis, nobis sequi repudiandae nisi nam obcaecati? Reiciendis.`
+      }} />
     </>
   )
 }
+
+/*
+
+main > App > Home > Card
+
+*/

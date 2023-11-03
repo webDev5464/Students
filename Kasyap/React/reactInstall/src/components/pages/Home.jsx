@@ -1,4 +1,6 @@
 import myImage from "../assets/mountain.jpg"
+import { AiFillAndroid, AiFillGithub } from "react-icons/ai"
+import { FiMousePointer } from "react-icons/fi"
 
 const myStyle = {
   card: {
@@ -10,6 +12,10 @@ const myStyle = {
   },
   article: {
     fontSize: 22
+  },
+  AndroidIcon: {
+    fontSize: 35,
+    color: "red"
   }
 }
 
@@ -20,7 +26,7 @@ export default function Home() {
         <img src={myImage} alt="" style={{ width: 400 }} />
       </div>
       <div>
-        <h3>Mountain Image</h3>
+        <h3>Mountain Image <AiFillAndroid style={myStyle.AndroidIcon} /> | <AiFillGithub className="GithubIcon" /> | <FiMousePointer /> </h3>
         <p style={myStyle.article}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ipsum ad, quidem quaerat adipisci fuga quod distinctio officiis officia, laboriosam perferendis. Minima vitae ea consequuntur, omnis delectus eos rerum placeat.</p>
       </div>
     </div>

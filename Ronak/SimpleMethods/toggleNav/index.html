@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>ToggleNav</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+      color: white;
+      padding: 15px;
+
+      position: relative;
+    }
+
+    .navBtn {
+      font-size: 30px;
+    }
+
+    #list {
+      position: absolute;
+      right: 10px;
+      top: 65px;
+      color: black;
+      background-color: lightgray;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    #list>ul>li {
+      list-style: none;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div>
+      <h2>MySite</h2>
+    </div>
+
+    <!-- Bar btn -->
+    <div onclick="toggleNav()" class="navBtn"></div>
+
+    <div id="list">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    let list = document.getElementById("list")
+    list.style.display = "none"
+
+    let navBtn = document.querySelector(".navBtn")
+    navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
+
+    function toggleNav() {
+
+      if (list.style.display == "none") {
+        list.style.display = "block"
+        navBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+        console.log("block");
+      } else {
+        list.style.display = "none"
+        navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`
+        console.log("none");
+      }
+
+    }
+  </script>
+</body>
+
+
+
+</html>

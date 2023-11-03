@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Commerce Site</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div>
+      <h2>My E-Commerce</h2>
+    </div>
+
+    <ul>
+      <li class="NavLink" onclick="singlePage('products')" id="default">Products</li>
+      <li class="NavLink" onclick="singlePage('cart')">Cart</li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container" id="products">
+      <h1>This is a products page</h1>
+    </div>
+
+    <div class="container" id="cart">
+      <h1>This is a cart page</h1>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

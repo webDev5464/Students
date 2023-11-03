@@ -104,3 +104,13 @@
 .btn:active {
   padding: 4px;
 }
+
+/*  */
+
+.confused>div>div>p:first-child {
+  color: red;
+}
+
+.confused>div>div>p:last-child {
+  color: blue;
+}

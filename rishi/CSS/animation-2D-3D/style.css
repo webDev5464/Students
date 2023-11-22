@@ -1,0 +1,43 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100ch;
+} */
+
+.rotate {
+  background-color: yellow;
+  color: red;
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 10px;
+  transition: 2s;
+
+}
+
+.rotate:hover {
+  transform: rotateZ(360deg);
+
+}
+
+.increaseHight {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  animation-name: increaseHeight;
+  animation-duration: 4s;
+  transition: 1s ease;
+}
+
+@keyframes increaseHeight {
+  0% {
+    height: 100px;
+    width: 100px;
+  }
+
+  100% {
+    height: 400px;
+    width: 500px;
+  }
+}

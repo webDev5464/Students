@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./lightTheme.css" id="themeStyle">
+</head>
+
+<body>
+
+  <!--! Navigation -->
+  <nav>
+    <div>
+      <h2>My E-Commerce</h2>
+    </div>
+
+    <div class="navController">
+      <!--? Navigation link -->
+      <ul>
+        <li class="NavLink" onclick="toggleNav('products')" id="default">Products</li>
+        <li class="NavLink" onclick="toggleNav('cart')">Cart</li>
+      </ul>
+
+      <!--? Theme Switch -->
+      <section class="switchPlate" onclick="toggleTheme()">
+        <div class="switchBtn switchBtn-left"></div>
+      </section>
+    </div>
+  </nav>
+
+  <!--! Pages -->
+  <main>
+    <section id="products" class="page">
+      <div id="ProductsRenderHere"></div>
+    </section>
+
+    <section id="cart" class="page">
+      Cart Page
+    </section>
+  </main>
+
+  <script src="./Products.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

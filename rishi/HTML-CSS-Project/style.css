@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 52px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --mainHeadingFont: 'Playfair Display', serif;
+}
+
+header {
+  position: relative;
+  background: url(./assets/main-header-1.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 85vh;
+
+  color: white;
+}
+
+.headerGlass {
+  background-color: #00000050;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 140px;
+}
+
+.headingEndNavigate {
+  display: flex;
+  align-items: center;
+}
+
+.headingEndNavigate ul {
+  display: flex;
+  margin: 0 40px;
+}
+
+.headingEndNavigate>ul>li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+.sosicalRef {
+  display: flex;
+  align-items: center;
+}
+
+.sosicalRef>div {
+  margin: 0 10px;
+}
+
+.headerBtn {
+  border: 2px solid white;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.headerBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.HeaderHeading {
+  position: absolute;
+  text-align: center;
+
+  left: 38%;
+  top: 45%;
+}
+
+.HeaderHeading>h1 {
+  font-family: var(--mainHeadingFont);
+  font-style: italic;
+  font-size: 45px;
+}

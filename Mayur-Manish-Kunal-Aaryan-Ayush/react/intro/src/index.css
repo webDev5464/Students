@@ -39,3 +39,7 @@ nav>ul>li>a {
 .content {
   padding: 15px;
 }
+
+.reactIcon {
+  font-size: 300px;
+}

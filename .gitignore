@@ -25,6 +25,7 @@ Globle Image/
 globle image/
 img/
 Img/
+*.vscode/
 
 # misc
 *.DS_Store

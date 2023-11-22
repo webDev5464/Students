@@ -1,0 +1,75 @@
+:root {
+  --myHomePageColor: #00ffff;
+
+  --globalP: 40px;
+}
+
+.varBg {
+  height: 40px;
+  background-color: var(--myHomePageColor);
+}
+
+.varBg>p {
+  font-size: var(--globalP);
+}
+
+.boxShadow {
+  display: flex;
+  justify-content: center;
+}
+
+.boxShadow>div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.boxShadow>div:first-child {
+  box-shadow: 5px 20px 10px black;
+
+  border-radius: 20px;
+
+  background: linear-gradient(lightgreen, lightblue, tomato);
+}
+
+.boxShadow>div:nth-child(2) {
+  box-shadow: 0 0 20px black;
+
+  border-radius: 50px 10px;
+
+  background: radial-gradient(lightgreen, lightblue, tomato);
+}
+
+.boxShadow>div:nth-child(3) {
+  box-shadow: inset 0 0 20px black;
+
+  border-radius: 10px 30px 60px 100px;
+
+  background: conic-gradient(tomato, lightgreen, lightblue);
+}
+
+.boxShadow>div:last-child {
+  box-shadow: inset 10px 5px 10px black;
+
+  border-radius: 50%;
+
+  background: linear-gradient(lightgreen 30%, lightblue 80%, tomato 20%);
+}
+
+.textShadow {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textShadow>h1:first-child {
+  text-shadow: 2px 3px 5px red;
+}
+
+.textShadow>h1:nth-child(2) {
+  text-shadow: 1px 1px 3px red, -1px -1px 3px green;
+}
+
+.textShadow>h1:nth-child(3) {
+  color: white;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}

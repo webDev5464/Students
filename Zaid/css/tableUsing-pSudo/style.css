@@ -1,0 +1,40 @@
+table {
+  border: 3px solid black;
+  width: 50%;
+  background-color: gray;
+}
+
+th {
+  border: 2px solid black;
+  padding: 5px 10px;
+  background-color: rgb(255, 144, 124);
+}
+
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+tr:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+
+tr:hover {
+  background-color: maroon;
+}
+
+
+h1 {
+  border: 2px solid red;
+  text-align: center;
+  width: 500px;
+  /* width: fit-content; */
+  margin: 20px auto;
+}

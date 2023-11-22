@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 323px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px;
+}
+
+.bookmarkIcon {
+  font-size: 35px;
+}
+
+.reactIcon {
+  font-size: 50px;
+  color: skyblue;
+}

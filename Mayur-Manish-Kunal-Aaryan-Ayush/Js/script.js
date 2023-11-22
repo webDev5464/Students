@@ -762,5 +762,5 @@
 
 //? error
 
-let num = 5
-console.log(num.toUppercase());
+// let num = 5
+// console.log(num.toUppercase());

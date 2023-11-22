@@ -946,3 +946,132 @@ Array start with 0 index.
 // console.log(text);
 
 //! Loop
+const language = ["HTML", "CSS", "JavaScript", "React", "Nodejs", "MongoDb"]
+
+let renderingLoop = document.getElementById("renderingLoop")
+
+let text = ""
+
+//* for
+
+// for (let init = 0; init < language.length; init++) {
+//   text += `<li>${language[init]}</li>`
+// }
+
+// renderingLoop.innerHTML = text
+
+//* for in
+
+/*
+  array index print
+*/
+
+// for (let x in language) {
+//   text += x + "<br>"
+// }
+
+// renderingLoop.innerHTML = text
+
+//* for of
+
+/*
+  array value print
+*/
+
+// for (let x of language) {
+//   text += x + "<br>"
+// }
+
+// renderingLoop.innerHTML = text
+
+//* while
+
+// let init = 0
+// while (init < language.length) {
+//   text += language[init] + "<br>"
+//   init++
+// }
+
+// renderingLoop.innerHTML = text
+
+//* do while
+
+// let init = 0
+
+// do {
+//   text += language[init] + "<br>"
+//   init++
+// } while (init < language.length)
+
+// renderingLoop.innerHTML = text
+
+//* forEach()
+
+// const personData = [
+//   {
+//     fName: "John",
+//     lName: "Doe",
+//     age: 22
+//   },
+//   {
+//     fName: "Smith",
+//     lName: "Duck",
+//     age: 29
+//   },
+//   {
+//     fName: "Chagan",
+//     lName: "Chapri",
+//     age: 68
+//   }
+// ]
+
+// let render = ""
+// personData.forEach((e) => {
+//   render += `
+//     <h1>${e.fName} ${e.lName}</h1>
+//     <p>${e.age}</p>
+//   `
+// })
+
+// renderingLoop.innerHTML = render
+
+//* map()
+
+// const personData = [
+//   {
+//     fName: "John",
+//     lName: "Doe",
+//     age: 22
+//   },
+//   {
+//     fName: "Smith",
+//     lName: "Duck",
+//     age: 29
+//   },
+//   {
+//     fName: "Chagan",
+//     lName: "Chapri",
+//     age: 68
+//   }
+// ]
+
+// const render = personData.map((x) => {
+//   return `
+//     <h3>My name is ${x.fName + " " + x.lName}</h3>
+//     <p>i'm ${x.age} year old.</p>
+//   `
+// })
+
+// renderingLoop.innerHTML = render
+
+//! ---- Extra tips ----
+
+// let text = []
+// console.log(text);
+
+// function addValue() {
+//   text.push("Hello Hemang")
+//   console.log(text);
+
+//   renderingLoop.innerHTML = text
+// }

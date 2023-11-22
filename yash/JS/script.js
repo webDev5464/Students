@@ -51,9 +51,9 @@
 
 // console.log(z);
 
-/* This 
-is 
-    a 
+/* This
+is
+    a
     Multiple line
     Comment
 */
@@ -240,3 +240,172 @@ is
 // } else {
 //     console.log("Good Night");
 // }
+
+//! Switch Statement
+// let date = new Date().getDay()
+// console.log(date);
+// let msg = ""
+
+// switch (date) {
+//     case 0:
+//         msg += "Sunday"
+//         break;
+
+//     case 1:
+//         msg += "Monday"
+//         break;
+
+//     case 2:
+//         msg += "Tuesday";
+//         break;
+
+//     case 3:
+//         msg += "Wednesday";
+//         break;
+
+//     case 4:
+//         msg += "Thursday";
+//         break;
+
+//     case 5:
+//         msg += "Friday";
+//         break;
+
+//     case 6:
+//         msg += "Saturday";
+// }
+
+// console.log(msg);
+
+//=========== Example ==============
+
+// check index.html file
+// function subBtn() {
+//     let inputValue = Number(document.getElementById("inputValue").value)
+
+//     switch (inputValue) {
+//         case 1:
+//             console.log(true);
+//             break;
+
+//         case 0:
+//             console.log(false);
+//             break
+
+//         default:
+//             console.log("Somethings Wrong");
+//     }
+// }
+
+//! Loops
+
+// let languages = ["HTML", "CSS", "JavaScript", "React", "Node js", "Python"]
+
+// let loopRender = document.getElementById("loopRender")
+
+// let text = ""
+
+// let languagesLength = languages.length
+
+//* for Loop
+
+// for (let init = 0; init < languagesLength; init++) {
+//     text += `<li>${languages[init]}</li>`
+// }
+
+// loopRender.innerHTML = `<ul>${text}</ul>`
+
+//* for in
+
+// for (let x in languages) {
+//     text += `<li>${x} ${languages[x]}</li>`
+// }
+
+// loopRender.innerHTML = `<ul>${text}</ul>`
+
+//* for of
+
+// for (let x of languages) {
+//     text += `<li>${x}</li>`
+// }
+
+// loopRender.innerHTML = `<ul>${text}</ul>`
+
+//* while
+
+// let init = 0
+// while (init < languagesLength) {
+//     console.log(languages[init] + "<br>");
+//     init++
+// }
+
+// loopRender.innerHTML = text
+
+//* do while
+
+// let init = 0
+
+// do {
+//     text += languages[init] + "<br>"
+//     init++
+// } while (init < languagesLength)
+
+// loopRender.innerHTML = text
+
+//* forEach()
+
+// let personData = [
+//     {
+//         fName: "John",
+//         lName: "Doe",
+//         age: 22
+//     },
+//     {
+//         fName: "Smith",
+//         lName: "Duck",
+//         age: 29
+//     },
+//     {
+//         fName: "Chagan",
+//         lName: "Chapri",
+//         age: 68
+//     }
+// ]
+
+// let loopRender = document.getElementById("loopRender")
+// let text = ""
+
+// personData.forEach((e) => {
+//     text += `<h1>${e.fName} ${e.lName}</h1>`
+// })
+
+// loopRender.innerHTML = text
+
+//* map()
+
+// let personData = [
+//     {
+//         fName: "John",
+//         lName: "Doe",
+//         age: 22
+//     },
+//     {
+//         fName: "Smith",
+//         lName: "Duck",
+//         age: 29
+//     },
+//     {
+//         fName: "Chagan",
+//         lName: "Chapri",
+//         age: 68
+//     }
+// ]
+
+// let loopRender = document.getElementById("loopRender")
+// let text = ""
+
+// const render = personData.map((e) => {
+//     return `<h1>${e.fName}</h1>`
+// })
+
+// loopRender.innerHTML = render.join("")

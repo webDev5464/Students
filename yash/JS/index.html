@@ -5,10 +5,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+
+  <style>
+    .thisClass {
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="demo"></div>
+
+  <p id="demoP">Hello</p>
+
+  <input type="text" id="inputValue">
+  <button onclick="showValue()">Submit!</button>
+  <p id="result"></p>
+
+  <script>
+    function showValue() {
+      let inputValue = document.getElementById("inputValue").value
+      let result = document.getElementById("result")
+      result.innerHTML = ""
+
+      try {
+        if (inputValue.trim() == "") throw "Input is emty"
+
+        if (isNaN(inputValue)) throw "Please enter a number"
+
+        let inputVal = Number(inputValue)
+
+        if (inputVal < 5) throw "Too Low value"
+
+        if (inputVal > 10) throw "Too Heigh value"
+
+        if (inputVal > 5 || 10 < inputVal) throw "Value Submitted"
+
+      } catch (err) {
+        result.innerHTML = err
+      } finally {
+        document.getElementById("inputValue").value = ""
+      }
+
+
+    }
+
+    document.getElementById("demoP").setAttribute("class", "thisClass")
+  </script>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- <input type="text" placeholder="Enter Number 0 or 1" id="inputValue">
+  <button onclick="subBtn()">Submit!</button> -->
+
+<!-- <div id="loopRender"></div> -->
+
+<!-- <div id="demo"></div>
 
   <button onclick="randomValue(1111,9999)">Click!</button>
 
@@ -19,9 +74,4 @@
     function randomValue(min, max) {
       demo.innerHTML = Math.floor(Math.random() * (max - min) + 1) + min
     }
-  </script>
-
-  <script src="./script.js"></script>
-</body>
-
-</html>
+  </script> -->

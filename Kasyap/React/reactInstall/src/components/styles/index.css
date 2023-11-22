@@ -6,3 +6,18 @@
   font-size: 35px;
   color: blue;
 }
+
+.light {
+  --white: white;
+  --black: black;
+}
+
+.dark {
+  --white: black;
+  --black: white;
+}
+
+.card {
+  background-color: var(--white);
+  color: var(--black);
+}

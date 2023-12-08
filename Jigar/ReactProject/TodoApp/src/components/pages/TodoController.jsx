@@ -13,7 +13,6 @@ const TodoController = () => {
 export default TodoController
 
 const TodoForm = () => {
-
   const {
     inputHeading, setInputHeading, inputTitle, setInputTitle, AddTodo
   } = useContext(TodoContext)

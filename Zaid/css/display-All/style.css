@@ -1,0 +1,52 @@
+.blockLine {
+  background-color: red;
+
+  display: inline;
+}
+
+.inlineLine {
+  background-color: green;
+}
+
+.anotherLine {
+  background-color: yellow;
+
+  display: block;
+}
+
+.box-100 {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hideBox {
+  display: none;
+}
+
+/*  */
+
+.dropDown {
+  background-color: red;
+  width: fit-content;
+}
+
+.dropDown>h3 {
+  margin: 0;
+}
+
+.down {
+  display: none;
+}
+
+.dropDown:hover .down {
+  display: block;
+}

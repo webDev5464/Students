@@ -54,12 +54,114 @@ let dataRender = ""
 
 earbud.forEach((e) => {
   dataRender += `
-    <div>
+    <div class="card">
       <div>
-        <img src="${e.img}" alt="Product" width="200px" />
+        <img src="${e.img}" alt="Product" width="250px" />
+      </div>
+
+      <div class="cardDetail">
+        <p>${e.title.slice(0, 90)}</p>
+
+        <div class="border"></div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <div class="priceDetail">
+            <span>${e.price}/-</span>
+            <span>${e.discount}% off</span>
+            <span>${e.price - Math.round((e.price * e.discount) / 100)}/-</span>
+          </div>
+
+          <div class="btn success-btn" onClick="addProduct(${e.id})">Add</div>
+        </div>
+
       </div>
     </div>
   `
 })
 
 ProductsRenderHere.innerHTML = dataRender
+
+//! Add to card
+const cartData = []
+const RenderCartProducts = document.getElementById("RenderCartProducts")
+
+function addProduct(id) {
+  const findCardData = cartData.find(x => x.id == id)
+  const findProductData = earbud.find(x => x.id == id)
+
+  if (findCardData) {
+    alert("Product Already Added")
+  } else {
+    cartData.push(findProductData)
+  }
+  console.log(cartData);
+
+  //! Render CartData
+  const renderCartData = cartData.map(e => {
+    return `
+      <div class="card">
+        <div>
+          <img src="${e.img}" alt="Product" width="250px" />
+        </div>
+  
+        <div class="cardDetail">
+          <p>${e.title.slice(0, 90)}</p>
+  
+          <div class="border"></div>
+  
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="priceDetail">
+              <span>${e.price}/-</span>
+              <span>${e.discount}% off</span>
+              <span>${e.price - Math.round((e.price * e.discount) / 100)}/-</span>
+            </div>
+  
+            <div class="btn alert-btn" onClick="removeData(${e.id})">Remove</div>
+          </div>
+  
+        </div>
+      </div>
+    `
+  })
+
+  RenderCartProducts.innerHTML = renderCartData
+}
+
+//! remove in card
+function removeData(id) {
+  let findData = cartData.findIndex(x => x.id == id)
+  console.log(findData);
+
+  if (!findData) {
+    cartData.splice(findData, 1)
+  }
+
+  const reRenderCartData = cartData.map((e) => {
+    return `
+      <div class="card">
+        <div>
+          <img src="${e.img}" alt="Product" width="250px" />
+        </div>
+
+        <div class="cardDetail">
+          <p>${e.title.slice(0, 90)}</p>
+
+          <div class="border"></div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="priceDetail">
+              <span>${e.price}/-</span>
+              <span>${e.discount}% off</span>
+              <span>${e.price - Math.round((e.price * e.discount) / 100)}/-</span>
+            </div>
+
+            <div class="btn alert-btn" onClick="removeData(${e.id})">Remove</div>
+          </div>
+
+        </div>
+      </div>
+    `
+  })
+
+  RenderCartProducts.innerHTML = reRenderCartData.join("")
+}

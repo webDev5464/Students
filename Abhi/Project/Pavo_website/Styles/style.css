@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+:root {
+  --mainBg: #cdedfa;
+  --mainBgLight: #f1f9fc;
+  --mainPadding: 0 200px;
+}
+
+.btn {
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+
+.blue-btn {
+  cursor: pointer;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+}
+
+.blue-btn:hover {
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue;
+}
+
+.red-btn {
+  cursor: pointer;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+}
+
+.red-btn:hover {
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+}
+
+/* ==== Navigation ==== */
+
+.webLogo>img {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 170px;
+}
+
+header {
+  background: linear-gradient(var(--mainBg), white);
+  padding: 0 0 150px 0;
+}
+
+.navUl {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  margin: 0 20px;
+  list-style: none;
+}
+
+.links>a {
+  text-decoration: none;
+  color: gray;
+}
+
+.icons>a {
+  color: blue;
+  font-size: 22px;
+}
+
+/* NavDropDown */
+.drop {
+  color: gray;
+  cursor: pointer;
+  position: relative;
+}
+
+.drop:hover {
+  color: tomato;
+}
+
+.down>li>a:hover {
+  color: tomato;
+}
+
+.down {
+  background-color: white;
+  width: 150px;
+  padding: 5px;
+}
+
+.downParent {
+  position: absolute;
+  display: none;
+  left: -45px;
+  padding: 10px 0 0 0;
+  width: 150px;
+}
+
+.down>li {
+  list-style: none;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+
+.down>li:last-child {
+  border: none;
+}
+
+.down>li>a {
+  color: gray;
+  text-decoration: none;
+}
+
+.drop:hover .downParent {
+  display: block;
+}
+
+.links>a:hover {
+  color: tomato;
+}
+
+/* ==== Close - Navigation ==== */
+
+.headerBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--mainPadding);
+}
+
+.headerBanner>.detail {
+  width: 450px;
+}
+
+.headerBanner>.detail>h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.headerBanner>.detail>p {
+  color: gray;
+}
+
+.btn-parent {
+  display: flex;
+}
+
+.btn-parent>div:first-child {
+  margin: 30px 25px 0 0;
+}
+
+.btn-parent>div:last-child {
+  margin: 30px 0 0 25px;
+}
+
+/* Main */
+
+.mainArticle {
+  text-align: center;
+  padding: var(--mainPadding);
+}
+
+.mainArticle>p {
+  font-size: 30px;
+}
+
+.featureCard {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 20px;
+  padding: var(--mainPadding);
+  margin: 100px 0;
+}
+
+.featureCard>.card {
+  width: 350px;
+  background-color: var(--mainBgLight);
+  border-radius: 15px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardIcon {
+  padding: 0 0 20px 0;
+}
+
+.cardIcon>img {
+  width: 70px;
+}
+
+.cardDetail {
+  text-align: center;
+}
+
+.cardDetail>h3 {
+  padding: 0 0 10px 0;
+}

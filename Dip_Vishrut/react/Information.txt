@@ -1,0 +1,7 @@
+- react install command : npm create vite ./
+
+- install node_modules : npm install or npm i
+
+- run as a localhost : npm run dev
+
+- install react icons : npm i react-icons

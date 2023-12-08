@@ -7,6 +7,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--penalBg);
+  height: 100vh;
 }
 
 /* ================ */
@@ -77,5 +79,64 @@ nav ul>li {
 
 main {
   padding: 10px;
-  background-color: var(--penalBg);
+
+}
+
+#ProductsRenderHere {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.card {
+  border: 2px solid var(--white);
+  padding: 5px;
+  width: 263px;
+}
+
+.cardDetail {
+  margin: 0 0 3.5px 0;
+}
+
+.cardDetail>p:first-child {
+  color: var(--white);
+}
+
+.border {
+  border: 2px solid var(--white);
+  margin: 10px 0;
+}
+
+.priceDetail {
+  color: var(--white);
+}
+
+.priceDetail>span:first-child {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.priceDetail>span:nth-child(2) {
+  color: tomato;
+}
+
+.btn {
+  color: var(--black);
+  padding: 2px 7px;
+  border: 2px solid var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: .90;
+}
+
+.success-btn {
+  background-color: lightgreen;
+}
+
+.alert-btn {
+  background-color: tomato;
 }

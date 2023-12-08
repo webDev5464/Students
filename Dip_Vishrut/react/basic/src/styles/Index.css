@@ -1,0 +1,10 @@
+.card {
+  width: 300px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.Graduate {
+  color: blue;
+  font-size: 30px;
+}

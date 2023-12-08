@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+  background: url("./assets/header-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  height: 100vh;
+}
+
+.logo>img {
+  width: 130px;
+}
+
+header>.headerGlass>nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.headerGlass {
+  background-color: rgba(0, 0, 0, 0.338);
+  height: 100vh;
+}
+
+.NavParent {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navBtn {
+  margin: 0 5px;
+  border: 2px solid white;
+  padding: 8px 13px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.NavParent>ul {
+  display: flex;
+}
+
+.NavParent>ul>li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.headerHeading {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  text-align: center;
+  color: white;
+}
+
+.headerHeading h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.headerHeading p {
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+.headerBtn {
+  background-color: #36b3a8;
+  width: fit-content;
+  margin: 80px auto;
+  padding: 13px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.headerBtn:hover {
+  background-color: #2e988f;
+}

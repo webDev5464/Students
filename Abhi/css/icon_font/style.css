@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*? Css Variable */
+:root {
+  --headingBg: #303443;
+  --headingFont: 'Roboto Mono';
+
+  --paraphFont: 'Kdam Thmor Pro', sans-serif;
+}
+
+.truckIcon {
+  color: tomato;
+  font-size: 60px;
+}
+
+.gFont {
+  background-color: var(--headingBg);
+  color: white;
+  font-family: var(--headingFont);
+}
+
+.article {
+  font-size: 40px;
+  font-family: var(--paraphFont);
+}

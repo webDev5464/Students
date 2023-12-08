@@ -108,3 +108,16 @@
   right: 47%;
   /* left: 50%; */
 }
+
+.textShadow>h2:first-child {
+  text-shadow: 3px 3px 3px gray;
+}
+
+.textShadow>h2:nth-child(2) {
+  text-shadow: 3px 3px 3px gray, -3px -3px 3px lightblue;
+}
+
+.textShadow>h2:nth-child(3) {
+  text-shadow: -1px -1px 0 black, 1px 1px 0 black, 0 0 3px black;
+  color: white;
+}

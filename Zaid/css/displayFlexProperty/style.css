@@ -1,0 +1,78 @@
+.flex>div,
+.between>div,
+.around>div,
+.evenly>div {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: black;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*  */
+
+.item-center>div:first-child {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  margin: 10px;
+}
+
+.item-center>div:nth-child(2) {
+  width: 100px;
+  height: 150px;
+  background-color: black;
+  margin: 10px;
+}
+
+.item-center>div:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+.item-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  */
+
+.center {
+  width: 400px;
+  height: 400px;
+  border: 4px solid red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.center>div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}

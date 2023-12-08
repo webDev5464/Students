@@ -6,6 +6,8 @@ export default function Navigation() {
       <ul>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'UseState'}>UseState</NavLink></li>
+        <li><NavLink to={'UseEffect'}>UseEffect</NavLink></li>
+        <li><NavLink to={'MyUseRef'}>UseRef</NavLink></li>
       </ul>
     </>
   )

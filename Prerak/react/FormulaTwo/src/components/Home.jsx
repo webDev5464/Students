@@ -1,3 +1,11 @@
+import MyPropsCard from "../modules/MyPropsCard";
+
 export default function Home() {
-  return <h1>This is a Home page</h1>
+  return (
+    <>
+      <MyPropsCard card={{ heading: "Hello", title: "lorem", desc: "World" }} />
+
+      <MyPropsCard card={{ heading: "This is a props Card" }} />
+    </>
+  )
 }

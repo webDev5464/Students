@@ -1,0 +1,22 @@
+{
+  "demo": [
+    {
+      "id": "01",
+      "price": 100,
+      "title": "Ticket",
+      "date": "01/11/2022"
+    },
+    {
+      "id": "02",
+      "price": 200,
+      "title": "Ticket",
+      "date": "04/10/2023"
+    },
+    {
+      "id": "03",
+      "price": 300,
+      "title": "Ticket",
+      "date": "24/11/2023"
+    }
+  ]
+}

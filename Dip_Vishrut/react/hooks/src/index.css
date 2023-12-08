@@ -1,0 +1,17 @@
+.dark {
+  --black: black;
+  --white: white;
+}
+
+.light {
+  --black: white;
+  --white: black;
+}
+
+.card {
+  width: 300px;
+  border: 2px solid var(--white);
+  padding: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}

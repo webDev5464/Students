@@ -1,0 +1,43 @@
+@media screen and (max-width:1450px) {
+  :root {
+    --mainPadding: 0 50px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .featureCard>.card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  nav {
+    padding: 40px 70px;
+  }
+
+  .headerBanner {
+    flex-direction: column;
+  }
+
+  .headerBanner>.detail {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 50px 0;
+  }
+
+  .btn-parent {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .featureCard {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+  }
+
+  .featureCard>.card {
+    width: 400px;
+  }
+}

@@ -182,4 +182,1268 @@
 // const boy = ['B1', 'B2', 'B3']
 // const smallBoy = ['S1', 'S2', 'S3']
 
+// let x = girl + boy + smallBoy
 // console.log(girl.concat(boy, smallBoy));
+
+// console.log(typeof x);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const aToz = ['A', 'E', 'C', 'Q', 'B', 'L', 'Z', 'X']
+
+// console.log(aToz.sort());
+
+//! Array Object 
+
+const personsData = [
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+  {
+    fName: "vraj",
+    lName: "raval",
+  },
+  {
+    fName: "John",
+    lName: "Doe",
+  },
+  {
+    fName: "Chagan",
+    lName: "Chapri",
+  },
+  {
+    fName: "Magan",
+    lName: "Bloger",
+  },
+  {
+    fName: "jay",
+    lName: "raval",
+  },
+  {
+    fName: "jhon",
+    lName: "doe",
+  },
+  {
+    fName: "meet",
+    lName: "mistry",
+  },
+  {
+    fName: "dhuvil",
+    lName: "patel",
+  },
+  {
+    fName: "pram",
+    lName: "patel",
+  },
+  {
+    fName: "kuldeep",
+    lName: "nayi",
+  },
+  {
+    fName: "jeel",
+    lName: "patel",
+  },
+  {
+    fName: "ronak",
+    lName: "koshti",
+  },
+  {
+    fName: "priyanshu",
+    lName: "bhatt",
+  },
+]
+
+const render = personsData.map(x => `<h1>${x.fName + " " + x.lName}</h1>`)
+document.getElementById("names").innerHTML = render.join("")

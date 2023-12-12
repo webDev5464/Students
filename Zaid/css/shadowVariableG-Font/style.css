@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+
+:root {
+  --PrimColor: #303443;
+  --boxWH: 150px;
+
+  --headingFont: 'Kalnia', serif;
+  --articleFont: 'Roboto Mono', monospace;
+}
+
+.boxParent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  height: var(--boxWH);
+  width: var(--boxWH);
+  border: 2px solid black;
+}
+
+.box-1 {
+  box-shadow: 5px 5px 10px black;
+}
+
+.box-2 {
+  box-shadow: -5px -5px 5px black;
+}
+
+.box-3 {
+  box-shadow: inset 0 0 20px black;
+  padding: 10px;
+
+  box-sizing: border-box;
+  overflow: auto;
+  font-size: 13px;
+}
+
+.box-4 {
+  box-shadow: 0 0 10px black;
+}
+
+.heading {
+  font-family: var(--headingFont);
+}
+
+p {
+  font-family: var(--articleFont);
+}
+
+.h-1 {
+  text-shadow: 5px 5px 10px black;
+}
+
+.h-2 {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 0 0 10px red;
+}
+
+.h-3 {
+  text-shadow: 0 0 10px black;
+}

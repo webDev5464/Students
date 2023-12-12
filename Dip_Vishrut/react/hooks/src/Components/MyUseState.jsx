@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { MyContext } from "../App"
 
 const MyUseState = () => {
   return (
@@ -12,6 +13,10 @@ const MyUseState = () => {
       <hr />
 
       <ThemeChange />
+
+      <hr />
+
+      <ChangeInputValue />
     </>
   )
 }
@@ -71,5 +76,17 @@ function ThemeChange() {
 
       <button onClick={() => setTheme(!theme)}>Change My theme</button>
     </div>
+  )
+}
+
+function ChangeInputValue() {
+
+  const { input, setInput, InputDataAdd } = useContext(MyContext)
+  return (
+    <>
+      <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
+      <br />
+      <button onClick={InputDataAdd}>Submit</button>
+    </>
   )
 }

@@ -253,3 +253,40 @@
 
 // let y = x.split(",")
 // console.log(y);
+
+//! String Template
+
+// const data = {
+//   fname: "John",
+//   lname: "Doe"
+// }
+
+// let person = "Chagan"
+
+// let render = document.getElementById("render")
+
+// let article = `<h1 style="background-color:red">Hello World! My Name is ${person} my full  name is ${data.fname} ${data.lname}</h1>`
+
+// render.innerHTML = article
+
+//! Looping Array Element
+
+// const language = ["HTML", "CSS", "JavaScript", "React", "Node", "MongoDb"]
+
+// language.pop()
+// language.push("Chagan")
+// language.shift()
+// language.unshift("Magan")
+// language.splice(3, 0, "Val 1", "Val 2")
+
+// const $langLeng = language.length // 6
+
+// let text = ""
+
+// for (let x = 0; x < $langLeng; x++) {
+//   text += `<h1>${language[x]}</h1>`
+// }
+
+// document.getElementById("result").innerHTML = text
+
+// console.log(Array.isArray(language));

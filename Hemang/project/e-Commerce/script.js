@@ -130,11 +130,7 @@ function addProduct(id) {
 //! remove in card
 function removeData(id) {
   let findData = cartData.findIndex(x => x.id == id)
-  console.log(findData);
-
-  if (!findData) {
-    cartData.splice(findData, 1)
-  }
+  cartData.splice(findData, 1)
 
   const reRenderCartData = cartData.map((e) => {
     return `

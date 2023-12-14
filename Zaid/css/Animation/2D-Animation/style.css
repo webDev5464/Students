@@ -1,0 +1,26 @@
+.box {
+  background-color: red;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+/* .translate {
+  transform: translate(200px, 500px);
+} */
+
+/* .rotate {
+  transform: rotate(40deg);
+} */
+
+/* .scale {
+  margin: 200px 500px;
+  transform: scale(4);
+} */
+
+/* .skew {
+  margin: 200px 400px;
+  transform: skewX(-20deg);
+  transform: skewY(20deg);
+  transform: skew(20deg, 10deg);
+} */

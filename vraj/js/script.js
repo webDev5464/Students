@@ -327,3 +327,13 @@
 
 // render.innerHTML = myLoop.join("")
 
+//* for loop
+
+// let val = 100
+// let result = ""
+
+// for (let x = 0; x < val; x++) {
+//   result += x + 1 + "<br>"
+// }
+
+// document.getElementById("render").innerHTML = `<h1>${result}</h1>`

@@ -177,3 +177,85 @@
 // console.log(x);
 
 //! Datatype's
+
+// let render = document.getElementById("render")
+
+//? string
+
+// let message = "Hello 'World!'" // string
+
+// let $message = 'Hello World!, \
+// this is a "JavaScript"'
+
+// console.log(typeof message);
+
+            // template
+// let strTem = `message : 
+// ${message}`
+// console.log(typeof strTem);
+
+// render.innerHTML = <h1>Hello Js</h1>
+
+// let numstr = "5"
+
+// console.log(typeof Number(numstr));
+
+//? Number
+
+// let x = 5
+// console.log(x);
+
+//? boolean
+
+// let x = false
+// let y = true
+
+// console.log(typeof x);
+// console.log(Number(x)); // 0
+// console.log(Number(y)); // 1
+
+//? object
+
+//-------------------------------
+
+//* Array
+
+// const language = ["HTML" , "CSS" , "JavaScript"]
+// console.log(language[2] + " " + language[0]);
+// console.log(typeof language);
+
+// console.log(Array.isArray(language));
+
+// const backendLanguage = ["React" , "Nodejs" , "MongoDb"]
+
+// const newArr = language.concat(backendLanguage)
+// console.log(typeof newArr);
+
+//-------------------------------
+
+//* object
+
+// const personData = {
+//     fName: "John",
+//     lName: "Doe",
+//     age: 27
+// }
+
+// console.log(personData.fName + " " + personData.lName);
+
+//-------------------------------
+
+//* null
+
+// let x = null
+// console.log(typeof x);
+
+//? undefine
+
+// let $x = undefined
+// console.log(typeof $x);
+
+//? NaN
+
+// let _x = NaN // Not a Number
+// console.log(typeof _x); // number

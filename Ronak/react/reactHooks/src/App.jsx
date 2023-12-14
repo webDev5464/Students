@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import MyUseRef from "./hooks/UseRef";
 import MyUseState from "./hooks/UseState";
 import MyUseEffect from "./hooks/MyUseEffect";
+import Home from "./Home";
 
 export default function App() {
 
@@ -37,7 +38,8 @@ export default function App() {
       }
 
       <Routes>
-        <Route path="/" element={<MyUseState />} />
+        <Route path="/" element={<Home />} />
+        <Route path="UseState" element={<MyUseState />} />
         <Route path="UseRef" element={<MyUseRef />} />
         <Route path="UseEffect" element={<MyUseEffect />} />
       </Routes>
@@ -48,7 +50,8 @@ export default function App() {
 function Navigation() {
   return (
     <ul>
-      <li><NavLink to={'/'}>UseState</NavLink></li>
+      <li><NavLink to={'/'}>Home</NavLink></li>
+      <li><NavLink to={'UseState'}>UseState</NavLink></li>
       <li><NavLink to={'UseRef'}>UseRef</NavLink></li>
       <li><NavLink to={'UseEffect'}>UseEffect</NavLink></li>
     </ul>

@@ -5,7 +5,7 @@ const userPostData = async (req, res) => {
 
   const dataSaveInDb = userModel({ fname, lname, age })
 
-  await dataSaveInDb.save() 
+  await dataSaveInDb.save()
 }
 
 module.exports = userPostData

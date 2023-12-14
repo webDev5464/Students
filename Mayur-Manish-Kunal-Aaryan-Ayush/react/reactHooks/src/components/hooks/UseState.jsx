@@ -8,8 +8,6 @@ export default function UseState() {
   )
 }
 
-
-
 function Counter() {
 
   const [val, setVal] = useState(0)

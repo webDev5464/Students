@@ -278,6 +278,12 @@
 // language.shift()
 // language.unshift("Magan")
 // language.splice(3, 0, "Val 1", "Val 2")
+// let x = language.slice(2, 5)
+// console.log(x);
+
+// let x = language.toString()
+// console.log(typeof x);
+
 
 // const $langLeng = language.length // 6
 
@@ -290,3 +296,52 @@
 // document.getElementById("result").innerHTML = text
 
 // console.log(Array.isArray(language));
+
+//! Array Sorting
+
+// let num = [40, 100, 1, 5, 25, 10];
+
+// num.sort()
+// console.log(num);
+
+// const x = num.sort((a, b) => {
+//   return a - b
+// })
+
+// console.log(x);
+
+// const x = num.sort(() => {
+//   return 0.5 - Math.random()
+// })
+
+// console.log(x);
+
+//* forEach
+
+// let num = [40, 100, 1, 5, 25, 10];
+
+// console.log(num.join(" * "));
+// num.forEach((value) => {
+//   console.log(value);
+// })
+
+// ------------------
+
+// let print = ""
+
+// num.forEach(x => print += `<h1>${x}</h1>`)
+
+// console.log(print);
+
+// document.getElementById("result").innerHTML = print
+
+//* map
+
+// let num = [40, 100, 1, 5, 25, 10];
+
+// let render = num.map(x => {
+//   return `<h1>${x}</h1>`
+// })
+
+// console.log(render);
+// document.getElementById("result").innerHTML = render.join("")

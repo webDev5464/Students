@@ -1,0 +1,46 @@
+.title>p:first-child {
+  background-color: aqua;
+}
+
+.title>p:last-child {
+  background-color: brown;
+}
+
+.title>p:nth-child(2) {
+  background-color: yellow;
+}
+
+.title>p:nth-child(3) {
+  background-color: blue;
+}
+
+.elementSelector>p {
+  font-size: 30px;
+}
+
+.elementSelector>div>p {
+  background-color: green;
+}
+
+.successBtn {
+  background-color: lightgreen;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: fit-content;
+  padding: 10px 15px;
+  box-shadow: 3px 3px 5px gray;
+  border: 2px solid gray;
+
+  border-radius: 7px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.successBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+.successBtn:active {
+  scale: 0.9;
+}

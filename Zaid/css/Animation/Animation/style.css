@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-delay: .5s;
+}
+
+@keyframes rotation {
+    0% {
+        transform: translate(0px);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(150px);
+        background-color: yellow;
+    }
+
+    50% {
+        transform: translate(150px, 150px);
+        background-color: aqua;
+    }
+
+    75% {
+        transform: translate(0, 150px);
+        background-color: brown;
+    }
+
+    100% {
+        transform: translate(0);
+        background-color: red;
+    }
+}

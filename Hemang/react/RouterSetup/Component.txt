@@ -1,0 +1,51 @@
+//! How to create components?
+
+// function App() {
+//   return <h1>Hello World!</h1>
+// }
+
+// export default App
+
+// ========================
+
+// const App = () => {
+//   return <h1>Hello</h1>
+// }
+
+// export default App
+
+// =========================
+
+// export default function App() {
+//   return <h1>Hello</h1>
+// }
+
+// const App = () => {
+//   return <h1>Hello</h1>
+// }
+
+// export default App
+
+//! How to create multiple components
+
+export default function App() {
+  return (
+    <>
+      <div>
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <AppChild />
+      
+    </>
+  )
+}
+
+function AppChild() {
+  return (
+    <div>
+      <h1>Hello Chagan</h1>
+    </div>
+  )
+}

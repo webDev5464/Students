@@ -189,8 +189,8 @@
 
 // console.log(typeof message);
 
-            // template
-// let strTem = `message : 
+// template
+// let strTem = `message :
 // ${message}`
 // console.log(typeof strTem);
 
@@ -259,3 +259,94 @@
 
 // let _x = NaN // Not a Number
 // console.log(typeof _x); // number
+
+//! Function
+
+// function MyFunction() {
+//   console.log("Hello World!");
+// }
+
+// MyFunction()
+
+// function totalFunc(a, b) {
+//   return a + b
+// }
+
+// console.log(totalFunc(10, 15));
+// console.log(totalFunc(100, 50));
+// console.log(totalFunc(200, 700));
+
+//* arrow
+
+// const MyArrowFunc = () => {
+//   console.log("Hello World!");
+// }
+
+// MyArrowFunc()
+
+// const decrementtation = (x, y) => {
+//   return x - y
+// }
+
+// console.log(decrementtation(10, 5));
+
+//* ------------
+
+// MyFunc()
+
+// function MyFunc() {
+//   console.log("Simp Func");
+// }
+
+// MyArrFunc()
+
+// const MyArrFunc = () => {
+//   console.log("Arr Func");
+// }
+
+//? Example :
+
+// let themeContent = document.getElementById("themeContent")
+
+// function changeTheme() {
+//   let $class = themeContent.getAttribute("class")
+
+//   if ($class == "box light") {
+//     themeContent.setAttribute("class", "box dark")
+//   } else {
+//     themeContent.setAttribute("class", "box light")
+//   }
+// }
+
+//! Array methods
+
+// const language = ["HTML", "CSS", "JavaScript", "React"]
+
+// language.pop()
+// language.push("Node js")
+// language.shift()
+// language.unshift("Github")
+
+// language.splice(0, 2)
+// language.splice(3, 0, "Node js", "Mongodb")
+
+// console.log(language.length);
+
+// let x = language.toString()
+// console.log(x);
+
+// console.log(language);
+
+//? for loop
+
+// const render = document.getElementById("render")
+// const language = ["HTML", "CSS", "JavaScript", "React"]
+// const $length = language.length
+
+// let text = ""
+// for (let x = 0; x < $length; x++) {
+//   // text += 
+//   console.log(language[x]);
+// }
+
+// render.innerHTML = text

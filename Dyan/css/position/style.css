@@ -1,0 +1,67 @@
+body {
+  height: 500vh;
+}
+
+.abosult {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+.relative {
+  position: relative;
+
+  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+}
+
+.dropDown {
+  position: relative;
+  margin: 50px 50px;
+  width: fit-content;
+
+}
+
+.down {
+  position: absolute;
+  display: none;
+  right: 0;
+}
+
+.dropDown:hover .down {
+  display: block;
+}
+
+.fix {
+  position: fixed;
+  background-color: red;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  /* width: fit-content; */
+}
+
+
+.sticky {
+  position: sticky;
+  top: 50px;
+  background-color: red;
+  padding: 10px;
+
+  z-index: -1;
+}
+
+/*  */
+
+.overF {
+  border: 4px solid black;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+
+  overflow: auto;
+}

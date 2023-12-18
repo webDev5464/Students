@@ -1,0 +1,31 @@
+/* div {
+    height: 100px;
+    width: 400px;
+    background-color: green;
+    padding: 10px;
+    margin: 200px;
+    transition: 1s ease-out;
+} */
+
+/* 
+.rotateX {
+    transform: rotateX(160deg);
+} */
+
+/* div:hover {
+    transform: rotateZ(360deg);
+} */
+
+
+/* div {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+
+    transition: width .5s, height 2s ease-in-out;
+}
+
+div:hover {
+    height: 400px;
+    width: 600px;
+} */

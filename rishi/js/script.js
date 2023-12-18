@@ -345,3 +345,85 @@
 
 // console.log(render);
 // document.getElementById("result").innerHTML = render.join("")
+
+//! Date get and set
+
+// let date = new Date()
+
+// console.log(date.getFullYear());
+// console.log(date.getMonth() + 1);
+// console.log(date.getDate());
+// console.log(date.getDay());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+
+
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+// console.log(months[date.getMonth()]);
+
+//! if else and else if
+
+// let x = 5
+// let y = 5
+// let z = 6
+
+// if (x && z == y) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// const date = new Date().getHours()
+
+// if (date < 12) {
+//   console.log("Good Morning");
+// } else if (date > 12 && date < 18) {
+//   console.log("Good Afternoon");
+// } else {
+//   console.log("Good Night");
+// }
+
+//* ternary operator
+
+// let x = 5
+// let y = 6
+
+// x == 5 ? console.log(true) : console.log(false)
+
+//! try catch statement
+
+function submit() {
+  const inputVal = document.getElementById("inputVal").value
+  const result = document.getElementById("result")
+
+  try {
+    if (isNaN(inputVal)) throw "Not a Number"
+    if (inputVal == "") throw "Blank"
+    if (inputVal.length < 4) throw "to low"
+    if (inputVal.length > 8) throw "to high"
+
+    if (inputVal.length > 4 || inputVal.length < 8) throw "Submitted"
+
+  } catch (msg) {
+    result.innerHTML = msg
+  } finally {
+    document.getElementById("inputVal").value = ""
+  }
+  
+}

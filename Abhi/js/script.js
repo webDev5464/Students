@@ -304,6 +304,22 @@
 //   console.log("Arr Func");
 // }
 
+// let x = 5
+// let y = 6
+// let z = 5
+
+// if (x || y == z) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (x && y == z) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
 //? Example :
 
 // let themeContent = document.getElementById("themeContent")
@@ -345,8 +361,64 @@
 
 // let text = ""
 // for (let x = 0; x < $length; x++) {
-//   // text += 
+//   // text +=
 //   console.log(language[x]);
 // }
 
 // render.innerHTML = text
+
+//! loop
+
+// const users = [
+//   {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 27
+//   },
+//   {
+//     fname: "Smith",
+//     lname: "Duck",
+//     age: 45
+//   },
+//   {
+//     fname: "Chagan",
+//     lname: "Chapri",
+//     age: 16
+//   },
+//   {
+//     fname: "Magan",
+//     lname: "Bloger",
+//     age: 18
+//   }
+// ]
+
+//* for
+
+// const userlegh = users.length
+// let $render = ""
+
+// for (let x = 0; x < userlegh; x++) {
+//   $render += `<h1>${users[x].fname + " " + users[x].lname}</h1>`
+// }
+
+// document.getElementById("render").innerHTML = $render
+
+//* map (function)
+
+// const mapLoop = users.map((x) => {
+//   return `<h1>${x.fname + " " + x.lname}</h1>`
+// })
+
+// console.log(mapLoop.join(""));
+// document.getElementById("render").innerHTML = mapLoop.join("")
+
+//* forEach (function)
+
+// let render = ""
+
+// users.forEach((x) => {
+//   render += `<h1>${x.fname + " " + x.lname}</h1>`
+// })
+
+// console.log(render);
+// document.getElementById("render").innerHTML = render

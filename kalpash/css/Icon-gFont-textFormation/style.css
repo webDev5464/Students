@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Rubik+Bubbles&display=swap');
+
+hr {
+  border: 4px solid black;
+  margin: 50px 100px;
+}
+
+.homeIcon {
+  color: black;
+  font-size: 35px;
+}
+
+h1 {
+  /* font-family: 'Rubik Bubbles'; */
+  font-family: 'Arimo';
+}
+
+.demo {
+  font-family: 'Arimo';
+  font-size: 40px;
+}
+
+/*  */
+
+.article {
+  width: 500px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.p-1 {
+  font-weight: bold;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  text-align: justify;
+  /* text-align: center; */
+  /* text-align: end; */
+
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
+  /* text-transform: lowercase; */
+}

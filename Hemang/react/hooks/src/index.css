@@ -1,0 +1,16 @@
+.dark {
+  --black: black;
+  --white: white;
+}
+
+.light {
+  --black: white;
+  --white: black;
+}
+
+.themeCard {
+  background-color: var(--black);
+  color: var(--white);
+
+  padding: 20px;
+}

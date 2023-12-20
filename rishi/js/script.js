@@ -408,22 +408,102 @@
 
 //! try catch statement
 
-function submit() {
-  const inputVal = document.getElementById("inputVal").value
-  const result = document.getElementById("result")
+// function submit() {
+//   const inputVal = document.getElementById("inputVal").value
+//   const result = document.getElementById("result")
 
-  try {
-    if (isNaN(inputVal)) throw "Not a Number"
-    if (inputVal == "") throw "Blank"
-    if (inputVal.length < 4) throw "to low"
-    if (inputVal.length > 8) throw "to high"
+//   try {
+//     if (isNaN(inputVal)) throw "Not a Number"
+//     if (inputVal == "") throw "Blank"
+//     if (inputVal.length < 4) throw "to low"
+//     if (inputVal.length > 8) throw "to high"
 
-    if (inputVal.length > 4 || inputVal.length < 8) throw "Submitted"
+//     if (inputVal.length > 4 || inputVal.length < 8) throw "Submitted"
 
-  } catch (msg) {
-    result.innerHTML = msg
-  } finally {
-    document.getElementById("inputVal").value = ""
+//   } catch (msg) {
+//     result.innerHTML = msg
+//   } finally {
+//     document.getElementById("inputVal").value = ""
+//   }
+
+// }
+
+//! Switch case
+
+// let date = new Date().getMonth()
+
+// let val;
+
+// switch (date) {
+//   case 0:
+//     val = "January"
+//     break;
+
+//   case 3:
+//     val = "March"
+//     break;
+
+//   case 10:
+//     val = "November"
+//     break;
+
+//   case 11:
+//     val = "December"
+// }
+
+// console.log(val);
+
+//! loop
+
+const users = [
+  {
+    fname: "John",
+    lname: "Doe",
+    age: 27
+  },
+  {
+    fname: "Smith",
+    lname: "Duck",
+    age: 45
+  },
+  {
+    fname: "Chagan",
+    lname: "Chapri",
+    age: 16
+  },
+  {
+    fname: "Magan",
+    lname: "Bloger",
+    age: 18
   }
-  
-}
+]
+
+//* for
+
+// const dataLength = users.length
+// let text = ""
+
+// for (let x = 0; x < dataLength; x++) {
+//   text += `<h1>${users[x].fname + " " + users[x].lname}</h1>`
+// }
+
+// document.getElementById("result").innerHTML = text
+
+//* map (function)
+
+// const render = users.map((e) => {
+//   return `<h1>${e.fname + " " + e.lname}</h1>`
+// })
+
+// document.getElementById("result").innerHTML = render.join("")
+// console.log(render);
+
+//* forEach (function)
+
+// let text = ""
+// users.forEach((x) => {
+//   text += `<h1>${x.fname + " " + x.lname}</h1>`
+// })
+
+// console.log(typeof text);
+// document.getElementById("result").innerHTML = text

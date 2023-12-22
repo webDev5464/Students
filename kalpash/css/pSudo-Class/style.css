@@ -1,0 +1,27 @@
+.parentArticle p {
+  color: red;
+}
+
+.parentArticle p:first-child {
+  color: aqua;
+}
+
+.parentArticle p:last-child {
+  color: yellow;
+}
+
+.parentArticle p:nth-child(2) {
+  color: brown;
+}
+
+.selectedChild>p {
+  color: green;
+}
+
+.selectedChild>div>p {
+  font-size: 35px;
+}
+
+.selectedChild>div:nth-child(3)>p {
+  font-size: 50px;
+}

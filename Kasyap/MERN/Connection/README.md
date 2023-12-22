@@ -2,6 +2,7 @@
 
 - npm create vite ./
 - npm i
+- npm i axios
 
 
 # Server

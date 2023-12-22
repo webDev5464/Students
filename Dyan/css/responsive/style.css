@@ -1,0 +1,47 @@
+.parent>div {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  margin: 10px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: tomato;
+  }
+
+  .parent>div {
+    background-color: greenyellow;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+
+  .parent>div {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .parent>div {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {}

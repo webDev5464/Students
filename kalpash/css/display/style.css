@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div {
+  background-color: red;
+  margin: 10px 0;
+
+  display: inline;
+}
+
+.span {
+  background-color: blue;
+  margin: 10px 0;
+
+  display: block;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+
+  display: none;
+  /* display: block; */
+}
+
+/* DropDown */
+
+.drop {
+  position: relative;
+
+  margin: 20px;
+  width: fit-content;
+}
+
+.down {
+  position: absolute;
+  /* display: none; */
+  left: -1000px;
+  transition: .5s;
+
+  padding: 0 10px;
+  width: 110px;
+  background-color: rgb(176, 176, 176);
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.down li {
+  padding: 10px 0;
+  list-style: none;
+  border-bottom: 2px solid gray;
+}
+
+.down li:last-child {
+  border: none;
+}
+
+.drop:hover .down {
+  /* display: block; */
+
+  left: 0;
+}
+
+.hoverButton {
+  background-color: rgb(176, 176, 176);
+  width: fit-content;
+  padding: 5px 7px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+}

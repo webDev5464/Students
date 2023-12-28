@@ -1,0 +1,113 @@
+body {
+  /* background-color: black; */
+}
+
+.parentBox {
+  border: 3px dashed red;
+  margin: 30px 0;
+  background-color: white;
+  padding: 5px;
+}
+
+.parentBox>div {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  /* margin: 10px; */
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.flex-spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-spaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-spaceEvenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*  */
+
+.alignBox {
+  background-color: white;
+  border: 3px dashed red;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  /* align-items: baseline; */
+}
+
+.alignBox>div:first-child {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background-color: black;
+}
+
+.alignBox>div:last-child {
+  height: 100px;
+  width: 150px;
+  margin: 10px;
+  background-color: black;
+}
+
+.alignBox>div:nth-child(2) {
+  height: 50px;
+  width: 150px;
+  margin: 10px;
+  background-color: black;
+}
+
+/*  */
+
+.parent {
+  height: 400px;
+  background-color: white;
+  border: 3px solid red;
+
+  /* Center method using margin auto property */
+  width: 400px;
+  margin: 50px auto;
+
+  /* center method using flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent>div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+/*  */
+
+.cardParent {
+  border: 2px solid gray;
+  padding: 15px;
+  background-color: lightgray;
+  border-radius: 10px;
+
+  display: flex;
+  width: 1000px;
+  margin: auto;
+}
+
+.cardDetail {
+  margin: 0 0 0 20px;
+}

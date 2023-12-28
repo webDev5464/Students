@@ -422,3 +422,74 @@
 
 // console.log(render);
 // document.getElementById("render").innerHTML = render
+
+//* for in loop
+
+// let text = ""
+// for (x in users) {
+//   text += " " + users[x].fname
+// }
+
+// console.log(text);
+
+//* for of loop
+
+// let text = ""
+// for (x of users) {
+//   text += x.fname
+// }
+
+// console.log(text);
+
+//* while loop
+
+// let lang = users.length
+// let x = 0
+// let text = ""
+
+// while (x > lang) {
+//   text += users[x].fname
+//   x++
+// }
+
+// console.log(text);
+
+//* do while loop
+
+// text = ""
+// let lang = users.length
+// let x = 0
+
+// do {
+//   text += users[x].fname
+//   x++
+// } while (x < lang)
+
+// console.log(text);
+
+//! Break and continue
+
+let text = ""
+let x = 0
+
+for (; x < 10; x++) {
+  if (x == 5) {
+    // break;
+    continue;
+  }
+
+  text += x + "\n"
+}
+
+console.log(text);
+
+/*
+
+* Date
+* if else and else if with ternary operator
+* try catch
+* switch statement
+* error
+* DOM
+
+*/

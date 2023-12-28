@@ -359,7 +359,6 @@
 // console.log(date.getSeconds());
 // console.log(date.getMilliseconds());
 
-
 // const months = [
 //   "January",
 //   "February",
@@ -455,30 +454,30 @@
 
 //! loop
 
-const users = [
-  {
-    fname: "John",
-    lname: "Doe",
-    age: 27
-  },
-  {
-    fname: "Smith",
-    lname: "Duck",
-    age: 45
-  },
-  {
-    fname: "Chagan",
-    lname: "Chapri",
-    age: 16
-  },
-  {
-    fname: "Magan",
-    lname: "Bloger",
-    age: 18
-  }
-]
+// const users = [
+//   {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 27
+//   },
+//   {
+//     fname: "Smith",
+//     lname: "Duck",
+//     age: 45
+//   },
+//   {
+//     fname: "Chagan",
+//     lname: "Chapri",
+//     age: 16
+//   },
+//   {
+//     fname: "Magan",
+//     lname: "Bloger",
+//     age: 18
+//   }
+// ]
 
-//* for
+//? for
 
 // const dataLength = users.length
 // let text = ""
@@ -489,7 +488,27 @@ const users = [
 
 // document.getElementById("result").innerHTML = text
 
-//* map (function)
+//? for in
+
+// let text = ""
+
+// for (let x in users) {
+//   text += users[x].fname + "\n"
+// }
+
+// console.log(text);
+
+//? for of
+
+// let text = ""
+
+// for (let x of users) {
+//   text += x.fname + "\n"
+// }
+
+// console.log(text);
+
+//? map (function)
 
 // const render = users.map((e) => {
 //   return `<h1>${e.fname + " " + e.lname}</h1>`
@@ -498,7 +517,7 @@ const users = [
 // document.getElementById("result").innerHTML = render.join("")
 // console.log(render);
 
-//* forEach (function)
+//? forEach (function)
 
 // let text = ""
 // users.forEach((x) => {
@@ -507,3 +526,42 @@ const users = [
 
 // console.log(typeof text);
 // document.getElementById("result").innerHTML = text
+
+//? while loop
+
+// let x = 0
+// let text = ""
+
+// while (x < 10) {
+//   text += x
+//   x++
+// }
+
+// console.log(text);
+
+//? do while
+
+// let x = 0
+// let text = ""
+
+// do {
+//   text += x
+//   x++
+// } while (x > 10)
+
+// console.log(text);
+
+// let x = 5
+// console.log(x.toPrecision(3));
+
+let num = 9.656;
+const number =
+  num.toPrecision() +
+  "<br>" +
+  num.toPrecision(2) +
+  "<br>" +
+  num.toPrecision(4) +
+  "<br>" +
+  num.toPrecision(6);
+
+document.getElementById('result').innerHTML = number

@@ -14,7 +14,6 @@ export default function GetData() {
     GetData()
   }, [])
 
-
   return (
     <section>
       {

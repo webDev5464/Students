@@ -15,6 +15,35 @@ const dataSchema = mongoose.Schema({
 const $dataModel = mongoose.model("ConnectionFormula", dataSchema)
 
 
+//! post method store data in database
+const postData = async (req, res) => {
+  const { heading, title } = req.body
+
+  const data = await $dataModel({ heading, title }).save()
+
+  if (data) {
+    res.send({
+      process: true, msg: "Data store Successfully", $dataModel: data
+    })
+
+    console.log(data);
+  }
+
+}
+app.post("/postData", postData)
+
+//! get data 
+const getData = async (req, res) => {
+  const getAllData = await $dataModel.find({})
+
+  if (getAllData) {
+    res.send({
+      process: true, msg: "data get successfully", getAllData
+    })
+  }
+}
+app.get("/getData", getData)
+
 //! connection with database
 mongoose.connect("mongodb://127.0.0.1:27017/TestingFormula").then(() => {
   console.log("Database is connected...");

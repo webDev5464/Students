@@ -76,3 +76,51 @@
 
 // const cars = ["Saab", "Volvo", "BMW"]
 // console.log(Array.isArray(cars))
+
+//! function
+
+// MyFunction()
+
+// function MyFunction() {
+//   console.log("Hello");
+// }
+
+
+
+// function MyF(a, b) {
+//   console.log(a + b);
+// }
+
+// MyF(5, 10)
+
+
+
+// function fun() {
+//   const msg = "Hello World!"
+
+//   return (
+//     `<h1>${msg}</h1>`
+//   )
+// }
+
+// render.innerHTML = fun()
+// console.log(fun());
+
+//? Arrow function
+
+// const MyFunction = (a, b, c) => {
+//   return (a + b - c)
+// }
+
+// console.log(MyFunction(10, 20, 15));
+
+// const person = {
+//   fName: "John",
+//   lName: "Doe",
+//   age: 27,
+//   fullName: () => {
+//     return person.fName + " " + person.lName
+//   }
+// }
+
+// console.log(fullName());

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --mainColor: #161616;
+  --btnBg: #2d172f;
+  --hoverBtnBg: #b233aa;
+  --secondaryColor: #8030bc;
+
+  --themeBtn: linear-gradient(100deg, #b233aa, #8030bc);
+  --hoverThemeBtn: linear-gradient(-100deg, #b233aa, #8030bc);
+
+  /* https://fonts.google.com/specimen/Zen+Dots?query=zen+Dots */
+  --headingFont: 'Zen Dots', sans-serif;
+}
+
+body {
+  background-color: var(--mainColor);
+}
+
+/* Navigation */
+
+nav {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 70px;
+
+  border-bottom: 2px solid #252525;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 30px;
+}
+
+.navBtn {
+  display: flex;
+}
+
+.navBtn>div:first-child {
+  border: 2px solid var(--hoverBtnBg);
+  margin: 0 10px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: var(--btnBg);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.navBtn>div:first-child:hover {
+  background-color: var(--hoverBtnBg);
+}
+
+.navBtn>div:last-child {
+  background: var(--themeBtn);
+  padding: 10px 35px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navBtn>div:last-child:hover {
+  background: var(--hoverThemeBtn);
+}

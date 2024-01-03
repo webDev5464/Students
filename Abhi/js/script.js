@@ -469,19 +469,19 @@
 
 //! Break and continue
 
-let text = ""
-let x = 0
+// let text = ""
+// let x = 0
 
-for (; x < 10; x++) {
-  if (x == 5) {
-    // break;
-    continue;
-  }
+// for (; x < 10; x++) {
+//   if (x == 5) {
+//     // break;
+//     continue;
+//   }
 
-  text += x + "\n"
-}
+//   text += x + "\n"
+// }
 
-console.log(text);
+// console.log(text);
 
 /*
 

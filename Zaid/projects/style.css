@@ -26,6 +26,13 @@ body {
 
 /* Navigation */
 
+header {
+  background: url("./assets/gradient1.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 nav {
   color: white;
   display: flex;
@@ -75,4 +82,63 @@ nav ul li {
 
 .navBtn>div:last-child:hover {
   background: var(--hoverThemeBtn);
+}
+
+nav>ul>li:hover,
+nav>ul>li>span:hover {
+  color: var(--hoverBtnBg);
+  transition: .3s;
+}
+
+.downArrow>i {
+  transition: .5s;
+}
+
+/* nav dropDown */
+
+.drop {
+  position: relative;
+}
+
+.down {
+  position: absolute;
+  flex-direction: column;
+  width: 200px;
+  display: none;
+  padding: 25px 0 0 0;
+}
+
+.drop:hover .downArrow>i {
+  position: relative;
+  transform: rotateX(180deg);
+}
+
+.drop:hover .down {
+  display: block;
+}
+
+.down>div {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+
+.down li {
+  margin: 0;
+  padding: 8px 25px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.down li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.down li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.down li:hover {
+  background-color: var(--hoverBtnBg);
+  color: white;
 }

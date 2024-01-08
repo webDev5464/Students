@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
+import axios from "axios"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <PostUserData />
+      {/* <GetUserData /> */}
     </>
   )
 }
 
-export default App
+function PostUserData() {
+
+  const [val, setVal] = useState({
+    heading: "",
+    title: ""
+  })
+
+  const inputValue = (e) => {
+    setVal({ ...val, [e.target.name]: e.target.value })
+  }
+
+  const formHandler = async (e) => {
+    e.preventDefault()
+
+    const result = await axios.post("http://localhost:8080/postData", val)
+    console.log(result);
+
+    if (result.data.process) {
+      alert(result.data.msg)
+    }
+  }
+
+  return (
+    <div>
+      <form onSubmit={formHandler}>
+        <input type="text" name="heading" placeholder="heading..." onChange={inputValue} />
+        <input type="text" name="title" placeholder="title..." onChange={inputValue} />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  )
+}
+
+// function GetUserData() {
+//   return (
+//     <div>
+//       hello one
+//     </div>
+//   )
+// }

@@ -335,12 +335,11 @@
 
 // console.log(typeof Number(y[0]));
 
-// let x = "518273612"
-// let y = x.split('')
+// let y = "518273612"
 
 // const outSideArr = []
 // for (let x = 0; x < y.length; x++) {
-//   outSideArr.push(Number(y[x]))
+//   outSideArr[x] = Number(y[x])
 // }
 
 // console.log(outSideArr);
@@ -365,3 +364,32 @@
 //   "<br>" +
 //   num.toPrecision(6);
 // console.log(number);
+
+const arr = ['A', 5, 'Q', 'R', 8, 'O', 4]
+
+// const strArr = []
+// const numArr = []
+
+// const newArr = []
+// for (let x = 0; x < arr.length; x++) {
+//   if (typeof arr[x] == "string") {
+//     newArr.unshift(arr[x])
+//   } else {
+//     newArr.push(arr[x])
+//   }
+// }
+
+// const newArr = [...strArr, ...numArr]
+
+// newArr.pop()
+// newArr.push("Hello")
+
+// newArr.shift()
+// newArr.unshift("lorem")
+
+// console.log(newArr);
+
+const arr_ = [12, 5, 6, 1, 6]
+
+console.log(arr_.join(""));
+// console.log(typeof arr_.join('*'));

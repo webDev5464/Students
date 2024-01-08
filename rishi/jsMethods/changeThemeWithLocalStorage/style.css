@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+  background-color: var(--white);
+}
+
+.card {
+  width: 330px;
+  border: 2px solid var(--white);
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+button {
+  width: 50px;
+  font-size: 30px;
+}

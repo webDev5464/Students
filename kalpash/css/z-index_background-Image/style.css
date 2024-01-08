@@ -1,0 +1,68 @@
+/* input {
+  border: none;
+  outline: none;
+  border: 2px solid black;
+}
+
+input:focus {
+  border: none;
+  box-shadow: inset 0 0 5px black, 3px 3px 8px black;
+} */
+
+.regularBg {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+
+  background-image: url('./images/main-header-1.jpg');
+
+  background-position: center;
+  /* background-position: 50% 50%; */
+
+  /* background-size: contain; */
+  /* background-size: cover; */
+
+  /* filter: contrast(5); */
+  /* transition: .5s; */
+}
+
+/* .regularBg:hover {
+  filter: contrast(100%);
+} */
+
+.fixedImage {
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+
+  background-image: url('./images/mountaine.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.child {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.381);
+}
+
+.child h1 {
+  margin: 0;
+}
+
+.xyz {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.xyz>div {
+  width: 200px;
+  height: 400px;
+}
+
+.xyz>div:nth-child(even) {
+  background-color: yellow;
+}
+
+.xyz>div:nth-child(odd) {
+  background-color: yellowgreen;
+}

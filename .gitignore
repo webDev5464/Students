@@ -6,6 +6,8 @@
 *.avif
 *.webp
 *.zip
+*.mp4
+*.mp3
 
 # dependencies
 *node_modules/

@@ -5,11 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learning Js</title>
+
+  <style>
+    #render {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 10px
+    }
+
+    .productCard {
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: lightgray;
+    }
+  </style>
 </head>
 
 <body>
 
   <div id="render"></div>
+
+  <!-- <img id="myImg">
+
+  <script>
+    let img = document.getElementById("myImg")
+
+    img.setAttribute("href", "./thinking-smiley-face.webp")
+  </script> -->
 
   <script src="./script.js"></script>
 </body>

@@ -523,12 +523,36 @@
 //   console.log('no');
 // }
 
+let y = 5
+let x = 5
+let z = 6
+
+//! if else , else if
+
+// if (5 !== 5) {
+//   console.log(true);
+// } else if (10 > 20) {
+//   console.log("center value");
+// } else {
+//   console.log(false);
+// }
+
+//! ternary operator
+
+// let compar = 5 !== 10 ? true : false
+
+// console.log(compar);
+
+
+
+//! or operator ( || )
+
+//! and operator ( && )
+
 /*
-
-* if else and else if with ternary operator
-* try catch
-* switch statement
-* error
-* DOM
-
+  * if else and else if with ternary operator
+  * try catch
+  * switch statement
+  * error
+  * DOM
 */

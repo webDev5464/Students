@@ -389,7 +389,42 @@ const arr = ['A', 5, 'Q', 'R', 8, 'O', 4]
 
 // console.log(newArr);
 
-const arr_ = [12, 5, 6, 1, 6]
+// const arr_ = [12, 5, 6, 1, 6]
 
-console.log(arr_.join(""));
+// console.log(arr_.join(""));
 // console.log(typeof arr_.join('*'));
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// fruits.splice(2, 2, 'Chagan')
+// console.log(fruits);
+
+// let str = "Lorem ipsum dolor sit amet"
+// const newArr = fruits.slice(2, 3)
+// console.log(newArr);
+
+// const num = [40, 1000, 1, 5, 25, 10]
+
+// console.log(num.sort((a, b) => {
+//   return a - b
+// }));
+
+const points = [40, 100, 1, 5, 25, 10];
+
+
+function MyFunction(val, y) {
+  return val.filter(function (x) {
+    return y < x
+  })
+}
+
+console.log(MyFunction(points, 40));
+
+// const x = []
+
+// function myArrayMax(arr) {
+//   return Math.max.apply(null, arr);
+// }
+
+// console.log(myArrayMax(num));
+// 100

@@ -142,3 +142,31 @@ nav>ul>li>span:hover {
   background-color: var(--hoverBtnBg);
   color: white;
 }
+
+.headerBanner {
+  color: white;
+  margin: 100px 70px;
+}
+
+.headerBanner h1 {
+  font-family: var(--headingFont);
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+.headerBanner h1 span {
+  color: transparent;
+  -webkit-text-stroke: .1px rgba(255, 255, 255, 0.705);
+}
+
+.headerBanner p {
+  margin: 15px 0 0 0;
+  font-size: 25px;
+  color: #b3b3b3;
+}
+
+.bannerImage {
+  position: absolute;
+  top: 170px;
+  right: 60px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .pageContainer {
+      height: 100vh;
+      margin: 50px 0;
+    }
+
+    .pageContainer:nth-child(even) {
+      background-color: lightblue;
+    }
+
+    .pageContainer:nth-child(odd) {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <div>
+    <ul>
+      <li><a href="#link-1">Link 1</a></li>
+      <li><a href="#link-2">Link 2</a></li>
+      <li><a href="#link-3">Link 3</a></li>
+      <li><a href="#link-4">Link 4</a></li>
+      <li><a href="#link-5">Link 5</a></li>
+      <li><a href="#link-6">Link 6</a></li>
+    </ul>
+  </div>
+
+  <div class="pageContainer" id="link-1">
+    <h1>Topic Link 1</h1>
+
+    <a href="#top">Go top</a>
+  </div>
+  <div class="pageContainer" id="link-2">
+    <h1>Topic Link 2</h1>
+
+    <a href="#top">Go top</a>
+  </div>
+  <div class="pageContainer" id="link-3">
+    <h1>Topic Link 3</h1>
+
+    <a href="#top">Go top</a>
+  </div>
+  <div class="pageContainer" id="link-4">
+    <h1>Topic Link 4</h1>
+
+    <a href="#top">Go top</a>
+  </div>
+  <div class="pageContainer" id="link-5">
+    <h1>Topic Link 5</h1>
+
+    <a href="#top">Go top</a>
+  </div>
+  <div class="pageContainer" id="link-6">
+    <h1>Topic Link 6</h1>
+
+    <a href="#top">Go top</a>
+  </div>
+
+</body>
+
+</html>

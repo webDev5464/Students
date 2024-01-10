@@ -14,3 +14,16 @@
 
   padding: 20px;
 }
+
+.cardParent {
+  background-color: black;
+  color: white;
+  width: 400px;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.cardPriceDetail {
+  display: flex;
+  justify-content: space-between;
+}

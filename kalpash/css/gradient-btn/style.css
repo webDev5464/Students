@@ -1,0 +1,120 @@
+body {
+  padding: 0 0 50px 0;
+}
+
+.gradient-container>div {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.gradient-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gradient-container :first-child {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.386), blue, green);
+}
+
+.gradient-container :nth-child(2) {
+  background: repeating-radial-gradient(red, blue 10%, green 20%);
+}
+
+.animation-conic {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 50px 0;
+  border-radius: 100%;
+}
+
+.animation-conic>div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: repeating-conic-gradient(black, white 10%);
+  animation-name: roundedConic;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes roundedConic {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*  */
+
+.simpleBtn div {
+  background-color: rgb(0, 194, 0);
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 20px;
+  /* box-shadow: inset 2px 2px 3px black, 2px 2px 3px black; */
+  box-shadow: 10px 10px 0 tomato;
+  transition: .5s;
+}
+
+.simpleBtn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.simpleBtn div:hover {
+  /* background-color: rgb(0, 125, 0); */
+  /* box-shadow: -2px -2px 3px black, inset -2px -2px 3px black; */
+}
+
+.simpleBtn div:active {
+  transform: scale(.95);
+}
+
+.arrow-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #3498db;
+  clip-path: polygon(0% 0%, 0% 0%, 0%, 0%);
+  animation: flyArrow 2s linear infinite;
+}
+
+.button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@keyframes flyArrow {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

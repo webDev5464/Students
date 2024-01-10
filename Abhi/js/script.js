@@ -547,7 +547,11 @@ let z = 6
 
 //! or operator ( || )
 
+// console.log(1 || 5 == 6 ? true : false);
+
 //! and operator ( && )
+
+// console.log(6 && 5 == 5 ? true : false);
 
 /*
   * if else and else if with ternary operator

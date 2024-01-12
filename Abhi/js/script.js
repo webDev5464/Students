@@ -523,9 +523,9 @@
 //   console.log('no');
 // }
 
-let y = 5
-let x = 5
-let z = 6
+// let y = 5
+// let x = 5
+// let z = 6
 
 //! if else , else if
 
@@ -543,8 +543,6 @@ let z = 6
 
 // console.log(compar);
 
-
-
 //! or operator ( || )
 
 // console.log(1 || 5 == 6 ? true : false);
@@ -553,10 +551,82 @@ let z = 6
 
 // console.log(6 && 5 == 5 ? true : false);
 
+//! try catch
+
+// function submitBtn() {
+//   let input = document.getElementById('input').value
+//   let text = document.getElementById('text')
+
+//   try {
+
+//     if (isNaN(input)) throw "Require only number"
+//     if (input.trim() == "") throw "Please fill input"
+//     input = Number(input)
+//     if (input < 4) throw "to low"
+//     if (input > 8) throw "to high"
+//     if (input > 4 || input < 8) throw "Done"
+
+//   } catch (msg) {
+//     text.innerHTML = msg
+//   } finally {
+//     if (input > 4 || input < 8) {
+//       document.getElementById('input').value = ""
+//     }
+//   }
+// }
+
+//! switch statement
+// let date = new Date()
+// console.log(date.setMonth(1));
+
+// function submitBtn() {
+
+//   let inputVal = Number(document.getElementById('input').value)
+//   let text = document.getElementById('text')
+
+//   switch (inputVal) {
+//     case 0:
+//       console.log(false);
+//       break;
+
+//     case 1:
+//       console.log(true);
+//       break;
+//   }
+
+// }
+
+// const x = new Date().getDay();
+
+// let days;
+
+// switch (x) {
+//   case 6:
+//     days = "Saturday";
+//     break;
+
+//   case 0:
+//     days = "Sunday";
+//     break;
+
+//   default:
+//     days = "Looking forward to the Weekend";
+// }
+
+// console.log(days);
+
+
+// try {
+
+//   eval("alert('hello)")
+
+// } catch (chagan) {
+//   console.log(chagan.message);
+//   console.log(chagan.name);
+// }
+
+
 /*
-  * if else and else if with ternary operator
-  * try catch
-  * switch statement
   * error
   * DOM
 */

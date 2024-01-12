@@ -409,16 +409,16 @@ const arr = ['A', 5, 'Q', 'R', 8, 'O', 4]
 //   return a - b
 // }));
 
-const points = [40, 100, 1, 5, 25, 10];
+// const points = [40, 100, 1, 5, 25, 10];
 
 
-function MyFunction(val, y) {
-  return val.filter(function (x) {
-    return y < x
-  })
-}
+// function MyFunction(val, y) {
+//   return val.filter(function (x) {
+//     return y < x
+//   })
+// }
 
-console.log(MyFunction(points, 40));
+// console.log(MyFunction(points, 40));
 
 // const x = []
 
@@ -428,3 +428,82 @@ console.log(MyFunction(points, 40));
 
 // console.log(myArrayMax(num));
 // 100
+
+// console.log(Math.floor(Math.random() * 9999));
+
+//! if else ans else is
+
+// const date = new Date()
+
+// date.setHours(14)
+// console.log(date);
+
+//? ternary operator
+// console.log(date.getHours() < 18 ? 10 : 20);
+
+// if (date.getHours() < 12) {
+//   console.log('good morning');
+// } else if (date.getHours() < 18) {
+//   console.log('good afternoon');
+// } else {
+//   console.log('good evening');
+// }
+
+//! loop
+
+const language = ['html', 'css', 'javascript', 'react', 'nodejs', 'mongodb', 'python']
+
+//? for loop
+
+// let text = ""
+// let x = 0
+
+// for (; x < language.length; x++) {
+//   text += language[x] + '\n'
+// }
+
+// document.getElementById('render').innerHTML = text
+
+// demo.innerHTML = text
+
+// console.log(typeof text);
+
+//? for in loop
+
+// let text = ""
+// for (let x in language) {
+// text += language[x]
+// console.log(x);
+// }
+
+// console.log(text);
+
+
+//? for of loop
+
+// for (let x of language) {
+//   console.log(x);
+// }
+
+//? while loop
+
+// let text = ""
+// let x = 0
+
+// while (x < language.length) {
+//   console.log(language[x]);
+//   x++
+// }
+
+//? do while loop
+
+let x = 0
+
+// do {
+//   console.log(language[x]);
+//   x++
+// } while (x > language.length)
+
+//? forEach ( function ) loop
+
+//? map ( function ) loop

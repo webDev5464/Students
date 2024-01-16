@@ -1,0 +1,29 @@
+.box {
+  background-color: yellow;
+  width: 400px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 100px 0;
+  transition: 1s ease-in;
+}
+
+.translate:hover {
+  /* transform: translate(500px, 500px); */
+  width: 600px;
+  background-color: red;
+}
+
+.scale:hover {
+  transform: scale(.5, 1);
+}
+
+.rotate:hover {
+  /* 3d */
+  transform: rotateY(100deg);
+  transform: rotateX(100deg);
+  /* transform: rotateZ(180deg); */
+}
+
+.skew:hover {
+  transform: skew(360deg, 360deg);
+}

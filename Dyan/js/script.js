@@ -506,4 +506,93 @@ let x = 0
 
 //? forEach ( function ) loop
 
+// const lang = ['html', 'css', 'javascript', 'nodejs', 'mongodb', 'python', 'sql']
+
+// console.log(lang.join(" | "));
+
+// const user = [
+//   { fname: 'john', lname: 'doe' },
+//   { fname: 'smith', lname: 'duck' },
+//   { fname: 'chagan', lname: 'Chapri' }
+// ]
+
+// let text = ""
+// user.forEach((e, i, a) => {
+//   text += `<h2>${e.fname} ${e.lname}</h2>`
+// })
+
+// console.log(typeof text);
+
+// demo.innerHTML = text
+
 //? map ( function ) loop
+
+// const user = [
+//   { fname: 'john', lname: 'doe' },
+//   { fname: 'smith', lname: 'duck' },
+//   { fname: 'chagan', lname: 'Chapri' }
+// ]
+
+// const print = user.map(e => {
+//   return e.fname + ' ' + e.lname + "<br>"
+// })
+
+// demo.innerHTML = Array.isArray(print)
+
+// console.log(print);
+
+// let text = ""
+// for (let x = 0; x < user.length; x++) {
+//   text += user[x].fname
+// }
+
+// console.log(text);
+
+//! nesting list using map function
+
+const nestingNavigation = [
+  {
+    title: 'products',
+    values: [
+      {
+        title: 'electronics',
+        page: ['mobiles', 'laptops', 'earbuds']
+      }, {
+        title: 'clothes',
+        page: ['shirts', 'tshirts']
+      }
+    ]
+  }, {
+    title: 'privacy policy',
+    values: [
+      {
+        title: 'policy One'
+      },
+      {
+        title: 'policy two',
+        page: ['p1', 'p2']
+      }
+    ]
+  }
+]
+
+const print = nestingNavigation.map((e) => {
+  return `
+    <li>${e.title}</li>
+
+    ${e.values.map(x => {
+    return `<ul>
+      <li>${x.title}
+        <ul>
+          ${Array.isArray(x.page) ? x.page.map(p => {
+      return `<li>${p}</li>`
+    }).join('') : ''}
+        </ul>
+      </li>
+    </ul>    
+    `
+  }).join('')}
+  `
+})
+
+document.getElementById('demo').innerHTML = `<ul>${print.join('')}</ul>`

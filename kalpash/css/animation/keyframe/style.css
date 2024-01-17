@@ -1,0 +1,51 @@
+body {
+  position: relative;
+  height: 100vh;
+}
+
+div {
+  /* width: 100px; */
+  /* height: 100px; */
+  /* background-color: red; */
+  /* position: absolute; */
+
+  /* animation-name: myAnimation; */
+  /* animation-duration: 2s; */
+  /* animation-delay: 1s; */
+  /* animation-timing-function: ease-out; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: reverse; */
+  /* animation-fill-mode: backwards; */  
+}
+
+@keyframes myAnimation {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
+
+  25% {
+    right: 200px;
+    top: 0px;
+    background-color: blue;
+  }
+
+  50% {
+    right: 200px;
+    bottom: 200px;
+    background-color: yellow;
+  }
+
+  75% {
+    left: 0px;
+    bottom: 200px;
+    background-color: green;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
+}

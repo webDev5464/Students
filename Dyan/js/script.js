@@ -497,7 +497,7 @@ const language = ['html', 'css', 'javascript', 'react', 'nodejs', 'mongodb', 'py
 
 //? do while loop
 
-let x = 0
+// let x = 0
 
 // do {
 //   console.log(language[x]);
@@ -550,49 +550,70 @@ let x = 0
 
 //! nesting list using map function
 
-const nestingNavigation = [
-  {
-    title: 'products',
-    values: [
-      {
-        title: 'electronics',
-        page: ['mobiles', 'laptops', 'earbuds']
-      }, {
-        title: 'clothes',
-        page: ['shirts', 'tshirts']
-      }
-    ]
-  }, {
-    title: 'privacy policy',
-    values: [
-      {
-        title: 'policy One'
-      },
-      {
-        title: 'policy two',
-        page: ['p1', 'p2']
-      }
-    ]
+// const nestingNavigation = [
+//   {
+//     title: 'products',
+//     values: [
+//       {
+//         title: 'electronics',
+//         page: ['mobiles', 'laptops', 'earbuds']
+//       }, {
+//         title: 'clothes',
+//         page: ['shirts', 'tshirts']
+//       }
+//     ]
+//   }, {
+//     title: 'privacy policy',
+//     values: [
+//       {
+//         title: 'policy One'
+//       },
+//       {
+//         title: 'policy two',
+//         page: ['p1', 'p2']
+//       }
+//     ]
+//   }
+// ]
+
+// const print = nestingNavigation.map((e) => {
+//   return `
+//     <li>${e.title}</li>
+
+//     ${e.values.map(x => {
+//     return `<ul>
+//       <li>${x.title}
+//         <ul>
+//           ${Array.isArray(x.page) ? x.page.map(p => {
+//       return `<li>${p}</li>`
+//     }).join('') : ''}
+//         </ul>
+//       </li>
+//     </ul>
+//     `
+//   }).join('')}
+//   `
+// })
+
+// document.getElementById('demo').innerHTML = `<ul>${print.join('')}</ul>`
+
+//! Try Catch statement
+
+function result() {
+  let input = document.getElementById('input').value
+  let text = document.getElementById('text')
+
+  try {
+    if (isNaN(input)) throw "Require is Number"
+    if (input.trim() == "") throw "Input is Blank"
+
+    Number(input)
+    if (5 > input) throw "To Low"
+    if (10 < input) throw "To Hight"
+    if (5 <= input || 10 >= input) throw "Done"
+  } catch (msg) {
+    text.innerHTML = msg
+  } finally {
+    document.getElementById('input').value = ""
   }
-]
-
-const print = nestingNavigation.map((e) => {
-  return `
-    <li>${e.title}</li>
-
-    ${e.values.map(x => {
-    return `<ul>
-      <li>${x.title}
-        <ul>
-          ${Array.isArray(x.page) ? x.page.map(p => {
-      return `<li>${p}</li>`
-    }).join('') : ''}
-        </ul>
-      </li>
-    </ul>    
-    `
-  }).join('')}
-  `
-})
-
-document.getElementById('demo').innerHTML = `<ul>${print.join('')}</ul>`
+}

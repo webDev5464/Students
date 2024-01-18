@@ -599,21 +599,60 @@ const language = ['html', 'css', 'javascript', 'react', 'nodejs', 'mongodb', 'py
 
 //! Try Catch statement
 
-function result() {
-  let input = document.getElementById('input').value
-  let text = document.getElementById('text')
+// function result() {
+//   let input = document.getElementById('input').value
+//   let text = document.getElementById('text')
 
-  try {
-    if (isNaN(input)) throw "Require is Number"
-    if (input.trim() == "") throw "Input is Blank"
+//   try {
+//     if (isNaN(input)) throw "Require is Number"
+//     if (input.trim() == "") throw "Input is Blank"
 
-    Number(input)
-    if (5 > input) throw "To Low"
-    if (10 < input) throw "To Hight"
-    if (5 <= input || 10 >= input) throw "Done"
-  } catch (msg) {
-    text.innerHTML = msg
-  } finally {
-    document.getElementById('input').value = ""
-  }
-}
+//     Number(input)
+//     if (5 > input) throw "To Low"
+//     if (10 < input) throw "To Hight"
+//     if (5 <= input || 10 >= input) throw "Done"
+//   } catch (msg) {
+//     text.innerHTML = msg
+//   } finally {
+//     document.getElementById('input').value = ""
+//   }
+// }
+
+//! Switch Cash
+
+// const x = new Date().getDay();
+// const x = 7
+
+// let days;
+
+// switch (x) {
+//   case 0:
+//     days = "Sunday";
+//     break;
+//   case 1:
+//     days = "Monday";
+//     break;
+//   case 2:
+//     days = "Tuesday";
+//     break;
+//   case 3:
+//     days = "Wednesday";
+//     break;
+//   case 4:
+//     days = "Thursday";
+//     break;
+//   case 5:
+//     days = "Friday";
+//     break;
+//   default:
+//     days = "Something Wrong";
+//     break;
+//   case 6:
+//     days = "Saturday";
+// }
+
+// console.log("Today is " + days);
+
+/*
+! ====================== End ======================
+*/

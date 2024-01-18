@@ -9,10 +9,33 @@
 
 <body>
 
-  <input type="text" id="input">
+  <!-- <input type="text" id="input">
   <button onclick="result()">Submit</button>
   <br>
-  <p id="text"></p>
+  <p id="text"></p> -->
+
+  <input type="text" id="text">
+  <button type="submit" onclick="myValue()">Submit</button>
+  <p id="result"></p>
+
+  <script>
+    let myValue = () => {
+      let value = Number(document.getElementById("text").value)
+
+      switch (value) {
+        case 0:
+          text = "Off"
+          break
+        case 1:
+          text = "On"
+          break
+        default:
+          text = "Value is not found"
+      }
+
+      document.getElementById("result").innerHTML = text
+    }
+  </script>
 
   <script src="./script.js"></script>
 </body>

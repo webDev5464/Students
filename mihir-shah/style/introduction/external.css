@@ -1,0 +1,49 @@
+/* .internal {
+  background-color: orange;
+}
+
+.external {
+  background-color: aqua;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.parent {
+  background-color: aqua;
+  width: fit-content;
+}
+
+.parent:hover .child {
+  display: block;
+}
+
+.child {
+  display: none;
+  background-color: gray;
+}

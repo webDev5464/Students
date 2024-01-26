@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root {
+  --a: rgb(255, 231, 231);
+  --b: lightgreen;
+  --mainHeadingFont: 'Inconsolata', monospace;
+}
+
+.dark {
+  --black: black;
+  --white: white;
+}
+
+.light {
+  --black: white;
+  --white: black;
+}
+
+body {
+  background-color: var(--a);
+}
+
+.heading {
+  font-family: var(--mainHeadingFont);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Responsive */
+
+.flexBox {
+  display: flex;
+}
+
+.flexBox>div {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  margin: 10px;
+}
+
+img {
+  width: 40vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .flexBox>div {
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .flexBox>div {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {}

@@ -1,0 +1,10 @@
+#render {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.card {
+  width: 400px;
+  border: 2px solid black;
+}

@@ -1,0 +1,36 @@
+table {
+  border: 3px solid black;
+  width: 50%;
+}
+
+td {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 7px;
+  background-color: gray;
+}
+
+tr:nth-child(even) {
+  background-color: tomato;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+tr:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+/*  */
+
+ul li {
+  /* list-style: none; */
+  /* list-style: disc; */
+}

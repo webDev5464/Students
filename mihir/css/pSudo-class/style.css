@@ -1,0 +1,11 @@
+.div1 {
+  background-color: aqua;
+}
+
+.div2>div:last-child>p {
+  color: red;
+}
+
+.div2 div:first-child p:nth-child(2) {
+  color: blue;
+}

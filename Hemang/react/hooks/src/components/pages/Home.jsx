@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import PropsCard from "../hooks/PropsCard";
+import { CreatedContext } from "../hooks/MyCreateContext";
+import { AppContext } from "../../App";
 
 export default function Home() {
   const [todos, setTodos] = useState([])
@@ -8,9 +10,12 @@ export default function Home() {
     fetch("https://dummyjson.com/todos").then(x => x.json()).then(x => setTodos(x.todos))
   }, [])
 
+  const { person, welcomeMessage } = useContext(CreatedContext)
+  const { x } = useContext(AppContext)
+
   return (
     <>
-      <h1>This is a Home page</h1>
+      <h1>This is a Home page, {welcomeMessage} {person} {x}</h1>
 
       <div>
         {todos.map((val) => {

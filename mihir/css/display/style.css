@@ -1,0 +1,31 @@
+p,
+span,
+div {
+  margin: 20px 0;
+}
+
+p {
+  display: inline;
+  background-color: tomato;
+}
+
+span {
+  display: block;
+  background-color: greenyellow;
+}
+
+.box {
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.showBox {
+  width: fit-content;
+  background-color: antiquewhite;
+}
+
+.showBox:hover .box {
+  display: block;
+}

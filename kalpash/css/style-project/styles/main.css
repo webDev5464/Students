@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: rgb(234, 229, 224);
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+nav ul {
+  display: flex;
+  font-size: 20px;
+}
+
+nav ul li {
+  display: flex;
+  list-style: none;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+nav ul li div {
+  padding: 0 0 0 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav>div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.semiNav {
+  display: flex;
+  margin: 0 0 0 100px;
+}
+
+.semiNav div {
+  padding: 0 10px;
+}

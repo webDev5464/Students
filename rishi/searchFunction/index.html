@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <input type="search" id="searchInput">
+  <button onclick="searchFunction()">Search</button>
+
+  <div id="render"></div>
+
+  <script>
+    let render = document.getElementById('render')
+    let searchInput = document.getElementById('searchInput')
+    const language = ["HTML", "CSS", "JavaScript", "React Js", "Node Js", "Express Js", "MongoDb"]
+
+    render.innerHTML = language.map((x) => {
+      return `<h1>${x}<h1>`
+    }).join("")
+
+    function searchFunction() {
+      let searchValue = searchInput.value
+      let searchedValue = language.filter(x => x.toLowerCase().includes(searchValue))
+
+      render.innerHTML = searchedValue.map((x) => {
+        return `<h1>${x}<h1>`
+      }).join("")
+    }
+  </script>
+
+</body>
+
+</html>

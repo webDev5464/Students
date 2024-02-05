@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
+import { CreatedContext } from "./MyCreateContext"
 
 export default function MyUseEffect() {
   return (
@@ -16,6 +17,8 @@ function AutoFocusFirstTime() {
   const focusInput = useRef(null)
   const [focus, setFocus] = useState(false)
 
+  const { person } = useContext(CreatedContext)
+
   useEffect(() => {
     focusInput.current.focus()
   }, [focus])
@@ -24,6 +27,11 @@ function AutoFocusFirstTime() {
     <>
       <input type="text" ref={focusInput} />
       <button onClick={() => setFocus(!focus)}>click and focus</button>
+
+      <br />
+
+      {/* context use here */}
+      <h1>{person}</h1>
     </>
   )
 }

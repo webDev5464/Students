@@ -1,0 +1,15 @@
+body {
+  background-color: var(--white);
+}
+
+.card {
+  width: fit-content;
+  padding: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+#renderData {
+  background-color: var(--black);
+  color: var(--light);
+}

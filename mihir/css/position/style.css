@@ -1,0 +1,49 @@
+body {
+  height: 500vh;
+}
+
+.viewHeight {
+  width: 500px;
+  height: 50vh;
+  background-color: blue;
+  margin: 0 0 50px 0;
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+  background-color: tomato;
+  border: 2px dashed black;
+
+  position: absolute;
+
+  /* top: ; */
+  bottom: 10px;
+  right: 50px;
+  /* left: ; */
+}
+
+.parent {
+  height: 400px;
+  width: 400px;
+  border: 10px solid green;
+
+  position: relative;
+}
+
+.box {
+  background-color: greenyellow;
+  width: fit-content;
+  padding: 10px;
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  top: 100px;
+}
+
+.sticky {
+  position: sticky;
+  top: 50px;
+}

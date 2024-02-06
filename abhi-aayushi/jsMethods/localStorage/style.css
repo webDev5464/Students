@@ -1,0 +1,16 @@
+body {
+  background-color: var(--white);
+}
+
+.card {
+  width: 300px;
+  border: 2px solid;
+  background-color: var(--myColor);
+  color: var(--white);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#renderUsers {
+  color: var(--myColor);
+}

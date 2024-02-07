@@ -177,3 +177,60 @@
 // x = [5, 6]
 
 // console.log(x);
+
+//! function
+
+// myFunction(50, 15)
+
+// function myFunction(a, b) {
+//   console.log(a + b);
+// }
+
+// myFunction(5, 15)
+// myFunction(15, 15)
+
+
+// function func() {
+//   return "Hello World!"
+// }
+
+// console.log(func());
+
+// function myF(myVal) {
+//   return "Hello " + myVal
+// }
+
+// console.log(myF(10));
+
+// function myFunction() {
+//   let heading = document.getElementById('heading')
+//   heading.innerHTML = "Hello"
+//   heading.style.backgroundColor = "tomato"
+// }
+
+//? arrowFunction
+
+// const myFunction = () => {
+//   console.log("Hello Chagan");
+// }
+
+// myFunction()
+
+// const x = [5, 32, 6, 36]
+
+// console.log(x.filter((val) => {
+//   return 6 < val
+// }));
+
+//? object in function
+
+// const person = {
+//   fname: "John",
+//   lname: "Doe",
+//   age: 27,
+//   fullname: () => {
+//     return person.fname + " " + person.lname
+//   }
+// }
+
+// console.log(person.fullname());

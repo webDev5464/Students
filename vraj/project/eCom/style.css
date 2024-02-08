@@ -1,0 +1,26 @@
+.productImg {
+  width: 300px;
+}
+
+#productsRender,
+#cartDataRender {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.card {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.imgContainer {
+  width: fit-content;
+  margin: auto;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}

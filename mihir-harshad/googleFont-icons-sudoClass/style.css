@@ -1,0 +1,68 @@
+body {
+  margin-bottom: 100px;
+  /* user-select: none; */
+}
+
+.myClass div {
+  background-color: aqua;
+  margin: 20px 0;
+}
+
+.myClass :last-child {
+  background-color: tomato;
+}
+
+.myClass :first-child {
+  background-color: brown;
+}
+
+.myClass :nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+.title :nth-child(even) {
+  background-color: red;
+}
+
+.title :nth-child(odd) {
+  background-color: brown;
+}
+
+.family p:first-child {
+  color: red;
+}
+
+.family>div:nth-child(2)>div {
+  background-color: black;
+  color: white;
+}
+
+.basicBtn {
+  background-color: lightgray;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 5px 8px;
+  cursor: pointer;
+
+  /* sort hand */
+  border: 2px solid gray;
+
+  /* new */
+  border-radius: 10px;
+  /* box-shadow: 0 0 0 value; */
+  box-shadow: 3px 3px 5px gray;
+  user-select: none;
+  transition: .5s;
+}
+
+.basicBtn:hover {
+  background-color: lightblue;
+}
+
+.basicBtn:active {
+  background-color: tomato;
+  scale: .95;
+}

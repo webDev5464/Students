@@ -234,3 +234,53 @@
 // }
 
 // console.log(person.fullname());
+
+// function myFunction() {
+//   let body = document.getElementById('body')
+//   body.style.backgroundColor = "black"
+//   body.style.color = "white"
+// }
+
+// function cal() {
+//   let a = 10
+//   let b = 2
+//   return a * b
+// }
+
+// console.log(cal(10, 2));
+// console.log(cal(10, 4));
+// console.log(cal(10, 6));
+// console.log(cal(10, 12));
+// document.getElementById('heading').innerHTML = cal()
+
+//! if else and else if || ternary operator
+
+// if (5 < 10) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+
+// if (5 < 10) {
+//   console.log(true);
+// } else if (5 === 5) {
+//   console.log("yes 5 == 5");
+// } else {
+//   console.log("Condition wrong");
+// }
+
+let input = document.getElementById('input')
+let text = document.getElementById('text')
+
+function submitBtn() {
+  if (isNaN(input.value)) {
+    text.innerHTML = "Require number not a string"
+  } else if (input.value.length > 8) {
+    text.innerHTML = "too high"
+  } else if (input.value.length < 4) {
+    text.innerHTML = "too low"
+  } else {
+    text.innerHTML = "Submit"
+  }
+}

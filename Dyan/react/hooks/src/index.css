@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 10px;
+}
+
+/* Default class */
+.active {
+  color: tomato;
+}

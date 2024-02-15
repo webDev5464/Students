@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root {
+  --myVariable: #4e0000;
+  --myPaddingSize: 10px;
+  --semiFont: "Montserrat", sans-serif;
+  --boldFont: "Protest Riot", sans-serif;
+}
+
+.dark {
+  --black: black;
+  --white: white;
+  --green: rgb(0, 136, 255);
+}
+
+.light {
+  --black: rgb(63, 63, 63);
+  --white: rgb(134, 134, 134);
+  --green: green;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1 {
+  background-color: var(--myVariable);
+  padding: var(--myPaddingSize);
+}
+
+p {
+  font-family: var(--semiFont);
+  font-weight: 900;
+  color: var(--green);
+}

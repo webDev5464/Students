@@ -270,17 +270,159 @@
 //   console.log("Condition wrong");
 // }
 
-let input = document.getElementById('input')
-let text = document.getElementById('text')
+// let input = document.getElementById('input')
+// let text = document.getElementById('text')
 
-function submitBtn() {
-  if (isNaN(input.value)) {
-    text.innerHTML = "Require number not a string"
-  } else if (input.value.length > 8) {
-    text.innerHTML = "too high"
-  } else if (input.value.length < 4) {
-    text.innerHTML = "too low"
-  } else {
-    text.innerHTML = "Submit"
+// function submitBtn() {
+//   if (isNaN(input.value)) {
+//     text.innerHTML = "Require number not a string"
+//   } else if (input.value.length > 8) {
+//     text.innerHTML = "too high"
+//   } else if (input.value.length < 4) {
+//     text.innerHTML = "too low"
+//   } else {
+//     text.innerHTML = "Submit"
+//   }
+// }
+
+//? ternary operator
+
+// let text = ""
+// if (5 > 4) {
+//   text += "Right"
+// } else {
+//   text += "Wrong"
+// }
+
+// console.log(text);
+
+// let result = 5 > 4 ? "Right" : 5 == 5 ? "Yes" : "No"
+// console.log(result);
+
+// if (5 < 4) {
+//   console.log(true);
+// } else if (5 === "5") {
+//   console.log("Yes");
+// } else {
+//   console.log("false");
+// }
+
+//! try catch statement
+
+// function submitBtn() {
+//   let text = document.getElementById('text')
+//   let input = document.getElementById('input').value
+
+//   try {
+
+//     if (!input) throw "Input is blank"
+//     if (isNaN(input)) throw "Require only number"
+//     Number(input)
+//     let inputLength = input.length
+//     if (inputLength < 4) throw "To low"
+//     if (inputLength > 8) throw "To high"
+//     if (inputLength >= 4 && inputLength <= 8) throw "Submitted"
+//   } catch (myMsg) {
+//     text.innerHTML = myMsg
+//   } finally {
+//     document.getElementById('input').value = ""
+//   }
+// }
+
+// let x = 5
+// try {
+//   x.toUppercase()
+// } catch (e) {
+//   console.log(e.message);
+// }
+
+//todo == , === , < , > , <= , >= , != , !value , || , &&
+
+// let x = 5
+// console.log((x == 5) && (x == 5) ? true : false)
+
+//! backtick
+// let x = "John"
+
+// console.log(`Hello ${x}`);
+
+//! Loops
+
+/*
+  map - function
+  forEach - function
+  for 
+  for in
+  for of
+  while
+  do while
+*/
+
+const language = ['html', 'css', 'javascript', 'nodejs', 'expressjs', 'mongodb', 'nextjs', 'python']
+
+const users = [
+  {
+    fname: "John",
+    lname: "Doe",
+    age: 28
+  },
+  {
+    fname: "Chagan",
+    lname: "Chapri",
+    age: 19
+  },
+  {
+    fname: "Magan",
+    lname: "Bloger",
+    age: 23
+  },
+  {
+    fname: "Banty",
+    lname: "Slow",
+    age: 39
   }
-}
+]
+
+let renderData = document.getElementById('renderData')
+
+//? map() :- function
+
+// renderData.innerHTML = users.map((myVal) => {
+//   return `<h1>${myVal.fname} ${myVal.lname}</h1>`
+// }).join("")
+
+// --------------------------------
+
+// let text = ""
+
+// users.map((x) => {
+//   text += `<h1>${x.fname} ${x.lname}</h1>`
+// }).join("")
+
+// renderData.innerHTML = text
+
+// --------------------------------
+
+// users.map((x) => {
+//   console.log(`<h1>${x.fname} ${x.lname}</h1>`);
+// }).join("")
+
+//? forEach()
+
+// let text = ""
+
+// users.forEach((x) => {
+//   text += `<h1>${x.fname} ${x.lname}</h1>`
+// })
+
+// console.log(text);
+// renderData.innerHTML = text
+
+//? for
+
+// let text = ""
+// for (let x = 0; x < users.length; x++) {
+//   text += `${users[x].fname}` + "<br>"
+// }
+
+// renderData.innerHTML = text

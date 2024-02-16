@@ -351,7 +351,7 @@
 /*
   map - function
   forEach - function
-  for 
+  for
   for in
   for of
   while
@@ -360,36 +360,36 @@
 
 const language = ['html', 'css', 'javascript', 'nodejs', 'expressjs', 'mongodb', 'nextjs', 'python']
 
-const users = [
-  {
-    fname: "John",
-    lname: "Doe",
-    age: 28
-  },
-  {
-    fname: "Chagan",
-    lname: "Chapri",
-    age: 19
-  },
-  {
-    fname: "Magan",
-    lname: "Bloger",
-    age: 23
-  },
-  {
-    fname: "Banty",
-    lname: "Slow",
-    age: 39
-  }
-]
+// const users = [
+//   {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 28
+//   },
+//   {
+//     fname: "Chagan",
+//     lname: "Chapri",
+//     age: 19
+//   },
+//   {
+//     fname: "Magan",
+//     lname: "Bloger",
+//     age: 23
+//   },
+//   {
+//     fname: "Banty",
+//     lname: "Slow",
+//     age: 39
+//   }
+// ]
 
-let renderData = document.getElementById('renderData')
+// let renderData = document.getElementById('renderData')
 
 //? map() :- function
 
 // renderData.innerHTML = users.map((myVal) => {
 //   return `<h1>${myVal.fname} ${myVal.lname}</h1>`
-// }).join("")
+// })
 
 // --------------------------------
 
@@ -397,7 +397,7 @@ let renderData = document.getElementById('renderData')
 
 // users.map((x) => {
 //   text += `<h1>${x.fname} ${x.lname}</h1>`
-// }).join("")
+// })
 
 // renderData.innerHTML = text
 
@@ -405,7 +405,7 @@ let renderData = document.getElementById('renderData')
 
 // users.map((x) => {
 //   console.log(`<h1>${x.fname} ${x.lname}</h1>`);
-// }).join("")
+// })
 
 //? forEach()
 
@@ -422,7 +422,23 @@ let renderData = document.getElementById('renderData')
 
 // let text = ""
 // for (let x = 0; x < users.length; x++) {
-//   text += `${users[x].fname}` + "<br>"
+//   text += `${users[x].fname}`
 // }
 
-// renderData.innerHTML = text
+// console.log(text);
+
+//? for in
+
+// let text = ""
+// for (let x in language) {
+//   text += x
+// }
+
+// document.getElementById("renderData").innerHTML = text
+
+//? for of
+
+// let text1 = ""
+// for (let x of language) {
+//   console.log(x);
+// }

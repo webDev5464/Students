@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
+import MyUseState from "./components/MyUseState";
+import MyUseEffect from "./components/MyUseEffect";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="About" element={<About />} />
           <Route path="Service" element={<Service />} />
           <Route path="Chagan" element={<Contact />} />
+          <Route path="myUseState" element={<MyUseState />} />
+          <Route path="MyUseEffect" element={<MyUseEffect />} />
         </Routes>
       </main>
 
@@ -33,6 +37,8 @@ function Navigation() {
         <li><NavLink to={'About'}>About</NavLink></li>
         <li><NavLink to={'Service'}>Service</NavLink></li>
         <li><NavLink to={'Chagan'}>Contact</NavLink></li>
+        <li><NavLink to={'myUseState'}>myUseState</NavLink></li>
+        <li><NavLink to={'MyUseEffect'}>MyUseEffect</NavLink></li>
       </ul>
     </nav>
   )

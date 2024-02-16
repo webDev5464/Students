@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.dark {
+  --black: black;
+  --white: white;
+}
+
+.light {
+  --black: white;
+  --white: black;
+}
+
 nav {
   margin: 0;
   padding: 0;
@@ -33,4 +43,11 @@ main {
 /* Default class */
 .active {
   color: tomato;
+}
+
+/* Change Theme */
+
+.card {
+  background-color: var(--black);
+  color: var(--white);
 }

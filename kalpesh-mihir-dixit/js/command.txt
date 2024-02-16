@@ -1,0 +1,14 @@
+- npm install nodemon
+
+- package.json :- 
+
+"scripts": {
+    "start": "nodemon script.js"
+  }
+
+
+- modules install :- npm install
+
+- run terminal :- npm start
+
+- close :- ctrl + c

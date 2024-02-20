@@ -5,6 +5,7 @@ import Home from "./Pages/Home"
 import Service from "./Pages/Service"
 import Contact from "./Pages/Contact"
 import About from "./Pages/About"
+import MyState from "./hooks/MyState"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="Service" element={<Service />} />
           <Route path="Chagan" element={<Contact />} />
           <Route path="about" element={<About />} />
+          <Route path="myContext" element={<MyState />} />
         </Routes>
       </main>
 
@@ -41,6 +43,7 @@ function Navigation() {
         <li><NavLink to={'Service'}>Service</NavLink></li>
         <li><NavLink to={'Chagan'}>Contact</NavLink></li>
         <li><NavLink to={'about'}>About</NavLink></li>
+        <li><NavLink to={'myContext'}>myContext</NavLink></li>
       </ul>
     </nav>
   )

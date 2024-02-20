@@ -36,3 +36,22 @@ nav ul li a {
 main {
   padding: 10px;
 }
+
+/* theme variable */
+
+.dark {
+  --black: black;
+  --white: white;
+}
+
+.light {
+  --black: white;
+  --white: black;
+}
+
+.card {
+  margin: 50px 0;
+  padding: 20px;
+  background-color: var(--black);
+  color: var(--white);
+}

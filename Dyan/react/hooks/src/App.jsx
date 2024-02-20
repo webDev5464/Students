@@ -5,6 +5,7 @@ import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import MyUseState from "./components/MyUseState";
 import MyUseEffect from "./components/MyUseEffect";
+import MyUseRef from "./components/MyUseRef";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="Chagan" element={<Contact />} />
           <Route path="myUseState" element={<MyUseState />} />
           <Route path="MyUseEffect" element={<MyUseEffect />} />
+          <Route path="MyUseRef" element={<MyUseRef />} />
         </Routes>
       </main>
 
@@ -39,6 +41,7 @@ function Navigation() {
         <li><NavLink to={'Chagan'}>Contact</NavLink></li>
         <li><NavLink to={'myUseState'}>myUseState</NavLink></li>
         <li><NavLink to={'MyUseEffect'}>MyUseEffect</NavLink></li>
+        <li><NavLink to={'MyUseRef'}>MyUseRef</NavLink></li>
       </ul>
     </nav>
   )

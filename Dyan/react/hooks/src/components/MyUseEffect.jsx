@@ -3,6 +3,10 @@ import { useEffect, useState } from "react"
 export default function MyUseEffect() {
   const [data, setData] = useState([])
 
+  const reloadProducts = () => {
+
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
@@ -17,6 +21,8 @@ export default function MyUseEffect() {
 
   return (
     <>
+      <button onClick={reloadProducts}>reload products</button>
+
       {data.map((x) => {
         return (
           <div key={x.id}>
@@ -24,6 +30,7 @@ export default function MyUseEffect() {
           </div>
         )
       })}
+
     </>
   )
 }

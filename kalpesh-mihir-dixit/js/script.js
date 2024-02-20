@@ -309,25 +309,54 @@
 
 //! try catch statement
 
-// function submitBtn() {
-//   let text = document.getElementById('text')
-//   let input = document.getElementById('input').value
+function submitBtn() {
+  let text = document.getElementById('text')
+  let input = document.getElementById('input').value
+  let spArr = ["_", "-", "@", "$", "&", "#"]
 
-//   try {
 
-//     if (!input) throw "Input is blank"
-//     if (isNaN(input)) throw "Require only number"
-//     Number(input)
-//     let inputLength = input.length
-//     if (inputLength < 4) throw "To low"
-//     if (inputLength > 8) throw "To high"
-//     if (inputLength >= 4 && inputLength <= 8) throw "Submitted"
-//   } catch (myMsg) {
-//     text.innerHTML = myMsg
-//   } finally {
-//     document.getElementById('input').value = ""
-//   }
-// }
+  let password = input;
+  let result = false
+  let temp = false
+  for (let a = 0; a < password.length; a++) {
+    let check = spArr.includes(password[a]);
+    if (check) {
+      temp = true
+
+    } else {
+      temp = false
+
+    }
+    if (temp) {
+      result = temp
+    }
+  }
+
+
+  if (!result) {
+    text.innerHTML = 'special caracter is required'
+  }else{
+    text.innerHTML = ''
+  }
+
+  console.log(result)
+
+
+
+  try {
+    if (!input) throw "Input is blank"
+    if (isNaN(input)) throw "Require only number"
+    Number(input)
+    let inputLength = input.length
+    if (inputLength < 4) throw "To low"
+    if (inputLength > 8) throw "To high"
+    if (inputLength >= 4 && inputLength <= 8) throw "Submitted"
+  } catch (myMsg) {
+    text.innerHTML = myMsg
+  } finally {
+    document.getElementById('input').value = ""
+  }
+}
 
 // let x = 5
 // try {
@@ -442,3 +471,28 @@ const language = ['html', 'css', 'javascript', 'nodejs', 'expressjs', 'mongodb',
 // for (let x of language) {
 //   console.log(x);
 // }
+
+//? while loop
+
+// let text = ""
+// let x = 0
+// while (x < language.length) {
+//   text += language[x] + "\t"
+//   // console.log(language[x]);
+//   x++
+// }
+
+// console.log(text);
+
+//? do while loop
+
+// let text = ""
+// let x = 0
+
+// do {
+//   text += language[x] + "\t"
+//   // console.log(language[x] + "\t");
+//   x++
+// } while (x > language.length)
+
+// console.log(text);

@@ -177,6 +177,101 @@
 // console.log(Number(true)); // 1
 // console.log(Number(false)); // 0
 
-/*
-? ========== Welcome =============
+//! function & fat arrow function
+
+// function myFunction() {
+//   console.log("Clicked Button");
+// }
+
+//* -------------------------------------
+
+// console.log(myFunction_1(5, 10));
+
+// function myFunction_1(a, b) {
+//   return a + b
+// }
+
+//* -------------------------------------
+
+// function myFunc() {
+//   return "Hello World!"
+// }
+
+// document.getElementById('demo').innerHTML = `<h1>${myFunc()}</h1>`
+
+//? fet arrow function
+
+// const myFunction_2 = (a, b) => {
+//   return a + b
+// }
+
+// console.log(myFunction_2(15, 35));
+
+//? Object in function
+
+const person = {
+  fname: "John",
+  lname: "Doe",
+  age: 29,
+  /* fullname: () => {
+    return person.fname + ' ' + person.lname
+  } */
+
+  /* fullname: function () {
+    return this.fname + ' ' + this.lname
+  } */
+}
+
+// console.log(person.fullname());
+
+//! Backtick
+
+// let x = "John"
+
+// let msg = `Hello ${x}` //* String
+
+// console.log(msg);
+
+//! if else & else if , Ternary Operator
+
+// let x = 5
+// let y = 6
+// let z = 7
+
+// if (x == y) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (x == y) {
+//   console.log("Yes x == y");
+// } else if (x == z) {
+//   console.log("Yes x == z")
+// } else {
+//   console.log("Something Wrong");
+// }
+
+//? Ternary Operator
+
+// console.log(5 == 6 ? true : false);
+// console.log(5 === "5" ? true : false);
+
+
+
+/* 
+* [ Home Work ] :- Operators
+
+  ==
+  ===
+  ! :- not operator
+  !=
+  !==
+  >
+  <
+  >=
+  <= 
+  || :- or operator
+  && :- and operator
+
 */

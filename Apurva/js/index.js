@@ -257,9 +257,7 @@ const person = {
 // console.log(5 == 6 ? true : false);
 // console.log(5 === "5" ? true : false);
 
-
-
-/* 
+/*
 * [ Home Work ] :- Operators
 
   ==
@@ -270,8 +268,40 @@ const person = {
   >
   <
   >=
-  <= 
+  <=
   || :- or operator
   && :- and operator
 
 */
+
+//! loop's
+
+/*
+  map - function
+  forEach - function
+  while - loop
+  do...while - loop
+  for - loop, for in, for of
+*/
+
+const demo = document.getElementById("demo")
+const mernStack = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React js",
+  "Node js",
+  "Express js",
+  "MongoDB",
+  "Bootstrap 5 CSS",
+  "Tailwind CSS",
+  "Git - Github"
+]
+
+//* Map method
+
+const renderData = mernStack.map((myList) => {
+  return `<li type="1">${myList}</li>`
+}).join("")
+
+demo.innerHTML = `<ul>${renderData}</ul>`

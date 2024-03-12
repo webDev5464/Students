@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    .box {
+      height: 200px;
+      width: 200px;
+      background-color: yellow;
+      border: 3px dashed red;
+      animation-name: myAnimation;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 3;
+      border-radius: 100%;
+      /* animation-direction: alternate; */
+      transition: 1s ease-in;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        i {
+          font-size: 120px;
+        }
+      }
+    }
+
+    .one:hover {
+      /* transform: translate(40px, 70px); */
+      /* transform: rotate(180deg); x, y, z */
+      /* transform: scale(1.2); x, y */
+      /* transform: skew(20deg, 10deg); */
+    }
+  }
+}
+
+@keyframes myAnimation {
+  0% {}
+
+  50% {
+    rotate: 360deg;
+  }
+
+  100% {}
+}

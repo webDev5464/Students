@@ -1,0 +1,57 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 10px;
+
+  div {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+  }
+
+  :first-child {
+    background: linear-gradient(to right, red 50%, green 45%, blue);
+  }
+
+  :nth-child(2) {
+    background: radial-gradient(red, green, blue);
+  }
+
+  :nth-child(3) {
+    background: conic-gradient(red 10%, green 20%, blue, red);
+  }
+
+  :nth-child(4) {
+    background: repeating-conic-gradient(at 0% 0%, red 10%, green 20%, blue 5%);
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .box {
+    div {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .box {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: black;
+  }
+
+  .box {
+    div {
+      background-color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1400px) {}

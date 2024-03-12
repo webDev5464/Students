@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue: #1363c6;
+  --lightGray: #cacaca;
+}
+
+body {
+  height: 500vh;
+}
+
+header {
+  background-color: var(--blue);
+  position: relative;
+  overflow: hidden;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 130px;
+    background-color: var(--blue);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    .logo {
+      word-spacing: -5px;
+      font-weight: 600;
+
+      :first-child,
+      :last-child {
+        font-size: 40px;
+        color: white;
+      }
+
+      :nth-child(2) {
+        i {
+          font-size: 8px;
+          color: black;
+          padding: 0 0 0 3px;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      color: var(--lightGray);
+
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          margin: 0 15px;
+
+          a {
+            text-decoration: none;
+            color: var(--lightGray);
+          }
+        }
+
+        :last-child {
+          padding: 0 0 0 7px;
+        }
+
+        .drop {
+          position: relative;
+
+          i {
+            position: absolute;
+            top: 3px;
+            right: -15px;
+          }
+        }
+
+        .drop:hover,
+        a:hover {
+          color: white;
+          cursor: pointer;
+          transition: .2s;
+        }
+      }
+
+      div {
+        padding: 0 0 0 20px;
+      }
+
+      div:hover {
+        color: white;
+        cursor: pointer;
+        transition: .2s;
+      }
+    }
+  }
+
+  .headerBanner {
+    height: 80vh;
+    background-image: url("./assets/bg-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .headerContainer {
+    position: absolute;
+    bottom: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 120px;
+
+    .detail {
+      color: white;
+
+      .btn {
+        border: 1px solid white;
+        width: fit-content;
+        padding: 8px 10px;
+        border-radius: 30px;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 20px 0;
+      }
+
+      p {
+        margin: 20px 0;
+      }
+
+      .btnChild {
+        display: flex;
+        margin: 20px 0;
+
+        div {
+          border: 1px solid white;
+          padding: 20px 45px;
+          border-radius: 40px;
+          cursor: pointer;
+        }
+
+        :first-child {
+          margin: 0 20px 0 0;
+          background-color: white;
+          color: black;
+        }
+
+        :last-child {
+          margin: 0 0 0 20px;
+          transition: .5s;
+        }
+
+        :last-child:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+
+    .heroImg {
+      img {
+        width: 600px;
+      }
+    }
+  }
+}

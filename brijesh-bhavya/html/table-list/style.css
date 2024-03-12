@@ -1,0 +1,27 @@
+table {
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: red; */
+  border: 2px solid blue;
+  background-color: black;
+  color: white;
+  width: 800px;
+  height: 300px;
+  margin: auto;
+}
+
+td,
+th {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: tomato;
+}
+
+td {
+  text-align: center;
+}

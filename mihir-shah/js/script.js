@@ -166,7 +166,7 @@ const earbud = [
   },
 ];
 const language = ["HTML", "CSS", "JavaScript", "React", "Node", "Mongodb"]
-const render = document.getElementById('render')
+// const render = document.getElementById('render')
 
 //? map
 // const renderDatas = earbud.map((productVal) => {
@@ -211,3 +211,122 @@ const render = document.getElementById('render')
 //   console.log(x);
 // }
 
+//! Advance
+
+//* async function and fetch
+//* Api link :- https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI
+//* https://jsonplaceholder.typicode.com/
+
+// const fetchingData = async () => {
+//   const fetching = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+//   const data = await fetching.json()
+//   const allData = [...data.earbud, ...data.tshirt]
+
+//   const renderAllData = allData.map((x) => {
+//     return `
+//       <div>
+//         <p>${x.title}</p>
+//       </div>
+//     `
+//   }).join("")
+
+//   document.getElementById('render').innerHTML = renderAllData
+// }
+// fetchingData()
+
+// const myClass = document.querySelectorAll(".render")
+// myClass[2].style.backgroundColor = "red"
+
+// const getId = document.getElementById('render')
+// getId.setAttribute("class", "myClass")
+// getId.removeAttribute("id")
+
+// console.log(getId);
+
+// console.log(screen.height);
+
+// const value = window.prompt("Enter your name");
+// console.log(value);
+
+// const d = new Date()
+// d.setFullYear(2028)
+// console.log(d.getFullYear());
+
+//! setInterval
+
+// setInterval(() => {
+//   console.log("Run...");
+// }, 1000)
+
+// clearInterval()
+
+//! setTimeout
+
+// setTimeout(() => {
+//   console.log("Hello World!");
+// }, 3000)
+
+//! localStorage
+
+// localStorage.setItem("myName", "Chagan")
+// console.log(localStorage.getItem("myName"));
+
+// localStorage.removeItem("key")
+// localStorage.clear()
+
+// const users = { username: "John Doe" }
+// localStorage.setItem("users", JSON.stringify(users))
+// const data = JSON.parse(localStorage.getItem("users"))
+
+//* Example
+
+// function submitFun() {
+//   const inputVal = document.getElementById('input').value;
+
+//   const existingData = localStorage.getItem("data") ? JSON.parse(localStorage.getItem("data")) : [];
+
+//   const newValue = {
+//     value: inputVal,
+//     id: Date.now()
+//   };
+
+//   existingData.push(newValue);
+
+//   localStorage.setItem("data", JSON.stringify(existingData));
+// }
+
+// const render = document.getElementById("text")
+
+// const getData = JSON.parse(localStorage.getItem("data"))
+
+// render.innerHTML = getData.map((x) => {
+//   return `
+//     <p>${x.value}</p>
+//     <button onclick="deleteData(${x.id})">Delete</button>
+//   `
+// }).join("")
+
+// function deleteData(id) {
+//   console.log(id);
+// }
+
+// const arr = []
+// const obj = {}
+
+// console.log(
+//   Array.isArray(obj) ? "Yes" : "No"
+// );
+
+// if (Array.isArray(arr)) {
+//   "yes"
+// } else {
+//   "No"
+// }
+
+// const x = "5"
+
+// console.log(typeof x !== "string" ? "Is not string" : "Is String");
+
+/* 
+  ==, ===, !=, !==, NaN, isNaN, Array.isArray(val), <, >, <=, >=
+*/

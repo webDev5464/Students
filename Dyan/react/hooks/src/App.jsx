@@ -6,27 +6,35 @@ import Contact from "./pages/Contact";
 import MyUseState from "./components/MyUseState";
 import MyUseEffect from "./components/MyUseEffect";
 import MyUseRef from "./components/MyUseRef";
+import { createContext } from "react";
+
+export const AppContext = createContext()
 
 export default function App() {
+  const person = "John Doe"
   return (
     <BrowserRouter>
+      <AppContext.Provider value={{
+        person
+      }}>
 
-      <Navigation />
+        <Navigation />
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route path="Service" element={<Service />} />
-          <Route path="Chagan" element={<Contact />} />
-          <Route path="myUseState" element={<MyUseState />} />
-          <Route path="MyUseEffect" element={<MyUseEffect />} />
-          <Route path="MyUseRef" element={<MyUseRef />} />
-        </Routes>
-      </main>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="Service" element={<Service />} />
+            <Route path="Chagan" element={<Contact />} />
+            <Route path="myUseState" element={<MyUseState />} />
+            <Route path="MyUseEffect" element={<MyUseEffect />} />
+            <Route path="MyUseRef" element={<MyUseRef />} />
+          </Routes>
+        </main>
 
-      {/* <h1>This is a footer</h1> */}
+        {/* <h1>This is a footer</h1> */}
 
+      </AppContext.Provider>
     </BrowserRouter>
   )
 }

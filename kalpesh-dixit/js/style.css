@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+}
+
+#renderData {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.card {
+  border: 2px solid var(--black);
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+
+  .imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .cardDetail {
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-bar {
+    background-color: #2bab0d;
+    height: 70px;
+    width: 100%;
+}
+
+.menu-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.menu-bar ul li {
+    margin: 25px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.menu-bar.fa {
+    margin: 8px;
+}
+
+.sub-menu-1 {
+    display: none;
+    position: relative;
+}
+
+.sub-menu-2 {
+    display: none;
+    position: relative;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    background-color: green;
+    padding-top: 15px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background-color: #ab0d0d;
+    padding-top: 15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}

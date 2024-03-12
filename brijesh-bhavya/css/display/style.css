@@ -1,0 +1,42 @@
+/* p {
+  background-color: tomato;
+
+  display: inline;
+} */
+
+/* span {
+  background-color: aqua;
+
+  display: block;
+} */
+
+/* .hiddenCard {
+  border: 2px solid red;
+  margin: 50px 0;
+
+  display: none;
+} */
+
+/* a {
+  background-color: black;
+  color: white;
+}
+
+.mark {
+  background-color: yellow;
+} */
+
+.drop {
+  background-color: greenyellow;
+  width: fit-content;
+}
+
+.down {
+  display: none;
+}
+
+.drop:hover {
+  .down {
+    display: block;
+  }
+}

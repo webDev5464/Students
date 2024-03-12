@@ -309,54 +309,54 @@
 
 //! try catch statement
 
-function submitBtn() {
-  let text = document.getElementById('text')
-  let input = document.getElementById('input').value
-  let spArr = ["_", "-", "@", "$", "&", "#"]
+// function submitBtn() {
+//   let text = document.getElementById('text')
+//   let input = document.getElementById('input').value
+//   let spArr = ["_", "-", "@", "$", "&", "#"]
 
 
-  let password = input;
-  let result = false
-  let temp = false
-  for (let a = 0; a < password.length; a++) {
-    let check = spArr.includes(password[a]);
-    if (check) {
-      temp = true
+//   let password = input;
+//   let result = false
+//   let temp = false
+//   for (let a = 0; a < password.length; a++) {
+//     let check = spArr.includes(password[a]);
+//     if (check) {
+//       temp = true
 
-    } else {
-      temp = false
+//     } else {
+//       temp = false
 
-    }
-    if (temp) {
-      result = temp
-    }
-  }
-
-
-  if (!result) {
-    text.innerHTML = 'special caracter is required'
-  }else{
-    text.innerHTML = ''
-  }
-
-  console.log(result)
+//     }
+//     if (temp) {
+//       result = temp
+//     }
+//   }
 
 
+//   if (!result) {
+//     text.innerHTML = 'special caracter is required'
+//   }else{
+//     text.innerHTML = ''
+//   }
 
-  try {
-    if (!input) throw "Input is blank"
-    if (isNaN(input)) throw "Require only number"
-    Number(input)
-    let inputLength = input.length
-    if (inputLength < 4) throw "To low"
-    if (inputLength > 8) throw "To high"
-    if (inputLength >= 4 && inputLength <= 8) throw "Submitted"
-  } catch (myMsg) {
-    text.innerHTML = myMsg
-  } finally {
-    document.getElementById('input').value = ""
-  }
-}
+//   console.log(result)
+
+
+
+//   try {
+//     if (!input) throw "Input is blank"
+//     if (isNaN(input)) throw "Require only number"
+//     Number(input)
+//     let inputLength = input.length
+//     if (inputLength < 4) throw "To low"
+//     if (inputLength > 8) throw "To high"
+//     if (inputLength >= 4 && inputLength <= 8) throw "Submitted"
+//   } catch (myMsg) {
+//     text.innerHTML = myMsg
+//   } finally {
+//     document.getElementById('input').value = ""
+//   }
+// }
 
 // let x = 5
 // try {
@@ -387,7 +387,7 @@ function submitBtn() {
   do while
 */
 
-const language = ['html', 'css', 'javascript', 'nodejs', 'expressjs', 'mongodb', 'nextjs', 'python']
+// const language = ['html', 'css', 'javascript', 'nodejs', 'expressjs', 'mongodb', 'nextjs', 'python']
 
 // const users = [
 //   {
@@ -496,3 +496,99 @@ const language = ['html', 'css', 'javascript', 'nodejs', 'expressjs', 'mongodb',
 // } while (x > language.length)
 
 // console.log(text);
+
+//! Methods
+
+//* String methods
+
+// let text = "Please visit Microsoft! microsoft! Microsoft! microsoft!"
+
+// console.log(text.length);
+// console.log(text.toUpperCase());
+// console.log(text.toLowerCase());
+// console.log(text.slice(0, 20));
+// console.log(text.replace(/Microsoft!/gi, "Hello"));
+
+// let x = "hello"
+// let y = "world"
+
+// console.log(x + " " + y);
+// console.log(x[0]);
+
+// let text = "a,b,c,d,e,f"
+// console.log(text.split(","));
+
+//* setInterval
+// setInterval(() => {
+//   console.log("Hello");
+// })
+
+//* setTimeout
+// setTimeout(() => {
+//* fetch and asyncrunes
+const fetchingData = async () => {
+  const fetching = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+  const dataObj = await fetching.json()
+  // const allData = [...dataObj.earbud, ...dataObj.tshirt]
+
+  const renderData = document.getElementById("renderData")
+  renderData.innerHTML = dataObj.earbud.map((x) => {
+    return `
+        <div class="card">
+          <div class="imgDiv">
+            <img src="${x.img1}" alt="" width="300px">
+          </div>
+          <div class="cardDetail">
+            <p>${x.title.slice(0, 100)}...</p>
+          </div>
+        </div>
+      `
+  }).join("")
+}
+fetchingData()
+// }, 1000)
+
+// testingAPI :- https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI
+// jsonPlaceHolder :- https://jsonplaceholder.typicode.com/
+
+//* localStorage
+
+// localStorage.setItem("name", "John Doe")
+// console.log(localStorage.getItem("name"));
+// localStorage.removeItem("name")
+// localStorage.clear()
+
+// const person = [
+//   { fname: "John", lname: "Doe", age: 23 },
+//   { fname: "Chagan", lname: "Chapri", age: 16 }
+// ]
+
+// const jsonPerson = JSON.stringify(person);
+
+// localStorage.setItem("person", jsonPerson)
+
+// console.log(JSON.parse(localStorage.getItem("person")));
+
+//! Toggle Theme change using localStorage
+
+const themeStyle = document.getElementById("themeStyle")
+const themeHandler = () => {
+  const href = themeStyle.getAttribute("href")
+
+  if (href === "./light.css") {
+    themeStyle.setAttribute("href", "./dark.css")
+    localStorage.setItem("theme", "Dark")
+  } else {
+    themeStyle.setAttribute("href", "./light.css")
+    localStorage.setItem("theme", "Light")
+  }
+
+  console.log(themeStyle.getAttribute("href"));
+}
+
+const getLocalTheme = localStorage.getItem("theme")
+if (getLocalTheme == "Dark") {
+  themeStyle.setAttribute("href", "./dark.css");
+} else {
+  themeStyle.setAttribute("href", "./light.css");
+}

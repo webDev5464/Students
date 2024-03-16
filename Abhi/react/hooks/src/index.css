@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px 100px;
+
+  .webLogo {
+    font-size: 30px;
+  }
+
+  ul {
+    display: flex;
+    font-size: 20px;
+
+    li {
+      list-style: none;
+      padding: 0 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.pages {
+  padding: 20px;
+}
+
+.active {
+  color: tomato;
+}

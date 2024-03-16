@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Top Navabar -->
+        <nav>
+            <div class="heading-nav">
+                <div class="calling-information">
+                    <div class="phone">
+                        <a href="">
+                            <span><i class="fa-solid fa-mobile-screen"></i></span>
+                            <span>+91 9737080195</span>
+                        </a>
+                    </div>
+                    <div class="location">
+                        <a href="">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span>Our Location</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="logins">
+                    <div class="login-signup">
+                        <a href="">
+                            <span><i class="fa-regular fa-user"></i></span>
+                            <span> Login/Sign Up </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second top navbar -->
+            <div class="heading-second">
+                <div class="logos">
+                    <div class="logo">
+                        <img src="./images/logo.svg" alt="" />
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="search" onclick="search()">
+                        <span><i class="fa-solid fa-magnifying-glass"></i> </span>
+                    </div>
+                    <div class="wishlist">
+                        <a href="./wishlist.html"> <i class="fa-regular fa-heart"></i></a>
+                    </div>
+                    <div class="cart">
+                        <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="cate">
+                    <div class="browser">
+                        <span><i class="fa-solid fa-table-cells-large"></i></span>
+                        <span>Browse Categories </span>
+                    </div>
+                </div>
+                <div class="menus">
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a href="./">Home </a>
+                            </li>
+                            <li>
+                                <a href="">About </a>
+                            </li>
+                            <div class="dropDown1" id="dropDown1">
+                                <div class="Dropdown" onclick="dropdown(this)">
+                                    Shop <span><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                                <div class="up">
+                                    <ul>
+                                        <li>
+                                            <a href="">Women's</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Men's</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Cellphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="">computer</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Electronics</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Home & Gardern</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Luggage</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mother & kids</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropDown1" id="dropDown2">
+                                <div class="Dropdown" onclick="dropdown(this)">
+                                    Mega Menu
+
+                                    <span><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                                <div class="up">
+                                    <ul>
+                                        <li>
+                                            <a href="">Women's</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Men's</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Cellphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="">computer</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Electronics</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Home & Gardern</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Luggage</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mother & kids</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="search-box notActive">
+                    <div class="cancel">
+                        <span><i class="fa-solid fa-xmark" onclick="search()"></i></span>
+                    </div>
+                    <!-- <div class="selects"> -->
+                    <div class="select-searcxh">
+                        <select name="" id="">
+                <option value="All Categories">All Categories</option>
+                <option value="Women's">Women's</option>
+                <option value="Men's">Men's</option>
+                <option value="Cellphones">Cellphones</option>
+                <option value="Computer">Computer</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Home & Gardern">Home & Gardern</option>
+                <option value="Luggage">Luggage</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Mother & Kids">Mother & Kids</option>
+              </select>
+                    </div>
+                    <div class="input">
+                        <input type="text " placeholder="Search Here..." />
+                    </div>
+                    <div class="search-icon">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </nav>
+    </header>
+    <main>
+        <div class="tabels">
+            <table border="1">
+                <tr>
+                    <div class="products2">
+                        <th colspan="2">Product</th>
+
+
+                    </div>
+                    <th>Prise</th>
+                    <th>Stock Status</th>
+                    <th>Action</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="images">
+                            <img src="./images/products/product-1-1.jpg" alt="">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="products2">
+                            <a href="">   J.Crew Mercantile Women's Short-Sleeve</a>
+                            <p class="text"> Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tabeleprise">
+                            <h3>₹ 800</h3>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status">
+                            <p>In Stock</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="addbtn">
+                            <button><span class="span"><i class="fa-solid fa-bag-shopping"></i></span>Add To Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="delete">
+                            <span><i class="fa-solid fa-trash"></i></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="images">
+                            <img src="./images/products/product-2-1.jpg" alt="">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="products2">
+                            <a href="">Amazon Essentials Women's Tank</a>
+                            <p class="text"> Sit at ipsum amet clita no est, sed amet sadipscing et gubergren</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tabeleprise">
+                            <h3>₹ 599</h3>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status">
+                            <p>In Stock</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="addbtn">
+                            <button><span class="span"><i class="fa-solid fa-bag-shopping"></i></span>Add To Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="delete">
+                            <span><i class="fa-solid fa-trash"></i></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="images">
+                            <img src="./images/products/product-3-1.jpg" alt="">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="products2">
+                            <a href="">   Amazon Brand - Daily Ritual Women's Jersey</a>
+                            <p class="text"> Amazon Brand - Daily Ritual Women's Jersey</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tabeleprise">
+                            <h3>₹ 1299</h3>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status">
+                            <p>In Stock</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="addbtn">
+                            <button><span class="span"><i class="fa-solid fa-bag-shopping"></i></span>Add To Cart</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="delete">
+                            <span><i class="fa-solid fa-trash"></i></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

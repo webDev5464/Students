@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import About, { Magan } from "./pages/About"
 import Service from "./pages/Service"
 import MyUseState from "./pages/MyUseState"
+import MyUseEffect from "./pages/myUseEffect"
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="Chagan" element={<Service />} />
           <Route path="Magan" element={<Magan />} />
           <Route path="useState" element={<MyUseState />} />
+          <Route path="MyUseEffect" element={<MyUseEffect />} />
         </Routes>
       </main>
     </BrowserRouter>
@@ -35,6 +37,7 @@ const Navigation = () => {
         <li><NavLink to={'Chagan'}>Service</NavLink></li>
         <li><NavLink to={'Magan'}>Magan</NavLink></li>
         <li><NavLink to={'useState'}>useState</NavLink></li>
+        <li><NavLink to={'MyUseEffect'}>useEffect</NavLink></li>
       </ul>
     </nav>
   )

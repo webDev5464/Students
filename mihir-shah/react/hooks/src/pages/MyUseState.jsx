@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const MyUseState = () => {
   return (
@@ -37,19 +37,35 @@ function ChangeValueState() {
 function CounterState() {
   const [myValue, setMyValue] = useState(0)
 
+  const increment = () => {
+    setMyValue(myValue + 1)
+  }
+
+  const decrement = () => {
+    setMyValue(myValue - 1)
+  }
+
+  useEffect(() => {
+    alert("Click increment")
+  }, [myValue])
+
   return (
     <>
       <h1>{myValue}</h1>
 
-      <button onClick={() => setMyValue(myValue + 1)}>Increment</button>
+      <button onClick={increment}>Increment</button>
 
-      <button onClick={() => setMyValue(myValue - 1)}>Decrement</button>
+      <button onClick={decrement}>Decrement</button>
     </>
   )
 }
 
 function ChangeTheme() {
   const [theme, setTheme] = useState(false)
+
+  useEffect(() => {
+    alert("Change Theme")
+  }, [theme])
 
   return (
     <>
@@ -59,6 +75,8 @@ function ChangeTheme() {
       </div>
 
       <button onClick={() => setTheme(!theme)}>Change Theme</button>
+
+      <button>Alert Box</button>
     </>
   )
 }

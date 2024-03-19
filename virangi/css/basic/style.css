@@ -1,0 +1,47 @@
+.box {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-color: black;
+  border-radius: 100%;
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: red; */
+  border: 5px solid red;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  width: fit-content;
+  padding: 50px;
+  margin: 100px;
+  border: 7px solid red;
+}
+
+/* p {
+  background-color: red;
+} */
+
+/* span {
+  background-color: green;
+} */
+
+.container {
+  p {
+    background-color: green;
+    display: inline-block;
+    margin: auto;
+  }
+
+  span {
+    background-color: red;
+    display: block;
+  }
+
+  .center {
+    background-color: blue;
+    /* width: fit-content; */
+    margin: auto;
+  }
+}

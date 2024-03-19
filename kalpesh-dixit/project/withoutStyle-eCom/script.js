@@ -1,0 +1,4 @@
+const fetchingData = async () => {
+
+}
+fetchingData()

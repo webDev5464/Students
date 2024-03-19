@@ -129,9 +129,80 @@
 
 // console.log(typeof NaN); // Not a Number
 
-//TODO :- Function, Arrow Function
-//TODO :- if else & else if statement
-//TODO :- Condition's
+//! Function, Arrow Function
+
+// function myFunction() {
+//   console.log("Hello World");
+
+//   function nestingFunction() {
+//     console.log("This is a nesting function");
+//   }
+
+//   nestingFunction()
+// }
+
+// myFunction()
+
+// function cal() {
+//   return "Hello World!"
+// }
+
+// document.getElementById("myId").innerHTML = cal()
+
+// function calculation(p1, p2) {
+//   return p1 + p2
+// }
+
+// console.log(calculation("World", "Hello"));
+
+// console.log(myArrow());
+
+// const myArrow = () => {
+//   return "I am an arrow function"
+// }
+
+// const person = {
+//   fname: "Chagan",
+//   lname: "chatriWala",
+//   fullname: function () {
+//     return this.fname + " " + this.lname
+//   }
+// }
+
+// console.log(person.fullname());
+
+//! if else & else if statement, ternary operator
+
+// if (5 != "5") {
+//   console.log("Condition is true")
+// } else if (4 >= 5) {
+//   console.log("Second Condition is true")
+// } else {
+//   console.log("False");
+// }
+
+// console.log(a == b ? true : false);
+
+// function checking(a, b) {
+//   return a == b ? true : false
+// }
+
+// console.log(checking(10, 10));
+
+/*
+  ==
+  ===
+  !=
+  !==
+  <
+  >
+  <=
+  >=
+  &&
+  ||
+  !value
+*/
+
 //TODO :- Try & catch, finally
 //TODO :- Switch
 //TODO :- loops

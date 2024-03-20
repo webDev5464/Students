@@ -1,0 +1,41 @@
+body {
+  height: 500vh;
+}
+
+.myAbsolute {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  position: absolute;
+  /* top: ; */
+  /* bottom: 0px; */
+  /* left: ; */
+  /* right: 0px; */
+
+  bottom: 38%;
+  right: 36%;
+}
+
+.myRelative {
+  height: 400px;
+  width: 400px;
+  border: 5px solid red;
+  position: relative;
+}
+
+.simClass h1 {
+  background-color: yellow;
+  width: fit-content;
+  padding: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 200px;
+}

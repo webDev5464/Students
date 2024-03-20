@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 //? Database model and Schema
 const testingSchema = mongoose.Schema({
@@ -44,6 +45,35 @@ app.post("/postData", async (req, res) => {
   }
 })
 
+//? get
+app.get('/getData', async (req, res) => {
+  const getAllData = await testingModel.find({})
+  res.send(getAllData)
+})
+
+app.get('/getById', async (req, res) => {
+  const user = req.body
+  console.log(user.id);
+
+  const getByIdData = await testingModel.findById(user.id)
+  res.send(getByIdData)
+})
+
+app.get('/chaganId/:userId', async (req, res) => {
+  const params = req.params.userId
+  res.send(await testingModel.findById(params))
+})
+
+app.post('/defaultGet', async (req, res) => {
+  const { heading } = req.body
+
+  const findData = await testingModel.find({ heading })
+  if (findData.length > 0) {
+    res.send(findData)
+  } else {
+    res.send("Blank")
+  }
+})
 
 //? Database Connection
 const dbConn = async (req, res) => {

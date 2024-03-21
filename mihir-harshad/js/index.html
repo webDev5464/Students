@@ -10,7 +10,17 @@
 </head>
 
 <body>
-  <h1 id="myId"></h1>
+
+  <div class="form">
+    <input type="text" placeholder="Username..." id="username">
+    <input type="email" placeholder="Email..." id="email">
+    <input type="password" placeholder="Password..." id="pass">
+    <input type="text" placeholder="Confirm Password..." id="conPass">
+
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <div class="popupMsg notActive"></div>
 
   <script src="./script.js"></script>
 </body>

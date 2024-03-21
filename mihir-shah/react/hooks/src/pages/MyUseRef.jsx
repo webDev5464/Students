@@ -3,25 +3,47 @@ import { useEffect, useRef } from "react"
 const MyUseRef = () => {
   return (
     <>
-      <AutoFocusInput />
+      <AutoInputFocus />
+
+      <hr />
+
+      <AutoScroll />
     </>
   )
 }
 
 export default MyUseRef
 
-const AutoFocusInput = () => {
-  const getInput = useRef()
+const AutoInputFocus = () => {
+  const autoFocus = useRef()
 
   useEffect(() => {
-    getInput.current.focus()
+    autoFocus.current.focus()
   }, [])
+
+  return (
+    <div>
+      <form onSubmit={e => e.preventDefault()}>
+        <input type="text" placeholder="Write Something..." ref={autoFocus} />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <button onClick={() => autoFocus.current.focus()}>Write in input</button>
+    </div>
+  )
+}
+
+const AutoScroll = () => {
+  const scrollTextarea = useRef(null);
   return (
     <>
-      <form action="" onSubmit={e => e.preventDefault()}>
-        <input type="text" ref={getInput} />
-        <button onClick={() => getInput.current.focus()} type="submit">Focus Input</button>
-      </form>
+      <button onClick={() => scrollTextarea.current?.scrollIntoView({ behavior: "smooth" })}>Go to Heading</button>
+
+      <div style={{
+        height: "500vh"
+      }}></div>
+
+      <h1 ref={scrollTextarea}>Hello React</h1>
     </>
   )
 }

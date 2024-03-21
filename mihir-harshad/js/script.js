@@ -203,10 +203,95 @@
   !value
 */
 
-//TODO :- Try & catch, finally
-//TODO :- Switch
+/* const popupMsg = document.querySelector(".popupMsg")
+function submitForm() {
+  try {
+    const username = document.getElementById("username").value
+    const email = document.getElementById("email").value
+    const pass = document.getElementById("pass").value
+    const conPass = document.getElementById("conPass").value
+
+    if (!username) throw "Username field is blank"
+    if (!email) throw "email field is blank"
+    if (!pass) throw "password field is blank"
+    if (!conPass) throw "Confirm Password field is blank"
+    if (pass !== conPass) throw "Password and confirm password does not match."
+
+  } catch (x) {
+
+    popupMsg.innerHTML = `Error :- ${x}` //! Backtick
+    // popupMsg.getAttribute("class")
+    popupMsg.setAttribute("class", "popupMsg active")
+
+  } finally {
+    document.getElementById("username").value = ""
+    document.getElementById("email").value = ""
+    document.getElementById("pass").value = ""
+    document.getElementById("conPass").value = ""
+
+    setTimeout(() => {
+      popupMsg.innerHTML = ``
+      popupMsg.setAttribute("class", "popupMsg notActive")
+    }, 2000)
+  }
+} */
+
+//! Array Method's
+// const frt = ['Apple', 'Banana', 'Mango']
+
+// frt.push('Kiwi')
+// frt.pop()
+// frt.unshift('Orange')
+// frt.shift()
+// frt.reverse()
+// frt.sort()
+
+// console.log(frt);
+
+//! String Method
+
+// let text = "Hello"
+// text.reverse()
+// console.log(text);
+// console.log(text.toLowerCase());
+
+//! Switch
+
+/* const today = new Date()
+
+switch (today.getDay()) {
+  case 0:
+    console.log("Today is Sunday");
+    break;
+  case 1:
+    console.log("Today is Monday");
+    break;
+  case 2:
+    console.log("Today is Tuesday");
+    break;
+  case 3:
+    console.log("Today is Wednesday");
+    break;
+  case 4:
+    console.log("Today is Thursday");
+    break;
+  case 5:
+    console.log("Today is Friday");
+    break;
+  case 6:
+    console.log("Today is Saturday");
+    break;
+  default:
+    console.log("Error, invalid day number")
+} */
+
+//! Date
+// const setYear = new Date()
+// setYear.setFullYear(1987)
+// console.log(setYear);
+
 //TODO :- loops
-//TODO :- Date
 //TODO :- async & await
 //TODO :- fetch API
 //TODO :- localStorage, setTimeout, setInterval
+//TODO :- Error Handling

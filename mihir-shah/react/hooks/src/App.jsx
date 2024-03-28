@@ -5,24 +5,33 @@ import Service from "./pages/Service"
 import MyUseState from "./pages/MyUseState"
 import MyUseEffect from "./pages/myUseEffect"
 import MyUseRef from "./pages/MyUseRef"
+import { createContext } from "react"
+
+export const AppContext = createContext()
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Navigation />
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route path="Chagan" element={<Service />} />
-          <Route path="Magan" element={<Magan />} />
-          <Route path="useState" element={<MyUseState />} />
-          <Route path="MyUseEffect" element={<MyUseEffect />} />
-          <Route path="MyUseRef" element={<MyUseRef />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+  const rollNum = 7
+  const user = "Chagan And Magan"
+
+  return (
+    <AppContext.Provider value={{ user, rollNum }}>
+      <BrowserRouter>
+        <Navigation />
+
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="Chagan" element={<Service />} />
+            <Route path="Magan" element={<Magan />} />
+            <Route path="useState" element={<MyUseState />} />
+            <Route path="MyUseEffect" element={<MyUseEffect />} />
+            <Route path="MyUseRef" element={<MyUseRef />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 

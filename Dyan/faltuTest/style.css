@@ -1,0 +1,37 @@
+.display {
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+  border: 2px solid black;
+  
+  text-wrap: nowrap;
+  /* direction: rtl; */
+}
+
+.display:hover {
+  overflow: auto;
+}
+
+.display::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.display::-webkit-scrollbar-thumb {
+  background-color: rgb(128, 255, 242);
+  border-radius: 10px;
+}
+
+.display::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 102, 255);
+  cursor: grab;
+}
+
+.display::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+
+.display::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: black;
+}

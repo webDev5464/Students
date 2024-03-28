@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import "./index.css"
-import GlobContext from './context/GlobContext.jsx'
+import App from "./App"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <GlobContext>
+  <React.StrictMode>
     <App />
-  </GlobContext>
+  </React.StrictMode>,
 )

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobProvider } from '../context/GlobContext'
 
 const Service = () => {
+
+  const { personName } = useContext(GlobProvider)
+
   return (
-    <div>Service</div>
+    <div>Service {personName}</div>
   )
 }
 

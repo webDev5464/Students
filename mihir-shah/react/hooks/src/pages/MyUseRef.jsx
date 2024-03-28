@@ -1,4 +1,6 @@
-import { useEffect, useRef } from "react"
+import { createContext, useEffect, useRef } from "react"
+
+export const RefContext = createContext()
 
 const MyUseRef = () => {
   return (

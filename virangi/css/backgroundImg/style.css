@@ -1,0 +1,36 @@
+/* .parent {
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 0;
+  }
+} */
+
+.myBgImg {
+  background-image: url("./DoremonEndNobitaCrop.jpg");
+  height: 400px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -48px;
+
+  border: 2px solid red;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+}
+
+.glass {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+.fixedImg {
+  background: url("./photo-1498050108023-c5249f4df085.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}

@@ -1,0 +1,10 @@
+body {
+  background-color: var(--white);
+}
+
+.card {
+  background-color: var(--black);
+  color: var(--white);
+  width: fit-content;
+  padding: 10px;
+}

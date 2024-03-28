@@ -290,8 +290,101 @@ switch (today.getDay()) {
 // setYear.setFullYear(1987)
 // console.log(setYear);
 
-//TODO :- loops
+//! loops
+/*
+  map()
+  forEach()
+  for
+  for in
+  for of
+  while
+  do while
+*/
+// const render = document.getElementById('render')
+// const language = ['html', 'css', 'javaScript', 'react', 'node js', 'express js', 'mongo db']
+
+//? map()
+
+// --------------------------------------
+// let text = ""
+// language.map((y) => {
+//   text += y + "<br>"
+// })
+
+// render.innerHTML = text
+// --------------------------------------
+
+// render.innerHTML = language.map((x) => {
+//   return x + "<br>"
+// })
+
+//? forEach
+
+// let text = ""
+// language.forEach((x) => {
+//   text += x + "<br>"
+// })
+
+// render.innerHTML = text
+
+//? Real Example
+
+// const person = [
+//   { fname: "Chagan", lname: "Chapri" },
+//   { fname: "Magan", lname: "Bloger" },
+//   { fname: "John", lname: "Doe" },
+//   { fname: "Smith", lname: "Duck" },
+//   { fname: "Mihir", lname: "Chapri" },
+// ]
+
+// console.log(person.map((x) => {
+//   return x.fname + " " + x.lname
+// })); // ['Chagan Chapri', 'Magan Bloger', 'John Doe', 'Smith Duck', 'Mihir Chapri']
+
+// let text = ""
+// person.forEach((x) => {
+//   text += x.fname + " " + x.lname
+// })
+// console.log(text); // Chagan ChapriMagan BlogerJohn DoeSmith DuckMihir Chapri
+
+// const showPeople = person.map((x) => {
+//   return x.fname + " " + x.lname + "<br>"
+// }).join("")
+
+// render.innerHTML = showPeople
+
+//! DOM & BOM
+
+//* DOM // Document Object Model
+
+// select element
+
+// document.getElementById("render").innerHTML = "<h1>Hello</h1>"
+
+/*
+  const renderId = document.getElementById("render")
+  renderId.setAttribute('class', 'chagan')
+  const getClass = renderId.getAttribute("class")
+  renderId.innerHTML = "<h1>Hello World!</h1>"
+  console.log(getClass);
+*/
+
+/*
+  const allClass = document.querySelectorAll(".myClass")
+  console.log(allClass);
+  allClass.forEach((e) => {
+    e.innerHTML = "Hello"
+  })
+*/
+
+/*
+  const render = document.getElementById('render')
+  const createHeading = document.createElement('h1')
+  createHeading.innerHTML = "Hello World!"
+  render.appendChild(createHeading)
+*/
+
 //TODO :- async & await
 //TODO :- fetch API
-//TODO :- localStorage, setTimeout, setInterval
+//TODO :- localStorage, setTimeout, setInterval, windows
 //TODO :- Error Handling

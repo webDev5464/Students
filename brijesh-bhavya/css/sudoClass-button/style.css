@@ -1,0 +1,56 @@
+/* .parent>div h1 {
+  color: red;
+} */
+
+/* .parent>div h1:first-child {
+  color: green;
+} */
+
+/* .parent>div>h1:nth-child(2) {
+  color: red;
+} */
+
+/* .parent {
+  h1 {
+    color: green;
+  }
+
+  div {
+    h1 {
+      color: red;
+    }
+  }
+} */
+
+/* Button */
+
+.button {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 7px 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 6px;
+  background-color: lightgray;
+  cursor: pointer;
+  margin: 20px 0;
+  user-select: none;
+  box-shadow: 2px 2px 4px black;
+}
+
+.hover:hover {
+  background-color: gray;
+}
+
+.active:active {
+  scale: 0.95;
+}
+
+/* input {
+  border: none;
+} */
+
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 4px black;
+  border: none;
+}

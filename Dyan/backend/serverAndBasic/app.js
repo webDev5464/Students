@@ -51,29 +51,65 @@ app.get('/getData', async (req, res) => {
   res.send(getAllData)
 })
 
-app.get('/getById', async (req, res) => {
-  const user = req.body
-  console.log(user.id);
-
-  const getByIdData = await testingModel.findById(user.id)
-  res.send(getByIdData)
+app.post('/findDataDelete', async (req, res) => {
+  const { id } = req.body
+  const deleteData = await testingModel.findByIdAndDelete(id)
+  res.send({
+    message: "Your data is delete",
+    data: deleteData
+  })
 })
 
-app.get('/chaganId/:userId', async (req, res) => {
-  const params = req.params.userId
-  res.send(await testingModel.findById(params))
-})
 
-app.post('/defaultGet', async (req, res) => {
-  const { heading } = req.body
+app.put('/updateData', async (req, res) => {
+  // const { id } = req.params
+  // console.log(id);
+  const { id, heading, title } = req.body
+  try {
+    const findDataWithId = await testingModel.findById(id)
+    if (!findDataWithId) throw "Not Found"
 
-  const findData = await testingModel.find({ heading })
-  if (findData.length > 0) {
-    res.send(findData)
-  } else {
-    res.send("Blank")
+    res.send({
+      process: true,
+      msg: "Update data successfully",
+      data: await testingModel.findByIdAndUpdate(id, {
+        heading: heading,
+        title: title
+      })
+    })
+
+  } catch (msg) {
+    res.send(msg)
   }
 })
+
+// findByIdAndDelete
+
+// app.get('/getById', async (req, res) => {
+//   const user = req.body
+//   console.log(user.id);
+
+//   const getByIdData = await testingModel.findById(user.id)
+//   res.send(getByIdData)
+// })
+
+// app.get('/chaganId/:userId', async (req, res) => {
+//   const params = req.params.userId
+//   res.send(await testingModel.findById(params))
+// })
+
+// app.post('/defaultGet', async (req, res) => {
+//   const { heading } = req.body
+
+//   const findData = await testingModel.find({ heading })
+//   if (findData.length > 0) {
+//     res.send(findData)
+//   } else {
+//     res.send("Blank")
+//   }
+// })
+
+
 
 //? Database Connection
 const dbConn = async (req, res) => {

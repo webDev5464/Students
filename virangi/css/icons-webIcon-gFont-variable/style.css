@@ -1,0 +1,19 @@
+:root {
+  --Chango: "Chango", sans-serif;
+
+  --bgDark: rgb(0, 74, 127);
+}
+
+.homeIcon {
+  color: red;
+  background-color: var(--bgDark);
+  font-size: 40px;
+}
+
+.fontOne {
+  font-family: var(--Chango);
+}
+
+.fontTwo {
+  font-family: "Poor Story", system-ui;
+}

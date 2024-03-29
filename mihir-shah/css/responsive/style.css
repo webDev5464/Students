@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+  --kanit: "Kanit", sans-serif;
+  --reddit: "Reddit Mono", monospace;
+}
+
+.fontOne {
+  font-family: var(--kanit);
+}
+
+.fontTwo {
+  font-family: var(--reddit);
+}
+
+.parent {
+  div {
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+  }
+
+  div:first-child {
+    background-color: red;
+  }
+
+  div:nth-child(2) {
+    background-color: green;
+  }
+
+  div:nth-child(3) {
+    background-color: brown;
+  }
+
+  div:last-child {
+    background-color: black;
+  }
+}
+
+/* .parent>div:first-child */
+
+@media screen and (max-width: 1000px) {
+  .parent {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      background-color: red;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .parent {
+    div {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .parent {
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .parent {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .parent {
+    display: flex;
+    justify-content: space-between;
+  }
+}

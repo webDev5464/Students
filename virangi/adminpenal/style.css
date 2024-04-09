@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+
+  .first {
+    background-color: green;
+    width: 15vw;
+    height: 100vh;
+  }
+
+  .last {
+    nav {
+      background-color: yellow;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    main {
+      margin-top: 50px;
+    }
+
+    footer {
+      background-color: burlywood;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    background-color: red;
+    width: 85vw;
+    height: 100vh;
+
+    overflow: auto;
+  }
+}

@@ -1,0 +1,109 @@
+/* .box {
+  height: 300px;
+  width: 600px;
+  border: 4px solid red;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+} */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* .cardParent {
+  border: 4px solid black;
+  width: fit-content;
+
+} */
+
+/* .card {
+  background-color: yellow;
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+  border: 4px solid red;
+
+  transition: 1s;
+} */
+
+.cardParent:hover .tranform-translate {
+
+  /* transform: translate(100px, 200px); */
+  /* transform: rotateZ(80deg); */
+  /* transform: scaleY(1.5); */
+  /* transform: skew(20deg, 40deg); */
+}
+
+/* .box {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  animation: myAnimation;
+  animation-duration: 3s;
+  animation-delay: 2s;
+} */
+
+/* @keyframes myAnimation {
+  0% {
+    rotate: 0deg;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    rotate: 360deg;
+    transform: translate(300px, 0);
+  }
+} */
+
+/*  */
+
+/* HTML: <div class="loader"></div> */
+/* .loader {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%, #f03355) content-box;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+    radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l4 1s infinite steps(10);
+}
+
+@keyframes l4 {
+  to {
+    transform: rotate(1turn)
+  }
+} */
+
+.parent {
+  position: relative;
+  color: black;
+}
+
+.info {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  visibility: hidden;
+}
+
+.info::before {
+  content: "";
+  border: 4px solid black;
+  rotate: 45deg;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.parent:hover .info {
+  visibility: visible;
+}

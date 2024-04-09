@@ -290,69 +290,6 @@ switch (today.getDay()) {
 // setYear.setFullYear(1987)
 // console.log(setYear);
 
-//! loops
-/*
-  map()
-  forEach()
-  for
-  for in
-  for of
-  while
-  do while
-*/
-// const render = document.getElementById('render')
-// const language = ['html', 'css', 'javaScript', 'react', 'node js', 'express js', 'mongo db']
-
-//? map()
-
-// --------------------------------------
-// let text = ""
-// language.map((y) => {
-//   text += y + "<br>"
-// })
-
-// render.innerHTML = text
-// --------------------------------------
-
-// render.innerHTML = language.map((x) => {
-//   return x + "<br>"
-// })
-
-//? forEach
-
-// let text = ""
-// language.forEach((x) => {
-//   text += x + "<br>"
-// })
-
-// render.innerHTML = text
-
-//? Real Example
-
-// const person = [
-//   { fname: "Chagan", lname: "Chapri" },
-//   { fname: "Magan", lname: "Bloger" },
-//   { fname: "John", lname: "Doe" },
-//   { fname: "Smith", lname: "Duck" },
-//   { fname: "Mihir", lname: "Chapri" },
-// ]
-
-// console.log(person.map((x) => {
-//   return x.fname + " " + x.lname
-// })); // ['Chagan Chapri', 'Magan Bloger', 'John Doe', 'Smith Duck', 'Mihir Chapri']
-
-// let text = ""
-// person.forEach((x) => {
-//   text += x.fname + " " + x.lname
-// })
-// console.log(text); // Chagan ChapriMagan BlogerJohn DoeSmith DuckMihir Chapri
-
-// const showPeople = person.map((x) => {
-//   return x.fname + " " + x.lname + "<br>"
-// }).join("")
-
-// render.innerHTML = showPeople
-
 //! DOM & BOM
 
 //* DOM // Document Object Model
@@ -384,7 +321,125 @@ switch (today.getDay()) {
   render.appendChild(createHeading)
 */
 
+//! BOM (localStorage, setTimeout, setInterval, windows, alert)
+
+//? setInterval
+
+// setInterval(() => {
+//   const date = new Date()
+//   console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+// }, 1000)
+
+//? setTimeout
+
+// setTimeout(() => {
+//   console.log("Hello");
+// }, 5000)
+
+//? windows
+
+// const render = document.getElementById('render')
+// const bodyElement = document.querySelector('body')
+// render.innerHTML = "<h1>Hello World!</h1>"
+
+// setInterval(() => {
+//   console.log(window.screenY);
+
+//   if (window.scrollY > 500) {
+//     render.style.color = "white"
+//     bodyElement.style.backgroundColor = "black"
+//   } else {
+//     render.style.color = "black"
+//     bodyElement.style.backgroundColor = "white"
+//   }
+// })
+
+// setInterval(() => {
+//   console.log(window.scrollY > 500 ? true : false);
+// })
+
+//! loops
+/*
+  map()
+  forEach()
+  for
+  for in
+  for of
+  while
+  do while
+*/
+
+const render = document.getElementById("render")
+const language = ['html', 'css', 'javaScript', 'react', 'node js', 'express js', 'mongo db']
+
+//? map()
+//* data rendering
+
+// language.map((value, index, array) => { console.log(index, value); })
+// language.map(function (value, index, array) { console.log(index, value) })
+
+// render.innerHTML = language.map((value, index) => {
+//   return `<h1>${value} ${index}</h1>`
+// }).join("")
+
+//? forEach()
+//* data rendering
+
+// language.forEach((chagan, magan) => { console.log(magan, chagan) })
+
+/*
+let text = ""
+
+language.forEach((x, y) => {
+  text += `<h1>${y} ${x}</h1>`
+})
+
+console.log(text);
+render.innerHTML = text
+*/
+
+//? for
+//* logical operation
+
+// for (let x = 0; x < 1000; x++) {
+//   console.log(x);
+// }
+
+// let langLeng = language.length
+// let text = ""
+// for (let init = 0; init < langLeng; init++) {
+//   text += `<li>${init + " " + language[init]}</li>`
+// }
+
+// render.innerHTML = `<ul>${text}</ul>`
+
+//? for in
+//* data rendering
+//* logical operation
+
+// let text = ""
+// for (let x in language) {
+// console.log(x); // index
+
+//   text += language[x] + "<br>"
+// }
+// render.innerHTML = text
+
+//   text += language[x] + "<br>"
+// }
+// render.innerHTML = text
+
+//? for of
+//* data rendering
+//* logical operation
+
+// let text = ""
+// for (let x of language) {
+//   text += x + "<br>"
+// }
+
+// render.innerHTML = text
+
 //TODO :- async & await
 //TODO :- fetch API
-//TODO :- localStorage, setTimeout, setInterval, windows
 //TODO :- Error Handling

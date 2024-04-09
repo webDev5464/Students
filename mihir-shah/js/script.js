@@ -327,6 +327,34 @@ const language = ["HTML", "CSS", "JavaScript", "React", "Node", "Mongodb"]
 
 // console.log(typeof x !== "string" ? "Is not string" : "Is String");
 
-/* 
+/*
   ==, ===, !=, !==, NaN, isNaN, Array.isArray(val), <, >, <=, >=
 */
+
+// function OutterFUnction() {
+//   let value = "Hello World"
+
+//   function InnerFunction() {
+//     console.log(value);
+//   }
+
+//   return InnerFunction
+// }
+
+// OutterFUnction()
+
+// const myFunc = OutterFUnction()
+
+// myFunc()
+
+// let init; // undefine
+
+// function myFunc() {
+//   init = 5
+
+//   console.log(init);
+// }
+
+// // myFunc() // 5
+
+// console.log(init); // 5

@@ -440,6 +440,63 @@ render.innerHTML = text
 
 // render.innerHTML = text
 
+//? while loop
+//* logical operation
+
+// let init = 0
+// let text = ""
+// while (init < language.length) {
+//   console.log(language[init]);
+//   init++
+// }
+
+//? do while loop
+//* logical operation
+
+// let init = 0
+// let text = ""
+
+// do {
+//   console.log(language[init]);
+//   init++
+// } while (init > language.length)
+
+
+
+const product = [
+  {
+    title: "Boult Audio Z40 True Wireless in Ear Earbuds with 60H Playtime, Zen™ ENC Mic, Low Latency Gaming, Type-C Fast Charging, Made in India, 10mm Rich Bass Drivers, IPX5, Bluetooth 5.3 Ear Buds TWS (Blue)",
+    img: "https://m.media-amazon.com/images/I/71ITkeoYiTL._SL1500_.jpg",
+    price: 4999,
+    discount: 80
+  },
+  {
+    title: "Noise Buds VS104 Max Truly Wireless in-Ear Earbuds with ANC(Up to 25dB),Up to 45H Playtime, Quad Mic with ENC, Instacharge(10 min=180 min), 13mm Driver, BT v5.3 (Silver Grey)",
+    img: "https://m.media-amazon.com/images/I/51AbB+I1pvL._SX522_.jpg",
+    price: 4999,
+    discount: 64
+  },
+  {
+    title: "",
+    img: "",
+    price: "",
+    discount: ""
+  },
+  {
+    title: "",
+    img: "",
+    price: "",
+    discount: ""
+  },
+  {
+    title: "",
+    img: "",
+    price: "",
+    discount: ""
+  }
+]
+
+
+
 //TODO :- async & await
 //TODO :- fetch API
-//TODO :- Error Handling

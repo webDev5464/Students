@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    form {
+      width: fit-content;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form>
+    <fieldset>
+      <legend>User Form</legend>
+
+      <label for="value">Some Text :- </label>
+      <input type="text" placeholder="Write Some Text..." name="value" id="value">
+      <br><br>
+
+      <label for="email">Email :- </label>
+      <input type="email" name="email" id="email">
+
+      <br><br>
+
+      <label for="pass">Password :- </label>
+      <input type="password" name="pass" id="pass" placeholder="Password..." required>
+
+      <!-- <input type="text" name="" id="" value="Default Text" disabled> -->
+
+      <!-- <input type="number" name="" id=""> -->
+      <input type="tel" name="" id="" placeholder="00000-00000" pattern="[0-9]{5}-[0-9]{5}">
+
+      <br><br>
+      <input type="submit" value="Submit Form">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

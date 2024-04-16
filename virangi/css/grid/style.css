@@ -1,0 +1,64 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 500px);
+  /* gap: 20px; */
+  column-gap: 20px;
+
+  row-gap: 50px;
+  /* justify-content: center; */
+  place-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  div {
+    padding: 100px;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+  }
+
+  div:first-child {
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+  }
+
+  div:hover {
+    background-color: darkgray;
+  }
+}
+
+.parent {
+  /* background-color: red; */
+  width: fit-content;
+
+  span {
+    background-color: black;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .child {
+    display: none;
+    background-color: gray;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border-radius: 10px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.parent:hover .child {
+  display: block;
+}

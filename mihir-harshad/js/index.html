@@ -10,7 +10,35 @@
 </head>
 
 <body>
-  <div id="render"></div>
+  <!-- <div id="render"></div> -->
+
+
+  <section>
+    <button onclick="showDropDown()">Click Me!</button>
+
+    <div class="notActive" id="dropDown">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Chagan</li>
+        <li>Magan</li>
+        <li>Mihir</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function showDropDown() {
+      const dropDown = document.getElementById("dropDown");
+
+      if (dropDown.getAttribute("class") == "notActive") {
+        dropDown.setAttribute("class", "active");
+      } else {
+        dropDown.setAttribute("class", "notActive");
+      }
+    }
+  </script>
 
   <script src="./script.js"></script>
 </body>

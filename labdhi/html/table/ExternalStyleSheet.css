@@ -1,0 +1,43 @@
+table {
+  /* sort hand */
+  border: 3px black solid;
+  margin: auto;
+
+  /* border-width: 2px; */
+  /* border-color: black; */
+  /* border-style: solid; */
+  /* border-style: dashed; */
+  /* border-style: dotted; */
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+th {
+  /* height: 50px; */
+  /* width: 100px; */
+
+  padding: 10px 30px;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  /* padding: 4x; */
+  /* padding: top-bottom left-right; */
+  /* padding: top right bottom left; */
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+/* 
+  this is a css comment
+  
+  selection {
+    property: value;    
+  }
+*/

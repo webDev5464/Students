@@ -5,23 +5,42 @@ import Service from "./pages/Service"
 import MyUseState from "./pages/MyUseState"
 import MyUseEffect from "./pages/myUseEffect"
 import MyUseRef from "./pages/MyUseRef"
+import { createContext, useState } from "react"
+
+export const AppContext = createContext()
 
 const App = () => {
+  const person = "John Doe"
+
+  const [myValue, setMyValue] = useState(0)
+
+  const increment = () => {
+    setMyValue(myValue + 1)
+  }
+
+  const decrement = () => {
+    setMyValue(myValue - 1)
+  }
+
   return (
     <BrowserRouter>
-      <Navigation />
+      <AppContext.Provider value={{ person, myValue, increment, decrement }}>
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route path="Chagan" element={<Service />} />
-          <Route path="Magan" element={<Magan />} />
-          <Route path="useState" element={<MyUseState />} />
-          <Route path="MyUseEffect" element={<MyUseEffect />} />
-          <Route path="MyUseRef" element={<MyUseRef />} />
-        </Routes>
-      </main>
+        <Navigation />
+
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="Chagan" element={<Service />} />
+            <Route path="Magan" element={<Magan />} />
+            <Route path="useState" element={<MyUseState />} />
+            <Route path="MyUseEffect" element={<MyUseEffect />} />
+            <Route path="MyUseRef" element={<MyUseRef />} />
+          </Routes>
+        </main>
+
+      </AppContext.Provider>
     </BrowserRouter>
   )
 }

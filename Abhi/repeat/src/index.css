@@ -1,0 +1,16 @@
+.dark {
+  --white: white;
+  --black: black;
+}
+
+.light {
+  --white: rgb(255, 0, 0);
+  --black: white;
+}
+
+.card {
+  background-color: var(--black);
+  width: fit-content;
+  color: var(--white);
+  padding: 10px;
+}

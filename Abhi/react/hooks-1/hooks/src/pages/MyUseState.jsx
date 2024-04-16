@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useContext, useState } from "react"
+import { AppContext } from "../App"
 
 const MyUseState = () => {
   return (
@@ -35,19 +36,8 @@ function ChangeValueState() {
 }
 
 function CounterState() {
-  const [myValue, setMyValue] = useState(0)
 
-  const increment = () => {
-    setMyValue(myValue + 1)
-  }
-
-  const decrement = () => {
-    setMyValue(myValue - 1)
-  }
-
-  useEffect(() => {
-    alert("Click increment")
-  }, [myValue])
+  const { myValue, increment, decrement } = useContext(AppContext)
 
   return (
     <>
@@ -63,10 +53,6 @@ function CounterState() {
 function ChangeTheme() {
   const [theme, setTheme] = useState(false)
 
-  useEffect(() => {
-    alert("Change Theme")
-  }, [theme])
-
   return (
     <>
       <div className={theme ? "card light" : "card dark"}>
@@ -75,8 +61,6 @@ function ChangeTheme() {
       </div>
 
       <button onClick={() => setTheme(!theme)}>Change Theme</button>
-
-      <button>Alert Box</button>
     </>
   )
 }

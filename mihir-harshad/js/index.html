@@ -10,35 +10,46 @@
 </head>
 
 <body>
-  <!-- <div id="render"></div> -->
 
+  <ul class="demo">
+    <li>products
 
-  <section>
-    <button onclick="showDropDown()">Click Me!</button>
-
-    <div class="notActive" id="dropDown">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Chagan</li>
-        <li>Magan</li>
-        <li>Mihir</li>
+        <li>electronics
+
+          <ul>
+            <li>mobiles</li>
+            <li>laptops</li>
+            <li>earbuds</li>
+          </ul>
+        </li>
+
+        <li>clothes
+
+          <ul>
+            <li>shirts</li>
+            <li>tshirts</li>
+          </ul>
+        </li>
       </ul>
-    </div>
-  </section>
+    </li>
 
-  <script>
-    function showDropDown() {
-      const dropDown = document.getElementById("dropDown");
+    <li>privacy policy
 
-      if (dropDown.getAttribute("class") == "notActive") {
-        dropDown.setAttribute("class", "active");
-      } else {
-        dropDown.setAttribute("class", "notActive");
-      }
-    }
-  </script>
+      <ul>
+        <li>policy One</li>
+        <li>policy two
+
+          <ul>
+            <li>p1</li>
+            <li>p2</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul id="render"></ul>
 
   <script src="./script.js"></script>
 </body>

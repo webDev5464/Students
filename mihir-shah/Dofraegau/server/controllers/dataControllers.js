@@ -26,9 +26,15 @@ const addNewUserData = async (req, res) => {
   }
 }
 
+const deleteData = async (req, res) => {
+  const { id } = req.body
+  await userModel.findByIdAndDelete(id)
+}
+
 const getAllData = async (req, res) => res.send(await userModel.find({}))
 
 module.exports = {
   addNewUserData,
-  getAllData
+  getAllData,
+  deleteData
 }

@@ -1,0 +1,72 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* ul {
+  background-color: red;
+} */
+
+/* li {
+  background-color: greenyellow;
+  list-style: inside;
+} */
+
+/* .myHeading>h1 {
+  background-color: red;
+} */
+
+/* .myHeading>div h1 {
+  background-color: greenyellow;
+} */
+
+/* ===================== */
+
+/* .parent div:first-child {
+  background-color: aqua;
+} */
+
+/* .parent div:nth-child(3) {
+  background-color: yellow;
+} */
+
+/* .parent div:nth-child(even) {
+  background-color: greenyellow;
+} */
+
+/* .parent div:last-child {
+  background-color: red;
+} */
+
+/* ================ */
+
+div {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 7px 12px;
+  margin: 30px;
+  border-radius: 7px;
+  box-shadow: 5px 7px 10px gray;
+  cursor: pointer;
+  width: fit-content;
+
+  /* padding: 0; */
+  /* height: 50px; */
+  /* width: 50px; */
+
+
+  /* border-radius: 10px 20px 50px 5px; */
+  /* border-radius: 50%; */
+
+  /* box-shadow: 0 0 0 0; */
+}
+
+div:hover {
+  background-color: gray;
+}
+
+div:active {
+  color: tomato;
+  scale: .95;
+}

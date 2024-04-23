@@ -788,3 +788,31 @@ objData.earbud objData.shoes
 //! Array method, Object Method, String Method, Math, Date, Number Method, String Method
 
 /* _________________________________ ENDING OF JAVASCRIPT _________________________________ */
+
+const nestingNavigation = [
+  {
+    title: 'products',
+    values: [
+      {
+        title: 'electronics',
+        values: ['mobiles', 'laptops', 'earbuds']
+      },
+      {
+        title: 'clothes',
+        values: ['shirts', 'tshirts']
+      }
+    ]
+  },
+  {
+    title: 'privacy policy',
+    values: [
+      {
+        title: 'policy One'
+      },
+      {
+        title: 'policy two',
+        values: ['p1', 'p2']
+      }
+    ]
+  }
+]

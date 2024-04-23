@@ -1,0 +1,60 @@
+/* h1 {
+  background-color: red;
+}
+
+span,
+a {
+  background-color: black;
+  color: white;
+} */
+
+/* div {
+  background-color: red;
+  display: inline;
+}
+
+span {
+  background-color: green;
+  display: block;
+}
+
+.hide {
+  display: none;
+} */
+
+/*! DropDown Example */
+
+.child {
+  display: none;
+
+  ul {
+    li:first-child {
+      i {
+        color: red;
+        font-size: 25px;
+      }
+    }
+
+    li:nth-child(2) {
+      i {
+        color: brown;
+      }
+    }
+  }
+}
+
+.parent {
+  background-color: lightgray;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.parent:hover .child {
+  display: block;
+}

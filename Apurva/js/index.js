@@ -210,9 +210,9 @@
 //? Object in function
 
 const person = {
-  fname: "John",
-  lname: "Doe",
-  age: 29,
+  // fname: "John",
+  // lname: "Doe",
+  // age: 29,
   /* fullname: () => {
     return person.fname + ' ' + person.lname
   } */
@@ -258,7 +258,7 @@ const person = {
 // console.log(5 === "5" ? true : false);
 
 /*
-* [ Home Work ] :- Operators
+* [ Home Work ] :- Condition Operators
 
   ==
   ===
@@ -269,6 +269,9 @@ const person = {
   <
   >=
   <=
+
+  ? Logical Operators
+
   || :- or operator
   && :- and operator
 
@@ -277,31 +280,87 @@ const person = {
 //! loop's
 
 /*
-  map - function
+  map - function //? important
   forEach - function
+  for - loop, for in, for of //? important
   while - loop
   do...while - loop
-  for - loop, for in, for of
 */
 
-const demo = document.getElementById("demo")
-const mernStack = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React js",
-  "Node js",
-  "Express js",
-  "MongoDB",
-  "Bootstrap 5 CSS",
-  "Tailwind CSS",
-  "Git - Github"
-]
+// const demo = document.getElementById("demo")
+// const mernStack = [
+//   "HTML",
+//   "CSS",
+//   "JavaScript",
+//   "React js",
+//   "Node js",
+//   "Express js",
+//   "MongoDB",
+//   "Bootstrap 5 CSS",
+//   "Tailwind CSS",
+//   "Git - Github"
+// ]
 
 //* Map method
 
-const renderData = mernStack.map((myList) => {
-  return `<li type="1">${myList}</li>`
-}).join("")
+// demo.innerHTML = mernStack.map((e) => {
+//   return `<h1>${e}</h1>`
+// }).join("")
 
-demo.innerHTML = `<ul>${renderData}</ul>`
+//* forEach method
+
+// let text = ""
+
+// mernStack.forEach((e) => {
+//   text += `<h1>${e}</h1>`
+// })
+
+// demo.innerHTML = text
+
+//* for
+
+// for (let init = 1 ; init <= 10; init++) {
+//   console.log(init);
+// }
+
+// let text = ""
+// for (let init = 0; init < mernStack.length; init++) {
+//   text += `<h1>${mernStack[init]}</h1>`
+// }
+
+// demo.innerHTML = text
+
+//* for in
+// index
+
+// for (let x in mernStack) {
+//   console.log(x);
+// }
+
+//* for of
+// value
+
+// for (let x of mernStack) {
+//   console.log(x);
+// }
+
+//* while
+
+// let text = ""
+// let init = 0
+// let value = 0
+// while (init < 10) {
+//   console.log(value++);
+//   // init++
+// }
+
+//* do while
+
+// let text = ""
+// let init = 0
+// let value = 0
+
+// do {
+//   console.log(value++);
+//   init++
+// } while (init > 10)

@@ -1,0 +1,30 @@
+{
+  "earbud": [
+    {
+      "title": "this is a title",
+      "price": "price"
+    },
+    {
+      "title": "this is a title",
+      "price": "price"
+    },
+    {
+      "title": "this is a title",
+      "price": "price"
+    }
+  ],
+  "headphone": [
+    {
+      "title": "this is a title",
+      "price": "price"
+    },
+    {
+      "title": "this is a title",
+      "price": "price"
+    },
+    {
+      "title": "this is a title",
+      "price": "price"
+    }
+  ]
+}

@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import axios from 'axios'
 
 const App = () => {
+
+  const autoFocus = useRef(null)
 
   const [formData, setFormData] = useState({
     fname: "",
@@ -11,14 +13,10 @@ const App = () => {
     price: ""
   })
 
+
   const formHandler = async (e) => {
     e.preventDefault()
-    try {
-      const resp = await axios.post("http://localhost:5464/addData", formData)
-      alert(resp.data.msg)
-    } catch (err) {
-      console.log(err.message);
-    }
+    await axios.post("http://localhost:5464/addData", formData)
   }
 
   const inputValue = (e) => {
@@ -34,9 +32,14 @@ const App = () => {
     setUserData(resp.data)
   }
 
+  const deleteFormHandler = async (id) => {
+    autoFocus.current.focus()
+    await axios.post("http://localhost:5464/deleteData", id)
+  }
+
   useEffect(() => {
     getData()
-  }, [])
+  }, [formHandler, deleteFormHandler])
 
   // ======================================================
 
@@ -45,7 +48,7 @@ const App = () => {
       <form onSubmit={formHandler}>
         <div>
           <label htmlFor="fname">First Name :- </label>
-          <input type="text" name="fname" onChange={inputValue} />
+          <input type="text" name="fname" onChange={inputValue} ref={autoFocus} />
         </div>
 
         <div>
@@ -77,9 +80,14 @@ const App = () => {
         userData.map((value, index) => (
           <div key={index}>
             <p>First Name :- {value.fname}</p>
+            <p>Last Name :- {value.lname}</p>
+            <p>age :- {value.age}</p>
             <p>Data Id :- {value._id}</p>
 
-            <button onClick={() => console.log(value._id)}>Delete</button>
+            <button
+              type="submit"
+              onClick={() => deleteFormHandler({ id: value._id })}
+            >Delete</button>
           </div>
         ))
       }

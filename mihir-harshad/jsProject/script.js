@@ -26,7 +26,24 @@ productsRender.innerHTML = product.map((value) => {
 }).join("")
 
 function addToCart(id) {
-  console.log(product.find(item => item.Id == id));
+  try {
+    const userSelectedData = product.find(item => item.Id == id)
+    const localCartData = JSON.parse(localStorage.getItem('cartData')) || []
+
+    if (localCartData == null) {
+      localCartData.push(userSelectedData)
+      localStorage.setItem('cartData', JSON.stringify(localCartData))
+    } else {
+      if (localCartData.find(item => item.Id == id) !== undefined) {
+        throw "Product Already added in cart."
+      } else {
+        localCartData.push(userSelectedData)
+        localStorage.setItem('cartData', JSON.stringify(localCartData))
+      }
+    }
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 //* task : find product store in localStorage

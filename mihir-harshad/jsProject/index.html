@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body id="top">
+
+  <header>
+    <nav class="bg-black text-white flex items-center justify-between py-3 px-32">
+      <div class="text-2xl">
+        <span class="text-red-500 font-bold">My</span> e-Com
+      </div>
+
+      <ul>
+        <li><a href="">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="p-10">
+
+    <div id="productsRender"
+      class="grid grid-cols-4 place-items-center gap-y-12 max-[1330px]:grid-cols-3 max-[980px]:grid-cols-2 max-[700px]:grid-cols-1">
+    </div>
+
+  </main>
+
+  <a class="fixed right-0 bottom-0 m-5 bg-black text-white p-2 active:scale-95" href="#top">Go to top</a>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="./tailwind.config.js"></script>
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

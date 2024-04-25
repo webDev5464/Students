@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "name": "js",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -239,3 +239,53 @@ let
 // } catch (err) {
 //   console.log(err.message);
 // }
+
+// function formHandler() {
+//   try {
+//     const fname = document.getElementById("fname").value
+//     const lname = document.getElementById("lname").value
+//     const email = document.getElementById("email").value
+//     const username = document.getElementById("username").value
+//     const pass = document.getElementById("pass").value
+//     const conPass = document.getElementById("conPass").value
+//     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+//     // if (!fname || !lname || !email || !username || !pass || !conPass) throw "Input field is empty..."
+
+//     if (!emailRegex.test(email)) throw "Invalid email address..."
+//     if (pass !== conPass) throw "Password does not match..."
+//   } catch (msg) {
+//     console.log(msg);
+//   } finally {
+//     document.getElementById("fname").value = ""
+//     document.getElementById("lname").value = ""
+//     document.getElementById("email").value = ""
+//     document.getElementById("username").value = ""
+//     document.getElementById("pass").value = ""
+//     document.getElementById("conPass").value = ""
+//   }
+// }
+
+// function formHandler() {
+//   try {
+//     const fname = document.getElementById("fname").value
+//     const lname = document.getElementById("lname").value
+//     const email = document.getElementById("email").value
+//     const username = document.getElementById("username").value
+//     const pass = document.getElementById("pass").value
+//     const conPass = document.getElementById("conPass").value
+
+//     if (!fname || !lname || !email || !username || !pass || !conPass) throw "Input field is empty..."
+//     if (pass !== conPass) throw "Password does not match..."
+
+//   } catch (err) {
+//     console.log(err);
+//   } finally {
+//     document.getElementById("fname").value = ""
+//     document.getElementById("lname").value = ""
+//     document.getElementById("email").value = ""
+//     document.getElementById("username").value = ""
+//     document.getElementById("pass").value = ""
+//     document.getElementById("conPass").value = ""
+//   }
+// }
+

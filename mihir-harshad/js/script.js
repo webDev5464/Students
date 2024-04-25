@@ -787,32 +787,57 @@ objData.earbud objData.shoes
 
 //! Array method, Object Method, String Method, Math, Date, Number Method, String Method
 
+//? Array method
+
+//* concat()
+
+// const girl = ['g1', 'g2', 'g3']
+// const boy = ['b1', 'b2', 'b3']
+// console.log(boy.concat(girl));
+
+// const newArr = [...girl, ...boy]
+// console.log(newArr);
+
+//* new
+
+// const person = (name, age) => {
+//   this.name = name
+//   this.age = age
+// }
+
+// const result = new person("John", 22)
+
+// console.log(result);
+//* join()
+
+
+
 /* _________________________________ ENDING OF JAVASCRIPT _________________________________ */
 
-const nestingNavigation = [
-  {
-    title: 'products',
-    values: [
-      {
-        title: 'electronics',
-        values: ['mobiles', 'laptops', 'earbuds']
-      },
-      {
-        title: 'clothes',
-        values: ['shirts', 'tshirts']
-      }
-    ]
-  },
-  {
-    title: 'privacy policy',
-    values: [
-      {
-        title: 'policy One'
-      },
-      {
-        title: 'policy two',
-        values: ['p1', 'p2']
-      }
-    ]
-  }
-]
+// const nestingNavigation = [
+//   {
+//     title: 'products',
+//     values: [
+//       {
+//         title: 'electronics',
+//         values: ['mobiles', 'laptops', 'earbuds']
+//       },
+//       {
+//         title: 'clothes',
+//         values: ['shirts', 'tshirts']
+//       }
+//     ]
+//   },
+//   {
+//     title: 'privacy policy',
+//     values: [
+//       {
+//         title: 'policy One'
+//       },
+//       {
+//         title: 'policy two',
+//         values: ['p1', 'p2']
+//       }
+//     ]
+//   }
+// ]

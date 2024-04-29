@@ -15,7 +15,8 @@ const Navigation = () => {
   return (
     <>
       <ul>
-        <li><NavLink to={'/'}>Register</NavLink></li>
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'register'}>Register</NavLink></li>
         <li><NavLink to={'login'}>login</NavLink></li>
       </ul>
     </>

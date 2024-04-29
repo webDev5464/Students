@@ -52,7 +52,7 @@ const ProductsRenderHere = document.getElementById("ProductsRenderHere")
 
 let dataRender = ""
 
-earbud.forEach((e) => {
+products.forEach((e) => {
   dataRender += `
     <div class="card">
       <div>
@@ -87,7 +87,7 @@ const RenderCartProducts = document.getElementById("RenderCartProducts")
 
 function addProduct(id) {
   const findCardData = cartData.find(x => x.id == id)
-  const findProductData = earbud.find(x => x.id == id)
+  const findProductData = products.find(x => x.id == id)
 
   if (findCardData) {
     alert("Product Already Added")

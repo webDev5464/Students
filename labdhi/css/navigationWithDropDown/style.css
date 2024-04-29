@@ -19,9 +19,58 @@ header {
   height: 100vh;
   width: 100vw;
 
-  div {
+  .glass {
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
+  }
+
+  nav {
+    background-color: rgba(0, 0, 41, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 180px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .navLogo {
+      img {
+        width: 150px;
+      }
+    }
+
+    .navLink {
+      display: flex;
+      align-items: center;
+      color: white;
+
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          margin: 0 30px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+
+      .navBtn {
+        border: 2px solid white;
+        margin: 0 30px;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.5s;
+      }
+
+      .navBtn:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+
   }
 }
 

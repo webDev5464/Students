@@ -34,6 +34,9 @@ $app.post('/register', async (req, res) => {
 
     if (!username || !email || !pass || !conPass) throw "All fields are required"
 
+    const findUser = await _authModel.findOne({ username })
+    if (findUser !== null) throw "Username already registered"
+
     if (pass !== conPass) throw "Passwords do not match"
 
     res.send({
@@ -41,7 +44,6 @@ $app.post('/register', async (req, res) => {
       msg: `${username} Register Success fully...`,
       data: await _authModel({ username, email, pass: await bcrypt.hash(pass, 10) }).save()
     })
-
   } catch (err) {
     res.send({
       process: false,

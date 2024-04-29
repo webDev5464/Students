@@ -5,23 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .cart {
+      width: fit-content;
+
+      img {
+        width: 300px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <div>
-    <input type="text" name="" id="fname" placeholder="First Name">
-    <input type="text" name="" id="lname" placeholder="Last Name">
-    <br><br>
-    <input type="email" name="" id="email" placeholder="Email">
-    <input type="text" name="" id="username" placeholder="Username">
-    <br><br>
-    <input type="password" name="" id="pass" placeholder="Password">
-    <input type="text" name="" id="conPass" placeholder="Confirm Password">
-
-    <br><br>
-    <button type="submit" onclick="formHandler()">Submit</button>
-  </div>
+  <div id="renderData"></div>
 
   <script src="./script.js"></script>
 </body>

@@ -8,19 +8,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="/styles/lightTheme.css" id="themeStyle">
 </head>
 
 <body>
-
   <nav>
     <div>My-Ecom</div>
 
     <div class="navLink">
       <ul>
-        <li><a href="./index.html" style="color: tomato;">Home</a></li>
-        <li><a href="./pages/cart.html">Cart</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./cart.html" style="color: tomato;">Cart</a></li>
       </ul>
 
       <div class="themeBtnSlider" onclick="themeChange()">
@@ -33,12 +32,11 @@
     <div id="renderAllData"></div>
   </main>
 
-  <script src="./js/data.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="../js/index.js"></script>
   <script>
     const renderAllData = document.getElementById("renderAllData")
-
-    renderAllData.innerHTML = products.map((value) => {
+    const getLocalData = JSON.parse(localStorage.getItem("cartStore"))
+    renderAllData.innerHTML = getLocalData.map((value) => {
       return `
         <section class="card">
           <div class="cardImg">
@@ -54,32 +52,12 @@
             </p>
           
             <div class="cardButton">
-              <button onclick="addToCart(${value.id})">Add To Cart</button>
+              <button onclick="addToCart(${value.id})">Remove to cart</button>
             </div>
           </div>
         </section>
       `
     }).join("")
-
-    function addToCart(id) {
-      const productFindAndAddToCart = products.find(item => item.id == id)
-      const localCartData = JSON.parse(localStorage.getItem("cartStore"))
-
-      const cartData = []
-
-      if (localCartData == null) {
-        cartData.push(productFindAndAddToCart)
-        localStorage.setItem("cartStore", JSON.stringify(cartData))
-      } else {
-
-        if (localCartData.find(item => item.id == id) !== undefined) {
-          alert("Product Already Added")
-        } else {
-          localCartData.push(productFindAndAddToCart)
-          localStorage.setItem("cartStore", JSON.stringify(localCartData))
-        }
-      }
-    }
   </script>
 </body>
 

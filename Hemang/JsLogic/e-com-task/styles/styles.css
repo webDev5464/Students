@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 150px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .navLink {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+        margin: 0 20px;
+
+        a {
+          color: var(--white);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .themeBtnSlider {
+      position: relative;
+      padding: 2px 2px;
+      margin-left: 20px;
+      border: 2px solid red;
+      background-color: var(--white);
+      color: var(--black);
+      width: 60px;
+      border-radius: 20px;
+      height: 30px;
+
+      .themeBtnThumb {
+        position: absolute;
+        left: 2px;
+        border: 1px solid green;
+        padding: 2px 5px;
+        width: fit-content;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+#renderAllData {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+
+  .card {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px var(--gray);
+    overflow: hidden;
+
+    .cardImg {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    .cardDetail {
+      background-color: var(--lightGray);
+      height: 150px;
+      width: 100%;
+      padding: 5px;
+      border-top: 1px solid var(--black);
+
+      .priceDetail {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          margin: 3px 0;
+        }
+
+        span:last-child {
+          color: red;
+        }
+      }
+
+      .cardButton {
+        margin: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        button {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

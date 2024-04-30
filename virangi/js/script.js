@@ -368,10 +368,52 @@ const products = [
 //   console.log("Hello");
 // }
 
-let text = ""
-for (let init = 0; init < products.length; init++) {
-  text += products[init].title + '<br>'
-}
+// let text = ""
+// for (let init = 0; init < products.length; init++) {
+//   text += products[init].title + '<br>'
+// }
 
-document.getElementById('renderData').innerHTML = text
+// document.getElementById('renderData').innerHTML = text
 
+//? for of
+
+// for (let init of products) {
+//   console.log(init);
+// }
+
+//? for in
+
+// for (let init in products) {
+//   console.log(init);
+// }
+
+//? while
+
+// let init = 0
+// let text = ""
+
+// while (init < products.length) {
+//   console.log(products[init].title);
+//   init++
+// }
+
+//? do while
+
+// let init = 0
+// let text = ""
+
+// do {
+//   console.log(products[init].title);
+//   init++
+// } while (init > products.length)
+
+
+//! DOM
+
+// const tags = document.getElementsByTagName("p")
+// console.log(tags);
+
+// const val = document.getElementsByClassName("myTitle")
+// console.log(document.getElementById("renderData").setAttribute("class", "World"));
+// console.log(document.getElementById("renderData").getAttribute("class"));
+// console.log(document.querySelectorAll(".Hello"));

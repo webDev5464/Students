@@ -169,3 +169,30 @@ multiple line
 // console.log(frt[2]);
 
 // console.log(Array.isArray(frt)); // true
+
+//! function, arrow function
+
+// function MyFunction() {
+//   // document.getElementById("heading").innerHTML = "Hello World!"
+//   document.getElementById("heading").style.display = "none"
+// }
+
+// function Addition() {
+//   return "Hello"
+//   // console.log("Hello");
+// }
+
+// Addition()
+// console.log(Addition());
+
+// function Addition(price, qty) {
+//   return price * qty
+// }
+
+// console.log(Addition(499, 4));
+
+// const myFunction = (price, qty) => {
+//   return price * qty
+// }
+
+// console.log(myFunction(999, 2));

@@ -29,3 +29,5 @@ const route = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={route} />
 )
+
+// https://fkhadra.github.io/react-toastify/introduction/

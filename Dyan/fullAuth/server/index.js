@@ -37,6 +37,7 @@ $app.post('/register', async (req, res) => {
     const findUser = await _authModel.findOne({ username })
     if (findUser !== null) throw "Username already registered"
 
+    if (pass.length < 8) throw "Minimum length 8 character require"
     if (pass !== conPass) throw "Passwords do not match"
 
     res.send({
@@ -55,6 +56,7 @@ $app.post('/register', async (req, res) => {
 $app.post('/login', async (req, res) => {
   try {
     const { email, username, pass } = req.body
+    if (!pass) throw "Password field is empty..."
     const findUser = await _authModel.findOne({ $or: [{ email }, { username }] })
     if (!findUser) throw "User not found"
     const checkPass = await bcrypt.compare(pass, findUser.pass)

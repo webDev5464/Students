@@ -154,3 +154,46 @@ console.log(x); */
 
 // let myValue
 // console.log(typeof myValue);
+
+//! function and arrow function
+
+//? regular function
+
+// function MyFunction() {
+//   console.log("Hello World!");
+// }
+
+// MyFunction()
+
+
+
+// function Calculator() {
+//   return "Hello World!"
+// }
+
+// console.log(Calculator());
+
+
+
+// function Calculator(price, qty) {
+//   return price * qty
+// }
+
+// console.log(Calculator(999, 4));
+
+
+//? arrow function
+
+// const Calculator = () => {
+//   return "Hello World!"
+// }
+
+// console.log(Calculator());
+
+
+
+// const Calculator = (price, qty) => {
+//   return price * qty
+// }
+
+// console.log(Calculator(599, 6));

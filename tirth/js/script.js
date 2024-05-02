@@ -197,3 +197,102 @@ console.log(x); */
 // }
 
 // console.log(Calculator(599, 6));
+
+
+// const myFunction = () => {
+//   return "Hello World!"
+// }
+
+// console.log(myFunction());
+
+
+// console.log(fun());
+
+// function fun() {
+//   return "Hello World!"
+// }
+
+
+// const person = {
+//   fname: "John",
+//   lname: "Doe",
+//   age: 27,
+//   fullName: function () {
+//     return this.fname + " " + this.lname;
+//   }
+// }
+
+
+
+// const person = {
+//   fname: "John",
+//   lname: "Doe",
+//   age: 27,
+//   fullName: () => {
+//     return person.fname + " " + person.lname;
+//   }
+// }
+
+// console.log(person.fullName());
+
+//! if else statement and else if
+
+// if (10 == 10) {
+//   console.log("true");
+// } else {
+//   console.log('false');
+// }
+
+
+// if (10 === "10") {
+//   console.log("true");
+// } else if (10 !== "10") {
+//   console.log("10 not match");
+// } else {
+//   console.log("false");
+// }
+
+//! ternary Operator
+
+// console.log(5 == 5 ? true : false);
+
+// 5 != "5" ? console.log("true") : 5 != "5" ? console.log("second Condition true") : console.log(false)
+
+//! Conditional Operators
+
+// == (only check value)
+// console.log(5 == '5' ? true : false);
+
+// === (check value and datatype)
+// console.log(5 === '5' ? true : false);
+
+// != (only check value)
+// console.log(5 != 5 ? true : false);
+
+// !== (check value and datatype)
+// console.log(5 !== '5' ? true : false);
+
+// <
+// console.log(5 < 6 ? true : false);
+
+// >
+// console.log(5 > 6 ? true : false);
+
+// <=
+// console.log(4 <= 5 ? true : false);
+
+// >=
+// console.log(6 >= 5 ? true : false);
+
+//! logical operators
+
+// &&
+// console.log(5 == 5 && 5 == 6);
+
+// ||
+// console.log(5 == 6 || 5 == 7);
+
+// !
+
+// let text = 5
+// console.log(!Number(text));

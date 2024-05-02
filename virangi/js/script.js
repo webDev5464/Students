@@ -417,3 +417,56 @@ const products = [
 // console.log(document.getElementById("renderData").setAttribute("class", "World"));
 // console.log(document.getElementById("renderData").getAttribute("class"));
 // console.log(document.querySelectorAll(".Hello"));
+
+//! BOM
+
+//? setTimeout
+
+// setTimeout(() => {
+//   console.log("Hello World!");
+// }, 5000)
+
+
+//? setInterval
+
+// const interval = setInterval(() => {
+//   console.log("Hello World!");
+// })
+
+// setTimeout(() => {
+//   clearInterval(interval)
+// }, 5000)
+
+//? localStorage
+
+// localStorage.setItem("username", "John")
+// localStorage.setItem("person", "chagan")
+
+// const localValue = localStorage.getItem("username")
+
+// localStorage.removeItem("username")
+
+// localStorage.clear()
+
+const users = [
+  {
+    fname: "John",
+    lname: "Doe",
+    age: 29
+  },
+  {
+    fname: "John",
+    lname: "Doe",
+    age: 29
+  },
+  {
+    fname: "John",
+    lname: "Doe",
+    age: 29
+  }
+]
+
+localStorage.setItem("users", JSON.stringify(users))
+
+const objData = JSON.parse(localStorage.getItem("users"))
+console.log(objData);

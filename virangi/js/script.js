@@ -448,25 +448,45 @@ const products = [
 
 // localStorage.clear()
 
-const users = [
-  {
-    fname: "John",
-    lname: "Doe",
-    age: 29
-  },
-  {
-    fname: "John",
-    lname: "Doe",
-    age: 29
-  },
-  {
-    fname: "John",
-    lname: "Doe",
-    age: 29
+// const users = [
+//   {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 29
+//   },
+//   {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 29
+//   },
+//   {
+//     fname: "John",
+//     lname: "Doe",
+//     age: 29
+//   }
+// ]
+
+// localStorage.setItem("users", JSON.stringify(users))
+
+// const objData = JSON.parse(localStorage.getItem("users"))
+// console.log(objData);
+
+const toggleThemeSheet = document.getElementById("toggleThemeSheet")
+
+function themeChange() {
+  if (toggleThemeSheet.getAttribute("href") == "./lightTheme.css") {
+    toggleThemeSheet.setAttribute("href", "./darkTheme.css")
+    localStorage.setItem("theme", "dark")
+  } else {
+    toggleThemeSheet.setAttribute("href", "./lightTheme.css")
+    localStorage.setItem("theme", "light")
   }
-]
+}
 
-localStorage.setItem("users", JSON.stringify(users))
+const getTheme = localStorage.getItem("theme")
 
-const objData = JSON.parse(localStorage.getItem("users"))
-console.log(objData);
+if (getTheme == "dark") {
+  toggleThemeSheet.setAttribute("href", "./darkTheme.css")
+} else {
+  toggleThemeSheet.setAttribute("href", "./lightTheme.css")
+}

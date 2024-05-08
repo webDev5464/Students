@@ -196,3 +196,112 @@ multiple line
 // }
 
 // console.log(myFunction(999, 2));
+
+// MyFunction()
+
+// function MyFunction() {
+//   console.log("Hello");
+// }
+
+
+// MyFunction()
+
+// const MyFunction = () => {
+//   console.log("Hello");
+// }
+
+
+// const person = {
+//   fname: "John",
+//   lname: "Doe",
+//   age: 29,
+//   fullName: () => {
+//     return person.fname + ' ' + person.lname
+//   }
+// }
+
+// console.log(person.fullName());
+
+// const person = {
+//   fname: "John",
+//   lname: "Doe",
+//   age: 29,
+//   fullName: function () {
+//     return this.fname + ' ' + this.lname
+//   }
+// }
+
+// console.log(person.fullName());
+
+
+//! if else and else if
+
+// if (5 == 6) {
+//   console.log("Hello");
+// } else {
+//   console.log("Bye");
+// }
+
+
+// if (5 == 6) {
+//   console.log("Hello");
+// } else if (5 != 5) {
+//   console.log("Not Same");
+// } else {
+//   console.log("Bye");
+// }
+
+//? ternary Operator
+
+// 5 == 6 ? console.log(true) : console.log(false);
+
+// 5 == 6 ?
+//   console.log(true) :
+//   5 !== 5 ?
+//     console.log("yes its not match") :
+//     console.log("Bye")
+
+//! Operator
+
+//? Assignment
+
+// const val = 5
+
+// console.log(5 + 5);
+// console.log(5 - 5);
+// console.log(5 * 5);
+// console.log(5 / 5);
+// console.log(5 % 5);
+// console.log(5 ** 2);
+
+// let val = 5
+
+// val++ // increment
+// val-- // decrement
+
+// console.log(++val);
+
+//? Arithmetic
+
+let val = 12
+
+// val = val + 10
+
+// val += 10
+// val -= 10
+// val *= 10
+// val /= 10
+// val **= 10
+// val %= 10
+
+console.log(val);
+
+//? conditional
+
+// == , === , != , !== , < , > , <= , >=
+
+//? logical
+
+// && , || , !
+
+//TODO :- Date(), getDate(), setDate()

@@ -145,4 +145,44 @@
 
 // console.log(!Number(val));
 
-// 9313565251
+//! try catch
+
+// function submitHandler() {
+//   try {
+//     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+//     const username = document.getElementById("username").value
+//     const email = document.getElementById("email").value
+//     const password = document.getElementById("password").value
+
+//     if (!username || !email || !password) throw "Input fields are required."
+//     if (!emailRegex.test(email)) throw "Somethings wrong in your email."
+
+
+//   } catch (xyz) {
+//     console.log(xyz);
+//   } finally {
+//     document.getElementById("username").value = ""
+//     document.getElementById("email").value = ""
+//     document.getElementById("password").value = ""
+//   }
+// }
+
+// const val = 15
+
+// try {
+//   console.log(eval("alert(Hello World!')"));
+// } catch (msg) {
+//   console.log(msg.name, msg.message);
+// }
+
+//! BOM
+
+//? setTimeout()
+
+//? setInterval()
+
+//? localStorage
+
+//! Date() , setDate() , getDate()
+
+//! DOM

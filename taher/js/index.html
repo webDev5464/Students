@@ -5,14 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .passwordInput {
+      position: relative;
+      width: fit-content;
+
+      i {
+        position: absolute;
+        right: 3px;
+        top: 4px;
+        font-size: 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <div>
     <input type="text" name="" id="username" placeholder="username">
+    <br><br>
     <input type="email" name="" id="email" placeholder="email">
-    <input type="password" name="" id="password" placeholder="password">
+    <br><br>
+
+    <div class="passwordInput">
+      <input type="password" name="" id="password" placeholder="password">
+
+      <i onclick="showPass()" id="passIcon" class="fa-solid fa-eye-slash"></i>
+    </div>
+
+    <br>
     <button onclick="submitHandler()">Submit</button>
   </div>
 

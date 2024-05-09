@@ -167,6 +167,19 @@
 //   }
 // }
 
+// function showPass() {
+//   const passIcon = document.getElementById("passIcon")
+//   const password = document.getElementById("password")
+
+//   if (password.getAttribute("type") == "password") {
+//     password.setAttribute("type", "text")
+//     passIcon.setAttribute("class", "fa-solid fa-eye")
+//   } else {
+//     password.setAttribute("type", "password")
+//     passIcon.setAttribute("class", "fa-solid fa-eye-slash")
+//   }
+// }
+
 // const val = 15
 
 // try {
@@ -179,9 +192,19 @@
 
 //? setTimeout()
 
+// setTimeout(() => {
+//   console.log("Hello World!");
+// }, 2000)
+
 //? setInterval()
 
+// setInterval(() => {
+//   console.log("Hello World!");
+// })
+
 //? localStorage
+
+//! Loops
 
 //! Date() , setDate() , getDate()
 

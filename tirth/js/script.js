@@ -296,3 +296,40 @@ console.log(x); */
 
 // let text = 5
 // console.log(!Number(text));
+
+// try {
+
+//   let x = 5
+//   if (x !== 5) {
+//     throw 'x is 5'
+//   } else {
+//     throw 'x is not 5'
+//   }
+
+// } catch (MyErr) {
+
+//   console.log(MyErr);
+
+// }
+
+function formHandler() {
+  try {
+    const fname = document.getElementById("fname").value
+    const lname = document.getElementById("lname").value
+    const username = document.getElementById("username").value
+    const email = document.getElementById("email").value
+    const pass = document.getElementById("pass").value
+    const conPass = document.getElementById("conPass").value
+
+    console.log([fname, lname, username, email, pass, conPass]);
+
+    if (!pass) throw "Password is required"
+    if (!conPass) throw "Confirm password is required"
+    if (pass !== conPass) throw "Password and confirm password does not match."
+
+  } catch (msg) {
+    console.log(msg);
+  }
+}
+
+//TODO :- fetch api with async function

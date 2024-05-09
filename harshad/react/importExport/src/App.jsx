@@ -1,4 +1,3 @@
-// import { Home, Users } from "./components/Home"
 import Home, { Users } from "./components/Home"
 
 export default function App() {

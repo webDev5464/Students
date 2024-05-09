@@ -471,22 +471,51 @@ const products = [
 // const objData = JSON.parse(localStorage.getItem("users"))
 // console.log(objData);
 
-const toggleThemeSheet = document.getElementById("toggleThemeSheet")
+// const toggleThemeSheet = document.getElementById("toggleThemeSheet")
 
-function themeChange() {
-  if (toggleThemeSheet.getAttribute("href") == "./lightTheme.css") {
-    toggleThemeSheet.setAttribute("href", "./darkTheme.css")
-    localStorage.setItem("theme", "dark")
-  } else {
-    toggleThemeSheet.setAttribute("href", "./lightTheme.css")
-    localStorage.setItem("theme", "light")
-  }
-}
+// function themeChange() {
+//   if (toggleThemeSheet.getAttribute("href") == "./lightTheme.css") {
+//     toggleThemeSheet.setAttribute("href", "./darkTheme.css")
+//     localStorage.setItem("theme", "dark")
+//   } else {
+//     toggleThemeSheet.setAttribute("href", "./lightTheme.css")
+//     localStorage.setItem("theme", "light")
+//   }
+// }
 
-const getTheme = localStorage.getItem("theme")
+// const getTheme = localStorage.getItem("theme")
 
-if (getTheme == "dark") {
-  toggleThemeSheet.setAttribute("href", "./darkTheme.css")
-} else {
-  toggleThemeSheet.setAttribute("href", "./lightTheme.css")
-}
+// if (getTheme == "dark") {
+//   toggleThemeSheet.setAttribute("href", "./darkTheme.css")
+// } else {
+//   toggleThemeSheet.setAttribute("href", "./lightTheme.css")
+// }
+
+// let text = "Please visit microsoft and Microsoft!"
+
+// console.log(text.replace(/Microsoft/gi, "Hello"));
+
+// let text = "a,b,c,d,e,f"
+
+// console.log(text.split());
+
+let num = 9.656;
+// const number =
+//   num.toPrecision() +
+//   "<br>" +
+//   num.toPrecision(2) +
+//   "<br>" +
+//   num.toPrecision(4) +
+//   "<br>" +
+//   num.toPrecision(6);
+
+// console.log(num.toPrecision(500));
+
+// console.log(typeof ((10 + 30).valueOf()));
+
+// const arr = [[10, 20], [40], [405], [1]]
+// const b = ['b1', ['b2.1', 'b2.2'], 'b3']
+// const a = ['a1', 'a2', 'a3']
+
+// console.log(b.concat(a).flat());
+// console.log(arr.flat());

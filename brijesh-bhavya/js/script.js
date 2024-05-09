@@ -283,7 +283,7 @@ multiple line
 
 //? Arithmetic
 
-let val = 12
+// let val = 12
 
 // val = val + 10
 
@@ -294,7 +294,7 @@ let val = 12
 // val **= 10
 // val %= 10
 
-console.log(val);
+// console.log(val);
 
 //? conditional
 
@@ -305,3 +305,35 @@ console.log(val);
 // && , || , !
 
 //TODO :- Date(), getDate(), setDate()
+
+//! try catch
+
+// try {
+//   const num = 5
+
+//   console.log(num.toUppercase());
+// } catch (myError) {
+//   console.log(myError.name + ':- ' + myError.message);
+// }
+
+
+
+
+function formHandler() {
+  try {
+    const fname = document.getElementById("fname").value
+    const lname = document.getElementById("lname").value
+    const username = document.getElementById("username").value
+    const email = document.getElementById("email").value
+    const pass = document.getElementById("pass").value
+    const conPass = document.getElementById("conPass").value
+
+    console.log([fname, lname, username, email, pass, conPass]);
+
+    if (!pass) {
+      throw "password is required"
+    }
+  } catch (msg) {
+    console.log(msg);
+  }
+}

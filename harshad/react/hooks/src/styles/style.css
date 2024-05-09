@@ -1,0 +1,29 @@
+.increaseDecrease {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+
+  button {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card {
+  border: 2px solid black;
+  width: fit-content;
+  padding: 20px;
+
+  h1,
+  p {
+    margin: 10px 0;
+    padding: 0;
+  }
+}
+
+input {
+  margin: 30px 0;
+}

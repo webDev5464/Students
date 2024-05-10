@@ -316,24 +316,33 @@ multiple line
 //   console.log(myError.name + ':- ' + myError.message);
 // }
 
+// function formHandler() {
+//   try {
+//     const fname = document.getElementById("fname").value
+//     const lname = document.getElementById("lname").value
+//     const username = document.getElementById("username").value
+//     const email = document.getElementById("email").value
+//     const pass = document.getElementById("pass").value
+//     const conPass = document.getElementById("conPass").value
 
+//     console.log([fname, lname, username, email, pass, conPass]);
 
+//     if (!pass) {
+//       throw "password is required"
+//     }
+//   } catch (msg) {
+//     console.log(msg);
+//   }
+// }
 
-function formHandler() {
-  try {
-    const fname = document.getElementById("fname").value
-    const lname = document.getElementById("lname").value
-    const username = document.getElementById("username").value
-    const email = document.getElementById("email").value
-    const pass = document.getElementById("pass").value
-    const conPass = document.getElementById("conPass").value
+// https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI
 
-    console.log([fname, lname, username, email, pass, conPass]);
-
-    if (!pass) {
-      throw "password is required"
-    }
-  } catch (msg) {
-    console.log(msg);
-  }
+async function getAllData() {
+  const rowData = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+  const data = await rowData.json()
+  console.log(data);
 }
+
+getAllData()
+
+// console.log("Hello");

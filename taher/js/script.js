@@ -204,6 +204,24 @@
 
 //? localStorage
 
+// localStorage.setItem("person", "John")
+// localStorage.setItem("Username", "John")
+// localStorage.setItem("admin", "John")
+// const getData = localStorage.getItem("person")
+// localStorage.removeItem("person")
+// localStorage.clear()
+
+// const data = [
+//   { fname: "John", lname: "Doe" },
+//   { fname: "Smith", lname: "Duck" },
+//   { fname: "Chagan", lname: "Chapri" },
+//   { fname: "Magan", lname: "Bloger" }
+// ]
+
+// localStorage.setItem("data", JSON.stringify(data))
+// const storageData = JSON.parse(localStorage.getItem("data"))
+// console.log(storageData);
+
 //! Loops
 
 //! Date() , setDate() , getDate()

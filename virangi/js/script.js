@@ -519,3 +519,39 @@ let num = 9.656;
 
 // console.log(b.concat(a).flat());
 // console.log(arr.flat());
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]
+// delete fruits[1]
+
+// console.log(fruits.flat());
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]
+
+// console.log(Array.isArray(fruits));
+// console.log(typeof fruits == "object");
+
+// fruits.splice(1, 2)
+
+// console.log(fruits);
+// fruits.splice(1, 2)
+
+// console.log(fruits);
+
+// const points = [40, 100, 1, 5, 25, 10];
+
+// points.sort((a, b) => {
+//   return a - b
+// })
+
+// console.log(points);
+
+//! Asynchronous function with fetch API
+
+async function getAllData() {
+  const rowData = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+  const data = await rowData.json()
+
+
+}
+
+getAllData()

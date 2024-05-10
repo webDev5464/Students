@@ -312,24 +312,60 @@ console.log(x); */
 
 // }
 
-function formHandler() {
-  try {
-    const fname = document.getElementById("fname").value
-    const lname = document.getElementById("lname").value
-    const username = document.getElementById("username").value
-    const email = document.getElementById("email").value
-    const pass = document.getElementById("pass").value
-    const conPass = document.getElementById("conPass").value
+// function formHandler() {
+//   try {
+//     const fname = document.getElementById("fname").value
+//     const lname = document.getElementById("lname").value
+//     const username = document.getElementById("username").value
+//     const email = document.getElementById("email").value
+//     const pass = document.getElementById("pass").value
+//     const conPass = document.getElementById("conPass").value
 
-    console.log([fname, lname, username, email, pass, conPass]);
+//     console.log([fname, lname, username, email, pass, conPass]);
 
-    if (!pass) throw "Password is required"
-    if (!conPass) throw "Confirm password is required"
-    if (pass !== conPass) throw "Password and confirm password does not match."
+//     if (!pass) throw "Password is required"
+//     if (!conPass) throw "Confirm password is required"
+//     if (pass !== conPass) throw "Password and confirm password does not match."
 
-  } catch (msg) {
-    console.log(msg);
-  }
-}
+//   } catch (msg) {
+//     console.log(msg);
+//   }
+// }
+
+//! BOM
+
+//? setTimeout
+
+// setTimeout(() => {
+//   console.log('Hello');
+// }, 5000)
+
+//? setInterval
+
+// setInterval(() => {
+//   console.log('Hello');
+// }, 1000)
+
+//? localStorage
+
+// localStorage.setItem("person", "John")
+// localStorage.setItem("Username", "John")
+// localStorage.setItem("admin", "John")
+// const getData = localStorage.getItem("person")
+// localStorage.removeItem("person")
+// localStorage.clear()
+
+// const data = [
+//   { fname: "John", lname: "Doe" },
+//   { fname: "Smith", lname: "Duck" },
+//   { fname: "Chagan", lname: "Chapri" },
+//   { fname: "Magan", lname: "Bloger" }
+// ]
+
+// localStorage.setItem("data", JSON.stringify(data))
+// const storageData = JSON.parse(localStorage.getItem("data"))
+// console.log(storageData);
+
+//! DOM
 
 //TODO :- fetch api with async function

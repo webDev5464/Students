@@ -335,14 +335,89 @@ multiple line
 //   }
 // }
 
-// https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI
 
-async function getAllData() {
-  const rowData = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
-  const data = await rowData.json()
-  console.log(data);
-}
+//! async and await with fetch data
+//? https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI
 
-getAllData()
+// async function fetchData() {
+//   const renderAllData = document.getElementById("renderAllData")
+//   const rowData = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+//   const objData = await rowData.json()
 
-// console.log("Hello");
+//   const newObj = [...objData.earbud, ...objData.tshirt]
+
+//   renderAllData.innerHTML = newObj.map((MyValue) => {
+//     return `
+//       <section class="card">
+//         <div>
+//           <img src="${MyValue.img1}" alt="ProductImage">
+//         </div>
+
+//         <div>
+//           <p>${MyValue.title}</p>
+//         </div>
+//       </section>
+//     `
+//   }).join("")
+// }
+
+// fetchData()
+
+//? String templates
+
+// const person = "John"
+
+// console.log(`Hello ${person}`);
+
+//? call back function
+
+// const func = () => {
+//   return () => {
+
+//   }
+// }
+
+//! Loops
+
+//? map(), forEach(), for , for in , for of , do while, while
+const frtRender = document.getElementById("frtRender")
+const frt = ["Apple", "Banana", "Mango", "Kiwi", "Orange"]
+
+//? Map() method
+// console.log(frt.join(" * "));
+
+// frtRender.innerHTML = frt.map((MyFrtVal) => {
+//   return `<h1>${MyFrtVal}</h1>`
+// }).join("")
+
+//? forEach() method
+
+// let text = ""
+
+// frt.forEach((frtValue) => {
+//   text += frtValue + "<br>"
+// })
+
+// frtRender.innerHTML = text
+
+//? for
+
+// let text = ""
+
+// for (let init = 0; init < frt.length; init++) {
+//   text += frt[init] + "<br>"
+// }
+
+// frtRender.innerHTML = text
+
+//? for in
+
+// for (let init in frt) {
+//   console.log(init);
+// }
+
+//? for of
+
+// for (let init of frt) {
+//   console.log(init);
+// }

@@ -1,350 +1,206 @@
-// document.getElementById("heading").innerHTML = "Hello World!"
-
-//! variable's
+//! Data types
 
 /*
+  String
+  Number
+  Boolean
+  Undefined
 
-* let
-* const
-* var
-
+  Object
 */
 
-// const myName = "John"
-// let continue = "Magan"
-// var myName = "John"
-// console.log(continue);
+// const name = "John"
 
+// const rollNumber = 8
 
-// var myName = "John"
+// const isAdmin = false
 
-// var myName = "Magan"
+//! function
 
-// console.log(myName);
-
-//? let and const
-
-// let myName = "John"
-// console.log(myName);
-
-// myName = "Chagan"
-
-// const myName = "John"
-
-// myName = "Chagan"
-
-// console.log(myName);
-
-//! blockScope
-
-// let myName = "John"
-
-// {
-
-//   let myName = "Chagan"
-//   console.log(myName);
-// }
-
-/* var x = 5
-
-{
-  var x = 10
-}
-
-console.log(x); */
-
-//! DataTypes
-
-/*
-   Number
-   NaN
-   String
-   Boolean
-   Object
-   undefined
-   null
-  // Symbol
-  // BigInt
-*/
-
-// typeof operator :- for check datatype
-
-//? Number
-
-// let num = 5
-
-// let num = 5.595
-
-// let isNotNumber = NaN
-
-// console.log(typeof isNotNumber);
-
-// console.log(typeof num);
-
-//? String
-
-// let str = "Hello \
-// chagan"
-// let str = 'Hello \'Chagan\''
-
-// console.log(str);
-
-// let str = 'Hello'
-
-// let str = `Hello`
-
-//   lorem
-//   asdasd
-//   asdasd
-//   asdasd
-
-// `
-
-// console.log(typeof str);
-
-
-// let user = "Chagan"
-// let person = `Hello, ${user}`
-
-// console.log(person);
-
-//? boolean
-
-// let isAdmin = true // 1
-// let isAdmin = false // 0
-
-// console.log(isAdmin);
-// console.log(Number(isAdmin));
-
-//? object
-
-//* Array, null, object
-
-// Array
-// const frt = ["Orange", "Apple", "Banana", "Mango"]
-// index = start with 0
-
-// console.log(frt[1]);
-// console.log(frt.length);
-// console.log(typeof frt);
-
-// console.log(Array.isArray(frt));
-
-
-
-// object
-
-// const person = { key: "Value" }
-
-// const person = {
-//   fname: "John",
-//   lname: "Doe",
-//   age: 29
-// }
-
-// console.log(typeof person);
-// console.log(person.fname + " " + person.lname);
-
-// null
-
-// const myValue = null
-// console.log(typeof myValue);
-
-//? undefined
-
-// let myValue
-// console.log(typeof myValue);
-
-//! function and arrow function
-
-//? regular function
-
-// function MyFunction() {
-//   console.log("Hello World!");
-// }
-
-// MyFunction()
-
-
-
-// function Calculator() {
-//   return "Hello World!"
-// }
-
-// console.log(Calculator());
-
-
-
-// function Calculator(price, qty) {
+// function MyFunction(price, qty) {
 //   return price * qty
 // }
 
-// console.log(Calculator(999, 4));
+// console.log(MyFunction());
 
 
-//? arrow function
-
-// const Calculator = () => {
-//   return "Hello World!"
-// }
-
-// console.log(Calculator());
-
-
-
-// const Calculator = (price, qty) => {
-//   return price * qty
-// }
-
-// console.log(Calculator(599, 6));
-
-
-// const myFunction = () => {
-//   return "Hello World!"
-// }
+//? Arrow function
 
 // console.log(myFunction());
 
-
-// console.log(fun());
-
-// function fun() {
-//   return "Hello World!"
+// function myFunction() {
+//   return "Hello"
 // }
+
+
+// myFunction()
+
+// const myFunction = () => {
+//   console.log("Hello World");
+// }
+
+// const person = {
+//   fname: "John",
+//   lname: "Doe",
+//   age: 72,
+//   fullname: () => {
+//     return person.fname + " " + person.lname
+//   }
+// }
+
+// console.log(person.fullname());
 
 
 // const person = {
 //   fname: "John",
 //   lname: "Doe",
-//   age: 27,
-//   fullName: function () {
-//     return this.fname + " " + this.lname;
+//   age: 72,
+//   fullname: function () {
+//     return this.fname + " " + this.lname
 //   }
 // }
 
+// console.log(person.fullname());
 
+//? Callback function
 
-// const person = {
-//   fname: "John",
-//   lname: "Doe",
-//   age: 27,
-//   fullName: () => {
-//     return person.fname + " " + person.lname;
-//   }
+// function callBack(name, cal) {
+//   return cal(`Hello ${name}`)
 // }
 
-// console.log(person.fullName());
+// console.log(callBack("John", (val) => {
+//   return val
+// }));
 
-//! if else statement and else if
+//! if else and else if
 
-// if (10 == 10) {
-//   console.log("true");
+// if (5 === "5") {
+//   console.log(true);
+// } else if (5 == 5) {
+//   console.log("Hello");
 // } else {
-//   console.log('false');
+//   console.log(false);
 // }
 
+//? ternary operator
 
-// if (10 === "10") {
-//   console.log("true");
-// } else if (10 !== "10") {
-//   console.log("10 not match");
-// } else {
-//   console.log("false");
-// }
+// 5 !== 6 ? console.log("second condition") : console.log(false);
 
-//! ternary Operator
+// 5 == 6 ? console.log(true) : 5 !== 6 ? console.log("second condition") : console.log(false);
 
-// console.log(5 == 5 ? true : false);
+//! operators
 
-// 5 != "5" ? console.log("true") : 5 != "5" ? console.log("second Condition true") : console.log(false)
+//? Arithmetic
 
-//! Conditional Operators
+// const num1 = 10;
+// const num2 = 20;
 
-// == (only check value)
-// console.log(5 == '5' ? true : false);
+// console.log(num1 + num2);
+// console.log(num1 * num2);
+// console.log(num1 / num2);
+// console.log(num1 % num2);
+// console.log(num1 - num2);
+// console.log(5 ** 2);
 
-// === (check value and datatype)
-// console.log(5 === '5' ? true : false);
+// let val = 5
+// val--
+// console.log(val);
 
-// != (only check value)
-// console.log(5 != 5 ? true : false);
+//? Assignment
 
-// !== (check value and datatype)
-// console.log(5 !== '5' ? true : false);
+// let a = 5
 
-// <
-// console.log(5 < 6 ? true : false);
+// a = a + 5
 
-// >
-// console.log(5 > 6 ? true : false);
+// a += 5
+// a -= 5
+// a *= 5
+// a /= 5
+// a %= 5
+// a **= 5
 
-// <=
-// console.log(4 <= 5 ? true : false);
+// console.log(a);
 
-// >=
-// console.log(6 >= 5 ? true : false);
+//? Comparison
 
-//! logical operators
+// console.log(5 == 5);
+// console.log(5 === "5");
+// console.log(5 != "6");
+// console.log(5 !== 5);
+// console.log(3 < 4);
+// console.log(3 > 4);
+// console.log(3 >= 3);
+// console.log(3 <= 5);
 
-// &&
-// console.log(5 == 5 && 5 == 6);
+//? Logical
 
-// ||
-// console.log(5 == 6 || 5 == 7);
+//* and operator
+// console.log(5 == 5 && 6 === 6);
 
-// !
+//* or operator
+// console.log(5 == 6 || 6 !== 6);
 
-// let text = 5
-// console.log(!Number(text));
+//* not operator
+// const val = "Hello"
 
-// try {
+// console.log(!Number(val));
 
-//   let x = 5
-//   if (x !== 5) {
-//     throw 'x is 5'
-//   } else {
-//     throw 'x is not 5'
-//   }
+//! try catch
 
-// } catch (MyErr) {
-
-//   console.log(MyErr);
-
-// }
-
-// function formHandler() {
+// function submitHandler() {
 //   try {
-//     const fname = document.getElementById("fname").value
-//     const lname = document.getElementById("lname").value
+//     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 //     const username = document.getElementById("username").value
 //     const email = document.getElementById("email").value
-//     const pass = document.getElementById("pass").value
-//     const conPass = document.getElementById("conPass").value
+//     const password = document.getElementById("password").value
 
-//     console.log([fname, lname, username, email, pass, conPass]);
+//     if (!username || !email || !password) throw "Input fields are required."
+//     if (!emailRegex.test(email)) throw "Somethings wrong in your email."
 
-//     if (!pass) throw "Password is required"
-//     if (!conPass) throw "Confirm password is required"
-//     if (pass !== conPass) throw "Password and confirm password does not match."
 
-//   } catch (msg) {
-//     console.log(msg);
+//   } catch (xyz) {
+//     console.log(xyz);
+//   } finally {
+//     document.getElementById("username").value = ""
+//     document.getElementById("email").value = ""
+//     document.getElementById("password").value = ""
 //   }
+// }
+
+// function showPass() {
+//   const passIcon = document.getElementById("passIcon")
+//   const password = document.getElementById("password")
+
+//   if (password.getAttribute("type") == "password") {
+//     password.setAttribute("type", "text")
+//     passIcon.setAttribute("class", "fa-solid fa-eye")
+//   } else {
+//     password.setAttribute("type", "password")
+//     passIcon.setAttribute("class", "fa-solid fa-eye-slash")
+//   }
+// }
+
+// const val = 15
+
+// try {
+//   console.log(eval("alert(Hello World!')"));
+// } catch (msg) {
+//   console.log(msg.name, msg.message);
 // }
 
 //! BOM
 
-//? setTimeout
+//? setTimeout()
 
 // setTimeout(() => {
-//   console.log('Hello');
-// }, 5000)
+//   console.log("Hello World!");
+// }, 2000)
 
-//? setInterval
+//? setInterval()
 
 // setInterval(() => {
-//   console.log('Hello');
-// }, 1000)
+//   console.log("Hello World!");
+// })
 
 //? localStorage
 
@@ -366,6 +222,105 @@ console.log(x); */
 // const storageData = JSON.parse(localStorage.getItem("data"))
 // console.log(storageData);
 
-//! DOM
+//? Theme change using localStorage
 
-//TODO :- fetch api with async function
+// function themeChange() {
+//   const themeCss = document.getElementById("themeCss")
+
+//   if (themeCss.getAttribute('href') == "./lightTheme.css") {
+//     themeCss.setAttribute('href', "./darkTheme.css")
+//     localStorage.setItem("theme", "dark")
+//   } else {
+//     themeCss.setAttribute('href', "./lightTheme.css")
+//     localStorage.setItem("theme", "light")
+//   }
+// }
+
+// const storageTheme = localStorage.getItem("theme")
+// const themeCss = document.getElementById("themeCss")
+
+// if (storageTheme == "dark") {
+//   themeCss.setAttribute("href", "./darkTheme.css")
+// } else {
+//   themeCss.setAttribute('href', "./lightTheme.css")
+// }
+
+//! Loops
+
+//? map(), forEach(), for, for in, for of, while, do while
+
+// const renderData = document.getElementById("renderData")
+// const Language = ["HTML", "CSS", "JavaScript", "React Js", "Node Js", "Express js", "MongoDb"]
+
+//? map()
+
+// console.log(Language.join(" * "));
+// console.log(Language);
+
+// renderData.innerHTML = Language.map((MyValue) => {
+//   return MyValue + "<br>"
+// }).join("")
+
+//? forEach()
+
+// let text = ""
+
+// Language.forEach((MyValue) => {
+//   text += `<h1>${MyValue}</h1>`
+// })
+
+// renderData.innerHTML = text
+
+//? for
+
+// let text = ""
+
+// for (let init = 0; init < Language.length; init++) {
+//   text += `<h1>${Language[init]}</h1>`
+// }
+
+// renderData.innerHTML = text
+
+//? for in
+
+// for (let init in Language) {
+//   console.log(init);
+// }
+
+//? for of
+
+// for (let init of Language) {
+//   console.log(init);
+// }
+
+//? while
+
+// let text = ""
+// let init = 0
+// let languageLength = Language.length
+
+// while (init < languageLength) {
+//   text += Language[init] + "<br>"
+//   init++
+// }
+
+// renderData.innerHTML = text
+
+//? do while
+
+// let text = ""
+// let init = 0
+// let languageLength = Language.length
+
+// do {
+//   text += Language[init] + "<br>"
+//   init++
+// } while (init > languageLength)
+
+// renderData.innerHTML = text
+
+//TODO :- Date() - setDate() - getDate()
+
+//! Date() , setDate() , getDate()
+
+//! DOM

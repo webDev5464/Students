@@ -1,0 +1,19 @@
+body {
+  background-color: var(--white);
+}
+
+.card {
+  width: 300px;
+  border: 2px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+
+  img {
+    width: 300px;
+  }
+
+  .cardDetail {
+    padding: 5px;
+    border-top: 2px solid black;
+  }
+}

@@ -9,7 +9,7 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <style>
+  <!-- <style>
     .passwordInput {
       position: relative;
       width: fit-content;
@@ -21,12 +21,15 @@
         font-size: 12px;
       }
     }
-  </style>
+  </style> -->
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./lightTheme.css" id="themeCss">
 </head>
 
 <body>
 
-  <div>
+  <!-- <div>
     <input type="text" name="" id="username" placeholder="username">
     <br><br>
     <input type="email" name="" id="email" placeholder="email">
@@ -40,7 +43,25 @@
 
     <br>
     <button onclick="submitHandler()">Submit</button>
-  </div>
+  </div> -->
+
+  <!-- <section class="card">
+    <div>
+      <img src="./Ship.jpg" alt="ShipImage">
+    </div>
+
+    <div class="cardDetail">
+      <h1>This is a Ship Image</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur saepe, veniam error deserunt
+        accusantium cumque blanditiis iure explicabo amet, eius autem eveniet voluptatem, tempore quos perspiciatis
+        voluptate commodi cum!</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </section>
+
+  <button onclick="themeChange()">Change Theme</button> -->
+
+  <div id="renderData"></div>
 
   <script src="./script.js"></script>
 </body>

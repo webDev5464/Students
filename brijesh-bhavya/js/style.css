@@ -1,0 +1,15 @@
+#renderAllData {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.card img {
+  width: 300px;
+}
+
+.card {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid black;
+}

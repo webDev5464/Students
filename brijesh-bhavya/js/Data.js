@@ -1,0 +1,52 @@
+const products = [
+  {
+    id: 101,
+    title: "OnePlus Nord Buds 2r True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 Rating [Deep Grey]",
+    brand: "OnePlus",
+    detail: [
+      "[Enhanced Sound Experience]: The buds comes with 12.4mm driver unit, which delivers crisp clear and enhanced bass quality sound experience",
+      "[Sound Master Equalizers]: For the OnePlus Nord Buds 2r, you get to choose how heavy or light you want your sound with the help of sound master equalizer s 3 unique audio profiles -Bold, Bass & Balanced"
+    ],
+    img1: "https://m.media-amazon.com/images/I/51oMWaW7tKL._SX522_.jpg",
+    img2: "https://m.media-amazon.com/images/I/51Ibbe7YqQL._SX522_.jpg",
+    price: 2299,
+    discount: 13,
+    qty: 1,
+    size: [],
+    category: "earbud",
+    subCategory: "electronic"
+  },
+  {
+    id: 102,
+    title: "Noise Vivid Call 2 Smart Watch with 1.85” HD Display, BT Calling, IP68 Waterproof, 7 Days Battery Life, Sleep Tracking, 150+ Watch Faces (Jet Black)",
+    brand: "Noise",
+    detail: [
+      "Bluetooth calling - Experience hands-free living with the calling functionality on your wrist. With Noise Buzz, you can now access call logs and your dial pad.",
+      "1.85” display - Get a clearer and bolder viewing experience indoors and outdoors."
+    ],
+    img1: "https://m.media-amazon.com/images/I/51g1bLteeVL._SX679_.jpg",
+    img2: "https://m.media-amazon.com/images/I/71aHfJtmrML._SX679_.jpg",
+    price: 5999,
+    discount: 82,
+    qty: 1,
+    size: [],
+    category: "smartwatch",
+    subCategory: "electronic"
+  },
+  {
+    id: 103,
+    title: "Reebok Men's Velocity Runner Lp Running Shoe",
+    brand: "Reebok",
+    detail: [
+      "Upper Material: Mesh; Outer Sole: Eva;Insole: Support Insole; Color: Pugry6/none/none;Fastening: Lace-up; Ankle Height: Regular; Arch Type: Medium;Cushioning: Medium: Surface Type: Hard;Package Contents: Men's Velocity Runner Lp Running Shoes"
+    ],
+    img1: "https://m.media-amazon.com/images/I/81UEKD1LteL._SY695_.jpg",
+    img2: "https://m.media-amazon.com/images/I/81eSGZ7qUCL._SY695_.jpg",
+    price: 2799,
+    discount: 55,
+    qty: 1,
+    size: ["6uk", "7uk", "8uk", "9uk"],
+    category: "shoesForMan",
+    subCategory: "footwear"
+  }
+]

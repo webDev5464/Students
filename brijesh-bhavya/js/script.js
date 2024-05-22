@@ -380,8 +380,8 @@ multiple line
 //! Loops
 
 //? map(), forEach(), for , for in , for of , do while, while
-const frtRender = document.getElementById("frtRender")
-const frt = ["Apple", "Banana", "Mango", "Kiwi", "Orange"]
+// const frtRender = document.getElementById("frtRender")
+// const frt = ["Apple", "Banana", "Mango", "Kiwi", "Orange"]
 
 //? Map() method
 // console.log(frt.join(" * "));
@@ -421,3 +421,47 @@ const frt = ["Apple", "Banana", "Mango", "Kiwi", "Orange"]
 // for (let init of frt) {
 //   console.log(init);
 // }
+
+// console.log(JSON.stringify(products));
+
+//! BOM
+
+//? localStorage
+
+// localStorage.setItem("person", "John")
+// localStorage.setItem("username", "John")
+// localStorage.setItem("fname", "John")
+
+// localStorage.removeItem("person")
+// localStorage.clear()
+
+// const getData = localStorage.getItem("username")
+// console.log(getData)
+
+// localStorage.setItem("data", JSON.stringify(products))
+// const localData = JSON.parse(localStorage.getItem("data"))
+// console.log(localData);
+
+//? setTimeout()
+
+// setTimeout(() => {
+//   console.log("Hello World");
+// }, 5000)
+
+//? setInterval()
+
+// setInterval(() => {
+//   console.log("Hello World");
+// }, 2000)
+
+//? window
+
+setInterval(() => {
+  const initValue = window.scrollY > 1000
+
+  if (initValue) {
+    document.querySelector("body").style.backgroundColor = "black"
+  } else {
+    document.querySelector("body").style.backgroundColor = "white"
+  }
+})

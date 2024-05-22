@@ -319,8 +319,49 @@
 
 // renderData.innerHTML = text
 
-//TODO :- Date() - setDate() - getDate()
-
-//! Date() , setDate() , getDate()
+//! DOM
 
 //! DOM
+
+//? setTimeout()
+
+// setTimeout(() => {
+//   console.log("Hello World!");
+// }, 2000)
+
+//? setInterval()
+
+// setInterval(() => {
+//   console.log("Hello World!");
+// }, 2000)
+
+
+//? windows
+
+// setInterval(() => {
+//   console.log(window.scrollY);
+// })
+
+//? localStorage
+
+// localStorage.setItem("person", "John")
+// localStorage.removeItem("Key")
+// const getLocalData = localStorage.getItem("person")
+// localStorage.clear()
+
+// const users = {
+//   name: "John",
+//   age: 30,
+// }
+
+// localStorage.setItem("users", JSON.stringify(users))
+
+// const getData = JSON.parse(localStorage.getItem("users"))
+
+// console.log(getData);
+
+//? Math
+
+//? Array methods
+
+//! Theme change with localStorage

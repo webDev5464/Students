@@ -324,3 +324,63 @@
 //! Date() , setDate() , getDate()
 
 //! DOM
+
+//! Methods
+
+//? String Method
+
+// let text = "abcdefghijklmnopqrstuvwxyz";
+// let length = text.toUpperCase();
+// console.log(length);
+
+// let text = "Please visit Microsoft MICROSOFT Microsoft!"
+// let change = text.replace(/Microsoft/ig, "World")
+// console.log(change);
+
+// let text = "a,b,c d,e,f"
+// let arr = text.split(' ')
+// console.log(arr);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"]
+// fruits.unshift("Kiwi")
+// fruits.push("Kiwi")
+
+// const result = fruits.slice(2, 3)
+// console.log(result);
+
+// const num = [40, 100, 1, 5, 25, 10]
+// console.log(num.sort((a, b) => {
+//   return a - b
+// }));
+
+// const points = [40, 100, 1, 5, 25, 10];
+
+// function myArrayMax(arr) {
+//   return Math.max.apply(null, arr);
+// }
+
+// console.log(myArrayMax(points));
+
+// const arr = [[10, 20], [30, 40, [50, 60]]]
+
+// console.log(arr.flat().flat().reduce((a, b) => {
+//   return a + b
+// }));
+
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
+
+// console.log(q1.concat(q2, q3, q4));
+
+async function getData() {
+  const rowData = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+  const obj = await rowData.json()
+
+  obj.map((value) => console.log(value.title))
+}
+
+getData()
+
+console.log("Hello");

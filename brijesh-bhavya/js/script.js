@@ -456,12 +456,39 @@ multiple line
 
 //? window
 
-setInterval(() => {
-  const initValue = window.scrollY > 1000
+// setInterval(() => {
+//   const initValue = window.scrollY > 1000
 
-  if (initValue) {
-    document.querySelector("body").style.backgroundColor = "black"
-  } else {
-    document.querySelector("body").style.backgroundColor = "white"
-  }
-})
+//   if (initValue) {
+//     document.querySelector("body").style.backgroundColor = "black"
+//   } else {
+//     document.querySelector("body").style.backgroundColor = "white"
+//   }
+// })
+
+//! DOM
+
+// const element = document.getElementsByTagName("h1")
+
+// const element = document.getElementsByClassName("MyClass")
+// for (let val of element) {
+//   val.innerHTML = "Hello Magan"
+// }
+
+// element[0].innerHTML = "Hello"
+// element[1].innerHTML = "Hello Chagan"
+
+// for (let val of element) {
+//   val.setAttribute("class", "ChaganClass")
+// }
+
+// const newElement = document.querySelectorAll(".ChaganClass")
+// console.log(newElement);
+
+// console.log(element);
+
+// const element = document.querySelector(".MyClass")
+
+// element.addEventListener('mouseover', () => {
+//   console.log("Hello")
+// })

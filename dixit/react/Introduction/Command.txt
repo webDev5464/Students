@@ -1,0 +1,11 @@
+-  Install react
+
+npm create vite .
+
+- Install node_modules
+
+npm Install
+
+- run application
+
+npm run dev

@@ -1,36 +1,28 @@
-// This is a function base component
+// import { useEffect, useRef } from "react"
 
-// function App() {
-//   return <h1>Hello World!</h1>
-// }
-
-// export default App
-
-// =======================
+import Prop from "./Prop";
 
 // export default function App() {
-//   return <h1>Hello World!</h1>
+//   const autoFocus = useRef()
+
+//   const focusInput = () => {
+//     autoFocus.current.focus()
+//   }
+
+//   useEffect(() => {
+//     autoFocus.current.focus()
+//   }, [])
+
+//   return (
+//     <>
+//       <input type="text" name="" id="" ref={autoFocus} />
+//       <button onClick={focusInput}>Focus</button>
+//     </>
+//   )
 // }
 
-
-// =======================
-
-
-// export const App = () => {
-//   return <h1>Hello World!</h1>
-// }
-
-const App = () => {
-  return <h1 className="text-6xl font-bold bg-red-500 my-5">Hello World!</h1>
+export default function App() {
+  return <>
+    <Prop title="robin" />
+  </>
 }
-
-const Chagan = () => {
-  return <h1>My Name is chagan</h1>
-}
-
-export { App, Chagan }
-
-
-// =======================
-
-// export default App

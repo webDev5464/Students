@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* p {
+  background-color: red;
+  display: inline;
+}
+
+span {
+  background-color: green;
+  display: block;
+} */
+
+.parent {
+  width: fit-content;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.parent > h1 {
+  background-color: black;
+  color: white;
+}
+
+.child {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.parent:hover .child {
+  display: block;
+}

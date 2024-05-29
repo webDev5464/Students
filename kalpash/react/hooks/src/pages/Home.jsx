@@ -1,51 +1,32 @@
-import { useEffect, useState } from "react"
+import { useContext } from "react"
 import CardProps from "../hooks/CardProps"
+import { MyContext } from "../App"
+import { MyGlobContext } from "../GlobProvider"
 
 function Home() {
-
-  const [ApiData, setApiData] = useState()
-
-  const fetchData = async () => {
-    const response = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
-    const objData = await response.json()
-    setApiData([...objData.earbud, ...objData.tshirt])
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
+  const { ApiData } = useContext(MyContext)
+  const { users } = useContext(MyGlobContext)
 
   return (
     <div>
-      <h1>This is a Home page</h1>
 
-      {
-        ApiData == undefined ? "" : ApiData.map((value, index) => (
-          <CardProps key={index} MyValue={{
-            imgOne: value.img1,
-            title: value.title,
-            price: value.price,
-            discount: value.discount
-          }} />
-        ))
-      }
+      <h1>{users}</h1>
+
+      <div className="cardParent">
+        {
+          ApiData == undefined ? "" : ApiData.map((value, index) => (
+            <CardProps key={index} MyValue={{
+              imgOne: value.img1,
+              title: value.title,
+              price: value.price,
+              discount: value.discount
+            }} />
+          ))
+        }
+      </div>
 
     </div>
   )
 }
 
 export default Home
-
-
-// export default function Home() {
-//   const obj = { A: [1, 2], B: [3, 4], C: [5, 6], D: [7, 8] }
-//   // [1, 2, 4, 5, 6, 7, 8]
-
-//   const newObj = [...obj.A, ...obj.B]
-//   console.log(newObj);
-
-//   return (
-//     <>
-//     </>
-//   )
-// }

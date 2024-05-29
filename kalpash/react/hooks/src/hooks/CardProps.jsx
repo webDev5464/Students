@@ -4,8 +4,8 @@ export default function CardProps({ MyValue }) {
 
   return (
     <div className="card">
-      <div>
-        <img src={MyValue.imgOne} alt="" />
+      <div className="imgParent">
+        <img src={MyValue.imgOne} alt="" className="img" />
       </div>
 
       <div>

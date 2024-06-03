@@ -13,3 +13,9 @@ npm init -y
 ```
 npm i express
 ```
+
+- server auto running
+
+```
+npm i nodemon
+```

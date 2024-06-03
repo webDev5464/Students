@@ -1,0 +1,132 @@
+:root {
+  --MyBlue: #57b1ff;
+  --Yellow: yellow;
+  --mainSpace: 10px;
+  --OficialFont: Arial;
+}
+
+h1 {
+  font-family: var(--OficialFont);
+}
+
+.box {
+  background-color: var(--MyBlue);
+  width: 200px;
+  height: 200px;
+  padding: var(--mainSpace);
+
+  /* transform: translate(800px); */
+  /* transform: rotate(360deg); */
+  /* transform: skew(10deg, 30deg); */
+  /* transform: scale(1.5); */
+  /* transition: 5s ease-in; */
+
+  animation-name: MyAnimation;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes MyAnimation {
+  0% {
+    transform: translate(0px);
+    background-color: yellow;
+  }
+
+  25% {
+    transform: translate(600px);
+    background-color: red;
+  }
+
+  50% {
+    transform: translate(600px, 600px);
+    background-color: blue;
+  }
+
+  75% {
+    transform: translate(0px, 600px);
+    background-color: green;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    background-color: yellow;
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+section {
+  background-color: blue;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  padding: 10px;
+
+  place-items: center;
+  align-content: center;
+  /* place-content: center; */
+  /* justify-content: center; */
+
+  div {
+    background-color: var(--MyBlue);
+  }
+}
+
+/* Media query */
+
+@media (min-width: 1200px) {
+  section {
+    background-color: red;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    grid-template-columns: repeat(2, auto);
+    overflow: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  section {
+    display: none;
+  }
+
+  .box-two,
+  .box-one {
+    height: 100px;
+    width: 400px;
+    border: 3px solid red;
+    margin: 50px 0;
+  }
+
+  .box-one {
+    padding: 10px;
+  }
+
+  .box-two {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}

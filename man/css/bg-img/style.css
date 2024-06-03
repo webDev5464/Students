@@ -1,0 +1,68 @@
+/* .parent {
+  border: 4px solid red;
+  width: fit-content;
+  position: relative;
+} */
+
+/* .parent h1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  color: red;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.parent {
+  background-image: url('./Ship.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+
+  border: 4px solid red;
+  height: 500px;
+  width: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    background-color: black;
+    color: wheat;
+    padding: 10px;
+    width: fit-content;
+    /* height: fit-content; */
+  }
+}
+
+.styleImg {
+  margin: 700px 0;
+  background-image: url('./Ship.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 400px;
+
+  .child {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      width: 500px;
+      color: white;
+      font-size: 1.6rem;
+    }
+  }
+}

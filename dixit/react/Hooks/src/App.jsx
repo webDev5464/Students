@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Service from "./components/Service";
 import Navigation from "./Navigation";
+import MyUseState from "./hooks/MyUseState";
 
 export default function App() {
   // const person = "Chagan"
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="About" element={<About />} />
           <Route path="Chagan" element={<Service />} />
+          <Route path="MyUseState" element={<MyUseState />} />
         </Routes>
       </main>
 

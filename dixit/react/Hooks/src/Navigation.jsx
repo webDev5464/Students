@@ -11,6 +11,7 @@ export default function Navigation() {
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'About'}>About</NavLink></li>
         <li><NavLink to={'Chagan'}>Service</NavLink></li>
+        <li><NavLink to={'MyUseState'}>UseState</NavLink></li>
       </ul>
     </nav>
   )

@@ -5,6 +5,23 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+hr {
+  border-bottom: 2px solid black;
+  margin: 20px 0;
+}
+
+input {
+  font-size: 18px;
+  padding: .5px;
+}
+
+.card {
+  margin: 30px 0;
+  border: 2px solid;
+  width: fit-content;
+  padding: 10px;
+}
+
 .myClass {
   background-color: black;
   color: white;

@@ -12,7 +12,7 @@ hr {
 
 input {
   font-size: 18px;
-  padding: .5px;
+  padding: 0.5px;
 }
 
 .card {
@@ -57,4 +57,22 @@ nav {
 
 main {
   padding: 20px;
+}
+
+.useRefPage {
+  height: 500vh;
+  position: relative;
+}
+
+.activeButton {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+
+.notActiveButton {
+  display: none;
 }

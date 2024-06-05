@@ -4,6 +4,8 @@ import About from "./components/About";
 import Service from "./components/Service";
 import Navigation from "./Navigation";
 import MyUseState from "./hooks/MyUseState";
+import MyUseRef from "./hooks/MyUseRef";
+import MyUseEffect from "./hooks/MyUseEffect";
 
 export default function App() {
   // const person = "Chagan"
@@ -19,6 +21,8 @@ export default function App() {
           <Route path="About" element={<About />} />
           <Route path="Chagan" element={<Service />} />
           <Route path="MyUseState" element={<MyUseState />} />
+          <Route path="MyUseRef" element={<MyUseRef />} />
+          <Route path="MyUseEffect" element={<MyUseEffect />} />
         </Routes>
       </main>
 

@@ -21,7 +21,6 @@ export default function MyUseEffect() {
         {
           allData == undefined ? "" : allData.map((value, index) => (
             <div key={index}>
-              
               <p>{value.title}</p>
             </div>
           ))

@@ -19,6 +19,7 @@ function ExampleOne() {
 
   useEffect(() => {
     autoFocus.current.focus()
+    console.log(autoFocus.current);
   }, [reload])
 
   return (

@@ -1,3 +1,9 @@
+import { useContext } from "react"
+import { AppContext } from "../App"
+
 export default function ChildTwo() {
-  return <h1>Child Two</h1>
+
+  const { user } = useContext(AppContext)
+
+  return <h1>Child Two. {user}</h1>
 }

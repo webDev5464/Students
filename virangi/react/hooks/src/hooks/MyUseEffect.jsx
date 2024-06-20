@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react"
+import ProductCard from "../modules/ProductCard"
 
 export default function MyUseEffect() {
 
@@ -24,9 +25,12 @@ export default function MyUseEffect() {
       <div>
         {data == undefined ? "" : data.map((item, index) => {
           return (
-            <div key={item.id}>
-              <p>{item.title}</p>
-            </div>
+            <ProductCard key={index}
+              MyProps={{
+                img: item.img1,
+                title: item.title,
+              }}
+            />
           )
         })}
       </div>

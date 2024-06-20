@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { globContext } from "../context/GlobProvider"
 
 export default function MyUseState() {
   return (
@@ -35,9 +36,11 @@ function ExampleTwo() {
 
   const [user, setUser] = useState(true)
 
+  const { x, y } = useContext(globContext)
+
   return (
     <>
-      <h1>Hello {user ? "Chagan" : "Magan"}</h1>
+      <h1>Hello {user ? x : y}</h1>
 
       <button onClick={() => setUser(!user)}>Change Value</button>
     </>

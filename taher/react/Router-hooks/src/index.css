@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 100px;
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      margin: 0 20px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.Logo {
+  font-size: 30px;
+}
+
+.active {
+  color: #ff0000;
+}
+
+hr {
+  margin: 20px 0;
+}

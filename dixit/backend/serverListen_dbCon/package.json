@@ -1,0 +1,19 @@
+{
+  "name": "serverlisten_dbcon",
+  "version": "1.0.0",
+  "description": "```\r npm init \r or\r npm init -y\r ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3",
+    "nodemon": "^3.1.4"
+  }
+}

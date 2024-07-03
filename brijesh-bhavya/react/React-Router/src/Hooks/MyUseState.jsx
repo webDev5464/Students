@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { AppProvider } from "../App"
 
 export default function MyUseState() {
   return (
@@ -17,19 +18,21 @@ export default function MyUseState() {
 }
 
 function ExampleOne() {
-  // const person = "Chagan"
+  // const myPerson = "Chagan"
 
-  const [person, setPerson] = useState("Chagan")
+  const { person, user } = useContext(AppProvider)
+
+  const [myPerson, setMyPerson] = useState(user)
 
   const changeValue = () => {
-    setPerson("magan")
+    setMyPerson(person)
   }
 
   return (
     <>
-      <h1>Hello {person}</h1>
+      <h1>Hello {myPerson}</h1>
 
-      {/* <button onClick={() => setPerson("Magan")}>Change Name</button> */}
+      {/* <button onClick={() => setmyPerson("Magan")}>Change Name</button> */}
       <button onClick={changeValue}>Change Name</button>
     </>
   )

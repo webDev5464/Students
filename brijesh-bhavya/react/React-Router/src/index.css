@@ -44,3 +44,31 @@ main {
 .active {
   color: #f2c464;
 }
+
+.cardParent {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.card {
+  width: 350px;
+  border: 2px solid black;
+}
+
+.card>div:first-child {
+  overflow: hidden; 
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card>div:last-child {
+  padding: 20px;
+
+  p {
+    margin: 10px 0;
+  }
+}

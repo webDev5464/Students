@@ -1,30 +1,22 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import ProductCard from "./ProductCard";
+import { GlobProvider } from "../Context/GlobContext";
 
 export default function MyUseEffect() {
 
-  const [data, setData] = useState()
-
-  const fetchData = async () => {
-    const rowData = await fetch("https://res.cloudinary.com/djkde7xp0/raw/upload/v1716272960/vfvoybg62ux93ksobfpw.json")
-    const objData = await rowData.json()
-
-    setData(objData.alldata)
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
-  console.log(data);
+  const { data } = useContext(GlobProvider)
 
   return (
     <>
-      <div>
+      <div className="cardParent">
         {
           data != undefined ? data.map((val, index) => (
-            <div key={val.id}>
-              <h1>{val.title}</h1>
-            </div>
+            <ProductCard key={val.id} MyValue={{
+              image: val.img1,
+              title: val.title,
+              price: val.price,
+              discount: val.discount
+            }} />
           )) : ""
         }
       </div>

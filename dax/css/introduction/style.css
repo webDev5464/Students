@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myClass {
+  /* background-color: lightblue; */
+  background-color: lightblue;
+
+  border: solid 4px black;
+  /* border-width: 6px;
+  border-style: dashed;
+  border-color: red; */
+
+  border-radius: 20px 50px;
+  box-shadow: 10px 10px 10px gray;
+  /* overflow: auto; */
+
+  padding: 0 20px 100px 20px;
+  /* margin: 10px 20px 100px 20px; */
+}
+
+.myClass>h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.anotherClass {
+  height: 400px;
+  width: 600px;
+}
+
+.child {
+  height: 100%;
+  overflow: auto;
+}
+
+#myId {}

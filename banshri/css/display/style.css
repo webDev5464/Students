@@ -1,0 +1,138 @@
+/* .box {
+  border: solid 2px black;
+}
+
+.highlight {
+  background-color: yellow;
+} */
+
+section {
+  margin: 150px 0;
+}
+
+hr {
+  border: 3px solid black;
+}
+
+.box>div {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center>div:first-child {
+  background-color: black;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.align-center>div:last-child {
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+
+.align-center>div:nth-child(2) {
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .align-center>div:nth-child(even) {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.align-center>div:nth-child(odd) {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+} */
+
+.content-parent {
+  display: flex;
+}
+
+.content-box {
+  border: 6px solid green;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box>div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+/* ============================= */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px;
+  border: 4px solid gray;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+
+  div {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  article {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      /* font-size: 2em; */
+    }
+  }
+}

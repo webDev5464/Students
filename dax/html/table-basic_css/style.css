@@ -1,0 +1,40 @@
+/* table {
+  border: 4px solid black;
+} */
+
+.myClass {
+  border: 2px solid black;
+  width: 400px;
+  /* min-height: 200px; */
+  height: 300px;
+  margin: auto;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+}
+
+/* ------------- */
+
+div {
+  background-color: red;
+  border: 6px solid black;
+  margin: 20px 0;
+  padding: 40px;
+}
+
+span {
+  background-color: green;
+}
+
+p {
+  background-color: blue;
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    width: 20vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    ul {
+        li {
+            padding: 5px;
+            list-style: none;
+            a {
+                margin: 15px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.menu-header {
+    height: 10vh;
+    background-color: #566f82;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    height: 90vh;
+}
+
+.main-div {
+    height: 100vh;
+    width: 80vw;
+    background-color: #566f82;
+}
+
+.createToDO-main {
+    background-color: #566f82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.createToDO {
+    height: 30%;
+    width: 50%;
+}
+
+.toDoHeader {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    padding: 10px;
+    h3 {
+        margin: 5px;
+        width: 150px;
+    }
+    label {
+        color: white;
+    }
+}
+
+.tx-box {
+    width: 280px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.time {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.date {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn {
+    height: 30px;
+}
+
+.blankToDo {
+    margin-top: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px
+}
+
+.toDoDetails {
+    margin: 10px;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+.header {
+    background-color: white;
+    color: black;
+    text-align: center;
+}

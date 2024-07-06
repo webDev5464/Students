@@ -16,18 +16,8 @@ export default function UserRegister() {
     try {
       e.preventDefault()
 
-      const response = await axios.post("http://localhost:8080/register", data)
+      const response = await axios.post("/api/register", data)
       console.log(response.data);
-
-      // const response = await fetch("http://localhost:8080/register", {
-      //   method: "POST",
-      //   headers: {
-      //     "content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(data)
-      // })
-
-      // console.log(response.body);
 
     } catch (err) {
       console.log(err.message);

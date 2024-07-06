@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { VerifyUser, login, register, verificationUser } from "../controllers/userControllers.js";
+import { login, logOutUser, register, verificationUser, verifyUser } from "../controllers/userControllers.js";
 
 export const userRouter = Router()
 
+userRouter.route('/').get(verificationUser, verifyUser)
 userRouter.route('/register').post(register)
 userRouter.route('/login').post(login)
-userRouter.route('/token').get(verificationUser, VerifyUser)
+userRouter.route('/logout').post(logOutUser)

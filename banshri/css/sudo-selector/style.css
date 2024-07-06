@@ -1,0 +1,39 @@
+.parent>h1:first-child {
+  color: red;
+}
+
+.parent>:nth-child(2)>h1 {
+  color: blue;
+}
+
+.parent :nth-child(3) {
+  color: green;
+}
+
+.parent>:last-child {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.parent>:last-child:hover {
+  color: tomato;
+}
+
+.parent>:last-child:active {
+  color: yellowgreen;
+  scale: .9;
+  transition: 2s;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  background-color: black;
+  color: white;
+}
+
+a:visited {
+  color: aqua;
+}

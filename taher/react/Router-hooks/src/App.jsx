@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Navigation from './pages/Navigation'
 import MyUseState from "./pages/MyUseState"
+import MyUseEffect from "./pages/MyUseEffect"
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="MyUseState" element={<MyUseState />} />
+          <Route path="MyUseEffect" element={<MyUseEffect />} />
         </Routes>
       </main>
 

@@ -1,7 +1,7 @@
 import { $userModel } from "../models/registerModel.js"
 //! npm i bcryptjs
 import bcrypt from "bcryptjs"
-import jwt from "jsonwebtoken"
+import jwt from 'jsonwebtoken'
 
 export const register = async (req, res) => {
   try {
@@ -47,13 +47,16 @@ export const login = async (req, res) => {
     const checkPass = await bcrypt.compare(pass, findUser.pass)
 
     if (checkPass) {
-      const createToken = jwt.sign({ id: findUser._id }, 'secureToken', { expiresIn: '5m' })
 
-      res.cookie('userToken', createToken, { httpOnly: true }).status(200).send(
+      const createToken = jwt.sign({ id: findUser._id }, process.env.tokenKey, { expiresIn: '5m' })
+      await $userModel.findByIdAndUpdate(findUser._id, { token: createToken })
+
+      const cookieExpireTime = 1 * 60 * 1000
+
+      res.cookie('userCookie', createToken, { maxAge: cookieExpireTime, httpOnly: true }).status(200).send(
         {
           process: true,
           message: "Login success!",
-          userInfo: await $userModel.findByIdAndUpdate(findUser._id, { token: createToken }),
           data: findUser
         }
       )
@@ -70,25 +73,47 @@ export const login = async (req, res) => {
 }
 
 export const verificationUser = (req, res, next) => {
-  const token = req.cookies.userToken
-  const verifyToken = jwt(token, 'secureToken')
-
-  console.log(75, verifyToken);
-  req.userSecure = verifyToken
-  console.log(74, token);
-  next()
-}
-
-export const VerifyUser = async (req, res) => {
   try {
-    let id = req.userid
-    console.log(84, id);
-    let user = await $userModel.findById(id)
-    res.send({ msg: 'verified', user, success: true })
-  } catch (msg) {
-    console.log(msg.message);
+    const token = req.cookies.userCookie
+    if (!token) throw new Error("Token not found")
+    const verifyToken = jwt.verify(token, process.env.tokenKey)
+    if (!verifyToken) throw new Error("Token is invalid")
+    req.userVerifyId = verifyToken.id
+
+    next()
+  } catch (err) {
+    res.send({
+      process: false,
+      message: err.message
+    })
   }
 }
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NGVkMzRjMTBlNjQ2M2QxZjRmODJkYiIsImlhdCI6MTcxOTgzNDE3OCwiZXhwIjoxNzE5OTIwNTc4fQ.0UogdQj_QB4UALFtDuX8BzW2hT94xU0I3HWX5k4ixHw
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2U0ZmRjOTg4ZGRlZmViMDAzMmJhNSIsImlhdCI6MTcxOTgzNTE2NSwiZXhwIjoxNzE5ODM1NDY1fQ.mM-VTbNIRHxKBvodnzf-ytmsGZTV5nOBNmPmIjqY_cM
+export const verifyUser = async (req, res) => {
+  try {
+    const id = req.userVerifyId
+
+    if (!id) throw new Error("User not verified")
+
+    const findUser = await $userModel.findById(id)
+
+    res.send({
+      process: true,
+      message: "User verified!",
+      userData: findUser
+    })
+
+  } catch (err) {
+    res.send({
+      process: false,
+      message: err.message
+    })
+  }
+}
+
+export const logOutUser = async (req, res) => {
+  res.clearCookie('userCookie')
+  res.status(200).send({ message: 'User logged out successfully' });
+}
+
+// npm i jsonwebtoken cookie-parser

@@ -1,0 +1,49 @@
+/* .myClass>div>p {
+  background-color: black;
+  color: white;
+} */
+
+/* div p:first-child {
+  color: red;
+} */
+
+/* div p:last-child {
+  color: greenyellow;
+} */
+
+/* div p:nth-child(1) {
+  color: blue;
+} */
+
+/* div p:nth-child(even) {
+  color: red;
+} */
+
+/* div p:nth-child(odd) {
+  color: blue;
+} */
+
+h1:hover {
+  color: red;
+  cursor: grab;
+}
+
+h1:active {
+  color: green;
+  cursor: grabbing;
+}
+
+input {
+  /* border: none; */
+  outline: none;
+}
+
+input:focus {
+  background: black;
+  color: white;
+}
+
+/* 
+#myId {
+  background-color: tomato;
+} */

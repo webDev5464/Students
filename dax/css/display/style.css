@@ -1,0 +1,69 @@
+/* div {
+  background-color: red;
+}
+
+span {
+  background-color: green;
+}
+
+div {
+  display: none;
+  visibility: hidden;
+}
+
+span {
+  display: block;
+  width: 500px;
+} */
+
+
+
+/* section {
+  border: 2px solid red;
+  width: fit-content;
+
+  div {
+    background-color: yellow;
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+section:hover ul {
+  display: block;
+} */
+
+
+.box {
+  border: 4px solid red;
+  margin: 50px 0;
+  display: flex;
+  /* flex-direction: column; */
+
+  div {
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+  }
+}
+
+.center {
+  /* Only applicable when display property have ben applied */
+  justify-content: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}

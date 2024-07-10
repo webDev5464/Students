@@ -5,7 +5,6 @@ import axios from 'axios'
 export const UserProvider = createContext()
 
 export default function UserContext({ children }) {
-
   const [userData, setUserData] = useState()
   const [logout, setLogout] = useState(true)
 
@@ -17,6 +16,23 @@ export default function UserContext({ children }) {
   useEffect(() => {
     verifyUser()
   }, [logout])
+
+  useEffect(() => {
+    const cookieExpirationTime = getCookieExpirationTime() // <--- Add this function
+    if (cookieExpirationTime < Date.now()) {
+      setLogout(true) // Log out the user programmatically
+    }
+  }, [])
+
+  const getCookieExpirationTime = () => {
+    const cookies = document.cookie.split(';')
+    const expirationCookie = cookies.find(cookie => cookie.includes('expires='))
+    if (expirationCookie) {
+      const expirationTime = expirationCookie.split('=')[1]
+      return new Date(expirationTime).getTime()
+    }
+    return null
+  }
 
   return (
     <UserProvider.Provider value={{ userData, setUserData, setLogout, logout }}>

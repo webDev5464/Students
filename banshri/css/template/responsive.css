@@ -1,0 +1,77 @@
+@media screen and (max-width: 1130px) {
+  header>.glass>nav {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width:1060px) {
+  body {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+
+  nav ul,
+  .nav-ref {
+    display: none;
+  }
+
+  .hamBar {
+    position: absolute;
+    right: 55px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .responsive-navbar {
+    display: none;
+  }
+
+  .hamBar {
+    display: none;
+  }
+
+  nav {
+    section {
+      /* display: flex;
+      align-items: center;
+      gap: 25px; */
+
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          list-style: none;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .nav-ref {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      div>i {
+        color: white;
+        font-size: 20px;
+      }
+
+      .button {
+        border: 2px solid white;
+        margin: 0 0 0 20px;
+        padding: 7px 10px;
+        cursor: pointer;
+        transition: .5s;
+      }
+
+      .button:hover {
+        background-color: var(--light-color);
+        color: black;
+      }
+    }
+  }
+}

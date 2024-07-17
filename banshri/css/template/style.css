@@ -1,0 +1,161 @@
+/* https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --heading-font: "Roboto Mono", monospace;
+  --light-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px;
+}
+
+.example {
+  overflow: hidden;
+}
+
+header {
+  background-image: url('./main-header-3.jpg');
+  background-size: cover;
+  height: 88vh;
+  color: var(--light-color);
+
+  .glass {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header-heading {
+      color: var(--light-color);
+      font-family: var(--heading-font);
+      text-align: center;
+
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 20px 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        font-size: 2rem;
+      }
+
+      section {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        /* ul {
+          display: flex;
+          gap: 20px;
+
+          li {
+            list-style: none;
+            font-size: 1.3rem;
+          }
+        } */
+      }
+
+      /* .nav-ref {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        div>i {
+          color: white;
+          font-size: 20px;
+        }
+
+        .button {
+          border: 2px solid white;
+          margin: 0 0 0 20px;
+          padding: 7px 10px;
+          cursor: pointer;
+          transition: .5s;
+        }
+
+        .button:hover {
+          background-color: var(--light-color);
+          color: black;
+        }
+      } */
+    }
+  }
+}
+
+.parent {
+  position: relative;
+  cursor: pointer;
+
+  .child {
+    position: absolute;
+    transition: 1s;
+    min-width: 200px;
+    left: -55px;
+
+    /* display: none; */
+    /* top: -1000px; */
+    height: 0px;
+    overflow: hidden;
+
+    padding: 20px 0 0 0;
+    /* padding: 20px 0 0 0; */
+
+    ul {
+      background-color: rgb(14, 14, 14);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    li:hover {
+      color: tomato;
+    }
+  }
+}
+
+.parent:hover .child {
+  /* display: block; */
+  /* top: 10px; */
+  height: 250px;
+}
+
+.responsive-navbar {
+  height: 100vh;
+  width: 400px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+.notActive {
+  position: absolute;
+
+  right: -1000px;
+  transition: 2s;
+}
+
+.active {
+  position: absolute;
+  transition: 2s;
+
+  right: 0;
+}

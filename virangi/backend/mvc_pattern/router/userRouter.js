@@ -1,6 +1,8 @@
 import { Router } from "express";
-import { submitData } from "../controllers/user.js";
+import { deleteUser, getUserData, submitData, updateUser } from "../controllers/user.js";
 
 export const userRouter = Router()
 
-userRouter.route('/register').post(submitData)
+userRouter.route('/').post(submitData).get(getUserData)
+userRouter.route('/update').post(updateUser)
+userRouter.route('/delete/:id').post(deleteUser)

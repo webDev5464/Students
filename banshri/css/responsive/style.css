@@ -1,0 +1,35 @@
+section>div {
+  color: white;
+  min-width: 200px;
+  /* max-width: 600px; */
+  height: 300px;
+  background-color: black;
+  margin: 10px;
+}
+
+.regular-content {
+  width: 400px;
+  height: 300px;
+  background-color: green;
+  margin: 50px 0;
+}
+
+@media screen and (max-width:1000px) {
+  section>div {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  div {
+    display: none;
+  }
+}

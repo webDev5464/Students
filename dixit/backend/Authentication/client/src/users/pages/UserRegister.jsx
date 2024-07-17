@@ -1,6 +1,4 @@
 import { useState } from "react"
-import axios from 'axios'
-// npm i axios
 
 export default function UserRegister() {
 
@@ -15,10 +13,6 @@ export default function UserRegister() {
   const formHandler = async (e) => {
     try {
       e.preventDefault()
-
-      const response = await axios.post("/api/register", data)
-      console.log(response.data);
-
     } catch (err) {
       console.log(err.message);
     }

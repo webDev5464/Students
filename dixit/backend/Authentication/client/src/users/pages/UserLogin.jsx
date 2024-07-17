@@ -1,11 +1,21 @@
-import { useContext, useState } from "react"
+/* eslint-disable no-unused-vars */
+import { useContext, useEffect, useState } from "react"
 import axios from "axios"
 import { UserProvider } from "../context/UserContext"
 import { useNavigate } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
+import { loginUser } from "../../redux/ThunkApi"
 
 export default function UserLogin() {
+  const dispatch = useDispatch()
+  const { loader, message } = useSelector(state => state.MySliceProvider)
+  console.log('loader', loader);
 
-  const navigate = useNavigate()
+  useEffect(() => {
+    if (message !== '') {
+      alert(message)
+    }
+  }, [message])
 
   const {
     setUserData
@@ -19,14 +29,18 @@ export default function UserLogin() {
 
   const formHandler = async (e) => {
     e.preventDefault()
-    const response = await axios.post('/api/login', formData)
+    dispatch(loginUser({ formData }))
 
-    const { process, data } = response.data
 
-    if (process) {
-      setUserData(data)
-      navigate('/')
-    }
+    // console.log(formData)
+    // const response = await axios.post('/api/login', formData)
+
+    // const { process, data } = response.data
+
+    // if (process) {
+    //   setUserData(data)
+    //   navigate('/')
+    // }
   }
 
   const inputHandler = (e) => {

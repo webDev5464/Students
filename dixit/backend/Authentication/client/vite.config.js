@@ -13,3 +13,5 @@ export default defineConfig({
     }
   }
 })
+
+// npm i react-redux @reduxjs/toolkit

@@ -1,44 +1,46 @@
 import { useEffect, useState } from "react";
 
 export default function MyUseEffect() {
-  // const [val, setVal] = useState(true)
+  // const [reload, setReload] = useState(false);
 
-  // const func = () => {
-  //   console.log('useEffect');
-  // }
+  // const myFunction = () => {
+  //   return "Hello World!";
+  // };
 
   // useEffect(() => {
-  //   func();
-  // }, [val])
+  //   console.log(myFunction());
+  // }, [reload]);
 
-  const [data, setData] = useState([])
+  const [data, setData] = useState();
 
-  const fetchData = async () => {
-    const response = await fetch('https://res.cloudinary.com/djkde7xp0/raw/upload/v1716272960/vfvoybg62ux93ksobfpw.json')
+  const fetchRowData = async () => {
+    const response = await fetch(
+      "https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI"
+    );
 
-    const objData = await response.json()
+    const objData = await response.json();
 
-    setData(objData.alldata)
-  }
+    setData([
+      ...objData.earbud,
+      ...objData.tshirt,
+      ...objData.shoes,
+      ...objData.tshirtWomen,
+    ]);
+  };
 
   useEffect(() => {
-    fetchData()
-  }, [])
-
-  console.log(data);
+    fetchRowData();
+  }, []);
 
   return (
     <>
-
       <div>
-        {data.map((x, i) => (
+        {data?.map((val, i) => (
           <div key={i}>
-            <img src={x.img1} alt="" />
+            <img src={val.img1} alt="" />
           </div>
         ))}
       </div>
-
-      {/* <button onClick={() => setVal(!val)}>Reload</button> */}
     </>
-  )
+  );
 }

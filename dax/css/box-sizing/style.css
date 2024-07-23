@@ -1,0 +1,39 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* vh, vw */
+/* section {
+  background-color: black;
+  height: 50vh; 
+
+  div {
+    background-color: red;
+    height: 50%;
+  }
+} */
+
+/* section {
+  display: flex;
+  justify-content: space-around;
+  margin: 500px 0;
+
+  div {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    padding: 50px;
+  }
+
+  div:first-child {
+    box-sizing: border-box;
+  }
+
+} */
+/* 500 + 50 = 550px */
+/* 300 + 50 = 350px */
+
+/* .parent section h1:first-child {
+  background-color: red;
+} */

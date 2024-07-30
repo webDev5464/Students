@@ -1,0 +1,13 @@
+<element id="" class="" href="" src="">Hello World!</element>
+
+------- Inline Elements ---------
+
+<span></span>
+
+<a href=""></a>
+
+<img src="" width="" height="">
+
+<br>
+
+<!-- This is a Comment -->

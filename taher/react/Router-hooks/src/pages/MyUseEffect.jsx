@@ -35,11 +35,14 @@ export default function MyUseEffect() {
   return (
     <>
       <div>
-        {data?.map((val, i) => (
+        {
+        data?
+        .map((val, i) => (
           <div key={i}>
             <img src={val.img1} alt="" />
           </div>
-        ))}
+        ))
+        }
       </div>
     </>
   );

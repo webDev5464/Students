@@ -1,0 +1,33 @@
+/* h1 {
+  color: red;
+} */
+
+.MyClass {
+  color: red;
+}
+
+#MyId {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 5px 2px 3px gray;
+  /* color: white; */
+  /* text-shadow: 1px 1px 0 black, -1px -1px 0 black; */
+}
+
+.box {
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  color: white;
+
+  padding: 100px 50px 0 500px;
+  margin: 100px;
+  overflow: auto;
+
+  /* border-width: ;
+  border-style: ;
+  border-color: ; */
+  border: red solid 3px;
+  border-radius: 20px;
+  box-shadow: inset -10px -10px 30px white;
+}

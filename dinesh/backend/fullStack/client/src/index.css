@@ -5,3 +5,15 @@
 .active {
   @apply text-red-500
 }
+
+h1 {
+  @apply text-4xl font-bold mt-5;
+}
+
+button {
+  @apply bg-gray-300 p-2 border border-black rounded-md mt-5 active:scale-95
+}
+
+hr {
+  @apply border border-black mt-5
+}

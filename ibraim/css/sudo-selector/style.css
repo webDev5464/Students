@@ -1,0 +1,51 @@
+/* .myClass>div {
+  color: red;
+} */
+
+/* .myClass h1 {
+  color: blue;
+} */
+
+/* .myClass>div:nth-child(2)>h1:first-child {
+  background-color: red;
+} */
+
+/* .myClass>div:nth-child(2) {
+
+  h1:first-child {
+    background-color: red;
+  }
+
+} */
+
+.button-one {
+  background-color: #8fee92;
+  width: fit-content;
+  padding: 5px 8px;
+  /* border: 1px solid gray; */
+  border-radius: 5px;
+  user-select: none;
+
+  cursor: pointer;
+  /* float: right; */
+
+  box-shadow: 0 0 3px gray;
+  border-bottom: 3px solid gray;
+  transition: .1s;
+}
+
+.button-one:hover {
+  background-color: #6fce72;
+}
+
+.button-one:active {
+  /* background-color: #ca4b4b; */
+  scale: 0.95;
+  border: none;
+  transform: translate(0, 5px);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid black;
+}

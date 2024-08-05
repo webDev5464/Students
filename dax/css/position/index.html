@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <section class="parent">
+    <div></div>
+  </section>
+
+  <div class="fix" id="removeScroll">
+    <h1>This is a navigation</h1>
+  </div>
+
+  <div class="sticky">
+    <h1>I'm sticky</h1>
+  </div>
+
+  <script>
+    const removeScroll = document.getElementById("removeScroll")
+    setInterval(() => {
+      // console.log(window.scrollY)
+
+      if (window.scrollY > 519) {
+        // console.log(true)
+        removeScroll.setAttribute("class", "notFix")
+      } else {
+        // console.log(false)
+        removeScroll.setAttribute("class", "fix")
+      }
+    })
+  </script>
+
+</body>
+
+</html>

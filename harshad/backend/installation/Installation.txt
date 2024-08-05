@@ -1,0 +1,36 @@
+1 === create package.json file ===> 
+
+  npm init 
+    or
+  npm init -y
+
+=> package.json
+
+  1.1 => 
+  - package.json
+
+    "type": "module"
+
+
+
+2 === install express library ===>
+
+  npm i express
+
+
+
+3 === Auto server running ===>
+
+  npm i nodemon
+
+  3.1 => 
+  - package.json
+
+    "scripts": {
+      "start": "nodemon"
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+4 === Connect mongodb database ===>
+
+  npm i mongoose

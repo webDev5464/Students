@@ -1,0 +1,11 @@
+==> Start Mongodb Shell :=> mongosh
+==> show all database :=> show dbs
+==> use database :=> use <database name>
+==> want to show collections :=> show collections
+==> show data's :=> db.<Collection Name>.find()
+==> want to show one data using data id :=> db.<Collection Name>.findById()
+
+==> want to insert data :=> db.<Collection Name>.insertOne()
+==> want to update data :=> db.<Collection Name>.updateOne()
+==> want to delete data :=> db.<Collection Name>.deleteOne()
+==> want to delete collection data :=> db.<Collection Name>.drop()

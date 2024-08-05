@@ -1,15 +1,23 @@
-import express, { json, urlencoded } from 'express'
-import dotenv from 'dotenv'
-import { dbCon } from './configs/dbCon.js'
-import { userRouters } from './routers/userRouter.js'
+import express, { json, urlencoded } from "express";
+// npm i cors
+import cors from "cors";
+import dotenv from "dotenv";
+// npm i cookie-parser
+import cookieParser from "cookie-parser";
+import { dbCon } from "./configs/dbCon.js";
+import { userRouters } from "./routers/userRouter.js";
 
-dotenv.config()
-const app = express()
-app.use(json())
-app.use(urlencoded({ extended: true }))
+dotenv.config();
+const app = express();
+app.use(cookieParser());
+app.use(json());
+app.use(urlencoded({ extended: true }));
+app.use(cors());
 
-app.use('/user', userRouters)
+app.use("/user", userRouters);
 
-const PORT = process.env.PORT
-dbCon(process.env.DB_URL)
-app.listen(PORT, () => console.log(`server is started : http://localhost:${PORT}`))
+const PORT = process.env.PORT;
+dbCon(process.env.DB_URL);
+app.listen(PORT, () =>
+  console.log(`server is started : http://localhost:${PORT}`)
+);

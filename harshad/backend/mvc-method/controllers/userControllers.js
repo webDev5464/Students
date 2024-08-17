@@ -26,7 +26,20 @@ export async function getAllUsers(req, res) {
 export const findUser = async (req, res) => {
   const { fullname } = req.params;
 
-  const user = await $userModel.find({ fname: fullname });
+  const user = await $userModel.findOne({ fname: fullname });
 
   res.send(user);
 };
+
+export const updateUser = async (req, res) => {
+  const { id, lname } = req.body;
+  // const findUser = await $userModel.findById(id);
+  const findUserAndUpdate = await $userModel.findByIdAndUpdate(id, { lname });
+  console.log(findUserAndUpdate);
+};
+
+export const deleteUser = async (req, res) => {
+  const { id } = req.body;
+  await $userModel.findByIdAndDelete(id);
+};
+  

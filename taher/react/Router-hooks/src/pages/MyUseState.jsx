@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 export default function MyUseState() {
   return (
@@ -13,8 +13,7 @@ export default function MyUseState() {
 
       <ExampleThree />
     </>
-  )
-
+  );
 }
 
 function ExampleOne() {
@@ -23,13 +22,13 @@ function ExampleOne() {
   // title = "magan"
   // const val = true
 
-  const [val, setVal] = useState("Chagan")
+  const [val, setVal] = useState("Chagan");
 
   console.log(val);
 
   const buttonHandler = () => {
-    setVal("Magan")
-  }
+    setVal("Magan");
+  };
 
   return (
     <>
@@ -37,12 +36,11 @@ function ExampleOne() {
 
       <button onClick={buttonHandler}>Change Value</button>
     </>
-  )
+  );
 }
 
 function ExampleTwo() {
-
-  const [a, b] = useState(true)
+  const [a, b] = useState(true);
 
   return (
     <>
@@ -50,12 +48,11 @@ function ExampleTwo() {
 
       <button onClick={() => b(!a)}>Change Value</button>
     </>
-  )
+  );
 }
 
 function ExampleThree() {
-
-  const [num, setNum] = useState(0)
+  const [num, setNum] = useState(0);
 
   return (
     <>
@@ -65,5 +62,5 @@ function ExampleThree() {
 
       <button onClick={() => setNum(num - 1)}>Decrement</button>
     </>
-  )
+  );
 }

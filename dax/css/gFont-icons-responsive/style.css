@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Teko", sans-serif;
+  --secondary-font: "Work Sans", sans-serif;
+}
+
+h1 {
+  font-family: var(--secondary-font);
+}
+
+.insta-icon {
+  font-size: 50px;
+  color: red;
+}
+
+/* <!------------------- Responsive -----------------------> */
+
+section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+section div {
+  height: 300px;
+  min-width: 300px;
+  /* margin: 20px; */
+  background-color: black;
+}
+
+@media screen and (min-width: 1500px) {
+  section div {
+    min-width: 30%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  section div {
+    width: 400px;
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section div {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  section div {
+    background-color: red;
+  }
+}

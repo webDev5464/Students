@@ -101,7 +101,7 @@ header {
 
   .headerBanner {
     height: 80vh;
-    background-image: url("./assets/bg-hero.png");
+    background-image: url("./codingImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }

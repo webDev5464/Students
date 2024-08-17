@@ -1,0 +1,26 @@
+section div {
+  height: 500px;
+  width: 300px;
+  background-color: black;
+}
+
+section {
+  display: grid;
+  place-items: center;
+
+  gap: 20px;
+  grid-template-columns: repeat(4, auto);
+
+}
+
+@media screen and (max-width: 1290px) {
+  section {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section {
+    grid-template-columns: repeat(2, auto);
+  }
+}

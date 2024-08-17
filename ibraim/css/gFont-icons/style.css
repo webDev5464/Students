@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Edu AU VIC WA NT Hand", cursive;
+  --secondary-font: "Roboto Mono", monospace;
+}
+
+h1 {
+  /* font-family: var(--primary-font); */
+  /* font-family: var(--secondary-font); */
+}
+
+/* .insta-icons {
+  font-size: 50px;
+  color: red;
+} */
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+section div {
+  height: 400px;
+  background-color: black;
+}
+
+/* media qry */
+@media screen and (min-width: 1300px) {
+  section div {
+    background-color: green;
+    min-width: 400px;
+    width: 400px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  section div {
+    width: 300px;
+    background-color: aqua;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section div {
+    background-color: rgba(0, 0, 255, 0.466);
+    min-width: 200px;
+    /* width: 200px; */
+  }
+}
+
+@media screen and (max-width: 630px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section div {
+    margin: 20px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:445px) {
+  section div {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {}

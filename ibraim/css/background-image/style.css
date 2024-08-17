@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .parent {
+  position: relative;
+}
+
+.parent h1 {
+  position: absolute;
+  top: 0;
+} */
+
+.imageFrame {
+  border: 2px solid red;
+
+  background-image: url("./myImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -87px;
+
+  height: 700px;
+  width: 600px;
+
+  margin: 10px;
+
+  div {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: white;
+  }
+}
+
+.fixedBg {
+  height: 500px;
+  background-image: url("./codingImage.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

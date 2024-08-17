@@ -1,0 +1,91 @@
+:root {
+  --myRedColor: #ff6969;
+  --myGreen: #00b500;
+  --mySpace: 100px;
+
+  /* color code , px size , google fonts */
+}
+
+.myVariable {
+  --myValue: 100px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 500vh;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  border: 2px solid var(--myRedColor);
+
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: var(--myGreen);
+
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+
+  /* part of animation */
+  transform: translate(50%, 50%);
+}
+
+.drop-down {
+  width: fit-content;
+  padding: 3px 10px;
+  position: relative;
+
+  div {
+    position: absolute;
+    display: none;
+    right: 30px;
+    padding: 10px;
+    text-align: center;
+
+    ul {
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.drop-down:hover div {
+  display: block;
+}
+
+.drop-down li:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.position {
+  background-color: var(--myGreen);
+  padding: 10px;
+  margin: 10px;
+}
+
+.fix {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.sticky {
+  width: fit-content;
+  position: sticky;
+  top: 0;
+}

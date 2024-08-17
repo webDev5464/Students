@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MyPropsComponent from "./MyPropsComponent";
 
 export default function MyUseEffect() {
   // const [reload, setReload] = useState(false);
@@ -35,14 +36,11 @@ export default function MyUseEffect() {
   return (
     <>
       <div>
-        {
-        data?
-        .map((val, i) => (
+        {data?.map((val, i) => (
           <div key={i}>
-            <img src={val.img1} alt="" />
+            <MyPropsComponent myValue={{ title: val.title, img: val.img1 }} />
           </div>
-        ))
-        }
+        ))}
       </div>
     </>
   );

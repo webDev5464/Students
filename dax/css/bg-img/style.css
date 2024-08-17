@@ -1,0 +1,48 @@
+/* div {
+  position: relative;
+  border: 2px solid red;
+  width: fit-content;
+}
+
+h1 {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+} */
+
+.bg-img {
+  border: 2px solid red;
+
+
+  background-image: url("./myImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -669px;
+  /* background-size: contain; */
+
+
+
+  height: 500px;
+  width: 1000px;
+}
+
+.glass {
+  background-color: rgba(0, 39, 86, 0.331);
+  height: 100%;
+  color: white;
+  font-size: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effected-image {
+  background-image: url('./myImg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 5px -206px;
+
+  height: 500px;
+}

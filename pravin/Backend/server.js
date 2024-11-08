@@ -1,27 +1,15 @@
-import express, { json } from "express";
+import express, { json, urlencoded } from "express";
 import dotenv from "dotenv";
 import dbCon from "./configs/dbCon.js";
+import { UserRoute } from "./routes/route.js";
 
 const app = express()
-app.use(json( ))
+app.use(json(), urlencoded({ extended: true }))
 dotenv.config()
 
 
-// async function getMethod(req, res, next) {
-//     try {
 
-//     } catch (err) {
-//         console.log(err.message)
-//     }
-// }
-
-// getMethod()
-
-const getMethod = (req, res) => {
-    res.send("Hello World")
-}
-
-app.route('/').get(getMethod)
+app.use("/api", UserRoute)
 
 const PORT = process.env.PORT
 dbCon(process.env.URL)

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --primary-color: #349842;
+  --secondary-color: #f1c40f;
+
+  --size: 30px;
+
+  --primary-font: "Roboto Mono", monospace;
+}
+
+p {
+  font-size: var(--size);
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+}

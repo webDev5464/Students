@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+/* .paddingEx>div {
+
+} */
+/* 
+h1 {
+  background-color: red;
+} */
+
+.ex {
+  display: flex;
+  margin: 100px;
+}
+
+.div1 {
+  height: 200px;
+  width: 300px;
+  background-color: yellow;
+  margin: 30px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+}
+
+.div2 {
+  height: 200px;
+  width: 300px;
+  background-color: yellow;
+  margin: 30px;
+
+  padding: 30px;
+}

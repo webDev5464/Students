@@ -1,0 +1,135 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/*! display none and block concept */
+
+/* .block {
+  font-size: 30px;
+  display: none;
+}
+
+.parent:hover .hide {
+  display: block;
+}
+
+.hide {
+  display: none;
+} */
+
+/*! Display inline and block concept */
+
+/* div,
+span {
+  margin: 10px;
+  border: 3px solid red;
+}
+
+div {
+  display: inline;
+}
+
+span {
+  display: block;
+} */
+
+/*! Display flex */
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 20px;
+}
+
+.parent-center {
+  display: flex;
+  justify-content: center;
+}
+
+.parent-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parent-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.parent-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.align-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-item .box:nth-child(1) {
+  height: 300px;
+}
+
+.align-item .box:nth-child(2) {
+  height: 50px;
+}
+
+.align-item .box:nth-child(3) {
+  height: 100px;
+} */
+
+/*! single center object */
+
+/* .parent {
+  height: 400px;
+
+  width: 400px;
+  margin: auto;
+
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  height: 150px;
+  width: 150px;
+  background-color: red;
+} */
+
+/*! How to use display property in real project */
+
+/* .card {
+  display: flex;
+  width: fit-content;
+  margin: 50px auto;
+  background-color: lightblue;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-container {
+  margin: 0 30px 0 0;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
+
+.article {
+  width: 600px;
+}
+
+.card h1 {
+  margin: 0 0 10px 0;
+}
+
+.card p {
+  margin: 10px 0;
+} */

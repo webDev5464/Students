@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+
+  background-color: rgb(33, 33, 90);
+  color: white;
+  /* z-index: 100; */
+}
+
+main {
+  padding: 50px 0 0 0;
+}
+
+body {
+  height: 500vh;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+  background-color: greenyellow;
+  color: black;
+  height: 30px;
+  width: 80px;
+  border: 2px solid black;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: white;
+  scale: 0.95;
+}
+
+nav ul {
+  display: flex;
+  margin: 0 50px 0 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+/*  */
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.align-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-item>div {
+  width: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+.align-item>div:nth-child(1) {
+  height: 200px;
+}
+
+.align-item>div:nth-child(2) {
+  height: 50px;
+}
+
+.align-item>div:last-child {
+  height: 100px;
+  background-color: red;
+}
+
+/*  */
+
+.card-parent {
+  height: 400px;
+  width: 400px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+
+  justify-content: center;
+}
+
+/*  */
+
+.about {
+  display: flex;
+  width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px gray;
+}
+
+.card-img {
+  margin: 0 50px 0 0;
+  border-radius: 10px;
+  width: 400px;
+  overflow: auto;
+}

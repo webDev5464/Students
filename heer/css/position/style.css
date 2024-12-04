@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 500vh;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+
+  position: relative;
+  margin: auto;
+}
+
+.parent .child {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sticky {
+  background-color: yellow;
+  width: fit-content;
+  padding: 20px;
+
+  position: sticky;
+  top: 20px;
+}
+
+.fixed {
+  background-color: yellow;
+  width: fit-content;
+  padding: 20px;
+
+  position: fixed;
+  right: 0;
+}
+
+/*  */
+
+.parent-1 {
+  width: fit-content;
+  margin: auto;
+
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.parent-1 li {
+  list-style: none;
+  text-align: center;
+}
+
+.parent-1>li {
+  background-color: #ddd;
+
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.parent-1 .child {
+  display: none;
+  padding: 10px 0;
+  background-color: aliceblue;
+}
+
+.parent-1 .child>li {
+  margin: 5px 0;
+  transition: .2s;
+}
+
+.parent-1 .child>li:hover {
+  color: blue;
+  scale: 1.2;
+}
+
+.parent-1:hover .child {
+  display: block;
+}
+
+/* li {
+  list-style: inside;
+} */

@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* li {
+  list-style: inside;
+} */
+
+body {
+  height: 500vh;
+}
+
+
+
+
+
+
+
+
+
+
+/*! Navigation */
+
+nav {
+  background-color: navy;
+  color: white;
+  padding: 15px 100px;
+
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+nav img {
+  width: 100px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  margin: 0 0 0 10px;
+}
+
+.logo-name p:last-child {
+  margin: 0 0 0 20px;
+}
+
+.nav-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-content>ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-content li {
+  list-style: none;
+}
+
+.nav-content li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-content li>a:hover {
+  color: tomato;
+}
+
+.nav-content button {
+  padding: 4px 8px;
+  font-weight: 600;
+  border: 5px black;
+  border-style: groove;
+  cursor: pointer;
+}
+
+.nav-content button:active {
+  scale: .97;
+}
+
+main {
+  padding: 90px 0 0 0;
+}
+
+.nav-drop {
+  position: relative;
+}
+
+.nav-down {
+  position: absolute;
+  color: black;
+  text-align: center;
+  display: none;
+  padding: 10px 0 0 0;
+  /* right: -7px; */
+
+  right: 50%;
+  transform: translate(50%);
+}
+
+.nav-down>ul {
+  background-color: #ddd;
+  padding: 10px 20px;
+}
+
+.nav-down>ul>li {
+  margin: 5px 0;
+}
+
+.nav-down>ul>li:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.nav-drop:hover .nav-down {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/*! Drop-down */
+
+/* .down {
+  display: none;
+}
+
+.down li {
+  list-style: none;
+  margin: 5px 0;
+  transition: .5s;
+}
+
+.down li:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.drop {
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.drop>div:first-child {
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.down {
+  background-color: aliceblue;
+  text-align: center;
+  margin: 10px 0 0 0;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+.drop:hover .down {
+  display: block;
+} */
+
+/*! Button */
+
+/* .button-1 {
+  border: none;
+  background-color: navy;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px black, 2px 2px black, 3px 3px black;
+  position: relative;
+}
+
+.button-1:hover {
+  background-color: #333;
+}
+
+.button-1:active {
+  background-color: #111;
+  box-shadow: 0 0;
+  top: 3px;
+  left: 3px;
+} */
+
+/* https://getcssscan.com/css-buttons-examples */

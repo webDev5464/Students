@@ -1,0 +1,115 @@
+@media screen and (max-width: 1080px) {
+  header {
+    background-position: 0 -80px;
+  }
+}
+
+@media screen and (max-width:1030px) {
+  nav {
+    width: 90%;
+  }
+
+  .header-heading {
+    padding: 50px 80px;
+  }
+
+  header {
+    background-position: 0 -30px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  nav ul {
+    gap: 20px;
+  }
+
+  header {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-heading {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .notActive {
+    height: 0;
+    transition: .5s;
+    overflow: hidden;
+  }
+
+  .bar {
+    display: block;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  nav .parent {
+    gap: 20px;
+  }
+
+  .header-heading h1 {
+    font-size: 30px;
+  }
+
+  header {
+    background-position: -120px 0;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+  }
+
+  .list {
+    position: absolute;
+    top: 54px;
+    right: 50%;
+    transform: translate(50%);
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 20px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list li {
+    text-align: center;
+    margin: 1px auto;
+    width: fit-content;
+    transition: .5s;
+  }
+
+  .list li:hover {
+    cursor: pointer;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  header {
+    background-position: -200px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    background-position: -270px 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .header-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-heading button {
+    margin: 20px 0;
+  }
+}

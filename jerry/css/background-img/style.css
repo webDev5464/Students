@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("./Ai_hand.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -50px;
+
+
+  height: 400px;
+  width: 500px;
+  border: 2px solid red;
+}
+
+.container-two {
+  background-image: url(./Ai_hand.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+  margin: 700px 0;
+  height: 400px;
+
+
+}
+
+.container-two div {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  margin: 10px;
+  color: white;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+}

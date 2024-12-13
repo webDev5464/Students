@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --dark-gray: #565656;
+}
+
+body {
+  height: 500vh;
+}
+
+nav {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  border-radius: 20px;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.Logo {
+  background-color: black;
+  color: white;
+  /* font-weight: 600; */
+  text-transform: uppercase;
+  padding: 8px 15px;
+  border-radius: 20px 20px 0 20px;
+}
+
+nav .parent {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  list-style: none;
+  color: var(--dark-gray);
+}
+
+.nav-icons span {
+  margin: 0 5px;
+  color: var(--dark-gray);
+}
+
+.mirror {
+  background: linear-gradient(rgba(255, 255, 255, 0) 70%, black);
+  height: 100%;
+  padding: 20px 0 0 0;
+}
+
+header {
+  background-image: url(./header_1.jpg);
+  background-size: cover;
+  background-position: 0 -130px;
+  height: 100vh;
+  position: relative;
+}
+
+.header-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 180px;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+
+.header-heading h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.header-heading p,
+button {
+  text-transform: uppercase;
+}
+
+.header-heading button {
+  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.header-heading button:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+  cursor: pointer;
+}

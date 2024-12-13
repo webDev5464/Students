@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section {
+  border: 2px solid red;
+  width: fit-content;
+
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  transition: 5s;
+
+  animation-name: myAnimation;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  /* animation-delay: 2s; */
+}
+
+section:hover div {
+  /* animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-delay: 2s; */
+
+  /*! 2D */
+  /* transform: translate(50px, 100px); */
+  /* transform: rotate(30deg); */
+  /* transform: scale(.5); */
+  /* transform: skew(20deg, 10deg); */
+
+  /*! 3D */
+  /* transform: rotateY(180deg); */
+  /* transform: rotateZ(360deg); */
+}
+
+@keyframes myAnimation {
+  /* from {
+    background-color: red;
+    transform: rotate(360deg);
+  }
+
+  to {
+    background-color: green;
+  } */
+
+  0% {
+    background-color: yellow;
+    transform: rotate(180deg);
+  }
+
+  25% {
+    background-color: red;
+    transform: scale(1.5);
+  }
+
+  50% {
+    background-color: green;
+    border: 5px solid black;
+  }
+
+  75% {
+    background-color: blue;
+    display: none;
+  }
+
+  100% {
+    background-color: black;
+  }
+}

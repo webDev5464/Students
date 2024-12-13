@@ -1,0 +1,27 @@
+/* .parent {
+  color: red;
+} */
+
+/* .parent p {
+  color: red;
+} */
+
+/* .parent>p {
+  color: red;
+} */
+
+/* .parent div>p {
+  color: red;
+} */
+
+/* .parent div:nth-child(2)>p:nth-child(2) {
+  color: red;
+} */
+
+/* .parent div:nth-child(2)>:first-child {
+  color: red;
+} */
+
+.parent>div:nth-child(3) {
+  color: red;
+}

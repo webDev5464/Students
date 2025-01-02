@@ -1,0 +1,11 @@
+#renderData {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+}
+
+.detailCard {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}

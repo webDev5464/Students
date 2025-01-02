@@ -1,0 +1,40 @@
+body {
+  margin: 100px;
+}
+
+.parent {
+  border-radius: 0;
+  border: none;
+  padding: 8px 13px;
+
+  transform: skew(-21deg);
+  position: relative;
+  cursor: pointer;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100%;
+  width: 0;
+  transition: .5s;
+}
+
+.parent:hover .child {
+  width: 100%;
+}
+
+.parent:hover .btn-content {
+  color: white;
+}
+
+.btn-content {
+  transform: skew(21deg);
+  transition: .5s;
+}
+
+.parent span {
+  margin: 0 10px 0 0;
+}

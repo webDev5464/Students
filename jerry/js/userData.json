@@ -1,0 +1,252 @@
+[
+  {
+    "_id": "676beecd3599bb455baaf4ed",
+    "icon": "/uploads/MERN Stack.png",
+    "courseTitle": "MERN Stack",
+    "description": "Comprehensive course on building full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
+    "duration": "6 months",
+    "level": "Intermediate",
+    "includes": [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js"
+    ],
+    "lessons": 50,
+    "extraSkills": [
+      "RESTful APIs",
+      "GraphQL",
+      "Authentication"
+    ],
+    "benefits": [
+      "Hands-on projects",
+      "Industry-relevant skills",
+      "Job-ready portfolio"
+    ],
+    "chatGPTIntegration": "Learn how to integrate AI solutions using ChatGPT in full-stack applications.",
+    "technology": {
+      "_id": "676bea691609417fd81f9e04",
+      "name": "Node.js",
+      "icon": "SiNodedotjs",
+      "iconBranch": "si"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4ee",
+    "icon": "/uploads/React.png",
+    "courseTitle": "React",
+    "description": "Master React.js to build dynamic and responsive web applications.",
+    "duration": "3 months",
+    "level": "Beginner",
+    "includes": [
+      "React.js"
+    ],
+    "lessons": 30,
+    "extraSkills": [
+      "Hooks",
+      "State Management",
+      "React Router"
+    ],
+    "benefits": [
+      "Interactive UI design",
+      "Reusable components",
+      "Rich ecosystem"
+    ],
+    "chatGPTIntegration": "Learn how to create conversational interfaces in React with ChatGPT.",
+    "technology": {
+      "_id": "676bea691609417fd81f9dfb",
+      "name": "React.js",
+      "icon": "FaReact",
+      "iconBranch": "fa"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4ef",
+    "icon": "/uploads/Artificial Intelligence.png",
+    "courseTitle": "Artificial Intelligence",
+    "description": "Explore the fundamentals and advanced concepts of Artificial Intelligence.",
+    "duration": "8 months",
+    "level": "Advanced",
+    "includes": [
+      "Python",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "lessons": 60,
+    "extraSkills": [
+      "Natural Language Processing",
+      "Computer Vision",
+      "Reinforcement Learning"
+    ],
+    "benefits": [
+      "AI-based projects",
+      "Cutting-edge technologies",
+      "High-demand skills"
+    ],
+    "chatGPTIntegration": "Understand AI-powered solutions and enhance workflows with ChatGPT.",
+    "technology": {
+      "_id": "676bea691609417fd81f9de5",
+      "name": "Python",
+      "icon": "SiPython",
+      "iconBranch": "si"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4f0",
+    "icon": "/uploads/Machine Learning.png",
+    "courseTitle": "Machine Learning",
+    "description": "Learn Machine Learning techniques and build intelligent systems.",
+    "duration": "6 months",
+    "level": "Intermediate",
+    "includes": [
+      "Python",
+      "Scikit-learn",
+      "TensorFlow"
+    ],
+    "lessons": 45,
+    "extraSkills": [
+      "Data Preprocessing",
+      "Feature Engineering",
+      "Model Evaluation"
+    ],
+    "benefits": [
+      "Practical algorithms",
+      "Real-world datasets",
+      "Portfolio projects"
+    ],
+    "chatGPTIntegration": "Leverage ML models with ChatGPT for advanced use cases.",
+    "technology": {
+      "_id": "676bea691609417fd81f9de5",
+      "name": "Python",
+      "icon": "SiPython",
+      "iconBranch": "si"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4f1",
+    "icon": "/uploads/Data Science.png",
+    "courseTitle": "Data Science",
+    "description": "Master data science to analyze and visualize data effectively.",
+    "duration": "8 months",
+    "level": "Advanced",
+    "includes": [
+      "Python",
+      "R",
+      "Pandas",
+      "NumPy",
+      "Tableau"
+    ],
+    "lessons": 70,
+    "extraSkills": [
+      "Data Cleaning",
+      "Statistical Analysis",
+      "Visualization"
+    ],
+    "benefits": [
+      "Hands-on experience",
+      "Capstone projects",
+      "Industry connections"
+    ],
+    "chatGPTIntegration": "Learn how to generate insights and reports using ChatGPT.",
+    "technology": {
+      "_id": "676bea691609417fd81f9df3",
+      "name": "R",
+      "icon": "FaRProject",
+      "iconBranch": "fa"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4f2",
+    "icon": "/uploads/Android Development.png",
+    "courseTitle": "Android Development",
+    "description": "Build robust Android applications using Kotlin and Java.",
+    "duration": "5 months",
+    "level": "Intermediate",
+    "includes": [
+      "Kotlin",
+      "Java",
+      "Firebase"
+    ],
+    "lessons": 40,
+    "extraSkills": [
+      "UI/UX Design",
+      "APIs",
+      "Publishing Apps"
+    ],
+    "benefits": [
+      "Practical app development",
+      "Portfolio-ready apps",
+      "Monetization techniques"
+    ],
+    "chatGPTIntegration": "Develop smart assistants using ChatGPT for Android apps.",
+    "technology": {
+      "_id": "676bea691609417fd81f9dee",
+      "name": "Kotlin",
+      "icon": "SiKotlin",
+      "iconBranch": "si"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4f3",
+    "icon": "/uploads/Flutter Development.png",
+    "courseTitle": "Flutter Development",
+    "description": "Learn Flutter to build beautiful cross-platform mobile applications.",
+    "duration": "4 months",
+    "level": "Beginner",
+    "includes": [
+      "Flutter",
+      "Dart"
+    ],
+    "lessons": 30,
+    "extraSkills": [
+      "Animations",
+      "State Management",
+      "Testing"
+    ],
+    "benefits": [
+      "One codebase for all platforms",
+      "Customizable widgets",
+      "Performance optimization"
+    ],
+    "chatGPTIntegration": "Create AI-driven chat features using ChatGPT in Flutter apps.",
+    "technology": {
+      "_id": "676bea691609417fd81f9e03",
+      "name": "Flutter",
+      "icon": "SiFlutter",
+      "iconBranch": "si"
+    }
+  },
+  {
+    "_id": "676beecd3599bb455baaf4f4",
+    "icon": "/uploads/Frontend Development.png",
+    "courseTitle": "Frontend Development",
+    "description": "Master the fundamentals of frontend web development.",
+    "duration": "4 months",
+    "level": "Beginner",
+    "includes": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "lessons": 25,
+    "extraSkills": [
+      "Responsive Design",
+      "Debugging",
+      "Version Control"
+    ],
+    "benefits": [
+      "Foundational knowledge",
+      "Hands-on projects",
+      "Career readiness"
+    ],
+    "chatGPTIntegration": "Enhance frontend projects with ChatGPT-driven suggestions.",
+    "technology": {
+      "_id": "676bea691609417fd81f9df5",
+      "name": "HTML",
+      "icon": "SiHtml5",
+      "iconBranch": "si"
+    }
+  }
+]

@@ -307,5 +307,35 @@
 
 // console.log(convertToObject)
 
-//! fetch API
+//! try catch
 
+// function myFunction() {
+//   try {
+//     eval("alert(hello World')")
+//   } catch (e) {
+//     console.log(e.name)
+//   }
+// }
+
+// myFunction()
+
+//! fetch API and asynchronous function
+
+const renderData = document.getElementById("renderData")
+async function fetchingData() {
+  try {
+    const rowData = await fetch("https://jsonplaceholder.typicode.com/todos")
+    const data = await rowData.json()
+
+    console.log(data)
+
+    renderData.innerHTML = data.map((value) => {
+      return `<p>${value.title}</p>`
+    }).join("")
+
+  } catch (err) {
+    console.log(err.name)
+  }
+}
+
+fetchingData()

@@ -401,8 +401,135 @@
 // console.log(5 == 6 ? "Hello world!" : 5 === "5" ? "Chagan" : "Magan")
 
 
+//! DOM (Document Object Model)
+
+//? getElementsByTagName
+// const element = document.getElementsByTagName("h1")
+// console.log(element)
+
+//? getElementById, innerHTML, innerText
+// const element = document.getElementById("jerry")
+// console.log(element)
+// element.innerText = "I Love You Jerry Darling"
+// element.innerHTML = "<span>Jerry</span>"
+// element.style = "color: red; font-size: 50px;"
+
+//? getElementsByClassName
+// const element2 = document.getElementsByClassName("dabbo")
+// console.log(element2)
+
+//? getAttribute, setAttribute
+// const element = document.getElementById("mainHeading")
+// element.setAttribute("class", "dabbo")
+// const getAttribute = element.getAttribute("class")
+// console.log(getAttribute)
+
+//? querySelectorAll, querySelector
+
+// const element = document.querySelector("h1")
+// const element = document.querySelectorAll("h1")
+
+// const element = document.querySelector("#jerry")
+// const element = document.querySelectorAll(".dabbo")
+
+// console.log(element)
+
+//? object length
+// const obj = [1, 2, 4, 7, 5, 3, 5]
+// console.log(obj.length)
+// console.log(obj[2])
+
+//! BOM (Browser Object Model)
+
+//? setTimeout
+// setTimeout(() => {
+//   console.log("Hello")
+// }, 5000)
+
+//? setInterval
+// setInterval(() => {
+//   console.log("setInterval")
+// }, 5000)
+
+//? window
+
+// setInterval(() => {
+//   console.log(window.scrollY >= 500)
+// })
+
+// const bodyElement = document.getElementsByTagName("body")[0]
+// setInterval(() => {
+//   if (window.scrollY >= 500) {
+//     bodyElement.style = "background-color: black; color: white;"
+//   } else {
+//     bodyElement.style = "background-color: white; color: black;"
+//   }
+// })
+
+//? localStorage
+
+// localStorage.setItem("myData", "My wife is jerry")
+// const data = localStorage.getItem("myData")
+// console.log(data)
+// document.getElementById("print").innerHTML = data
+
+// localStorage.removeItem("myData")
+// localStorage.clear()
+
+
+//? store object data in localStorage
+
+// const userData = [
+//   {
+//     id: 1,
+//     name: "John",
+//     age: 25,
+//   },
+//   {
+//     id: 2,
+//     name: "Jane",
+//     age: 30,
+//   },
+//   {
+//     id: 3,
+//     name: "Bob",
+//     age: 35,
+//   }
+// ]
+
+// const objToJson = JSON.stringify(userData) // convert object to json
+// localStorage.setItem("jerryData", objToJson)
+// localStorage.setItem("jerryData", JSON.stringify(userData))
+
+// const getData = localStorage.getItem("jerryData")
+// const jsonToObj = JSON.parse(getData) // convert json to object
+
+// console.log(jsonToObj)
 
 //! JSON
+//? Complete
+
+// const userData = [
+//   {
+//     id: 1,
+//     name: "John",
+//     age: 25,
+//   },
+//   {
+//     id: 2,
+//     name: "Jane",
+//     age: 30,
+//   },
+//   {
+//     id: 3,
+//     name: "Bob",
+//     age: 35,
+//   }
+// ]
+
+// const jsonUserData = JSON.stringify(userData) //? convert to json
+
+//! Loops
 
 
 
@@ -410,15 +537,7 @@
 
 
 
-//! Loops
-
-
-
-//! DOM
-
-
-
-//! BOM
+//! Error Handling (try catch)
 
 
 
@@ -428,11 +547,14 @@
 //? ThemeChanger with local storage
 //? Responsive Navigation
 
-//! Error Handling (try catch)
 
 
 
 //! String Methods
+
+
+
+//! Number Methods
 
 
 

@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  background-color: black;
+  color: white;
+}
+
+.icons-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.myCodingImage {
+  width: 400px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/shopping-bag.png">
+  <title>Shot With DW</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/darkTheme.css" id="changeStyle">
+</head>
+
+<body>
+
+  <nav>
+    <div class="headingEndSearch">
+      <div>
+        <h3>My E-Commerce</h3>
+      </div>
+
+      <div class="Search">
+        <div class="SearchParent">
+          <input type="text" placeholder="Search..." id="searchInput">
+          <div class="magnifyingIcon" onclick="enterSearch()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navController">
+      <ul>
+        <li class="link" onclick="singlePage('products')" id="default">Products</li>
+        <li class="link" onclick="singlePage('cart')">Cart</li>
+      </ul>
+
+      <div class="refLinks">
+        <div>
+          <a href="https://github.com/webDev5464" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="themeBtn" onclick="toggleTheme()">
+          <div id="themeIcon"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <main>
+      <section class="container" id="products">
+        <div id="hereRenderProducts"></div>
+      </section>
+
+      <section class="container" id="cart">
+        <div id="cartDataRender"></div>
+      </section>
+    </main>
+
+  <div class="showProductImage">
+    <div id="cancelBtn"><i class="fa-solid fa-xmark"></i></div>
+    <div class="productImageChild"><img src="" id="setProductImage"></div>
+  </div>
+
+  <div class="popup"></div>
+
+  <script src="./js/products.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

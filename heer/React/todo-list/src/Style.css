@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+input,
+textarea {
+  @apply border-2 p-1 bg-green-200 m-2 rounded my-5
+}
+
+.active {
+  @apply text-red-300
+}

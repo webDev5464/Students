@@ -321,21 +321,48 @@
 
 //! fetch API and asynchronous function
 
-const renderData = document.getElementById("renderData")
-async function fetchingData() {
-  try {
-    const rowData = await fetch("https://jsonplaceholder.typicode.com/todos")
-    const data = await rowData.json()
+// const renderData = document.getElementById("renderData")
+// async function fetchingData() {
+//   try {
+//     const rowData = await fetch("https://jsonplaceholder.typicode.com/todos")
+//     const data = await rowData.json()
 
-    console.log(data)
+//     console.log(data)
 
-    renderData.innerHTML = data.map((value) => {
-      return `<p>${value.title}</p>`
-    }).join("")
+//     renderData.innerHTML = data.map((value) => {
+//       return `<p>${value.title}</p>`
+//     }).join("")
 
-  } catch (err) {
-    console.log(err.name)
-  }
-}
+//   } catch (err) {
+//     console.log(err.name)
+//   }
+// }
 
-fetchingData()
+// fetchingData()
+
+//! Array Methods
+
+// const boy = ["boy1", "boy2", "boy3"]
+// const girl = ["girl1", "girl2", "girl3"]
+
+// const combined = boy.concat(girl)
+// const combined = [...boy, ...girl]
+// console.log(combined)
+
+// numbers.push("Hello")
+// numbers.unshift("World")
+
+// numbers.shift()
+// numbers.pop()
+
+// console.log(numbers.length)
+
+// numbers.splice(1, 1, "New Value")
+// console.log(numbers)
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.sort().reverse())
+
+//! String Methods
+
+//! Number Methods

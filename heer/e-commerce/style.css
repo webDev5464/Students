@@ -1,0 +1,46 @@
+#renderData {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.card img {
+  width: 200px;
+}
+
+.card {
+  border: 2px solid var(--black);
+}
+
+.navIcons {
+  display: flex;
+}
+
+.cartBtn,
+.themeIcon {
+  font-size: 40px;
+  margin: 20px;
+}
+
+#cartSection {
+  height: 100vh;
+  width: 30%;
+  background-color: var(--yellow);
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.showCart {
+  display: block;
+}
+
+.hideCart {
+  display: none;
+}

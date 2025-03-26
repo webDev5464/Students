@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 100px;
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+nav div {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  color: tomato;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 50px 0;
+}

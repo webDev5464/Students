@@ -1,0 +1,21 @@
+#render {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.card img {
+  width: 300px;
+}
+
+.cardImg {
+  width: fit-content;
+  margin: auto;
+}

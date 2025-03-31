@@ -1,0 +1,16 @@
+.myNavigation {
+  display: flex;
+  gap: 30px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.myNavigation li {
+  list-style: none;
+}
+
+.myNavigation a {
+  color: white;
+  text-decoration: none;
+}

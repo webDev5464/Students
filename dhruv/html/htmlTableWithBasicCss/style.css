@@ -1,0 +1,82 @@
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ /* h1 {
+  margin: 30px;
+ } */
+
+ /* h1 {
+  background-color: tomato;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  color: white;
+} */
+
+ /* h1 {
+  background-color: black;
+  color: white;
+  font-size: 50px;
+} */
+
+ /* .myHeading {
+  color: red;
+  background-color: black;
+  width: 40%;
+  padding: 10px;
+} */
+
+ li {
+   list-style: inside;
+ }
+
+ /*! Card with css */
+
+ .cardImg {
+   width: 400px;
+ }
+
+ .mainCard {
+   /* border-style: solid;
+   border-width: 4px;
+   border-color: black; */
+
+   /*? short hand method */
+   border: solid 4px black;
+   width: fit-content;
+   margin: 50px;
+   font-family: arial;
+
+   border-radius: 20px 50px;
+   /* border-radius: 20px 60px 0 100px; */
+
+   overflow: hidden;
+   /* box-shadow: -10px -10px 20px gray; */
+   box-shadow: 0 0 20px skyblue;
+ }
+
+ .cardContent {
+   padding: 30px 10px;
+   /* padding: 50px 5px 0 5px; */
+ }
+
+ .courseLevel {
+   background-color: brown;
+   color: white;
+   width: fit-content;
+   padding: 5px 10px;
+
+   margin: 0 0 10px 0;
+   /* margin-bottom: 10px; */
+ }
+
+ .cardContent>h3 {
+   margin: 10px 0;
+ }

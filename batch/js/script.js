@@ -258,6 +258,71 @@
 
 // for, while, do while, for of, for in, for each, map, forEach
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const root = document.getElementById("root")
+
+//? map
+
+const nestingNavigation = [
+  {
+    title: 'products',
+    values: [
+      {
+        title: 'electronics',
+        values: ['mobiles', 'laptops', 'earbuds']
+      },
+      {
+        title: 'clothes',
+        values: ['shirts', 'tshirts']
+      }
+    ]
+  },
+  {
+    title: 'privacy policy',
+    values: [
+      {
+        title: 'policy One'
+      },
+      {
+        title: 'policy two',
+        values: ['p1', 'p2']
+      }
+    ]
+  }
+]
+
+root.innerHTML = nestingNavigation.map((e) => {
+  console.log(e)
+  return `
+    <ul>
+      <li>${e.title}
+        <ul>
+          <li>${e.values[0].title}
+            <ul>
+              ${e.values[0].values ? e.values[0].values.map((e) => { return `<li>${e}</li>` }).join("") : ''}
+            </ul>
+          </li>
+
+          <li>${e.values[1].title}
+            <ul>
+              ${e.values[1].values.map((e) => { return `<li>${e}</li>` }).join("")}
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  `
+}).join("")
+
+//? forEach
+
+// let text = ""
+
+// numbers.forEach((e) => {
+//   text += e
+// })
+
+// console.log(text)
 //! try catch
 
 // let a;
@@ -281,6 +346,3 @@
 
 //! Number Method
 
-const navigation = [
-  "home", { page: "About", children: ["About us", "Our team"] }, "contact"
-]

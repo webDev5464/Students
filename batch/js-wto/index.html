@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- <input type="text" id="input">
+  <button type="submit" onclick="resultFunction()">Test Input!</button>
+  <p id="result"></p>
+
+  <script>
+    let resultFunction = () => {
+      const result = document.getElementById("result")
+      result.innerHTML = ""
+      let input = document.getElementById("input").value
+
+      console.log(input)
+
+      try {
+        if (input.trim() == "") throw "empty"
+        if (isNaN(input)) throw "Not a Number!"
+        input = Number(input)
+        if (input < 5) throw "too low"
+        if (input > 10) throw "too high"
+      } catch (err) {
+        result.innerHTML = "input is " + err
+      }
+    }
+  </script> -->
+
+  <input type="text" id="input">
+  <button onclick="resultFunction()" type="submit">Submit</button>
+  <p id="result"></p>
+
+  <script>
+    function resultFunction() {
+      const input = document.getElementById("input").value
+      const result = document.getElementById("result")
+
+      try {
+        const typeNum = Number(input)
+        // if (isNaN(input)) throw "Only Number"
+        // if (input.trim("")) throw ""        
+      } catch (err) {
+        console.log(err)
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>

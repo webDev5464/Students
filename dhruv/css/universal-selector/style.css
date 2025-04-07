@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* box-sizing: border-box; */
+}
+
+.ex1,
+.ex2 {
+  background-color: yellow;
+  margin: 50px;
+
+  width: 400px;
+  height: 150px;
+
+  padding: 50px;
+}
+
+.ex1 {
+  box-sizing: border-box;
+}

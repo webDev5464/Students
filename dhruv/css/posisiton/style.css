@@ -1,0 +1,48 @@
+body {
+  height: 500vh;
+}
+
+/* Potion relative and absolute */
+
+.parentContainer {
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+  position: relative;
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+  position: absolute;
+  bottom: 0;
+  /* top: 0; */
+  right: 0;
+}
+
+/*  */
+
+.fixedHeading {
+  background-color: yellow;
+  width: fit-content;
+  padding: 10px;
+  margin: 0;
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/*  */
+
+.stickyHeading {
+  background-color: yellow;
+  width: fit-content;
+  padding: 10px;
+  margin: 0;
+
+  position: sticky;
+  top: 0;
+}

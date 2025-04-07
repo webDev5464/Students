@@ -1,0 +1,106 @@
+/* p {
+  background-color: red;
+  display: inline;
+}
+
+span {
+  background-color: yellow;
+  display: block;
+} */
+
+/* ------------------------- */
+
+/* h1 {
+  display: none;
+} */
+
+/* ------------------------- */
+
+/* IMP */
+/* .child {
+  display: none;
+}
+
+.parent:hover .child {
+  display: block;
+}
+
+.parent {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  background-color: red;
+}
+
+.parent>h2 {
+  width: fit-content;
+  background-color: #ddd;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.parent>h2:hover {
+  background-color: gray;
+} */
+
+/* ------------------------- */
+
+.parentFlex div {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+
+  /* margin: 10px; */
+}
+
+/* IMP */
+.parentFlex {
+  margin: 10px 0;
+
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+
+  /* vertical center */
+  align-items: center;
+
+  /* horizontally center */
+  justify-content: center;
+}
+
+.flex>div {
+  width: 100px;
+  background-color: black;
+}
+
+.flex>div:first-child {
+  height: 200px;
+}
+
+.flex>div:nth-child(2) {
+  height: 50px;
+}
+
+.flex>div:last-child {
+  height: 100px;
+}

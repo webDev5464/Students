@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*! CSS Variables */
+:root {
+  --heading-font: "Gravitas One", serif;
+  --article-font: "Roboto Mono", monospace;
+
+  --primary-bg: #7affdb;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  background-color: red;
+
+  width: 50%;
+  margin: auto;
+  font-family: var(--heading-font);
+  color: var(--primary-bg);
+}
+
+p {
+  font-size: 40px;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 900;
+  font-family: var(--article-font);
+}

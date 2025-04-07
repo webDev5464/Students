@@ -1,0 +1,23 @@
+/* .parent :first-child {
+  background-color: red;
+} */
+
+/* .parent>:first-child {
+  background-color: yellow;
+} */
+
+/* .parent>p:last-child {
+  background-color: brown;
+} */
+
+/* .parent>:nth-child(2) {
+  background-color: aqua;
+} */
+
+/* .parent>div>div>p {
+  color: blue;
+} */
+
+/* .parent p {
+  color: chocolate;
+} */

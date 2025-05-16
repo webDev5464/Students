@@ -1,0 +1,31 @@
+@media screen and (max-width: 1170px) {
+  nav {
+    margin: 0 100px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  nav {
+    margin: 0 30px;
+  }
+
+  .heading {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav ul {
+    display: none;
+  }
+
+  header {
+    background-position: -180px 0;
+  }
+}

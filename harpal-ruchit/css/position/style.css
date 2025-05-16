@@ -1,0 +1,40 @@
+body {
+  height: 200vh;
+}
+
+.parent {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+
+  position: relative;
+}
+
+.parent div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*  */
+
+.fixed,
+.sticky {
+  background-color: yellow;
+  /* width: fit-content; */
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}

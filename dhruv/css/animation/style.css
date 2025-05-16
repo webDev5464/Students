@@ -1,0 +1,59 @@
+div {
+  background-color: red;
+  border: 2px solid black;
+  width: fit-content;
+  padding: 10px;
+  margin: 100px;
+
+  transition: 1s ease;
+
+  animation-name: myAnimation;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+div:hover {
+  /* transform: rotate(360deg); */
+  /* transform: rotateX(360deg); */
+
+  /* transform: scale(.5); */
+  /* transform: scaleY(1.5); */
+  /* transform: skewY(20deg); */
+  /* transform: translate(300px, 500px ); */
+}
+
+/* animation  */
+
+/* @keyframes myAnimation {
+  from {
+    background-color: blue;
+  }
+
+  to {
+    background-color: green;
+  }
+} */
+
+@keyframes myAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(360deg);
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(.5);
+  }
+
+  100% {
+    /* transform: skew(120deg, 60deg); */
+  }
+}

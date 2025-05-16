@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+div {
+  width: 400px;
+  height: 200px;
+
+  /* background-color: yellow; */
+
+  /* border-width: 3px;
+  border-color: red;
+  border-style: solid; */
+
+  /* border: 2px solid red; */
+  box-shadow: -5px -5px 10px black, 5px 5px 10px red;
+  padding: 50px;
+}
+
+.with-box {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black;
+  letter-spacing: 10px;
+}

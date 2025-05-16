@@ -1,0 +1,6 @@
+
+@import "tailwindcss";
+
+.active {
+    @apply text-red-400
+}

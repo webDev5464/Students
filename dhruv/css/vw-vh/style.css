@@ -1,0 +1,18 @@
+body {
+  border: 2px solid red;
+  height: 500px;
+}
+
+div {
+  /* height: 50vh; */
+  height: 50%;
+  width: 50%;
+  /* width: 50vw; */
+  background-color: black;
+}
+
+section {
+  height: 400px;
+  width: 400px;
+  background-color: yellow;
+}

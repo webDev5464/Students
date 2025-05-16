@@ -1,0 +1,39 @@
+section {
+  position: relative;
+  background-color: red;
+  width: fit-content;
+  margin: auto;
+}
+
+button {
+  background-color: rgb(62, 205, 62);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  /* width: fit-content; */
+  /* display: block; */
+  /* margin: auto; */
+  /* display: inline-block; */
+}
+
+ul {
+  display: none;
+  position: absolute;
+  right: 50%;
+
+  transform: translate(50%);
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+section:hover ul {
+  display: block;
+}
+
+/* div {
+  height: 100px;
+  width: 300px;
+  background-color: red;
+  margin: 50px auto;
+} */

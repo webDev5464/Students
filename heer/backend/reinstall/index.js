@@ -1,22 +1,23 @@
 import e, { json, urlencoded } from 'express';
 import { connect } from 'mongoose';
+import { $Data } from './dataModel.js';
 
 const app = e()
 app.use(json(), urlencoded({ extended: true }))
 
 const dbCon = async () => {
-  await connect("mongodb+srv://heer:heer@cluster0.jjufo0q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  await connect("mongodb://127.0.0.1:27017/heer")
   console.log("Connected to MongoDB")
 }
 
-app.get("/", (req, res) => {
-  res.send("Hello World!")
+app.get("/", async (req, res) => {
+  const getData = await $Data.find()
+  res.send(getData)
 })
 
-app.post("/sendData", (req, res) => {
-  const data = req.body
-  console.log(16, data)
-
+app.post("/sendData", async (req, res) => {
+  const { firstName, lastName } = req.body
+  await $Data({ firstName, lastName }).save()
   res.send("U are register")
 })
 

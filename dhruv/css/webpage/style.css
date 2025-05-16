@@ -1,0 +1,145 @@
+:root {
+  --nav-dark: rgb(11, 23, 39);
+  --primary-green: #36b3a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 500vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+  background-image: url("./assets/header-01.jpg");
+  background-size: cover;
+  background-position: 0 -30px;
+}
+
+.glassEffect {
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.603));
+}
+
+/* Navigation */
+
+nav img {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+  background-color: var(--nav-dark);
+
+  z-index: 50;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-content button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.nav-content button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* header content */
+
+.glassEffect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+header section h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 20px 0 70px 0;
+}
+
+header section button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+header section button:hover {
+  cursor: pointer;
+}
+
+header section button:active {
+  background-color: #247871;
+}
+
+.down-arrow {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  bottom: -250px;
+}
+
+.down-arrow a {
+  color: white;
+}
+
+/* main content */
+
+main {
+  padding: 100px 0 0 0;
+}

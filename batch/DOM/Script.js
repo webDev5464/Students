@@ -13,3 +13,13 @@
 
 // ----------------------------------------------------------------
 
+function themeHandler() {
+  const themeStyle = document.getElementById("themeStyle")
+  const getAtt = themeStyle.getAttribute("href")
+
+  if (getAtt === "./light.css") {
+    themeStyle.setAttribute("href", "./dark.css")
+  } else {
+    themeStyle.setAttribute("href", "./light.css")
+  }
+}

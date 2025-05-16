@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* This is a comment */
+
+    .active {
+      display: block;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="myHeading" class="active"></h1>
+  <button onclick="myHeadingHandlerFunction()">show/hidden</button>
+
+  <!-- Internal JavaScript -->
+  <script>
+    // camelCase
+    // single line comment
+
+    /*
+      Multiple line comment
+    */
+
+    // document.getElementById("myHeading").innerHTML = "Hello World!"
+
+    // function myHeadingHandlerFunction() {
+    //   // console.log("Clicked Button")
+
+    //   const myHeading = document.getElementById("myHeading")
+    //   const getAtt = myHeading.getAttribute("class")
+
+    //   if (getAtt === "active") {
+    //     myHeading.setAttribute("class", "hidden")
+    //   } else {
+    //     myHeading.setAttribute("class", "active")
+    //   }
+    // }
+  </script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

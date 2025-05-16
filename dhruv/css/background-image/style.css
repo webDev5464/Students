@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .parent {
+  position: relative;
+  background-color: red;
+  width: fit-content;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+.bgImg {
+  background-image: url("./myImage.jpg");
+  height: 700px;
+  width: 600px;
+  border: 4px solid red;
+  margin: 10px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+}
+
+.bgImg>div {
+  /* background-color: red; */
+  height: 100%;
+
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  color: blue;
+}
+
+/* Ex: 2 */
+
+.fixedImg {
+  height: 400px;
+  background-image: url("./space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

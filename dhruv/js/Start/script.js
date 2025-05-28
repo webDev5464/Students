@@ -422,18 +422,17 @@
 
 //?  map(), forEach()
 
-const numbers = [1, 2, 3, 4, 5]
+// const numbers = [1, 2, 3, 4, 5]
 
-const printer = document.getElementById("printer")
+// const printer = document.getElementById("printer")
 
 //? map()
 
-
 // let text = ""
 
-printer.innerHTML = numbers.map((print) => {
-  return `<p>${print}</p>`
-}).join("")
+// printer.innerHTML = numbers.map((print) => {
+//   return `<p>${print}</p>`
+// }).join("")
 
 
 // numbers.forEach((print) => {
@@ -441,7 +440,6 @@ printer.innerHTML = numbers.map((print) => {
 // })
 
 // console.log(typeof text)
-
 
 //? forEach()
 
@@ -454,7 +452,87 @@ printer.innerHTML = numbers.map((print) => {
 
 // printer.innerHTML = text
 
+//? for
+
+// const numbers = ["Chagan", "Magan", "John", "Doe", "Jane"]
+// const printer = document.getElementById("printer")
+
+// let text = ""
+
+// for (let i = 0; i < numbers.length; i++) {
+//   text += `<p>${numbers[i]}</p>`
+// }
+
+// printer.innerHTML = text
+
+//? for in
+
+// const numbers = ["Chagan", "Magan", "John", "Doe", "Jane"]
+// const printer = document.getElementById("printer")
+
+// let i = 0
+// let text = ""
+// for (i in numbers) {
+//   text += `<p>${numbers[i]}</p>`
+// }
+
+// printer.innerHTML = text
+
+//? for of
+
+// const numbers = ["Chagan", "Magan", "John", "Doe", "Jane"]
+// const printer = document.getElementById("printer")
+
+// let i = 0
+// let text = ""
+// for (i of numbers) {
+//   text += `<p>${i}</p>`
+// }
+
+// printer.innerHTML = text
+
+//? while
+// const numbers = ["Chagan", "Magan", "John", "Doe", "Jane"]
+// let i = 0
+// let text = ""
+// while (i < numbers.length) {
+//   text += `<p>${numbers[i]}</p>\n`
+
+//   i++
+// }
+
+// console.log(text)
+
+//? do while
+// const numbers = ["Chagan", "Magan", "John", "Doe", "Jane"]
+// let i = 0
+
+// do {
+//   console.log(i)
+
+//   i++
+// } while (i > numbers.length)
+
 //! fetch (API Fetching)
+
+//* https://server.jatssdev.com/api/courses
+//* https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI
+//* https://jsonplaceholder.typicode.com/
+
+// Get, Post, Put, Patch, Delete
+
+// fetch("https://server.jatssdev.com/api/courses").then((x) => x.json()).then((data) => console.log(data))
+
+//? asynchronous function
+
+async function getCoursesData() {
+  const getRowData = await fetch("https://res.cloudinary.com/dpiiduvvx/raw/upload/v1703580765/API/productsAPI")
+  const data = await getRowData.json()
+
+  console.log(data) // data is the response from the server
+}
+
+getCoursesData()
 
 //! Number Method
 

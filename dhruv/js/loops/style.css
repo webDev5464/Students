@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+
+  place-items: center;
+}
+
+.productImg {
+  width: 200px;
+}
+
+.product {
+  width: 250px;
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+}
+
+.productCartBtn {
+  margin: 10px 0 0 0;
+}

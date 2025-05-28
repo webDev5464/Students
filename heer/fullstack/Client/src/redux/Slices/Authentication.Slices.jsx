@@ -1,5 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createSlice } from "@reduxjs/toolkit";
-import { $AuthLogin, $AuthRegister } from "../Thunk/Auth.thunk";
+import { $AuthLogin, $AuthRegister, $UserAuthToken, $UserLogout } from "../Thunk/Auth.thunk";
 import { toast } from "react-toastify"
 
 const Slice = createSlice({
@@ -9,7 +10,6 @@ const Slice = createSlice({
         loading: false,
         process: null,
         userData: null,
-
     },
 
     reducers: {
@@ -70,6 +70,47 @@ const Slice = createSlice({
                     position: "bottom-right",
                     closeOnClick: true
                 })
+            })
+
+            //! Auto login
+            .addCase($UserAuthToken.pending, (state) => {
+                state.loading = true
+            })
+            .addCase($UserAuthToken.fulfilled, (state, action) => {
+                const { message, data } = action.payload
+                state.loading = false
+                state.resMsg = message
+                state.userData = data
+                toast.success(message, {
+                    position: "bottom-right",
+                    closeOnClick: true
+                })
+            })
+            .addCase($UserAuthToken.rejected, (state, action) => {
+                const { message, process } = action.payload
+                state.loading = false
+                state.resMsg = message
+                state.process = process
+            })
+
+            //! User Logout
+            .addCase($UserLogout.pending, (state) => {
+                state.loading = true
+            })
+            .addCase($UserLogout.fulfilled, (state, action) => {
+                const { message } = action.payload
+                state.loading = false
+                state.userData = null
+                toast.success(message, {
+                    position: "bottom-right",
+                    closeOnClick: true
+                })
+            })
+            .addCase($UserLogout.rejected, (state, action) => {
+                const { message, process } = action.payload
+                state.loading = false
+                state.resMsg = message
+                state.process = process
             })
     }
 

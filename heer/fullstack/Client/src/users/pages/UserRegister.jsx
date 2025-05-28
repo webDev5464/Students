@@ -2,7 +2,7 @@ import { useState } from "react"
 // import axios, { Axios } from 'axios'
 import { $AuthRegister } from "../../redux/Thunk/Auth.thunk"
 import { useDispatch } from "react-redux"
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaLock, FaRegUserCircle, FaUser } from "react-icons/fa";
 import { MdOutlineMailLock } from "react-icons/md";
 import { TbLockPassword } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -18,7 +18,6 @@ export default function UserRegister() {
     fName: "",
     lName: "",
     username: "",
-    gender: "",
     email: "",
     password: "",
     conPass: ""
@@ -31,10 +30,8 @@ export default function UserRegister() {
       console.log(formData)
 
       dispatch($AuthRegister(formData))
-
-      // await axios.post("http://localhost:8080/api/UserRegister", formData)
     } catch (err) {
-      
+
       console.log(err.message)
 
 
@@ -46,161 +43,112 @@ export default function UserRegister() {
     setFormData({ ...formData, [name]: value })
   }
   return (
-    <>
-      <form action="" className="w-1/2  p-7 m-auto " onSubmit={formHandler}>
-
-        <div className="bg-cyan-400 text-white p-8 border-2 border-white max-w-xl mx-auto">
-          <h2 className="text-rose-600 text-xl mb-4 border-b border-white pb-2"> SIGN UP </h2>
-
-          {/* First Name input  */}
-          
-          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3">
-              <label htmlFor="fName" className="block text-sm/6 font-medium text-black">
-                First name :
+    <div className="min-h-screen flex items-center justify-center text-center">
+      <div className="w-120 p-10 rounded-xl bg-blue-200 shadow-[inset_-3px_-3px_7px_#ffffff73,_2px_2px_5px_rgba(94,104,121,0.288)]">
+        <div className="text-2xl font-semibold text-gray-700 mb-8">Login Form</div>
+        <form onSubmit={(e) => formHandler(e)}>
+          <div className="flex gap-4 mb-6">
+            {/* First Name */}
+            <div className="relative w-full">
+              <FaUser className="absolute left-4 top-3.5 text-gray-600 z-10" />
+              <input
+                type="text"
+                name="fName"
+                onChange={(e) => {inputHandler(e)}}
+                className="peer w-full h-12 pl-12 pr-4 pt-2 pb-1 text-lg text-gray-700 rounded-full bg-white outline-none shadow-inner shadow-[inset_2px_2px_5px_#BABECC,_inset_-5px_-5px_10px_#ffffff73] focus:pt-4"
+              />
+              <label className="absolute left-12 top-3 text-gray-500 text-sm transition-all duration-200 peer-focus:top-1 peer-focus:text-xs peer-focus:text-blue-600 peer-valid:top-1 peer-valid:text-xs peer-valid:text-blue-600">
+                First Name:
               </label>
-              <div className="mt-2">
-                <input
-                  id="fName"
-                  name="fName"
-                  type="text"
-                  autoComplete="given-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  onChange={inputHandler}
-                />
-              </div>
             </div>
 
-            {/* last Name input */}
-
-            <div className="sm:col-span-3">
-              <label htmlFor="lName" className="block text-sm/6 font-medium text-black">
-                Last name :
+            {/* Last Name */}
+            <div className="relative  w-full">
+              <FaUser className="absolute left-4 top-3.5 text-gray-600 z-10" />
+              <input
+                type="text"
+                name="lName"
+                onChange={(e) => {inputHandler(e)}}
+                className="peer w-full h-12 pl-12 pr-4 pt-2 pb-1 text-lg text-gray-700 rounded-full bg-white outline-none shadow-inner shadow-[inset_2px_2px_5px_#BABECC,_inset_-5px_-5px_10px_#ffffff73] focus:pt-4"
+              />
+              <label className="absolute left-12 top-3 text-gray-500 text-sm transition-all duration-200 peer-focus:top-1 peer-focus:text-xs peer-focus:text-blue-600 peer-valid:top-1 peer-valid:text-xs peer-valid:text-blue-600">
+                Last Name:
               </label>
-              <div className="mt-2">
-                <input
-                  id="lName"
-                  name="lName"
-                  type="text"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  onChange={inputHandler}
-                />
-              </div>
             </div>
           </div>
 
-          <hr className="my-4 border-green-700 border-2 " />
 
-          {/* username input */}
 
-          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3 ">
-              <label htmlFor="username" className="block text-sm/6 font-medium text-black">
-                Username :
-
-              </label>
-
-              <div className="mt-2 relative">
-                <span className="text-black absolute right-2 py-2.5"><FaRegUserCircle /></span>
-                <input
-                  id="username"
-                  name="username"
-                  type="text"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  onChange={inputHandler}
-                />
-              </div>
-            </div>
+          <div className="relative mb-6 ">
+            <FaUser className="absolute left-4 top-3.5 text-gray-600 z-10" />
+            <input
+              type="text"
+              name="username"
+              onChange={(e) => {inputHandler(e)}}
+              className="peer w-full h-12 pl-12 pr-4 pt-2 pb-1 text-lg text-gray-700 rounded-full bg-white outline-none shadow-inner shadow-[inset_2px_2px_5px_#BABECC,_inset_-5px_-5px_10px_#ffffff73] focus:pt-4"
+            />
+            <label className="absolute left-12 top-3 text-gray-500 text-sm transition-all duration-200 peer-focus:top-1 peer-focus:text-xs peer-focus:text-blue-600 peer-valid:top-1 peer-valid:text-xs peer-valid:text-blue-600">
+              username:
+            </label>
           </div>
 
-          {/* Email input */}
 
-          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3 my-3 ">
-              <label htmlFor="Email" className="block text-sm/6 font-medium text-black ">
-                Email :
 
-              </label>
-              <div className="mt-2 relative">
-                <span className="text-black absolute right-2 py-2.5"> <MdOutlineMailLock /></span>
-                <input
-                  id="email"
-                  name="email"
-                  type="text"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  onChange={inputHandler}
-                />
-              </div>
-            </div>
+          <div className="relative mb-6">
+            <MdOutlineMailLock className="absolute left-4 top-3.5 text-gray-600 z-10" />
+            <input
+              type="text"
+              name="email"
+              onChange={(e) => {inputHandler(e)}}
+              className="peer w-full h-12 pl-12 pr-4 pt-2 pb-1 text-lg text-gray-700 rounded-full bg-white outline-none shadow-inner shadow-[inset_2px_2px_5px_#BABECC,_inset_-5px_-5px_10px_#ffffff73] focus:pt-4"
+            />
+            <label className="absolute left-12 top-3 text-gray-500 text-sm transition-all duration-200 peer-focus:top-1 peer-focus:text-xs peer-focus:text-blue-600 peer-valid:top-1 peer-valid:text-xs peer-valid:text-blue-600">
+              Email:
+            </label>
           </div>
 
-          <hr className="my-4 border-green-700 border-2 " />
 
-          {/* password input */}
 
-          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3">
-              <label htmlFor="Password" className="block text-sm/6 font-medium text-black">
-                Password :
 
+          <div className="flex gap-4 mb-6">
+
+
+            {/* Password */}
+            <div className="relative w-1/2">
+              <FaLock className="absolute left-4 top-3.5 text-gray-600 z-10" />
+              <input
+                type="password"
+                name="password"
+                onChange={(e) => {inputHandler(e)}}
+                className="peer w-full h-12 pl-12 pr-4 pt-2 pb-1 text-lg text-gray-700 rounded-full bg-white outline-none shadow-inner shadow-[inset_2px_2px_5px_#BABECC,_inset_-5px_-5px_10px_#ffffff73] focus:pt-4"
+              />
+              <label className="absolute left-12 top-3 text-gray-500 text-sm transition-all duration-200 peer-focus:top-1 peer-focus:text-xs peer-focus:text-blue-600 peer-valid:top-1 peer-valid:text-xs peer-valid:text-blue-600">
+                Password:
               </label>
-              <div className="mt-2 relative">
-                <span className="text-black absolute right-2 py-2.5"> <TbLockPassword /></span>
-                <input
-                  id="password"
-                  name="password"
-                  type="text"
-                  autoComplete="given-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  onChange={inputHandler}
-
-                />
-
-              </div>
             </div>
 
-            {/* Confirm Password input */}
-
-            <div className="sm:col-span-3">
-              <label htmlFor="Conpass" className="block text-sm/6 font-medium text-black">
-                Confirm Password :
-
+            {/* Confirm Password */}
+            <div className="relative w-1/2">
+              <FaLock className="absolute left-4 top-3.5 text-gray-600 z-10" />
+              <input
+                type="password"
+                name="conPass"
+                onChange={(e) => {inputHandler(e)}}
+                className="peer w-full h-12 pl-12 pr-4 pt-2 pb-1 text-lg text-gray-700 rounded-full bg-white outline-none shadow-inner shadow-[inset_2px_2px_5px_#BABECC,_inset_-5px_-5px_10px_#ffffff73] focus:pt-4"
+              />
+              <label className="absolute left-12 top-3 text-gray-500 text-sm transition-all duration-200 peer-focus:top-1 peer-focus:text-xs peer-focus:text-blue-600 peer-valid:top-1 peer-valid:text-xs peer-valid:text-blue-600">
+                Confirm Password:
               </label>
-              <div className="mt-2 relative">
-                <span className="text-black absolute right-2 py-2.5">< TbLockPassword /></span>
-                <input
-                  id="conPass"
-                  name="conPass"
-                  type="text"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  onChange={inputHandler}
-                />
-              </div>
             </div>
           </div>
-
-          {/* Register input */}
-
-          <div className="w-fit m-auto mt-6">
-            <button className="border  pt-1 pb-2 font-bold text-black px-6  rounded-xl bg-green-500  border-green-500 hover:cursor-pointer active:scale-95">Register</button>
-
-          </div>
-
-            {/* Already Have Account input */}
-
-          <div className="w-fit m-auto mt-4">
-            <Link to={"/UserLogin"} className="border border-green-500 px-6 py-2 rounded-full  hover:cursor-pointer active:scale-95">
-              Already Have Account
-            </Link>
-          </div>
-
-        </div>
-      </form>
-
-    </>
+          <button
+            type="submit"
+            className="w-full h-12 text-lg font-semibold text-gray-700 rounded-full bg-white shadow-[2px_2px_5px_#BABECC,_-5px_-5px_10px_#ffffff73] hover:shadow-inner hover:text-blue-500 transition-colors duration-200"
+          >
+            Sign in
+          </button>
+        </form >
+      </div >
+    </div >
   )
 }

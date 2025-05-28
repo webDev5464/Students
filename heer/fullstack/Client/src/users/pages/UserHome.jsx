@@ -1,18 +1,20 @@
+/* eslint-disable no-unused-vars */
 import { useDispatch, useSelector } from "react-redux"
-import { decrement, increment } from "../../redux/Slices/Authentication.Slices"
 
-export default function UserHome(){
-    const { num ,loading } = useSelector(state => state.AuthData)
+export default function UserHome() {
+    const { userData } = useSelector(state => state.AuthData)
     const dispatch = useDispatch()
-    
+
+    console.log(userData)
+
     return (
         <>
-         <h1 className="text-x1 font-bold">Number: {num}</h1>
-
-         <div className="flex gap-4 my-3"> 
-            <button className=" active:scale-95 transition border px-3 pb-.5 rounded-sm hover:bg-green-200 cusor-pointer font-bold bg-green-400" onClick={() => dispatch(increment())}>INCREMENT </button>
-            <button className=" active:scale-95 transition border px-3 pb-.5 rounded-sm hover:bg-red-200 cusor-pointer font-bold bg-red-400" onClick={() => dispatch(decrement())}>DECREMENT </button>
-         </div>
+            <div className={userData ? "h-[100px] w-[100px] bg-green-500" : "h-[100px] w-[100px] bg-red-500"}>
+                <p className="font-bold">
+                    <span>{userData ? userData.fName : ""}</span>
+                    <span>{userData ? userData.lName : ""}</span>
+                </p>
+            </div>
         </>
     )
 }

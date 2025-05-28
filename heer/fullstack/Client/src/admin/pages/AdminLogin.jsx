@@ -1,11 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState } from "react"
-import { TbLockPassword } from "react-icons/tb";
-import { FaLock, FaRegUserCircle, FaUser } from "react-icons/fa";
+import { FaLock, FaUser } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { $AuthLogin } from "../../redux/Thunk/Auth.thunk";
 
-export default function UserLogin() {
+export default function AdminLogin() {
   const dispatch = useDispatch()
 
   const [formData, setFormData] = useState({

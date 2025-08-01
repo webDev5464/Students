@@ -1,0 +1,3 @@
+installation react = npm create vite . (React, JavaScript)
+Install Node Modules:- npm i
+Run the application:- npm run dev

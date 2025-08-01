@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.myBox {
+  @apply h-50 w-50 bg-black m-10
+}

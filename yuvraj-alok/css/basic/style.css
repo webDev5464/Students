@@ -1,0 +1,52 @@
+/* Universe selector */
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* .box {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+
+
+  padding: 20px;
+}
+
+.ex {
+  box-sizing: border-box;
+} */
+
+/* ------------------- */
+
+/* .parent div {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+
+  margin: 10px;
+}
+
+.parent div:first-child {
+  background-color: red;
+}
+
+.parent div:last-child {
+  background-color: yellow;
+}
+
+.parent div:nth-child(2) {
+  background-color: greenyellow;
+} */
+
+/* .parent div h1 {
+  color: red;
+} */
+
+/* .parent>div>h1 {
+  color: red;
+} */

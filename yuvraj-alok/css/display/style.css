@@ -1,0 +1,126 @@
+/* h1,
+span {
+  background-color: red;
+}
+
+h1 {
+  display: inline;
+}
+
+span {
+  display: block;
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/*! Drop-Down */
+
+/* .drop {
+  margin: 20px;
+  background-color: red;
+  width: fit-content;
+}
+
+.btn {
+  background-color: lightgray;
+  width: fit-content;
+  padding: 10px 15px;
+
+  border-radius: 7px;
+  border: 2px solid black;
+
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.down li {
+  background-color: red;
+  list-style: none;
+  text-align: center;  
+}
+
+.down {
+  display: none;
+}
+
+.drop:hover .down {
+  display: block;
+} */
+
+/*! Flex */
+
+.parent {
+  display: flex;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+.parent .c:first-child {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  margin: 10px;
+}
+
+.parent .c:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+.parent .c:nth-child(3) {
+  width: 100px;
+  height: 150px;
+  background-color: black;
+  margin: 10px;
+}
+
+.align {
+  align-items: center;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section {
+  background-color: red;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+} */

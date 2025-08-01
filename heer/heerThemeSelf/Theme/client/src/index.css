@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root{
+  --bg-color:black;
+} */
+
+.light{
+  --white:white;
+  --black:black;
+   --text-color:black;
+}
+.black{
+ --black:black;
+  --text-color: white;
+}
+
+.main{
+  background-color: var(--black);
+  color: var(--white);
+}
+hr{
+  height: 10px;
+}

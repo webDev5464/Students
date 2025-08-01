@@ -1,0 +1,84 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Css variables */
+:root {
+  --HeadingFont: "Bitcount Prop Single", system-ui;
+  --TitleFont: "Roboto Mono", monospace;
+
+  --myCOlor: #b86868;
+
+  --titleFontSide: 20px;
+}
+
+.light {
+  --black: black;
+  --white: white;
+}
+
+.dark {
+  --black: white;
+  --white: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 300vh;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.box {
+  background-color: red;
+  width: fit-content;
+  /* width: 50vw; */
+  padding: 10px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  margin: 50px;
+
+  position: relative;
+}
+
+.container>div {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+
+  position: absolute;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+}
+
+/* Use Google font */
+
+h1 {
+  font-family: var(--HeadingFont);
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--titleFontSide);
+
+  /* font-family: var(--HeadingFont); */
+}

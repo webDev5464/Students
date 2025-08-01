@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.active {
+  @apply text-red-500
+}
+
+.h1 {
+  @apply text-[50px] font-bold p-2 m-10
+}
+
+input {
+  @apply border my-3 mx-5
+}

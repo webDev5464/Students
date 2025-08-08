@@ -1,0 +1,86 @@
+/* p,
+span {
+  background-color: red;
+} */
+
+/* p {
+  display: inline;
+}
+
+span {
+  display: block;
+} */
+
+/* h1 {
+  background-color: red;
+} */
+
+/* main {
+  width: 50vw;
+  height: 50vh;
+} */
+
+.container {
+  /* background-color: black; */
+  /* width: 50vw; */
+  /* height: 50vh; */
+  /* width: 50vw; */
+  /* height: 50vh; */
+  /* width: 100%; */
+  /* height: 100%; */
+
+}
+
+section div {
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+  /* margin: 10px; */
+
+  padding: 50px;
+}
+
+section {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+  margin: 100px 0;
+}
+
+section div:first-child {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  /* margin: 0 auto; */
+  /* margin: 0 200px; */
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: square;
+  /* list-style-type: none; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.pass {
+  position: relative;
+  width: fit-content;
+  background-color: red;
+}
+
+.pass i {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+}

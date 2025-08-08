@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo span:first-child {
+  font-size: 30px;
+}
+
+.logo p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 7px 100px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+}
+
+.navContent {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+li {
+  /* list-style: inside; */
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: lightgreen;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+
+.drop {
+  position: relative;
+}
+
+.down {
+  position: absolute;
+  padding-top: 13px;
+
+  /* right: 50%; */
+  /* transform: translate(50%); */
+  left: -27px;
+  display: none;
+}
+
+.drop:hover .down {
+  display: block;
+}
+
+.dropContainer {
+  background-color: black;
+  border: 2px solid red;
+  padding: 10px 30px;
+}
+
+.dropContainer li {
+  text-align: center;
+  margin: 5px 0;
+}

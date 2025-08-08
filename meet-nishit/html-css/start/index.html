@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content=""> -->
+  <title>Document</title>
+
+
+  <style>
+    h1 {
+      background-color: black;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- 
+  <h1>Hello World!</h1>
+  <h2>Hello World!</h2>
+  <h3>Hello World!</h3>
+  <h4>Hello World!</h4>
+  <h5>Hello World!</h5>
+  <h6>Hello World!</h6>
+
+  <p>This is a title</p>
+
+  <span>This is a title</span> -->
+
+  <!-- <main>
+    <div class="container"></div>
+  </main> -->
+
+  <!-- <section></section>
+  <nav></nav>
+  <header></header>
+  <footer></footer>
+  <article></article> -->
+
+  <!-- <section>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique officia consequatur quis voluptas
+      unde id dolorem ullam, ducimus praesentium magnam, quo nisi! Nobis laudantium consequatur ab ipsam consectetur
+      maiores!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique officia consequatur quis voluptas
+      unde id dolorem ullam, ducimus praesentium magnam, quo nisi! Nobis laudantium consequatur ab ipsam consectetur
+      maiores!
+    </div>
+  </section> -->
+
+  <!-- <div class="box"></div> -->
+
+
+  <nav>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Service</a></li>
+      <li><a href="">Content</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="pass">
+    <input type="password" name="" id="pass">
+    <i class="fa-regular fa-eye" onclick="passHandler()"></i>
+  </div>
+
+  <script>
+    function passHandler() {
+      const pass = document.getElementById("pass")
+      const att = pass.getAttribute("type")
+
+      if (att == "password") {
+        pass.setAttribute("type", "text")
+      } else {
+        pass.setAttribute("type", "password")
+      }
+    }
+  </script>
+
+</body>
+
+</html>

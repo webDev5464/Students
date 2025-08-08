@@ -1,0 +1,58 @@
+/* .imgContainer img {
+  width: 500px;
+}
+
+main {
+  position: relative;
+  background-color: red;
+  width: fit-content;
+}
+
+main h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+} */
+
+.container {
+  background-image: url(./header_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: -300px; */
+
+  border: 2px solid red;
+  height: 400px;
+  /* width: 300px; */
+  width: 100%;
+  color: red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiperContainer {
+  height: 400px;
+  background-color: black;
+  margin: 50vh 0;
+
+  background-image: url(./pngwing.com.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: white;
+
+
+  border: 2px solid red;
+}
+
+.swuperHEading {
+  background: linear-gradient(rgba(255, 255, 255, 0.281), rgba(0, 0, 0, 0.396));
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

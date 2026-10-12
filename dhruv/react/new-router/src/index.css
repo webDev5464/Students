@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.userNav {
+  display: flex;
+  padding: 10px 100px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.userNav ul {
+  display: flex;
+  gap: 20px;
+
+  li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

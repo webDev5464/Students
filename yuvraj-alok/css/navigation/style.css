@@ -22,10 +22,11 @@ nav {
   align-items: center;
 }
 
-ul {
+.navList {
   display: flex;
   gap: 15px;
 }
+
 
 .navContent {
   display: flex;
@@ -77,4 +78,8 @@ button {
 .dropContainer li {
   text-align: center;
   margin: 5px 0;
+}
+
+.hambar {
+  display: none;
 }

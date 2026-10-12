@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+}
+
+section {
+  /* height: 300px; */
+  width: 300px;
+  border: 2px solid black;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  background-image: repeating-conic-gradient(black 10%, white 20%);
+  transition: 2s;
+  padding: 10px;
+  border-radius: 50%;
+
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-delay: 2s; */
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+section:hover div {
+  /* transform: translate(500px, 200px); */
+  /* transform: rotate(360deg); */
+
+  /* transform: rotateY(120deg); */
+
+  /* transform: scale(1.2); */
+
+  /* transform: skew(20deg, 50deg); */
+}
+
+@keyframes myAnimation {
+  /* 0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(400px);
+  }
+
+  50% {
+    transform: translate(400px, 400px);
+  }
+
+  75% {
+    transform: translate(0, 400px);
+  }
+
+  100% {
+    transform: translate(0);
+  }   */
+
+  to {
+    transform: rotate(0);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}

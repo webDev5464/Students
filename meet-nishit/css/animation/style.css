@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+section {
+  /* height: 300px; */
+  width: 300px;
+  border: 2px solid black;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(black 10%, white 20%);
+  /* transition: 1s; */
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  /* animation-timing-function: unset; */
+  animation-iteration-count: infinite;
+  /* animation-direction: reverse; */
+  /* animation-delay: 2s; */
+
+  animation-fill-mode: backwards;
+
+  /* animation-timing-function: inherit; */
+  animation-timing-function: linear;
+}
+
+section:hover div {
+  /* transform: translate(0, -500px); */
+  /* transform: rotate(30deg); */
+  /* transform: rotateY(180deg); */
+
+  /* transform: scale(.5); */
+  /* transform: skew(30deg); */
+}
+
+@keyframes myAnimation {
+  0% {
+    /* background: linear-gradient(black, white); */
+    transform: rotate(360deg);
+
+  }
+
+  100% {
+    background-color: red;
+    transform: rotate(0);
+
+  }
+}
+
+/* 0% {
+    background-color: yellow;
+    transform: translate(0);
+  }
+
+  50% {
+    background-color: red;
+    transform: translate(300px);
+  }
+
+  100% {
+    background-color: yellow;
+    transform: translate(0);
+  } */

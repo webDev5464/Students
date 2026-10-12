@@ -1,16 +1,17 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { deleteUser, getData } from './redux/slices/User.slice'
+import { deleteUser, getData, resetProcess } from './redux/slices/User.slice'
 
 export default function App() {
-  const { data } = useSelector(s => s.userSlice)
+  const { data, process } = useSelector(s => s.userSlice)
   const dispatch = useDispatch()
   console.log(data)
 
   useEffect(() => {
     dispatch(getData())
-  }, [])
+    dispatch(resetProcess())
+  }, [process])
 
   return (
     <div>

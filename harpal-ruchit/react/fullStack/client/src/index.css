@@ -1,0 +1,11 @@
+form {
+  border: 2px solid black;
+  width: fit-content;
+  padding: 20px;
+}
+
+input {
+  margin: 10px auto;
+  display: block;
+  padding: 3px;
+}

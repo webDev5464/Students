@@ -1,0 +1,52 @@
+body {
+  height: 200vh;
+}
+
+table {
+  border: 4px solid black;
+  width: 500px;
+  margin: auto;
+}
+
+th,
+td {
+  border: 2px solid black;
+}
+
+th {
+  padding: 10px;
+  background-color: gray;
+}
+
+tr:nth-child(odd) {
+  background-color: red;
+}
+
+tr:nth-child(even) {
+  background-color: yellow;
+}
+
+tr:hover {
+  background-color: lightblue;
+}
+
+/* Sudo selector */
+
+.container div {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  margin: 10px;
+}
+
+.container div:nth-child(2) {
+  background-color: red;
+}
+
+.container div:last-child {
+  background-color: blue;
+}
+
+.container div:first-child {
+  background-color: yellow;
+}

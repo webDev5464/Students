@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  /* background-color: red; */
+  width: fit-content;
+  margin: 100px;
+}
+
+.button {
+  background-color: lightgray;
+  padding: 3px 6px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.list {
+  display: none;
+
+  li {
+    list-style: none;
+  }
+}
+
+.list li {
+  list-style: none;
+}
+
+.parent:hover .list {
+  display: block;
+}
+
+.myHeading {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 0 0 3px blue;
+}
+
+/*  */
+
+/* section>h1 {
+  background-color: red;
+} */
+
+section div div h1 {
+  background-color: red;
+}

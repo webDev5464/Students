@@ -1,0 +1,49 @@
+@media screen and (max-width: 800px) {
+  nav {
+    padding: 7px 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navList {
+    display: none;
+  }
+
+
+  .navList {
+    position: absolute;
+    background-color: black;
+    top: 50px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .hambar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    background-position: -190px;
+  }
+}
+
+/* @media screen and (max-width: 800px) {
+  .res div {
+    background-color: red;
+  }
+
+  body {
+    background-color: red;
+  }
+} */
+
+/* @media screen and (min-width: 1000px) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+/* @media screen and (min-width: 800px) and (max-width: 1000px) {} */

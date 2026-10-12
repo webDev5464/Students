@@ -1,0 +1,11 @@
+Init Package.json
+
+- npm init -y
+
+Install express.js
+
+- npm i express
+
+Install nodemon
+
+- npm i nodemon -D

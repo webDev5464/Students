@@ -1,0 +1,144 @@
+body {
+  height: 500vh;
+  background-color: var(--myBlack);
+}
+
+/* :root {
+  --myBlack: black;
+} */
+
+.light {
+  --myBlack: white;
+}
+
+.dark {
+  --myBlack: black;
+}
+
+div.container {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+  position: absolute;
+
+  /* right: 0; */
+  /* bottom: 0; */
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+
+}
+
+.parent {
+  height: 400px;
+  width: 400px;
+  border: 2px solid var(--myBlack);
+
+  position: relative;
+  margin: auto;
+}
+
+.fixed {
+  background-color: yellow;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.stickyparent {
+  height: 600px;
+  width: 400px;
+  border: 2px solid red;
+}
+
+/*  */
+
+section.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-grow: inherit; */
+
+
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.even {
+  justify-content: space-evenly;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+section.container div {
+  width: 100px;
+  /* min-width: 200px; */
+
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}
+
+section.container div:first-child {
+  /* flex-grow: 5; */
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.align div {
+  background-color: black;
+  width: 100px;
+  margin: 10px;
+}
+
+.align div:first-child {
+  background-color: black;
+  width: 100px;
+  height: 200px;
+}
+
+.align div:last-child {
+  background-color: black;
+  width: 100px;
+  height: 300px;
+}
+
+.align div:nth-child(2) {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+.objCenter {
+  height: 600px;
+  width: 400px;
+  border: 2px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.objCenter div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}

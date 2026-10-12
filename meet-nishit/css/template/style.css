@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 400vh;
+}
+
+header {
+  height: 100vh;
+  border: 2px solid red;
+  position: relative;
+
+
+
+  background: url("./header-01.jpg");
+  background-size: cover;
+}
+
+.glass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.681));
+}
+
+.scrollDown {
+  font-size: 35px;
+  position: absolute;
+  bottom: 60px;
+  right: 50%;
+  transform: translate(50%);
+  /* cursor: pointer; */
+
+}
+
+.scrollDown a {
+  color: black;
+}
+
+.headerContent {
+  text-align: center;
+  color: white;
+}
+
+.headerContent h1 {
+  font-size: 60px;
+  margin: 20px 0 50px 0;
+}
+
+.headerContent button {
+  background-color: rgb(111, 226, 226);
+  padding: 10px 25px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 100px;
+}
+
+
+
+nav li {
+  list-style: none;
+}
+
+nav img {
+  width: 120px;
+}
+
+@media screen and (min-width: 720px) {
+  nav ul {
+    display: flex;
+    /* gap: 2rem; */
+    gap: 50px;
+  }
+
+  nav div:last-child {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+nav button {
+  background-color: transparent;
+  padding: 5px 16px;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+}
+
+.bar {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 8px 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav ul {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav div:last-child {
+    display: none;
+    position: absolute;
+
+    background-color: black;
+    width: 100%;
+    right: 0;
+    top: 69px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .bar {
+    display: block;
+  }
+
+}
+
+/* @media screen and (min-width: 1000px) {} */
+
+/* @media screen and (min-width:1000px) and (max-width: 1200px) {} */

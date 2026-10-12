@@ -10,6 +10,7 @@
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./backgroundImg.css">
+  <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
@@ -23,7 +24,8 @@
     </div>
 
     <div class="navContent">
-      <ul>
+      <span class="hambar" onclick="navHandler()"><i class="fa-solid fa-bars"></i></span>
+      <ul class="navList">
         <li><a href="./index.html">Home</a></li>
         <li>Products</li>
         <li><a href="./Contact.html">Contact</a></li>
@@ -33,6 +35,25 @@
       <button>Login</button>
     </div>
   </nav>
+
+  <script>
+    var x = document.querySelector(".navList");
+
+    function navHandler() {
+      const check = x.getAttribute("style")
+      x.setAttribute("style", "display: block;")
+
+      if (check) {
+        if (check == "display: none;") {
+          x.setAttribute("style", "display: block;")
+        } else {
+          x.setAttribute("style", "display: none;")
+        }
+      } else {
+        x.setAttribute("style", "display: block;")
+      }
+    }
+  </script>
 
   <!-- <main>
     <div class="imgContainer">
@@ -51,6 +72,8 @@
       <h1>This is a heading</h1>
     </div>
   </div>
+
+  <!--  -->
 
 </body>
 

@@ -32,15 +32,17 @@ export const postData = async (req, res) => {
 
 export const updateUser = async (req, res) => {
   try {
-    const { id, fname } = req.body
+    const { id, fname, lname } = req.body
 
-    const findUser = await $data.findById(id)
+    // const findUser = await $data.findById(id)
 
     // const findUser = await $data.findOne({ fname })
 
-    // const findAndUpdate = await $data.findByIdAndUpdate(id, { fname }, { new: true })
+    // console.log(findUser)
 
-    // const findAndUpdate = await $data.updateOne({ fname }, { $set: { fname } }, { new: true })
+    const findAndUpdate = await $data.findByIdAndUpdate(id, { fname }, { new: true })
+
+    // const findAndUpdate = await $data.updateOne({ fname }, { $set: { lname } }, { new: true })
 
     // const findDelete = await $data.findByIdAndDelete(id)
     // const findDelete = await $data.findOneAndDelete({ fname })
@@ -59,8 +61,11 @@ export const deleteUser = async (req, res) => {
     console.log("Chagan")
     // const { id } = req.params
     const { id } = req.body
-    console.log(req.body)
     await $data.findByIdAndDelete(id)
+    res.status(200).send({
+      success: true,
+      msg: "Deleted"
+    })
   } catch (err) {
     res.status(301).send({
       success: false,

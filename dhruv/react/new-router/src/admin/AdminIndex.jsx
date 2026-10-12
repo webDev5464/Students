@@ -1,9 +1,11 @@
 import { Outlet } from "react-router-dom";
+import AdminNav from "./modules/AdminNav";
 
 export default function AdminIndex() {
   return (
     <div>
-      <h1>THis is a AdminIndex</h1>
+      <AdminNav />
+      
       <Outlet />
     </div>
   )

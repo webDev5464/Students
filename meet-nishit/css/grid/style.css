@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* section div {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 10px;
+
+
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 10px;
+  row-gap: 30px;
+
+  justify-content: center;
+  place-items: center;
+} */
+
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+nav {
+  background-color: black;
+  height: 100px;
+  grid-column: 1 / span 5;
+}
+
+aside {
+  background-color: green;
+  height: 88.5vh;
+  border: 2px solid red;
+  max-width: 100px;
+  grid-
+
+  overflow-y: auto;
+  overflow-x: scroll;
+}
+
+main {
+  background-color: yellow;
+  height: 88.5vh;
+  grid-column: 2 / span 4;
+}

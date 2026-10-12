@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 40%;
+  margin: 100px auto;
+
+}
+
+fieldset {
+  padding: 20px;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+input {
+  padding: 4px;
+  width: 250px;
+}
+
+.btn {
+  background-color: red;
+  width: fit-content;
+  margin: auto;
+  margin-top: 40px;
+}
